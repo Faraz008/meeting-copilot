@@ -1,0 +1,293 @@
+{
+  "meeting_id": "s04",
+  "title": "Vendor Capacity Questions",
+  "date": "2025-05-29",
+  "timezone": "Asia/Kolkata",
+  "roster": [
+    "Asha",
+    "Ben",
+    "Chris"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "Asha",
+      "start": 0.0,
+      "end": 3.8,
+      "text": "Thanks for joining the vendor review."
+    },
+    {
+      "idx": 1,
+      "speaker": "Ben",
+      "start": 5.2,
+      "end": 9.0,
+      "text": "I have the contract summary and the staffing forecast."
+    },
+    {
+      "idx": 2,
+      "speaker": "Chris",
+      "start": 10.4,
+      "end": 14.2,
+      "text": "I have the latest vendor email open."
+    },
+    {
+      "idx": 3,
+      "speaker": "Asha",
+      "start": 15.6,
+      "end": 19.4,
+      "text": "We need to distinguish confirmed facts from items still pending."
+    },
+    {
+      "idx": 4,
+      "speaker": "Ben",
+      "start": 20.8,
+      "end": 24.6,
+      "text": "I'll note which questions have a direct answer."
+    },
+    {
+      "idx": 5,
+      "speaker": "Chris",
+      "start": 26.0,
+      "end": 29.8,
+      "text": "Let's keep the forecast unchanged until the facts are confirmed."
+    },
+    {
+      "idx": 6,
+      "speaker": "Asha",
+      "start": 31.2,
+      "end": 35.0,
+      "text": "Before we renew the vendor agreement, I need two details."
+    },
+    {
+      "idx": 7,
+      "speaker": "Ben",
+      "start": 36.4,
+      "end": 40.2,
+      "text": "What's the confirmed support capacity for June?"
+    },
+    {
+      "idx": 8,
+      "speaker": "Chris",
+      "start": 41.6,
+      "end": 45.4,
+      "text": "The vendor's current sheet only shows May numbers."
+    },
+    {
+      "idx": 9,
+      "speaker": "Asha",
+      "start": 46.8,
+      "end": 50.6,
+      "text": "We don't have the June figure in this meeting."
+    },
+    {
+      "idx": 10,
+      "speaker": "Ben",
+      "start": 52.0,
+      "end": 55.8,
+      "text": "Can we ask them to confirm the June support capacity?"
+    },
+    {
+      "idx": 11,
+      "speaker": "Chris",
+      "start": 57.2,
+      "end": 61.0,
+      "text": "Yes, I'll request the June capacity figure after this call."
+    },
+    {
+      "idx": 12,
+      "speaker": "Asha",
+      "start": 62.4,
+      "end": 66.2,
+      "text": "Thanks. I'll wait for the written number before changing the forecast."
+    },
+    {
+      "idx": 13,
+      "speaker": "Ben",
+      "start": 67.6,
+      "end": 71.4,
+      "text": "I can answer the June capacity question now: the vendor confirmed twelve support agents for June."
+    },
+    {
+      "idx": 14,
+      "speaker": "Chris",
+      "start": 72.8,
+      "end": 76.6,
+      "text": "I don't know that from the current contract summary."
+    },
+    {
+      "idx": 15,
+      "speaker": "Asha",
+      "start": 78.0,
+      "end": 81.8,
+      "text": "Has legal confirmed the weekend coverage clause?"
+    },
+    {
+      "idx": 16,
+      "speaker": "Ben",
+      "start": 83.2,
+      "end": 87.0,
+      "text": "The legal review is still pending."
+    },
+    {
+      "idx": 17,
+      "speaker": "Chris",
+      "start": 88.4,
+      "end": 92.2,
+      "text": "The vendor email lists the twelve-agent capacity in its June table."
+    },
+    {
+      "idx": 18,
+      "speaker": "Asha",
+      "start": 93.6,
+      "end": 97.4,
+      "text": "That answers the capacity question; thank you."
+    },
+    {
+      "idx": 19,
+      "speaker": "Ben",
+      "start": 98.8,
+      "end": 102.6,
+      "text": "The weekend clause is still not confirmed."
+    },
+    {
+      "idx": 20,
+      "speaker": "Chris",
+      "start": 104.0,
+      "end": 107.8,
+      "text": "We should not assume weekend coverage from the weekday schedule."
+    },
+    {
+      "idx": 21,
+      "speaker": "Asha",
+      "start": 109.2,
+      "end": 113.0,
+      "text": "Please keep that question open until legal gives us the clause."
+    },
+    {
+      "idx": 22,
+      "speaker": "Ben",
+      "start": 114.4,
+      "end": 118.2,
+      "text": "The capacity figure should be reflected in the staffing forecast."
+    },
+    {
+      "idx": 23,
+      "speaker": "Chris",
+      "start": 119.6,
+      "end": 123.4,
+      "text": "I haven't updated the forecast yet."
+    },
+    {
+      "idx": 24,
+      "speaker": "Asha",
+      "start": 124.8,
+      "end": 128.6,
+      "text": "Let's review the vendor response in the next operations meeting."
+    },
+    {
+      "idx": 25,
+      "speaker": "Ben",
+      "start": 130.0,
+      "end": 133.8,
+      "text": "The June figure is twelve agents, as confirmed."
+    },
+    {
+      "idx": 26,
+      "speaker": "Chris",
+      "start": 135.2,
+      "end": 139.0,
+      "text": "And the weekend coverage question remains unanswered."
+    },
+    {
+      "idx": 27,
+      "speaker": "Asha",
+      "start": 140.4,
+      "end": 144.2,
+      "text": "Good, record those separately."
+    },
+    {
+      "idx": 28,
+      "speaker": "Ben",
+      "start": 145.6,
+      "end": 149.4,
+      "text": "The forecast currently assumes ten agents."
+    },
+    {
+      "idx": 29,
+      "speaker": "Asha",
+      "start": 150.8,
+      "end": 154.6,
+      "text": "We should not revise it until the vendor's June figure is documented."
+    },
+    {
+      "idx": 30,
+      "speaker": "Chris",
+      "start": 156.0,
+      "end": 159.8,
+      "text": "The contract summary does not contain weekend coverage."
+    },
+    {
+      "idx": 31,
+      "speaker": "Ben",
+      "start": 161.2,
+      "end": 165.0,
+      "text": "That absence is why legal needs to confirm the clause."
+    },
+    {
+      "idx": 32,
+      "speaker": "Asha",
+      "start": 166.4,
+      "end": 170.2,
+      "text": "The next operations review can revisit the open point."
+    },
+    {
+      "idx": 33,
+      "speaker": "Chris",
+      "start": 171.6,
+      "end": 175.4,
+      "text": "The capacity answer and coverage question remain separate."
+    },
+    {
+      "idx": 34,
+      "speaker": "Asha",
+      "start": 176.8,
+      "end": 180.6,
+      "text": "The June capacity question is answered."
+    },
+    {
+      "idx": 35,
+      "speaker": "Ben",
+      "start": 182.0,
+      "end": 185.8,
+      "text": "The weekend coverage question remains open."
+    },
+    {
+      "idx": 36,
+      "speaker": "Chris",
+      "start": 187.2,
+      "end": 191.0,
+      "text": "I'll send the vendor request follow-up."
+    },
+    {
+      "idx": 37,
+      "speaker": "Asha",
+      "start": 192.4,
+      "end": 196.2,
+      "text": "We'll revisit the clause when legal responds."
+    },
+    {
+      "idx": 38,
+      "speaker": "Ben",
+      "start": 197.6,
+      "end": 201.4,
+      "text": "The forecast stays unchanged for now."
+    },
+    {
+      "idx": 39,
+      "speaker": "Chris",
+      "start": 202.8,
+      "end": 206.6,
+      "text": "Thanks, that's the review."
+    }
+  ]
+}

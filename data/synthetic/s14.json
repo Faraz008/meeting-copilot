@@ -1,0 +1,293 @@
+{
+  "meeting_id": "s14",
+  "title": "Completed Migration Work Status",
+  "date": "2026-02-27",
+  "timezone": "Asia/Kolkata",
+  "roster": [
+    "Tess",
+    "Uma",
+    "Victor"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "Tess",
+      "start": 0.0,
+      "end": 3.8,
+      "text": "This is a status review of the completed migration."
+    },
+    {
+      "idx": 1,
+      "speaker": "Uma",
+      "start": 5.2,
+      "end": 9.0,
+      "text": "I have the completion notes from the engineering channel."
+    },
+    {
+      "idx": 2,
+      "speaker": "Victor",
+      "start": 10.4,
+      "end": 14.2,
+      "text": "The operations report is also available."
+    },
+    {
+      "idx": 3,
+      "speaker": "Tess",
+      "start": 15.6,
+      "end": 19.4,
+      "text": "Let's confirm what has already happened."
+    },
+    {
+      "idx": 4,
+      "speaker": "Uma",
+      "start": 20.8,
+      "end": 24.6,
+      "text": "We should avoid reopening finished work as new tasks."
+    },
+    {
+      "idx": 5,
+      "speaker": "Victor",
+      "start": 26.0,
+      "end": 29.8,
+      "text": "I'll distinguish completed reports from outstanding work."
+    },
+    {
+      "idx": 6,
+      "speaker": "Tess",
+      "start": 31.2,
+      "end": 35.0,
+      "text": "Let's review what was completed before we close the migration workstream."
+    },
+    {
+      "idx": 7,
+      "speaker": "Uma",
+      "start": 36.4,
+      "end": 40.2,
+      "text": "I migrated the customer table on Tuesday."
+    },
+    {
+      "idx": 8,
+      "speaker": "Victor",
+      "start": 41.6,
+      "end": 45.4,
+      "text": "The index rebuild finished yesterday."
+    },
+    {
+      "idx": 9,
+      "speaker": "Tess",
+      "start": 46.8,
+      "end": 50.6,
+      "text": "I checked the row counts after the migration, and they matched."
+    },
+    {
+      "idx": 10,
+      "speaker": "Uma",
+      "start": 52.0,
+      "end": 55.8,
+      "text": "The backup restore test also passed last night."
+    },
+    {
+      "idx": 11,
+      "speaker": "Victor",
+      "start": 57.2,
+      "end": 61.0,
+      "text": "I sent the completion report to operations this morning."
+    },
+    {
+      "idx": 12,
+      "speaker": "Tess",
+      "start": 62.4,
+      "end": 66.2,
+      "text": "The rollback notes were added to the runbook on Wednesday."
+    },
+    {
+      "idx": 13,
+      "speaker": "Uma",
+      "start": 67.6,
+      "end": 71.4,
+      "text": "The monitoring dashboard was updated after the restore test."
+    },
+    {
+      "idx": 14,
+      "speaker": "Victor",
+      "start": 72.8,
+      "end": 76.6,
+      "text": "I verified the alert thresholds against the new database metrics."
+    },
+    {
+      "idx": 15,
+      "speaker": "Tess",
+      "start": 78.0,
+      "end": 81.8,
+      "text": "So those are reports of work already completed, not new assignments."
+    },
+    {
+      "idx": 16,
+      "speaker": "Uma",
+      "start": 83.2,
+      "end": 87.0,
+      "text": "Correct. I am not volunteering for another migration task."
+    },
+    {
+      "idx": 17,
+      "speaker": "Victor",
+      "start": 88.4,
+      "end": 92.2,
+      "text": "And I'm only confirming that the report was sent."
+    },
+    {
+      "idx": 18,
+      "speaker": "Tess",
+      "start": 93.6,
+      "end": 97.4,
+      "text": "The customer table, indexes, backup test, and runbook are all done."
+    },
+    {
+      "idx": 19,
+      "speaker": "Uma",
+      "start": 98.8,
+      "end": 102.6,
+      "text": "The dashboard update is also complete."
+    },
+    {
+      "idx": 20,
+      "speaker": "Victor",
+      "start": 104.0,
+      "end": 107.8,
+      "text": "The alert thresholds were checked and recorded."
+    },
+    {
+      "idx": 21,
+      "speaker": "Tess",
+      "start": 109.2,
+      "end": 113.0,
+      "text": "Did anything fail during the final verification?"
+    },
+    {
+      "idx": 22,
+      "speaker": "Uma",
+      "start": 114.4,
+      "end": 118.2,
+      "text": "No, the verification completed without a blocker."
+    },
+    {
+      "idx": 23,
+      "speaker": "Victor",
+      "start": 119.6,
+      "end": 123.4,
+      "text": "The operations team acknowledged the report."
+    },
+    {
+      "idx": 24,
+      "speaker": "Tess",
+      "start": 124.8,
+      "end": 128.6,
+      "text": "Then the migration workstream is complete."
+    },
+    {
+      "idx": 25,
+      "speaker": "Uma",
+      "start": 130.0,
+      "end": 133.8,
+      "text": "Yes, all the tasks we planned have been finished."
+    },
+    {
+      "idx": 26,
+      "speaker": "Victor",
+      "start": 135.2,
+      "end": 139.0,
+      "text": "There is no new work being assigned in this review."
+    },
+    {
+      "idx": 27,
+      "speaker": "Tess",
+      "start": 140.4,
+      "end": 144.2,
+      "text": "Let's close the item as completed."
+    },
+    {
+      "idx": 28,
+      "speaker": "Uma",
+      "start": 145.6,
+      "end": 149.4,
+      "text": "The backup is retained under the normal policy."
+    },
+    {
+      "idx": 29,
+      "speaker": "Victor",
+      "start": 150.8,
+      "end": 154.6,
+      "text": "The dashboard alert history is archived."
+    },
+    {
+      "idx": 30,
+      "speaker": "Tess",
+      "start": 156.0,
+      "end": 159.8,
+      "text": "The migration notes contain the verification results."
+    },
+    {
+      "idx": 31,
+      "speaker": "Uma",
+      "start": 161.2,
+      "end": 165.0,
+      "text": "Nothing remains blocked."
+    },
+    {
+      "idx": 32,
+      "speaker": "Victor",
+      "start": 166.4,
+      "end": 170.2,
+      "text": "No follow-up work was assigned in this review."
+    },
+    {
+      "idx": 33,
+      "speaker": "Tess",
+      "start": 171.6,
+      "end": 175.4,
+      "text": "We can close the completed workstream."
+    },
+    {
+      "idx": 34,
+      "speaker": "Tess",
+      "start": 176.8,
+      "end": 180.6,
+      "text": "All planned migration work is complete."
+    },
+    {
+      "idx": 35,
+      "speaker": "Uma",
+      "start": 182.0,
+      "end": 185.8,
+      "text": "The verification and restore test passed."
+    },
+    {
+      "idx": 36,
+      "speaker": "Victor",
+      "start": 187.2,
+      "end": 191.0,
+      "text": "The completion report was sent."
+    },
+    {
+      "idx": 37,
+      "speaker": "Tess",
+      "start": 192.4,
+      "end": 196.2,
+      "text": "No new action items came out of this review."
+    },
+    {
+      "idx": 38,
+      "speaker": "Uma",
+      "start": 197.6,
+      "end": 201.4,
+      "text": "The workstream can be closed."
+    },
+    {
+      "idx": 39,
+      "speaker": "Victor",
+      "start": 202.8,
+      "end": 206.6,
+      "text": "Thanks, ending the call."
+    }
+  ]
+}

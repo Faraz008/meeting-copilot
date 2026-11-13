@@ -1,0 +1,46 @@
+{
+  "meeting_id": "s05",
+  "meeting_date": "2025-06-06",
+  "roster": [
+    "Iris",
+    "Noah",
+    "Pavel"
+  ],
+  "action_items": [
+    {
+      "gold_id": "a1",
+      "title": "Prepare the incident alert summary with the recovery timeline",
+      "owner": "Noah",
+      "deadline": null,
+      "status": "committed",
+      "turns": [
+        14,
+        15,
+        16,
+        25
+      ],
+      "tags": [
+        "no_deadline"
+      ]
+    },
+    {
+      "gold_id": "a2",
+      "title": "Verify the database recovery timestamp in the incident log",
+      "owner": "Pavel",
+      "deadline": null,
+      "status": "committed",
+      "turns": [
+        18,
+        19,
+        24,
+        27
+      ],
+      "tags": [
+        "no_deadline"
+      ]
+    }
+  ],
+  "decisions": [],
+  "open_questions": [],
+  "follow_ups": []
+}

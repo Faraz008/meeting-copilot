@@ -1,0 +1,62 @@
+{
+  "meeting_id": "s12",
+  "meeting_date": "2025-12-05",
+  "roster": [
+    "Anika",
+    "Ben",
+    "Carlos"
+  ],
+  "action_items": [
+    {
+      "gold_id": "a1",
+      "title": "Publish the support rota",
+      "owner": "Ben",
+      "deadline": "2025-12-08",
+      "status": "committed",
+      "turns": [
+        35,
+        38
+      ],
+      "tags": []
+    },
+    {
+      "gold_id": "a2",
+      "title": "Prepare the customer email for the December 9 launch",
+      "owner": "Carlos",
+      "deadline": null,
+      "status": "committed",
+      "turns": [
+        36,
+        38
+      ],
+      "tags": [
+        "no_deadline"
+      ]
+    },
+    {
+      "gold_id": "a3",
+      "title": "Update the launch checklist with support links",
+      "owner": "Anika",
+      "deadline": "2025-12-08",
+      "status": "committed",
+      "turns": [
+        37,
+        38
+      ],
+      "tags": []
+    }
+  ],
+  "decisions": [
+    {
+      "gold_id": "d1",
+      "title": "The launch date is December 9, 2025",
+      "turns": [
+        16,
+        17
+      ],
+      "tags": []
+    }
+  ],
+  "open_questions": [],
+  "follow_ups": []
+}

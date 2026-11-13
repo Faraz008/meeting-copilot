@@ -1,0 +1,49 @@
+{
+  "meeting_id": "s11",
+  "meeting_date": "2025-11-14",
+  "roster": [
+    "Lena",
+    "Omar",
+    "Quinn"
+  ],
+  "action_items": [
+    {
+      "gold_id": "a1",
+      "title": "Revise the architecture note to make MySQL the active database choice and explain the reversal",
+      "owner": "Omar",
+      "deadline": null,
+      "status": "committed",
+      "turns": [
+        10,
+        16,
+        35
+      ],
+      "tags": [
+        "revision",
+        "no_deadline"
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "gold_id": "d1",
+      "title": "Use MySQL for the reporting service; this supersedes the earlier Postgres decision",
+      "previous_decision": "Use Postgres for the reporting service",
+      "turns": [
+        8,
+        9,
+        15,
+        16,
+        18,
+        19,
+        24,
+        27
+      ],
+      "tags": [
+        "revision"
+      ]
+    }
+  ],
+  "open_questions": [],
+  "follow_ups": []
+}

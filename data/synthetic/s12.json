@@ -1,0 +1,293 @@
+{
+  "meeting_id": "s12",
+  "title": "Launch Readiness End-of-Meeting Recap",
+  "date": "2025-12-05",
+  "timezone": "Asia/Kolkata",
+  "roster": [
+    "Anika",
+    "Ben",
+    "Carlos"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "Anika",
+      "start": 0.0,
+      "end": 3.8,
+      "text": "Thanks, this is the launch readiness review."
+    },
+    {
+      "idx": 1,
+      "speaker": "Ben",
+      "start": 5.2,
+      "end": 9.0,
+      "text": "The checklist has been updated with the latest status."
+    },
+    {
+      "idx": 2,
+      "speaker": "Carlos",
+      "start": 10.4,
+      "end": 14.2,
+      "text": "Support and customer messaging are the remaining areas."
+    },
+    {
+      "idx": 3,
+      "speaker": "Anika",
+      "start": 15.6,
+      "end": 19.4,
+      "text": "Let's review risks first, then capture owners at the end."
+    },
+    {
+      "idx": 4,
+      "speaker": "Ben",
+      "start": 20.8,
+      "end": 24.6,
+      "text": "That works; we can do a final action recap before closing."
+    },
+    {
+      "idx": 5,
+      "speaker": "Carlos",
+      "start": 26.0,
+      "end": 29.8,
+      "text": "I'll hold off on assuming anything is assigned until then."
+    },
+    {
+      "idx": 6,
+      "speaker": "Anika",
+      "start": 31.2,
+      "end": 35.0,
+      "text": "The launch review has covered the risks and the customer messaging."
+    },
+    {
+      "idx": 7,
+      "speaker": "Ben",
+      "start": 36.4,
+      "end": 40.2,
+      "text": "The staging environment is stable after yesterday's patch."
+    },
+    {
+      "idx": 8,
+      "speaker": "Carlos",
+      "start": 41.6,
+      "end": 45.4,
+      "text": "The support rota is drafted but not yet published."
+    },
+    {
+      "idx": 9,
+      "speaker": "Anika",
+      "start": 46.8,
+      "end": 50.6,
+      "text": "The analytics event names have been checked."
+    },
+    {
+      "idx": 10,
+      "speaker": "Ben",
+      "start": 52.0,
+      "end": 55.8,
+      "text": "The remaining work is mostly small, but let's not assign it casually."
+    },
+    {
+      "idx": 11,
+      "speaker": "Carlos",
+      "start": 57.2,
+      "end": 61.0,
+      "text": "We should make sure the final checklist has the support links."
+    },
+    {
+      "idx": 12,
+      "speaker": "Anika",
+      "start": 62.4,
+      "end": 66.2,
+      "text": "Yes, that is still an open suggestion."
+    },
+    {
+      "idx": 13,
+      "speaker": "Ben",
+      "start": 67.6,
+      "end": 71.4,
+      "text": "The customer email is waiting on the final launch date."
+    },
+    {
+      "idx": 14,
+      "speaker": "Carlos",
+      "start": 72.8,
+      "end": 76.6,
+      "text": "No one has accepted the email task yet."
+    },
+    {
+      "idx": 15,
+      "speaker": "Anika",
+      "start": 78.0,
+      "end": 81.8,
+      "text": "The launch date is now confirmed for December ninth."
+    },
+    {
+      "idx": 16,
+      "speaker": "Ben",
+      "start": 83.2,
+      "end": 87.0,
+      "text": "That means the customer email can be prepared."
+    },
+    {
+      "idx": 17,
+      "speaker": "Carlos",
+      "start": 88.4,
+      "end": 92.2,
+      "text": "The support rota also needs to go out before launch."
+    },
+    {
+      "idx": 18,
+      "speaker": "Anika",
+      "start": 93.6,
+      "end": 97.4,
+      "text": "Let's capture the owners in a recap now, before we close."
+    },
+    {
+      "idx": 19,
+      "speaker": "Ben",
+      "start": 98.8,
+      "end": 102.6,
+      "text": "We should capture a clear owner for the support rota in the final recap."
+    },
+    {
+      "idx": 20,
+      "speaker": "Carlos",
+      "start": 104.0,
+      "end": 107.8,
+      "text": "The customer email is still waiting for an explicit owner."
+    },
+    {
+      "idx": 21,
+      "speaker": "Anika",
+      "start": 109.2,
+      "end": 113.0,
+      "text": "The checklist links are also on the recap list."
+    },
+    {
+      "idx": 22,
+      "speaker": "Ben",
+      "start": 114.4,
+      "end": 118.2,
+      "text": "Those are the three remaining commitments."
+    },
+    {
+      "idx": 23,
+      "speaker": "Carlos",
+      "start": 119.6,
+      "end": 123.4,
+      "text": "I'll send the email draft to both of you for a quick check."
+    },
+    {
+      "idx": 24,
+      "speaker": "Anika",
+      "start": 124.8,
+      "end": 128.6,
+      "text": "I'll add the links, not rewrite the technical checklist."
+    },
+    {
+      "idx": 25,
+      "speaker": "Ben",
+      "start": 130.0,
+      "end": 133.8,
+      "text": "The rota is my task; the email is Carlos's; the checklist links are Anika's."
+    },
+    {
+      "idx": 26,
+      "speaker": "Carlos",
+      "start": 135.2,
+      "end": 139.0,
+      "text": "Correct. All three are new commitments from this recap."
+    },
+    {
+      "idx": 27,
+      "speaker": "Anika",
+      "start": 140.4,
+      "end": 144.2,
+      "text": "Thanks. That's the action summary for the meeting."
+    },
+    {
+      "idx": 28,
+      "speaker": "Ben",
+      "start": 145.6,
+      "end": 149.4,
+      "text": "The support rota includes the weekend escalation contact."
+    },
+    {
+      "idx": 29,
+      "speaker": "Carlos",
+      "start": 150.8,
+      "end": 154.6,
+      "text": "The customer email will use the confirmed date."
+    },
+    {
+      "idx": 30,
+      "speaker": "Anika",
+      "start": 156.0,
+      "end": 159.8,
+      "text": "The checklist links should point to the published rota."
+    },
+    {
+      "idx": 31,
+      "speaker": "Ben",
+      "start": 161.2,
+      "end": 165.0,
+      "text": "The launch risk register is otherwise clear."
+    },
+    {
+      "idx": 32,
+      "speaker": "Carlos",
+      "start": 166.4,
+      "end": 170.2,
+      "text": "The email is a separate deliverable from the checklist."
+    },
+    {
+      "idx": 33,
+      "speaker": "Anika",
+      "start": 171.6,
+      "end": 175.4,
+      "text": "We'll keep those as three distinct owners."
+    },
+    {
+      "idx": 34,
+      "speaker": "Anika",
+      "start": 176.8,
+      "end": 180.6,
+      "text": "The recap captures the remaining launch work."
+    },
+    {
+      "idx": 35,
+      "speaker": "Ben",
+      "start": 182.0,
+      "end": 185.8,
+      "text": "I'll publish the rota by Monday."
+    },
+    {
+      "idx": 36,
+      "speaker": "Carlos",
+      "start": 187.2,
+      "end": 191.0,
+      "text": "I'll prepare the customer email."
+    },
+    {
+      "idx": 37,
+      "speaker": "Anika",
+      "start": 192.4,
+      "end": 196.2,
+      "text": "I'll update the checklist links."
+    },
+    {
+      "idx": 38,
+      "speaker": "Ben",
+      "start": 197.6,
+      "end": 201.4,
+      "text": "Those are the owners we confirmed at the end."
+    },
+    {
+      "idx": 39,
+      "speaker": "Carlos",
+      "start": 202.8,
+      "end": 206.6,
+      "text": "Thanks, we're ready to close."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "meeting_id": "s13",
+  "meeting_date": "2026-01-16",
+  "roster": [
+    "Robert",
+    "Roberto",
+    "Samantha",
+    "Samuel"
+  ],
+  "action_items": [
+    {
+      "gold_id": "a1",
+      "title": "Check partner onboarding dates against the partner calendar",
+      "owner": "Samantha",
+      "deadline": null,
+      "status": "committed",
+      "turns": [
+        11,
+        13,
+        24
+      ],
+      "tags": [
+        "no_deadline"
+      ]
+    },
+    {
+      "gold_id": "a2",
+      "title": "Prepare the partner onboarding summary using corrected identity references",
+      "owner": "Robert",
+      "deadline": null,
+      "status": "committed",
+      "turns": [
+        9,
+        14,
+        25
+      ],
+      "tags": [
+        "no_deadline"
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "gold_id": "d1",
+      "title": "Use full names in the final onboarding notes to avoid nickname ambiguity",
+      "turns": [
+        24,
+        25
+      ],
+      "tags": []
+    }
+  ],
+  "open_questions": [],
+  "follow_ups": []
+}

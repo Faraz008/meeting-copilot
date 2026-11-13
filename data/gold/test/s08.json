@@ -1,0 +1,51 @@
+{
+  "meeting_id": "s08",
+  "meeting_date": "2025-08-08",
+  "roster": [
+    "Elena",
+    "Marcus",
+    "Jo"
+  ],
+  "action_items": [
+    {
+      "gold_id": "a1",
+      "title": "Write the authentication section of the API migration guide",
+      "owner": null,
+      "deadline": null,
+      "status": "committed",
+      "turns": [
+        7,
+        8,
+        9,
+        10,
+        13,
+        14,
+        21,
+        27
+      ],
+      "tags": [
+        "ambiguous_owner",
+        "no_deadline"
+      ]
+    }
+  ],
+  "decisions": [],
+  "open_questions": [
+    {
+      "gold_id": "q1",
+      "title": "Who will own the authentication section of the API migration guide?",
+      "answered": false,
+      "turns": [
+        13,
+        15,
+        21,
+        27
+      ],
+      "tags": [
+        "unanswered",
+        "ambiguous_owner"
+      ]
+    }
+  ],
+  "follow_ups": []
+}

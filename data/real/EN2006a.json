@@ -1,0 +1,714 @@
+{
+  "meeting_id": "EN2006a",
+  "title": "AMI non-scenario meeting EN2006a",
+  "date": "2005-05-05",
+  "timezone": null,
+  "roster": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "B",
+      "start": 8.275,
+      "end": 9.727,
+      "text": "And something to fidget with."
+    },
+    {
+      "idx": 1,
+      "speaker": "B",
+      "start": 15.6,
+      "end": 18.41,
+      "text": "Okay. [cough]"
+    },
+    {
+      "idx": 2,
+      "speaker": "B",
+      "start": 19.901,
+      "end": 20.46,
+      "text": "See --"
+    },
+    {
+      "idx": 3,
+      "speaker": "A",
+      "start": 20.277,
+      "end": 20.892,
+      "text": "Right."
+    },
+    {
+      "idx": 4,
+      "speaker": "B",
+      "start": 22.592,
+      "end": 25.117,
+      "text": "On your marks, get set, go."
+    },
+    {
+      "idx": 5,
+      "speaker": "A",
+      "start": 23.197,
+      "end": 23.979,
+      "text": "'Kay."
+    },
+    {
+      "idx": 6,
+      "speaker": "C",
+      "start": 23.502,
+      "end": 25.281,
+      "text": "[laugh] Right."
+    },
+    {
+      "idx": 7,
+      "speaker": "D",
+      "start": 24.032,
+      "end": 24.506,
+      "text": "Hmm."
+    },
+    {
+      "idx": 8,
+      "speaker": "B",
+      "start": 26.506,
+      "end": 28.195,
+      "text": "Such a long time since I've done these."
+    },
+    {
+      "idx": 9,
+      "speaker": "D",
+      "start": 27.182,
+      "end": 36.944,
+      "text": "Did did you guys actually had sort of um the interaction or discussions while you we doing the annotation, did you have -- had stages of clarification or -- I suppose you did, right? Mm-hmm."
+    },
+    {
+      "idx": 10,
+      "speaker": "C",
+      "start": 34.575,
+      "end": 35.506,
+      "text": "We did, yeah."
+    },
+    {
+      "idx": 11,
+      "speaker": "B",
+      "start": 35.147,
+      "end": 37.344,
+      "text": "At the beginning we did. Um"
+    },
+    {
+      "idx": 12,
+      "speaker": "B",
+      "start": 38.496,
+      "end": 41.064,
+      "text": "we did a training set, didn't we, and then compared to see --"
+    },
+    {
+      "idx": 13,
+      "speaker": "A",
+      "start": 40.564,
+      "end": 41.179,
+      "text": "Yeah."
+    },
+    {
+      "idx": 14,
+      "speaker": "C",
+      "start": 40.795,
+      "end": 42.144,
+      "text": "Yeah, we did two of those, didn't we?"
+    },
+    {
+      "idx": 15,
+      "speaker": "B",
+      "start": 42.67,
+      "end": 43.601,
+      "text": "we probably did."
+    },
+    {
+      "idx": 16,
+      "speaker": "C",
+      "start": 43.191,
+      "end": 47.374,
+      "text": "I think we did two training sets and then we had at least one meeting with you where we talked it all through."
+    },
+    {
+      "idx": 17,
+      "speaker": "A",
+      "start": 46.104,
+      "end": 47.952,
+      "text": "Yeah. Mm."
+    },
+    {
+      "idx": 18,
+      "speaker": "D",
+      "start": 48.072,
+      "end": 48.687,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 19,
+      "speaker": "C",
+      "start": 48.773,
+      "end": 48.96,
+      "text": "[other]"
+    },
+    {
+      "idx": 20,
+      "speaker": "B",
+      "start": 49.248,
+      "end": 53.632,
+      "text": "And supposedly decided on things. And then we did th all the rest of them separately."
+    },
+    {
+      "idx": 21,
+      "speaker": "C",
+      "start": 51.393,
+      "end": 52.027,
+      "text": "Yes."
+    },
+    {
+      "idx": 22,
+      "speaker": "C",
+      "start": 52.027,
+      "end": 54.338,
+      "text": "Yeah."
+    },
+    {
+      "idx": 23,
+      "speaker": "D",
+      "start": 54.601,
+      "end": 68.111,
+      "text": "So did you feel that it was some some kind of -- some process of convergence, like that initially had quite different ideas about the phrase types and and markations and then eventually you came up uh with some kind of rules that you set up between uh the two of you? Or --"
+    },
+    {
+      "idx": 24,
+      "speaker": "B",
+      "start": 67.336,
+      "end": 74.304,
+      "text": "Yes, I think. Okay. [laugh] Yeah, but you convinced me. [laugh] [cough]"
+    },
+    {
+      "idx": 25,
+      "speaker": "C",
+      "start": 68.704,
+      "end": 83.101,
+      "text": "I'd say no, but [laugh] -- I d I mean I thought we had basically the same ideas to b I don't remember ever having strong arguments about what should be in what group or -- it was just the rules about things that s yeah."
+    },
+    {
+      "idx": 26,
+      "speaker": "B",
+      "start": 77.36,
+      "end": 79.36,
+      "text": "No, that's true. Mm-hmm."
+    },
+    {
+      "idx": 27,
+      "speaker": "B",
+      "start": 80.944,
+      "end": 82.688,
+      "text": "It's the length of it really."
+    },
+    {
+      "idx": 28,
+      "speaker": "D",
+      "start": 83.264,
+      "end": 83.696,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 29,
+      "speaker": "B",
+      "start": 84.096,
+      "end": 84.934,
+      "text": "But we had --"
+    },
+    {
+      "idx": 30,
+      "speaker": "C",
+      "start": 84.249,
+      "end": 100.016,
+      "text": "And what counted as wha as -- for the spectral features it was more confusing what counted as a spectral feature, and we had a long discussion about that. But I don't remember sort of arguing from different sides and converging, just sort of piecing out what would come up and agreeing what we'd do."
+    },
+    {
+      "idx": 31,
+      "speaker": "B",
+      "start": 88.558,
+      "end": 89.88,
+      "text": "That's really hard, yeah."
+    },
+    {
+      "idx": 32,
+      "speaker": "D",
+      "start": 91.2,
+      "end": 91.722,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 33,
+      "speaker": "A",
+      "start": 91.616,
+      "end": 92.272,
+      "text": "Yeah."
+    },
+    {
+      "idx": 34,
+      "speaker": "B",
+      "start": 93.008,
+      "end": 93.808,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 35,
+      "speaker": "B",
+      "start": 94.865,
+      "end": 95.472,
+      "text": "No."
+    },
+    {
+      "idx": 36,
+      "speaker": "D",
+      "start": 98.4,
+      "end": 98.859,
+      "text": "Yeah."
+    },
+    {
+      "idx": 37,
+      "speaker": "B",
+      "start": 99.152,
+      "end": 99.534,
+      "text": "Yeah."
+    },
+    {
+      "idx": 38,
+      "speaker": "D",
+      "start": 100.096,
+      "end": 100.605,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 39,
+      "speaker": "B",
+      "start": 101.152,
+      "end": 105.856,
+      "text": "And we we had a manual, which we haven't got here. Do you reckon if we get a copy, would that be useful?"
+    },
+    {
+      "idx": 40,
+      "speaker": "C",
+      "start": 106.193,
+      "end": 112.186,
+      "text": "It probably would be, but I don't -- i it's been a long time, yeah, [laugh] since we've done this."
+    },
+    {
+      "idx": 41,
+      "speaker": "A",
+      "start": 107.729,
+      "end": 108.461,
+      "text": "Mm."
+    },
+    {
+      "idx": 42,
+      "speaker": "D",
+      "start": 108.152,
+      "end": 108.659,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 43,
+      "speaker": "B",
+      "start": 108.255,
+      "end": 110.118,
+      "text": "Are we allowed to leave the meeting now it's started?"
+    },
+    {
+      "idx": 44,
+      "speaker": "B",
+      "start": 112.0,
+      "end": 113.824,
+      "text": "Can we get Ben to print us out one?"
+    },
+    {
+      "idx": 45,
+      "speaker": "D",
+      "start": 114.0,
+      "end": 122.48,
+      "text": "Yeah, I think so. Okay. I dropped a. So did Dere Derek and Ben has the um the file that they -- this manual? Or --"
+    },
+    {
+      "idx": 46,
+      "speaker": "C",
+      "start": 115.817,
+      "end": 119.128,
+      "text": "Yeah, that would be handy. [laugh] Sign off."
+    },
+    {
+      "idx": 47,
+      "speaker": "B",
+      "start": 116.155,
+      "end": 119.655,
+      "text": "Mm. [laugh] Okay. Yes, now we're moving with the headphones. [laugh]"
+    },
+    {
+      "idx": 48,
+      "speaker": "A",
+      "start": 116.251,
+      "end": 117.074,
+      "text": "Yeah."
+    },
+    {
+      "idx": 49,
+      "speaker": "B",
+      "start": 120.912,
+      "end": 121.368,
+      "text": "[cough]"
+    },
+    {
+      "idx": 50,
+      "speaker": "C",
+      "start": 122.379,
+      "end": 123.842,
+      "text": "We did send it to him, yeah."
+    },
+    {
+      "idx": 51,
+      "speaker": "A",
+      "start": 122.81,
+      "end": 126.66,
+      "text": "He has had it certainly. Yeah. Yeah, he's been emailed it while ago."
+    },
+    {
+      "idx": 52,
+      "speaker": "B",
+      "start": 123.169,
+      "end": 127.227,
+      "text": "Yes, he's he's been e emailed it, yeah. Otherwise we can go onto our system and get it."
+    },
+    {
+      "idx": 53,
+      "speaker": "D",
+      "start": 124.625,
+      "end": 125.956,
+      "text": "Yeah? O okay."
+    },
+    {
+      "idx": 54,
+      "speaker": "C",
+      "start": 125.008,
+      "end": 125.446,
+      "text": "Yeah."
+    },
+    {
+      "idx": 55,
+      "speaker": "C",
+      "start": 132.655,
+      "end": 133.251,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 56,
+      "speaker": "A",
+      "start": 133.0,
+      "end": 134.978,
+      "text": "Now he's gone. [laugh]"
+    },
+    {
+      "idx": 57,
+      "speaker": "C",
+      "start": 133.81,
+      "end": 139.264,
+      "text": "[laugh] There's a cool little count-down clock that lets you know exactly how long you've been meeting as well."
+    },
+    {
+      "idx": 58,
+      "speaker": "B",
+      "start": 133.904,
+      "end": 137.495,
+      "text": "Yes. [laugh] Let's say something rude."
+    },
+    {
+      "idx": 59,
+      "speaker": "A",
+      "start": 137.065,
+      "end": 138.08,
+      "text": "Oh really?"
+    },
+    {
+      "idx": 60,
+      "speaker": "A",
+      "start": 139.248,
+      "end": 139.896,
+      "text": "Excellent."
+    },
+    {
+      "idx": 61,
+      "speaker": "B",
+      "start": 139.282,
+      "end": 141.818,
+      "text": "I oh. top."
+    },
+    {
+      "idx": 62,
+      "speaker": "A",
+      "start": 141.519,
+      "end": 152.582,
+      "text": "[other] We should have these things in our area. You know, we don't have high-tech things. Well, I guess there's telescopes, but that -- that's that's different though, isn't it. That's not -- no."
+    },
+    {
+      "idx": 63,
+      "speaker": "B",
+      "start": 145.179,
+      "end": 146.95,
+      "text": "But no, how little work we did."
+    },
+    {
+      "idx": 64,
+      "speaker": "C",
+      "start": 145.716,
+      "end": 146.922,
+      "text": "No, we don't at all."
+    },
+    {
+      "idx": 65,
+      "speaker": "B",
+      "start": 147.786,
+      "end": 150.64,
+      "text": "I'm doing that at -- [laugh] yes. [laugh]"
+    },
+    {
+      "idx": 66,
+      "speaker": "C",
+      "start": 149.265,
+      "end": 153.971,
+      "text": "Yeah. But they're hardly in our areas. [laugh] Uh --"
+    },
+    {
+      "idx": 67,
+      "speaker": "B",
+      "start": 151.636,
+      "end": 154.455,
+      "text": "Yeah. [laugh] They have got a"
+    },
+    {
+      "idx": 68,
+      "speaker": "B",
+      "start": 156.24,
+      "end": 157.616,
+      "text": "conference thing, haven't they?"
+    },
+    {
+      "idx": 69,
+      "speaker": "A",
+      "start": 158.739,
+      "end": 159.0,
+      "text": "[other]"
+    },
+    {
+      "idx": 70,
+      "speaker": "B",
+      "start": 158.816,
+      "end": 159.85,
+      "text": "In the A_T_C_."
+    },
+    {
+      "idx": 71,
+      "speaker": "A",
+      "start": 159.734,
+      "end": 163.872,
+      "text": "Yeah, that's right, although you -- oh it isn't actually used all that often these days, I think."
+    },
+    {
+      "idx": 72,
+      "speaker": "B",
+      "start": 163.904,
+      "end": 179.465,
+      "text": "I had to fly to Germany to do a teleconference, the same as you did for the interview. And they fly you to Germany and put you on a four-way teleconference with three people in Chile. And had they asked, we could have done it fine at A_T_C_ [laugh] and saved me having to to go to Germany for a day. But"
+    },
+    {
+      "idx": 73,
+      "speaker": "C",
+      "start": 166.328,
+      "end": 167.351,
+      "text": "Yeah, I did as well."
+    },
+    {
+      "idx": 74,
+      "speaker": "A",
+      "start": 168.469,
+      "end": 169.084,
+      "text": "Gosh."
+    },
+    {
+      "idx": 75,
+      "speaker": "A",
+      "start": 176.144,
+      "end": 177.482,
+      "text": "Right, aye."
+    },
+    {
+      "idx": 76,
+      "speaker": "C",
+      "start": 176.409,
+      "end": 177.007,
+      "text": "No."
+    },
+    {
+      "idx": 77,
+      "speaker": "A",
+      "start": 178.48,
+      "end": 179.68,
+      "text": "Right. Gosh."
+    },
+    {
+      "idx": 78,
+      "speaker": "B",
+      "start": 180.672,
+      "end": 182.432,
+      "text": "they haven't got that far."
+    },
+    {
+      "idx": 79,
+      "speaker": "C",
+      "start": 182.928,
+      "end": 215.922,
+      "text": "[other] It's a very strange interview feeling as well, because you can't see them while you're giving your talk, because they just show -- usually they have a camera on you and a camera on them, but during the talk part they have a camera on I believe them, 'cause I could see that guy reading a newspaper halfway through my talk. [laugh] And then they had a camera on showing what my slides were, and so you forget that they can see you at all, and so when all that was over, they were answering me questions and the view switched again, I realised they were sitting there in the interview going -- [laugh]. [laugh] So --"
+    },
+    {
+      "idx": 80,
+      "speaker": "B",
+      "start": 186.947,
+      "end": 188.768,
+      "text": "[cough] Mm."
+    },
+    {
+      "idx": 81,
+      "speaker": "A",
+      "start": 187.215,
+      "end": 190.532,
+      "text": "And you miss all the the body language and things. Yeah, yeah."
+    },
+    {
+      "idx": 82,
+      "speaker": "A",
+      "start": 193.12,
+      "end": 193.824,
+      "text": "Right."
+    },
+    {
+      "idx": 83,
+      "speaker": "B",
+      "start": 199.904,
+      "end": 200.544,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 84,
+      "speaker": "A",
+      "start": 204.08,
+      "end": 204.788,
+      "text": "Right."
+    },
+    {
+      "idx": 85,
+      "speaker": "A",
+      "start": 207.232,
+      "end": 207.848,
+      "text": "Right."
+    },
+    {
+      "idx": 86,
+      "speaker": "A",
+      "start": 212.68,
+      "end": 214.435,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 87,
+      "speaker": "B",
+      "start": 212.722,
+      "end": 230.932,
+      "text": "[laugh] And mine was even -- it was different again. W we had -- it was a four-way split screen with me and three other people, and it just stayed like that. And I had the talk on a laptop in front of me and they had the talk on their laptops, and I had to tell tell them when to press the button to turn the page. It just --"
+    },
+    {
+      "idx": 88,
+      "speaker": "A",
+      "start": 219.488,
+      "end": 220.351,
+      "text": "Right."
+    },
+    {
+      "idx": 89,
+      "speaker": "A",
+      "start": 226.04,
+      "end": 226.73,
+      "text": "Right."
+    },
+    {
+      "idx": 90,
+      "speaker": "A",
+      "start": 228.109,
+      "end": 230.046,
+      "text": "Oh. Right. Gosh."
+    },
+    {
+      "idx": 91,
+      "speaker": "C",
+      "start": 228.692,
+      "end": 229.158,
+      "text": "Yeah."
+    },
+    {
+      "idx": 92,
+      "speaker": "C",
+      "start": 230.439,
+      "end": 233.321,
+      "text": "And you can't say looking over here. Like o"
+    },
+    {
+      "idx": 93,
+      "speaker": "B",
+      "start": 232.412,
+      "end": 256.848,
+      "text": "Yes, if you see towards the top left of the image, you'll notice -- And luckily Olivia had warned me it might be complicated, and so I had something with -- without very many um n not little flying in and things, because that would just make it really difficult. But I practised the talk, yeah, standing up in front of it and pointing to things, and you're sitting down in front of -- [laugh] And you could see yourself, but not only could s you see yourself, you see yourself bounce back two seconds later."
+    },
+    {
+      "idx": 94,
+      "speaker": "A",
+      "start": 232.424,
+      "end": 233.59,
+      "text": "Yeah."
+    },
+    {
+      "idx": 95,
+      "speaker": "C",
+      "start": 234.484,
+      "end": 235.823,
+      "text": "[laugh]."
+    },
+    {
+      "idx": 96,
+      "speaker": "A",
+      "start": 234.596,
+      "end": 235.633,
+      "text": "Yeah."
+    },
+    {
+      "idx": 97,
+      "speaker": "A",
+      "start": 239.855,
+      "end": 245.46,
+      "text": "That's very artificial though, isn't it? Yeah. Not very sensible. Yeah, right."
+    },
+    {
+      "idx": 98,
+      "speaker": "A",
+      "start": 249.17,
+      "end": 249.952,
+      "text": "Yeah."
+    },
+    {
+      "idx": 99,
+      "speaker": "C",
+      "start": 249.925,
+      "end": 250.449,
+      "text": "Yeah."
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "$defs": {
+    "ActionItem": {
+      "properties": {
+        "id": {
+          "default": "",
+          "title": "Id",
+          "type": "string"
+        },
+        "title": {
+          "maxLength": 100,
+          "minLength": 3,
+          "title": "Title",
+          "type": "string"
+        },
+        "owner_raw": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Owner Raw"
+        },
+        "owner": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Owner"
+        },
+        "deadline_raw": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Deadline Raw"
+        },
+        "deadline": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Deadline"
+        },
+        "status": {
+          "default": "committed",
+          "enum": [
+            "committed",
+            "proposed",
+            "superseded"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "condition": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Condition"
+        },
+        "confidence": {
+          "default": 0.5,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "minItems": 1,
+          "title": "Evidence",
+          "type": "array"
+        },
+        "flags": {
+          "items": {
+            "$ref": "#/$defs/Flag"
+          },
+          "title": "Flags",
+          "type": "array"
+        },
+        "superseded_by": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Superseded By"
+        }
+      },
+      "required": [
+        "title",
+        "evidence"
+      ],
+      "title": "ActionItem",
+      "type": "object"
+    },
+    "Decision": {
+      "properties": {
+        "id": {
+          "default": "",
+          "title": "Id",
+          "type": "string"
+        },
+        "summary": {
+          "maxLength": 200,
+          "minLength": 3,
+          "title": "Summary",
+          "type": "string"
+        },
+        "rationale": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rationale"
+        },
+        "confidence": {
+          "default": 0.5,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "minItems": 1,
+          "title": "Evidence",
+          "type": "array"
+        },
+        "flags": {
+          "items": {
+            "$ref": "#/$defs/Flag"
+          },
+          "title": "Flags",
+          "type": "array"
+        }
+      },
+      "required": [
+        "summary",
+        "evidence"
+      ],
+      "title": "Decision",
+      "type": "object"
+    },
+    "Evidence": {
+      "properties": {
+        "turn_idx": {
+          "minimum": 0,
+          "title": "Turn Idx",
+          "type": "integer"
+        },
+        "quote": {
+          "maxLength": 400,
+          "minLength": 3,
+          "title": "Quote",
+          "type": "string"
+        }
+      },
+      "required": [
+        "turn_idx",
+        "quote"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "Flag": {
+      "enum": [
+        "no_owner",
+        "ambiguous_owner",
+        "no_deadline",
+        "unresolved_deadline",
+        "low_confidence",
+        "proposed_not_committed",
+        "ungrounded_evidence",
+        "conditional"
+      ],
+      "title": "Flag",
+      "type": "string"
+    },
+    "FollowUp": {
+      "properties": {
+        "id": {
+          "default": "",
+          "title": "Id",
+          "type": "string"
+        },
+        "topic": {
+          "maxLength": 200,
+          "minLength": 3,
+          "title": "Topic",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "minItems": 1,
+          "title": "Evidence",
+          "type": "array"
+        }
+      },
+      "required": [
+        "topic",
+        "evidence"
+      ],
+      "title": "FollowUp",
+      "type": "object"
+    },
+    "OpenQuestion": {
+      "properties": {
+        "id": {
+          "default": "",
+          "title": "Id",
+          "type": "string"
+        },
+        "question": {
+          "maxLength": 300,
+          "minLength": 3,
+          "title": "Question",
+          "type": "string"
+        },
+        "asked_by": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Asked By"
+        },
+        "answered": {
+          "default": false,
+          "title": "Answered",
+          "type": "boolean"
+        },
+        "answer_summary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Answer Summary"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "minItems": 1,
+          "title": "Evidence",
+          "type": "array"
+        }
+      },
+      "required": [
+        "question",
+        "evidence"
+      ],
+      "title": "OpenQuestion",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "action_items": {
+      "items": {
+        "$ref": "#/$defs/ActionItem"
+      },
+      "title": "Action Items",
+      "type": "array"
+    },
+    "decisions": {
+      "items": {
+        "$ref": "#/$defs/Decision"
+      },
+      "title": "Decisions",
+      "type": "array"
+    },
+    "open_questions": {
+      "items": {
+        "$ref": "#/$defs/OpenQuestion"
+      },
+      "title": "Open Questions",
+      "type": "array"
+    },
+    "follow_ups": {
+      "items": {
+        "$ref": "#/$defs/FollowUp"
+      },
+      "title": "Follow Ups",
+      "type": "array"
+    }
+  },
+  "title": "ExtractionResult",
+  "type": "object"
+}

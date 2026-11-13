@@ -1,0 +1,293 @@
+{
+  "meeting_id": "s08",
+  "title": "Documentation Ownership Collision",
+  "date": "2025-08-08",
+  "timezone": "Asia/Kolkata",
+  "roster": [
+    "Elena",
+    "Marcus",
+    "Jo"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "Elena",
+      "start": 0.0,
+      "end": 3.8,
+      "text": "Let's resolve the missing authentication documentation."
+    },
+    {
+      "idx": 1,
+      "speaker": "Marcus",
+      "start": 5.2,
+      "end": 9.0,
+      "text": "The migration guide is otherwise close to complete."
+    },
+    {
+      "idx": 2,
+      "speaker": "Jo",
+      "start": 10.4,
+      "end": 14.2,
+      "text": "Support has sent several examples we can use."
+    },
+    {
+      "idx": 3,
+      "speaker": "Elena",
+      "start": 15.6,
+      "end": 19.4,
+      "text": "The main thing today is to establish a single accountable owner."
+    },
+    {
+      "idx": 4,
+      "speaker": "Marcus",
+      "start": 20.8,
+      "end": 24.6,
+      "text": "We should avoid parallel edits to the same section."
+    },
+    {
+      "idx": 5,
+      "speaker": "Jo",
+      "start": 26.0,
+      "end": 29.8,
+      "text": "I'll flag any overlap before we start editing."
+    },
+    {
+      "idx": 6,
+      "speaker": "Elena",
+      "start": 31.2,
+      "end": 35.0,
+      "text": "The API migration guide is still missing its authentication section."
+    },
+    {
+      "idx": 7,
+      "speaker": "Marcus",
+      "start": 36.4,
+      "end": 40.2,
+      "text": "I can take the authentication section."
+    },
+    {
+      "idx": 8,
+      "speaker": "Jo",
+      "start": 41.6,
+      "end": 45.4,
+      "text": "I'll take it too; I already have notes from support."
+    },
+    {
+      "idx": 9,
+      "speaker": "Elena",
+      "start": 46.8,
+      "end": 50.6,
+      "text": "Both of you have independently said you'll take the same section."
+    },
+    {
+      "idx": 10,
+      "speaker": "Marcus",
+      "start": 52.0,
+      "end": 55.8,
+      "text": "I wasn't trying to split it; I meant I could own the whole section."
+    },
+    {
+      "idx": 11,
+      "speaker": "Jo",
+      "start": 57.2,
+      "end": 61.0,
+      "text": "Same here. I meant the whole authentication section."
+    },
+    {
+      "idx": 12,
+      "speaker": "Elena",
+      "start": 62.4,
+      "end": 66.2,
+      "text": "We haven't agreed which of you is responsible."
+    },
+    {
+      "idx": 13,
+      "speaker": "Marcus",
+      "start": 67.6,
+      "end": 71.4,
+      "text": "I can step back if Jo prefers it."
+    },
+    {
+      "idx": 14,
+      "speaker": "Jo",
+      "start": 72.8,
+      "end": 76.6,
+      "text": "I don't want to assume Marcus is stepping back."
+    },
+    {
+      "idx": 15,
+      "speaker": "Elena",
+      "start": 78.0,
+      "end": 81.8,
+      "text": "Then the owner remains unresolved for now."
+    },
+    {
+      "idx": 16,
+      "speaker": "Marcus",
+      "start": 83.2,
+      "end": 87.0,
+      "text": "The section needs examples for token refresh and expiry."
+    },
+    {
+      "idx": 17,
+      "speaker": "Jo",
+      "start": 88.4,
+      "end": 92.2,
+      "text": "I have a support example, but it needs sanitizing."
+    },
+    {
+      "idx": 18,
+      "speaker": "Elena",
+      "start": 93.6,
+      "end": 97.4,
+      "text": "We should not assign ownership based on who spoke first."
+    },
+    {
+      "idx": 19,
+      "speaker": "Marcus",
+      "start": 98.8,
+      "end": 102.6,
+      "text": "Agreed; neither of us has withdrawn our offer."
+    },
+    {
+      "idx": 20,
+      "speaker": "Jo",
+      "start": 104.0,
+      "end": 107.8,
+      "text": "Right, both offers are still on the table."
+    },
+    {
+      "idx": 21,
+      "speaker": "Elena",
+      "start": 109.2,
+      "end": 113.0,
+      "text": "Let's record this as ambiguous rather than choosing a name."
+    },
+    {
+      "idx": 22,
+      "speaker": "Marcus",
+      "start": 114.4,
+      "end": 118.2,
+      "text": "The endpoint reference is already up to date."
+    },
+    {
+      "idx": 23,
+      "speaker": "Jo",
+      "start": 119.6,
+      "end": 123.4,
+      "text": "The authentication guide is the missing piece."
+    },
+    {
+      "idx": 24,
+      "speaker": "Elena",
+      "start": 124.8,
+      "end": 128.6,
+      "text": "We can resolve the owner in the documentation planning meeting."
+    },
+    {
+      "idx": 25,
+      "speaker": "Marcus",
+      "start": 130.0,
+      "end": 133.8,
+      "text": "Until then, I won't start editing the section."
+    },
+    {
+      "idx": 26,
+      "speaker": "Jo",
+      "start": 135.2,
+      "end": 139.0,
+      "text": "I won't start either, so we don't duplicate work."
+    },
+    {
+      "idx": 27,
+      "speaker": "Elena",
+      "start": 140.4,
+      "end": 144.2,
+      "text": "Good; the ownership question is still open."
+    },
+    {
+      "idx": 28,
+      "speaker": "Jo",
+      "start": 145.6,
+      "end": 149.4,
+      "text": "The support examples include customer identifiers."
+    },
+    {
+      "idx": 29,
+      "speaker": "Elena",
+      "start": 150.8,
+      "end": 154.6,
+      "text": "Those identifiers must be removed before publication."
+    },
+    {
+      "idx": 30,
+      "speaker": "Marcus",
+      "start": 156.0,
+      "end": 159.8,
+      "text": "The endpoint reference is maintained separately."
+    },
+    {
+      "idx": 31,
+      "speaker": "Jo",
+      "start": 161.2,
+      "end": 165.0,
+      "text": "We should not edit the same section twice."
+    },
+    {
+      "idx": 32,
+      "speaker": "Elena",
+      "start": 166.4,
+      "end": 170.2,
+      "text": "The owner question still needs an explicit resolution."
+    },
+    {
+      "idx": 33,
+      "speaker": "Marcus",
+      "start": 171.6,
+      "end": 175.4,
+      "text": "Neither offer has been withdrawn."
+    },
+    {
+      "idx": 34,
+      "speaker": "Elena",
+      "start": 176.8,
+      "end": 180.6,
+      "text": "The authentication section still has no single owner."
+    },
+    {
+      "idx": 35,
+      "speaker": "Marcus",
+      "start": 182.0,
+      "end": 185.8,
+      "text": "I won't start until we resolve that."
+    },
+    {
+      "idx": 36,
+      "speaker": "Jo",
+      "start": 187.2,
+      "end": 191.0,
+      "text": "Neither will I."
+    },
+    {
+      "idx": 37,
+      "speaker": "Elena",
+      "start": 192.4,
+      "end": 196.2,
+      "text": "We'll decide ownership at documentation planning."
+    },
+    {
+      "idx": 38,
+      "speaker": "Marcus",
+      "start": 197.6,
+      "end": 201.4,
+      "text": "The offers remain unresolved."
+    },
+    {
+      "idx": 39,
+      "speaker": "Jo",
+      "start": 202.8,
+      "end": 206.6,
+      "text": "Thanks, ending here."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "meeting_id": "s04",
+  "meeting_date": "2025-05-29",
+  "roster": [
+    "Asha",
+    "Ben",
+    "Chris"
+  ],
+  "action_items": [
+    {
+      "gold_id": "a1",
+      "title": "Request the vendor's confirmed June support capacity",
+      "owner": "Chris",
+      "deadline": null,
+      "status": "committed",
+      "turns": [
+        11,
+        12
+      ],
+      "tags": [
+        "no_deadline"
+      ]
+    }
+  ],
+  "decisions": [],
+  "open_questions": [
+    {
+      "gold_id": "q1",
+      "title": "What is the confirmed support capacity for June?",
+      "answered": true,
+      "turns": [
+        7,
+        13
+      ],
+      "tags": []
+    },
+    {
+      "gold_id": "q2",
+      "title": "Is weekend support coverage included in the vendor agreement?",
+      "answered": false,
+      "turns": [
+        16,
+        17,
+        20,
+        22,
+        25,
+        27
+      ],
+      "tags": [
+        "unanswered"
+      ]
+    }
+  ],
+  "follow_ups": [
+    {
+      "gold_id": "f1",
+      "title": "Revisit the weekend coverage clause after legal confirms it",
+      "deadline": null,
+      "turns": [
+        22,
+        25
+      ],
+      "tags": [
+        "deferred"
+      ]
+    }
+  ]
+}

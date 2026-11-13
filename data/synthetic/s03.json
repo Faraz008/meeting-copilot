@@ -1,0 +1,293 @@
+{
+  "meeting_id": "s03",
+  "title": "Analytics Dashboard Suggestions",
+  "date": "2025-04-30",
+  "timezone": "Asia/Kolkata",
+  "roster": [
+    "Nina",
+    "Omar",
+    "Jules"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "Nina",
+      "start": 0.0,
+      "end": 3.8,
+      "text": "Let's review feedback on the analytics dashboard."
+    },
+    {
+      "idx": 1,
+      "speaker": "Omar",
+      "start": 5.2,
+      "end": 9.0,
+      "text": "I grouped the feedback by reporting workflow."
+    },
+    {
+      "idx": 2,
+      "speaker": "Jules",
+      "start": 10.4,
+      "end": 14.2,
+      "text": "I brought the latest usability notes from the pilot."
+    },
+    {
+      "idx": 3,
+      "speaker": "Nina",
+      "start": 15.6,
+      "end": 19.4,
+      "text": "We should separate ideas from work that someone has accepted."
+    },
+    {
+      "idx": 4,
+      "speaker": "Omar",
+      "start": 20.8,
+      "end": 24.6,
+      "text": "That distinction will help when we move this into planning."
+    },
+    {
+      "idx": 5,
+      "speaker": "Jules",
+      "start": 26.0,
+      "end": 29.8,
+      "text": "I'll note the suggestions without assigning them prematurely."
+    },
+    {
+      "idx": 6,
+      "speaker": "Nina",
+      "start": 31.2,
+      "end": 35.0,
+      "text": "The dashboard review surfaced a few gaps in the weekly view."
+    },
+    {
+      "idx": 7,
+      "speaker": "Omar",
+      "start": 36.4,
+      "end": 40.2,
+      "text": "We should add a filter for region."
+    },
+    {
+      "idx": 8,
+      "speaker": "Jules",
+      "start": 41.6,
+      "end": 45.4,
+      "text": "It might also help to show the previous period beside the current one."
+    },
+    {
+      "idx": 9,
+      "speaker": "Nina",
+      "start": 46.8,
+      "end": 50.6,
+      "text": "Someone could investigate whether the export supports CSV and XLSX."
+    },
+    {
+      "idx": 10,
+      "speaker": "Omar",
+      "start": 52.0,
+      "end": 55.8,
+      "text": "A compact mobile summary would be useful too."
+    },
+    {
+      "idx": 11,
+      "speaker": "Jules",
+      "start": 57.2,
+      "end": 61.0,
+      "text": "Maybe design could sketch two layout options."
+    },
+    {
+      "idx": 12,
+      "speaker": "Nina",
+      "start": 62.4,
+      "end": 66.2,
+      "text": "Those are all reasonable ideas, but nobody has volunteered for them yet."
+    },
+    {
+      "idx": 13,
+      "speaker": "Omar",
+      "start": 67.6,
+      "end": 71.4,
+      "text": "Right, I'm not committing to the region filter today."
+    },
+    {
+      "idx": 14,
+      "speaker": "Jules",
+      "start": 72.8,
+      "end": 76.6,
+      "text": "And I haven't agreed to produce the mock-ups."
+    },
+    {
+      "idx": 15,
+      "speaker": "Nina",
+      "start": 78.0,
+      "end": 81.8,
+      "text": "Let's capture the ideas as proposals for planning."
+    },
+    {
+      "idx": 16,
+      "speaker": "Omar",
+      "start": 83.2,
+      "end": 87.0,
+      "text": "We could ask data engineering about the export limitation."
+    },
+    {
+      "idx": 17,
+      "speaker": "Jules",
+      "start": 88.4,
+      "end": 92.2,
+      "text": "That is another suggestion, not an assignment."
+    },
+    {
+      "idx": 18,
+      "speaker": "Nina",
+      "start": 93.6,
+      "end": 97.4,
+      "text": "Should we rank these before the next planning session?"
+    },
+    {
+      "idx": 19,
+      "speaker": "Omar",
+      "start": 98.8,
+      "end": 102.6,
+      "text": "We could rank them, but no one is taking that task now."
+    },
+    {
+      "idx": 20,
+      "speaker": "Jules",
+      "start": 104.0,
+      "end": 107.8,
+      "text": "The region filter probably has the clearest user value."
+    },
+    {
+      "idx": 21,
+      "speaker": "Nina",
+      "start": 109.2,
+      "end": 113.0,
+      "text": "The comparison view may be more expensive than it sounds."
+    },
+    {
+      "idx": 22,
+      "speaker": "Omar",
+      "start": 114.4,
+      "end": 118.2,
+      "text": "We should estimate it before choosing."
+    },
+    {
+      "idx": 23,
+      "speaker": "Jules",
+      "start": 119.6,
+      "end": 123.4,
+      "text": "Agreed as a suggestion; no estimate owner is set."
+    },
+    {
+      "idx": 24,
+      "speaker": "Nina",
+      "start": 124.8,
+      "end": 128.6,
+      "text": "Let's not turn the discussion into commitments by implication."
+    },
+    {
+      "idx": 25,
+      "speaker": "Omar",
+      "start": 130.0,
+      "end": 133.8,
+      "text": "I'll add the ideas to the backlog? No, better: someone can add them during planning."
+    },
+    {
+      "idx": 26,
+      "speaker": "Jules",
+      "start": 135.2,
+      "end": 139.0,
+      "text": "That still leaves ownership open."
+    },
+    {
+      "idx": 27,
+      "speaker": "Nina",
+      "start": 140.4,
+      "end": 144.2,
+      "text": "Fine. These remain proposals until we assign owners."
+    },
+    {
+      "idx": 28,
+      "speaker": "Jules",
+      "start": 145.6,
+      "end": 149.4,
+      "text": "The pilot users mostly asked for faster filtering."
+    },
+    {
+      "idx": 29,
+      "speaker": "Omar",
+      "start": 150.8,
+      "end": 154.6,
+      "text": "The export format question depends on the data service."
+    },
+    {
+      "idx": 30,
+      "speaker": "Nina",
+      "start": 156.0,
+      "end": 159.8,
+      "text": "We can keep the backlog wording neutral for now."
+    },
+    {
+      "idx": 31,
+      "speaker": "Jules",
+      "start": 161.2,
+      "end": 165.0,
+      "text": "No one should read the backlog entry as an acceptance."
+    },
+    {
+      "idx": 32,
+      "speaker": "Omar",
+      "start": 166.4,
+      "end": 170.2,
+      "text": "We'll revisit prioritization when owners are assigned."
+    },
+    {
+      "idx": 33,
+      "speaker": "Nina",
+      "start": 171.6,
+      "end": 175.4,
+      "text": "That keeps today's ideas at proposal stage."
+    },
+    {
+      "idx": 34,
+      "speaker": "Nina",
+      "start": 176.8,
+      "end": 180.6,
+      "text": "I'll carry the proposals into planning without owners."
+    },
+    {
+      "idx": 35,
+      "speaker": "Omar",
+      "start": 182.0,
+      "end": 185.8,
+      "text": "No commitments were made today."
+    },
+    {
+      "idx": 36,
+      "speaker": "Jules",
+      "start": 187.2,
+      "end": 191.0,
+      "text": "We'll assign owners when the work is prioritized."
+    },
+    {
+      "idx": 37,
+      "speaker": "Nina",
+      "start": 192.4,
+      "end": 196.2,
+      "text": "The export question remains a suggestion."
+    },
+    {
+      "idx": 38,
+      "speaker": "Omar",
+      "start": 197.6,
+      "end": 201.4,
+      "text": "I'll leave the backlog entries proposed."
+    },
+    {
+      "idx": 39,
+      "speaker": "Jules",
+      "start": 202.8,
+      "end": 206.6,
+      "text": "Thanks, meeting closed."
+    }
+  ]
+}

@@ -1,0 +1,715 @@
+{
+  "meeting_id": "EN2001d",
+  "title": "AMI non-scenario meeting EN2001d",
+  "date": "2005-03-01",
+  "timezone": null,
+  "roster": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "A",
+      "start": 20.704,
+      "end": 21.392,
+      "text": "Ah yeah."
+    },
+    {
+      "idx": 1,
+      "speaker": "E",
+      "start": 37.258,
+      "end": 38.015,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 2,
+      "speaker": "B",
+      "start": 37.28,
+      "end": 38.577,
+      "text": "Okay."
+    },
+    {
+      "idx": 3,
+      "speaker": "B",
+      "start": 46.96,
+      "end": 47.698,
+      "text": "Okay."
+    },
+    {
+      "idx": 4,
+      "speaker": "C",
+      "start": 47.472,
+      "end": 48.097,
+      "text": "--"
+    },
+    {
+      "idx": 5,
+      "speaker": "D",
+      "start": 48.11,
+      "end": 48.544,
+      "text": "Okay."
+    },
+    {
+      "idx": 6,
+      "speaker": "E",
+      "start": 48.912,
+      "end": 49.327,
+      "text": "Yep."
+    },
+    {
+      "idx": 7,
+      "speaker": "B",
+      "start": 48.96,
+      "end": 49.532,
+      "text": "Okay."
+    },
+    {
+      "idx": 8,
+      "speaker": "D",
+      "start": 56.784,
+      "end": 63.379,
+      "text": "Did I tell you that we've got kind of two-way interaction? If you control click an utterance, it will play where it should be in the file."
+    },
+    {
+      "idx": 9,
+      "speaker": "B",
+      "start": 62.668,
+      "end": 89.987,
+      "text": "Yeah. No, I'm just like sort of like preparing people for um -- it looks like it looks like really nothing. It looks like basically less than n th their stuff, but actually Dave has written a whole underlying different structure now and if we hooked it up with my display, then we should fairly easily from now get to a stage where we can like select individual segments and click on them, then play that part in a compressed way and display density information. Now at the moment the application is --"
+    },
+    {
+      "idx": 10,
+      "speaker": "D",
+      "start": 65.955,
+      "end": 66.216,
+      "text": "[cough]"
+    },
+    {
+      "idx": 11,
+      "speaker": "D",
+      "start": 66.7,
+      "end": 67.222,
+      "text": "[cough]"
+    },
+    {
+      "idx": 12,
+      "speaker": "D",
+      "start": 89.694,
+      "end": 92.945,
+      "text": "We should probably set those sizes 'cause that's such an easy thing to do."
+    },
+    {
+      "idx": 13,
+      "speaker": "B",
+      "start": 92.3,
+      "end": 125.278,
+      "text": "Yes, sure but -- so at the moment we have a dialogue act window and a graphical display w I'm not sure. No, the interesting thing is the sound came when I tried it last time after I I triggered off something by clicking on something. Yeah, there suddenly they come. Probably they're just slow at loading. And they don't have the buttons yet. So at the moment the display is still dis-coupled from it. It's loading your data -- I'm not quite sure, is this -- it probably looks like Vera's data from from the looks of it."
+    },
+    {
+      "idx": 14,
+      "speaker": "D",
+      "start": 99.104,
+      "end": 100.256,
+      "text": "Are you missing the sound?"
+    },
+    {
+      "idx": 15,
+      "speaker": "D",
+      "start": 109.536,
+      "end": 110.471,
+      "text": "Oh, there it is."
+    },
+    {
+      "idx": 16,
+      "speaker": "D",
+      "start": 115.376,
+      "end": 115.824,
+      "text": "Yeah."
+    },
+    {
+      "idx": 17,
+      "speaker": "D",
+      "start": 122.919,
+      "end": 127.534,
+      "text": "That's Vera's data on the display. But the segments are just made up, aren't they."
+    },
+    {
+      "idx": 18,
+      "speaker": "B",
+      "start": 127.483,
+      "end": 176.393,
+      "text": "Yeah, the segments are made up at the moment, but the code's there for integrating real segments. And this is summarised based on just Vera's data at the moment, from some part of the meeting. So we're we're not loading the whole thing at the moment yet properly. But the important thing is this is summarised based on -- I I realise I'm always pointing at my screen and you don't see. So this stuff is summarised based on on these intensity measures. And we don't have the exact audio record for this. Usually say we should have just copied it. So just to show, Dave has put a uh music file in there, and the music file is playing without gaps. That's because the way how we handle it at the moment is that Dave prepares an audio file, creates an audio file dynamically from just the chunks that we wanna have, and that runs in synch with what we have in the --"
+    },
+    {
+      "idx": 19,
+      "speaker": "A",
+      "start": 148.4,
+      "end": 149.189,
+      "text": "[cough]"
+    },
+    {
+      "idx": 20,
+      "speaker": "A",
+      "start": 169.696,
+      "end": 170.121,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 21,
+      "speaker": "B",
+      "start": 179.162,
+      "end": 180.958,
+      "text": "I'm not even sure why I'm making loud. It's just --"
+    },
+    {
+      "idx": 22,
+      "speaker": "D",
+      "start": 180.768,
+      "end": 181.44,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 23,
+      "speaker": "B",
+      "start": 183.535,
+      "end": 187.194,
+      "text": "So we see that running along with playing"
+    },
+    {
+      "idx": 24,
+      "speaker": "B",
+      "start": 189.216,
+      "end": 194.371,
+      "text": "of the music we see the the highlight of the dialogue acts."
+    },
+    {
+      "idx": 25,
+      "speaker": "E",
+      "start": 194.96,
+      "end": 196.368,
+      "text": "Right. That's pretty good."
+    },
+    {
+      "idx": 26,
+      "speaker": "D",
+      "start": 196.752,
+      "end": 201.025,
+      "text": "You can also control click on the dialogue acts and it will play that section of the file as well."
+    },
+    {
+      "idx": 27,
+      "speaker": "B",
+      "start": 206.136,
+      "end": 207.259,
+      "text": "Okay, s"
+    },
+    {
+      "idx": 28,
+      "speaker": "E",
+      "start": 207.91,
+      "end": 208.395,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 29,
+      "speaker": "C",
+      "start": 208.345,
+      "end": 208.755,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 30,
+      "speaker": "B",
+      "start": 209.903,
+      "end": 221.071,
+      "text": "So and and that already -- this part here already is dynamically created. Um shall I just load it with Jasmine's data, just to see a different -- Where's the --"
+    },
+    {
+      "idx": 31,
+      "speaker": "D",
+      "start": 218.759,
+      "end": 222.916,
+      "text": "Yeah, if you want. Oh that one looks almost com just you need to --"
+    },
+    {
+      "idx": 32,
+      "speaker": "A",
+      "start": 224.368,
+      "end": 231.009,
+      "text": "So uh which version of my data was that, the very first one? Yeah. Okay."
+    },
+    {
+      "idx": 33,
+      "speaker": "D",
+      "start": 227.577,
+      "end": 229.691,
+      "text": "The original, the very first one."
+    },
+    {
+      "idx": 34,
+      "speaker": "B",
+      "start": 227.775,
+      "end": 248.537,
+      "text": "Quite old. Yeah, we were b like -- doing this, we were just concerned with the whole stuff. And Dave, where -- what am I looking for? Am I looking for in data manager? Where am I looking? Or is it f is it where the is it where the file names are? Is it here? Is it uh sh is it here where um words importance file?"
+    },
+    {
+      "idx": 35,
+      "speaker": "D",
+      "start": 232.875,
+      "end": 233.466,
+      "text": "Yeah."
+    },
+    {
+      "idx": 36,
+      "speaker": "A",
+      "start": 233.936,
+      "end": 237.528,
+      "text": "Yeah, v I mean really doesn't matter. Just wanted to know if I'm just --"
+    },
+    {
+      "idx": 37,
+      "speaker": "D",
+      "start": 239.829,
+      "end": 241.76,
+      "text": "Um it will be in program."
+    },
+    {
+      "idx": 38,
+      "speaker": "C",
+      "start": 241.744,
+      "end": 242.698,
+      "text": "[cough]"
+    },
+    {
+      "idx": 39,
+      "speaker": "D",
+      "start": 243.011,
+      "end": 244.664,
+      "text": "Where do I call your display?"
+    },
+    {
+      "idx": 40,
+      "speaker": "D",
+      "start": 248.816,
+      "end": 255.984,
+      "text": "No, it is on your display. Um where it calls which one to get, you just need to change the flag."
+    },
+    {
+      "idx": 41,
+      "speaker": "B",
+      "start": 256.08,
+      "end": 257.063,
+      "text": "In my display."
+    },
+    {
+      "idx": 42,
+      "speaker": "D",
+      "start": 257.424,
+      "end": 260.393,
+      "text": "Um I think it must be, unless I it."
+    },
+    {
+      "idx": 43,
+      "speaker": "B",
+      "start": 262.784,
+      "end": 264.133,
+      "text": "Uh let me t"
+    },
+    {
+      "idx": 44,
+      "speaker": "C",
+      "start": 263.112,
+      "end": 265.824,
+      "text": "How y how do you do the summary? Is it --"
+    },
+    {
+      "idx": 45,
+      "speaker": "D",
+      "start": 264.697,
+      "end": 271.168,
+      "text": "Oh no, actually yeah, you can change it for -- in the summary when the summary gets called in program manager, you can do it."
+    },
+    {
+      "idx": 46,
+      "speaker": "B",
+      "start": 268.402,
+      "end": 268.909,
+      "text": "I d"
+    },
+    {
+      "idx": 47,
+      "speaker": "B",
+      "start": 272.288,
+      "end": 273.063,
+      "text": "Just --"
+    },
+    {
+      "idx": 48,
+      "speaker": "C",
+      "start": 272.592,
+      "end": 279.201,
+      "text": "So are you basing it on certain thresholds uh over a special d uh s okay."
+    },
+    {
+      "idx": 49,
+      "speaker": "B",
+      "start": 273.553,
+      "end": 274.132,
+      "text": "[other]"
+    },
+    {
+      "idx": 50,
+      "speaker": "D",
+      "start": 276.201,
+      "end": 279.66,
+      "text": "No, not yet. It's just -- picks the top-ranked ones at the moment."
+    },
+    {
+      "idx": 51,
+      "speaker": "B",
+      "start": 279.89,
+      "end": 281.661,
+      "text": "Okay, so wh where did you say, in prog"
+    },
+    {
+      "idx": 52,
+      "speaker": "D",
+      "start": 280.962,
+      "end": 285.936,
+      "text": "Yeah, the easiest thing is in programme manager, where it makes the summary. It's probably the best place to do it."
+    },
+    {
+      "idx": 53,
+      "speaker": "B",
+      "start": 285.856,
+      "end": 288.096,
+      "text": "W you know where that is, just about?"
+    },
+    {
+      "idx": 54,
+      "speaker": "D",
+      "start": 288.144,
+      "end": 289.312,
+      "text": "It'll be above that."
+    },
+    {
+      "idx": 55,
+      "speaker": "B",
+      "start": 289.696,
+      "end": 290.672,
+      "text": "Above that."
+    },
+    {
+      "idx": 56,
+      "speaker": "B",
+      "start": 293.792,
+      "end": 294.414,
+      "text": "Like in --"
+    },
+    {
+      "idx": 57,
+      "speaker": "D",
+      "start": 293.908,
+      "end": 299.848,
+      "text": "It'll be down. It's gonna be after the data manager's made. Yeah, that."
+    },
+    {
+      "idx": 58,
+      "speaker": "B",
+      "start": 297.662,
+      "end": 299.792,
+      "text": "In this main -- in this routine?"
+    },
+    {
+      "idx": 59,
+      "speaker": "D",
+      "start": 301.504,
+      "end": 302.64,
+      "text": "A new summary."
+    },
+    {
+      "idx": 60,
+      "speaker": "B",
+      "start": 302.912,
+      "end": 307.711,
+      "text": "There is something read importance with a zero and there is read word importance with a one."
+    },
+    {
+      "idx": 61,
+      "speaker": "D",
+      "start": 308.144,
+      "end": 314.777,
+      "text": "Yeah, th can't remember where I put it. Maybe it will be in s the summary constructor then."
+    },
+    {
+      "idx": 62,
+      "speaker": "B",
+      "start": 309.185,
+      "end": 311.547,
+      "text": "Shall I swap those around? Hmm?"
+    },
+    {
+      "idx": 63,
+      "speaker": "D",
+      "start": 317.853,
+      "end": 320.148,
+      "text": "Yeah, try the summaries constructor."
+    },
+    {
+      "idx": 64,
+      "speaker": "B",
+      "start": 319.407,
+      "end": 322.984,
+      "text": "Well wha wha what -- what's the differe so th this is reall"
+    },
+    {
+      "idx": 65,
+      "speaker": "D",
+      "start": 322.36,
+      "end": 328.59,
+      "text": "Well it reads them into separate arrays and then you can just change a flag to select one i which one it gives back."
+    },
+    {
+      "idx": 66,
+      "speaker": "B",
+      "start": 325.458,
+      "end": 325.99,
+      "text": "Yeah."
+    },
+    {
+      "idx": 67,
+      "speaker": "B",
+      "start": 329.664,
+      "end": 332.096,
+      "text": "Shall I just swap the file numbers around from now?"
+    },
+    {
+      "idx": 68,
+      "speaker": "D",
+      "start": 332.016,
+      "end": 332.842,
+      "text": "Yeah, if you want."
+    },
+    {
+      "idx": 69,
+      "speaker": "B",
+      "start": 333.712,
+      "end": 335.744,
+      "text": "Or would that crash anything?"
+    },
+    {
+      "idx": 70,
+      "speaker": "D",
+      "start": 336.18,
+      "end": 337.369,
+      "text": "Uh that should be fine."
+    },
+    {
+      "idx": 71,
+      "speaker": "B",
+      "start": 341.644,
+      "end": 345.111,
+      "text": "[other] Oh yeah, and and we really leave a. Maybe have to find out where."
+    },
+    {
+      "idx": 72,
+      "speaker": "D",
+      "start": 344.224,
+      "end": 347.708,
+      "text": "Yeah, I should make a new constructor that lets you set the flag."
+    },
+    {
+      "idx": 73,
+      "speaker": "B",
+      "start": 346.676,
+      "end": 347.309,
+      "text": "Mm."
+    },
+    {
+      "idx": 74,
+      "speaker": "B",
+      "start": 347.943,
+      "end": 352.969,
+      "text": "Mm. So you have time this afternoon? Yeah. So here."
+    },
+    {
+      "idx": 75,
+      "speaker": "D",
+      "start": 350.529,
+      "end": 351.056,
+      "text": "Yeah."
+    },
+    {
+      "idx": 76,
+      "speaker": "B",
+      "start": 356.154,
+      "end": 389.455,
+      "text": "So this shows if we see anything at all, then we see at the moment at least that we are definitely be um having a different summary, just because we're having a different im um important measure. So you see that um i it does something. Like at the moment I think this was -- yeah yeah, that's an old old old version. So it shows um -- and so if you if you think about how the old version happened, then you see it makes sense that words like prosody, just like a sing if that was the only utterance, then that probably scored quite well and stuff."
+    },
+    {
+      "idx": 77,
+      "speaker": "A",
+      "start": 367.082,
+      "end": 369.52,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 78,
+      "speaker": "C",
+      "start": 373.516,
+      "end": 379.803,
+      "text": "Oh that's the old old one. Okay. Okay. [laugh]"
+    },
+    {
+      "idx": 79,
+      "speaker": "D",
+      "start": 374.884,
+      "end": 375.524,
+      "text": "Yeah."
+    },
+    {
+      "idx": 80,
+      "speaker": "A",
+      "start": 376.546,
+      "end": 380.246,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 81,
+      "speaker": "E",
+      "start": 377.997,
+      "end": 378.389,
+      "text": "Mm."
+    },
+    {
+      "idx": 82,
+      "speaker": "D",
+      "start": 378.409,
+      "end": 379.141,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 83,
+      "speaker": "B",
+      "start": 391.933,
+      "end": 393.014,
+      "text": "Um"
+    },
+    {
+      "idx": 84,
+      "speaker": "B",
+      "start": 394.72,
+      "end": 397.823,
+      "text": "we have to get these buttons, Dave. [laugh]"
+    },
+    {
+      "idx": 85,
+      "speaker": "A",
+      "start": 394.899,
+      "end": 395.323,
+      "text": "Yeah."
+    },
+    {
+      "idx": 86,
+      "speaker": "D",
+      "start": 396.796,
+      "end": 397.346,
+      "text": "Yeah."
+    },
+    {
+      "idx": 87,
+      "speaker": "A",
+      "start": 398.499,
+      "end": 410.73,
+      "text": "Yeah, probably. Probably all these uh-huhs and uh-hmms are spelled differently in the thing or what's the problem. You should generalise. [laugh]."
+    },
+    {
+      "idx": 88,
+      "speaker": "D",
+      "start": 398.668,
+      "end": 401.006,
+      "text": "It's weird. On mine it complains about --"
+    },
+    {
+      "idx": 89,
+      "speaker": "B",
+      "start": 404.337,
+      "end": 405.152,
+      "text": "Yeah."
+    },
+    {
+      "idx": 90,
+      "speaker": "B",
+      "start": 411.79,
+      "end": 418.384,
+      "text": "Unfortunately, I didn't get the the bar on the display working just yet. But that should be a small issue."
+    },
+    {
+      "idx": 91,
+      "speaker": "D",
+      "start": 416.16,
+      "end": 416.721,
+      "text": "Okay."
+    },
+    {
+      "idx": 92,
+      "speaker": "A",
+      "start": 417.408,
+      "end": 433.378,
+      "text": "Ah-ha. That's a very old one rather. I think those S_s and E_s and so on, the single letters, are because of the problem with my um first version of the text thing. [laugh] 'Cause I think the --"
+    },
+    {
+      "idx": 93,
+      "speaker": "B",
+      "start": 426.924,
+      "end": 434.993,
+      "text": "Yeah, I know this is very old. We just never bothered to update the stuff, because we were working on -- so we see that we have a very different density curve as well for this one."
+    },
+    {
+      "idx": 94,
+      "speaker": "B",
+      "start": 436.693,
+      "end": 437.381,
+      "text": "And --"
+    },
+    {
+      "idx": 95,
+      "speaker": "B",
+      "start": 439.235,
+      "end": 466.035,
+      "text": "Yeah, so from here we go, and it hopefully won't be too difficult to now first of all put the right segments in, put a sliding bar into this so that people see where they are. So -- I'm uh I'm I'm constantly touching stuff on my screen I realise. And and then make selections based on a segment. Now what we're not quite sure is what's the best way for like how the summariser works. Should it always compress a segment to a constant length though, by a constant factor of time? Or --"
+    },
+    {
+      "idx": 96,
+      "speaker": "C",
+      "start": 445.472,
+      "end": 446.092,
+      "text": "[cough]"
+    },
+    {
+      "idx": 97,
+      "speaker": "E",
+      "start": 448.792,
+      "end": 449.341,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 98,
+      "speaker": "B",
+      "start": 470.401,
+      "end": 477.6,
+      "text": "What would you think sort of if, you know, if if there's a certain degree of of summarisation, what should be the constant?"
+    },
+    {
+      "idx": 99,
+      "speaker": "A",
+      "start": 477.936,
+      "end": 478.388,
+      "text": "Hmm."
+    }
+  ]
+}

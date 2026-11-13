@@ -1,0 +1,82 @@
+{
+  "meeting_id": "s03",
+  "meeting_date": "2025-04-30",
+  "roster": [
+    "Nina",
+    "Omar",
+    "Jules"
+  ],
+  "action_items": [
+    {
+      "gold_id": "a1",
+      "title": "Add a region filter to the analytics dashboard",
+      "owner": null,
+      "deadline": null,
+      "status": "proposed",
+      "turns": [
+        7,
+        12,
+        13
+      ],
+      "tags": [
+        "proposed",
+        "no_owner",
+        "no_deadline"
+      ]
+    },
+    {
+      "gold_id": "a2",
+      "title": "Explore a previous-period comparison in the dashboard",
+      "owner": null,
+      "deadline": null,
+      "status": "proposed",
+      "turns": [
+        8,
+        15,
+        27
+      ],
+      "tags": [
+        "proposed",
+        "no_owner",
+        "no_deadline"
+      ]
+    },
+    {
+      "gold_id": "a3",
+      "title": "Investigate CSV and XLSX export support",
+      "owner": null,
+      "deadline": null,
+      "status": "proposed",
+      "turns": [
+        9,
+        16,
+        17
+      ],
+      "tags": [
+        "proposed",
+        "no_owner",
+        "no_deadline"
+      ]
+    },
+    {
+      "gold_id": "a4",
+      "title": "Sketch mobile dashboard layout options",
+      "owner": null,
+      "deadline": null,
+      "status": "proposed",
+      "turns": [
+        10,
+        11,
+        17
+      ],
+      "tags": [
+        "proposed",
+        "no_owner",
+        "no_deadline"
+      ]
+    }
+  ],
+  "decisions": [],
+  "open_questions": [],
+  "follow_ups": []
+}

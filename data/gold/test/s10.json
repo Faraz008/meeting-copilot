@@ -1,0 +1,94 @@
+{
+  "meeting_id": "s10",
+  "meeting_date": "2025-10-31",
+  "roster": [
+    "Fatima",
+    "Gabe",
+    "Hiro"
+  ],
+  "action_items": [
+    {
+      "gold_id": "a1",
+      "title": "Compare the current access list with the HR roster",
+      "owner": null,
+      "deadline": null,
+      "status": "proposed",
+      "turns": [
+        7,
+        12
+      ],
+      "tags": [
+        "proposed",
+        "no_owner",
+        "no_deadline"
+      ]
+    },
+    {
+      "gold_id": "a2",
+      "title": "Review contractor accounts",
+      "owner": null,
+      "deadline": null,
+      "status": "proposed",
+      "turns": [
+        8,
+        12
+      ],
+      "tags": [
+        "proposed",
+        "no_owner",
+        "no_deadline"
+      ]
+    },
+    {
+      "gold_id": "a3",
+      "title": "Document the access exception process",
+      "owner": null,
+      "deadline": null,
+      "status": "proposed",
+      "turns": [
+        9,
+        12
+      ],
+      "tags": [
+        "proposed",
+        "no_owner",
+        "no_deadline"
+      ]
+    },
+    {
+      "gold_id": "a4",
+      "title": "Check automatic disabling of inactive accounts",
+      "owner": null,
+      "deadline": null,
+      "status": "proposed",
+      "turns": [
+        10,
+        12
+      ],
+      "tags": [
+        "proposed",
+        "no_owner",
+        "no_deadline"
+      ]
+    },
+    {
+      "gold_id": "a5",
+      "title": "Ask security to explain the service-account policy",
+      "owner": null,
+      "deadline": null,
+      "status": "proposed",
+      "turns": [
+        11,
+        12
+      ],
+      "tags": [
+        "proposed",
+        "no_owner",
+        "no_deadline"
+      ]
+    }
+  ],
+  "decisions": [],
+  "open_questions": [],
+  "follow_ups": []
+}

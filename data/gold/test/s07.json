@@ -1,0 +1,86 @@
+{
+  "meeting_id": "s07",
+  "meeting_date": "2025-12-19",
+  "roster": [
+    "Meera",
+    "Arjun",
+    "Tara"
+  ],
+  "action_items": [
+    {
+      "gold_id": "a1",
+      "title": "Send the final campaign banner copy",
+      "owner": "Arjun",
+      "deadline": "2025-12-20",
+      "status": "committed",
+      "turns": [
+        7,
+        13,
+        35
+      ],
+      "tags": [
+        "relative_date"
+      ]
+    },
+    {
+      "gold_id": "a2",
+      "title": "Review the campaign landing page",
+      "owner": "Tara",
+      "deadline": "2025-12-22",
+      "status": "committed",
+      "turns": [
+        8,
+        36
+      ],
+      "tags": [
+        "relative_date"
+      ]
+    },
+    {
+      "gold_id": "a3",
+      "title": "Prepare the email sequence draft",
+      "owner": "Arjun",
+      "deadline": "2026-01-02",
+      "status": "committed",
+      "turns": [
+        10,
+        24,
+        38
+      ],
+      "tags": [
+        "relative_date"
+      ]
+    },
+    {
+      "gold_id": "a4",
+      "title": "Send the invoice summary",
+      "owner": "Meera",
+      "deadline": "2025-12-31",
+      "status": "committed",
+      "turns": [
+        12,
+        26,
+        37
+      ],
+      "tags": [
+        "relative_date"
+      ]
+    }
+  ],
+  "decisions": [],
+  "open_questions": [],
+  "follow_ups": [
+    {
+      "gold_id": "f1",
+      "title": "Confirm the promotion code with finance",
+      "deadline": null,
+      "turns": [
+        19,
+        21
+      ],
+      "tags": [
+        "no_owner"
+      ]
+    }
+  ]
+}

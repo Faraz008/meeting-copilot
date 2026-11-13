@@ -18,7 +18,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8", "pytest-cov", "ruff", "pre-commit", "httpx2>=2.0.0",]
+dev = ["pytest>=8", "pytest-cov", "ruff", "pre-commit","hypothesis", "httpx2>=2.0.0",]
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -1,0 +1,30 @@
+{
+  "meeting_id": "s02",
+  "meeting_date": "2025-03-13",
+  "roster": [
+    "Maya",
+    "Dan",
+    "Leo"
+  ],
+  "action_items": [
+    {
+      "gold_id": "a1",
+      "title": "Consolidate and send the release checklist",
+      "owner": "Dan",
+      "deadline": "2025-03-17",
+      "status": "committed",
+      "turns": [
+        7,
+        12,
+        13,
+        26
+      ],
+      "tags": [
+        "revision"
+      ]
+    }
+  ],
+  "decisions": [],
+  "open_questions": [],
+  "follow_ups": []
+}

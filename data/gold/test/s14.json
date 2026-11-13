@@ -1,0 +1,24 @@
+{
+  "meeting_id": "s14",
+  "meeting_date": "2026-02-27",
+  "roster": [
+    "Tess",
+    "Uma",
+    "Victor"
+  ],
+  "action_items": [],
+  "decisions": [
+    {
+      "gold_id": "d1",
+      "title": "Close the migration workstream as completed",
+      "turns": [
+        24,
+        25,
+        27
+      ],
+      "tags": []
+    }
+  ],
+  "open_questions": [],
+  "follow_ups": []
+}

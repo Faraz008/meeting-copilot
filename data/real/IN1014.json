@@ -1,0 +1,714 @@
+{
+  "meeting_id": "IN1014",
+  "title": "AMI non-scenario meeting IN1014",
+  "date": "2005-10-11",
+  "timezone": null,
+  "roster": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "C",
+      "start": 26.276,
+      "end": 27.307,
+      "text": "With the lapel."
+    },
+    {
+      "idx": 1,
+      "speaker": "A",
+      "start": 31.186,
+      "end": 32.383,
+      "text": "."
+    },
+    {
+      "idx": 2,
+      "speaker": "B",
+      "start": 43.974,
+      "end": 45.596,
+      "text": "[humming]"
+    },
+    {
+      "idx": 3,
+      "speaker": "C",
+      "start": 49.693,
+      "end": 55.838,
+      "text": "So we -- I think we organise uh just to to discuss uh --"
+    },
+    {
+      "idx": 4,
+      "speaker": "B",
+      "start": 54.62,
+      "end": 60.117,
+      "text": "Sorry. [sharp exhale] I don't have my presentation. [laugh]"
+    },
+    {
+      "idx": 5,
+      "speaker": "C",
+      "start": 58.744,
+      "end": 59.326,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 6,
+      "speaker": "C",
+      "start": 62.366,
+      "end": 67.488,
+      "text": "To discuss uh, yeah, the project Alexandre and uh Jean-Marc uh proposed"
+    },
+    {
+      "idx": 7,
+      "speaker": "B",
+      "start": 62.819,
+      "end": 63.453,
+      "text": "Um --"
+    },
+    {
+      "idx": 8,
+      "speaker": "C",
+      "start": 69.051,
+      "end": 86.099,
+      "text": "a about uh capturing uh audio, video and slide uh [other] in a synchronized way. And so we will start with uh an introduction. Uh I think Olivier prepared some slides about uh reviewing uh"
+    },
+    {
+      "idx": 9,
+      "speaker": "B",
+      "start": 84.876,
+      "end": 85.367,
+      "text": "Yeah."
+    },
+    {
+      "idx": 10,
+      "speaker": "C",
+      "start": 87.71,
+      "end": 90.571,
+      "text": "current systems. And um --"
+    },
+    {
+      "idx": 11,
+      "speaker": "C",
+      "start": 92.068,
+      "end": 108.381,
+      "text": "And then, even if we don't have many things to to talk about, just to to -- start discussing about clearly the project and also um dealing with our kind of timing constraints. And uh --"
+    },
+    {
+      "idx": 12,
+      "speaker": "D",
+      "start": 106.143,
+      "end": 106.617,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 13,
+      "speaker": "B",
+      "start": 107.37,
+      "end": 110.86,
+      "text": "So they're on my -- they're on a."
+    },
+    {
+      "idx": 14,
+      "speaker": "C",
+      "start": 114.112,
+      "end": 118.818,
+      "text": "The U_ -- U_S_ -- U_ uh U_S_B_ cord doesn't work? And you didn't put on the --"
+    },
+    {
+      "idx": 15,
+      "speaker": "B",
+      "start": 118.263,
+      "end": 119.427,
+      "text": "No no. They are."
+    },
+    {
+      "idx": 16,
+      "speaker": "C",
+      "start": 120.416,
+      "end": 123.169,
+      "text": "Maybe you can access through the network."
+    },
+    {
+      "idx": 17,
+      "speaker": "C",
+      "start": 124.784,
+      "end": 126.265,
+      "text": "If it's on your H_."
+    },
+    {
+      "idx": 18,
+      "speaker": "B",
+      "start": 127.585,
+      "end": 131.051,
+      "text": "Yeah. No, no. My D_ machine."
+    },
+    {
+      "idx": 19,
+      "speaker": "C",
+      "start": 127.702,
+      "end": 129.889,
+      "text": "Or it's on uh your D_ machine."
+    },
+    {
+      "idx": 20,
+      "speaker": "C",
+      "start": 132.786,
+      "end": 136.153,
+      "text": "So maybe we wi we will be able to."
+    },
+    {
+      "idx": 21,
+      "speaker": "B",
+      "start": 134.067,
+      "end": 134.607,
+      "text": "Yeah."
+    },
+    {
+      "idx": 22,
+      "speaker": "B",
+      "start": 136.678,
+      "end": 137.2,
+      "text": "Okay."
+    },
+    {
+      "idx": 23,
+      "speaker": "C",
+      "start": 138.947,
+      "end": 141.042,
+      "text": "Should work. What?"
+    },
+    {
+      "idx": 24,
+      "speaker": "B",
+      "start": 139.031,
+      "end": 139.804,
+      "text": "Just going --"
+    },
+    {
+      "idx": 25,
+      "speaker": "D",
+      "start": 142.659,
+      "end": 143.457,
+      "text": "Keep going."
+    },
+    {
+      "idx": 26,
+      "speaker": "C",
+      "start": 145.086,
+      "end": 171.751,
+      "text": "[laugh] So um -- [laugh] w yeah, we had like five slides y uh presenting different systems. And mayb maybe you -- we can do that at the white-board. I it's a bit stupid. But uh y you know. I think you remember well the different uh parts. And uh I'm sure uh we can do that at the white-board. Yeah, it would be great to use the white-board."
+    },
+    {
+      "idx": 27,
+      "speaker": "A",
+      "start": 146.183,
+      "end": 148.538,
+      "text": "[sharp inhale] The show must go on. [laugh]"
+    },
+    {
+      "idx": 28,
+      "speaker": "B",
+      "start": 156.511,
+      "end": 157.234,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 29,
+      "speaker": "B",
+      "start": 163.745,
+      "end": 164.335,
+      "text": "Okay."
+    },
+    {
+      "idx": 30,
+      "speaker": "B",
+      "start": 166.307,
+      "end": 169.725,
+      "text": "Okay. So uh uh yeah. I will do something like that."
+    },
+    {
+      "idx": 31,
+      "speaker": "B",
+      "start": 172.346,
+      "end": 196.928,
+      "text": "Okay. [other] So uh I would like just to review at the different project regarding acquisition system. So basically there are five systems. The first one is called SMAC, which is developed by Fribourg and CERN. The second one i is your system. Uh I would to say the cheap meeting room system. The third one -- yeah, maybe I can share that with you."
+    },
+    {
+      "idx": 32,
+      "speaker": "C",
+      "start": 196.244,
+      "end": 199.072,
+      "text": "So the the the first one is uh SMAC. Okay."
+    },
+    {
+      "idx": 33,
+      "speaker": "B",
+      "start": 199.307,
+      "end": 201.704,
+      "text": "The SMAC, yeah. [other] Should I write?"
+    },
+    {
+      "idx": 34,
+      "speaker": "C",
+      "start": 201.815,
+      "end": 202.614,
+      "text": "Yeah, maybe yeah."
+    },
+    {
+      "idx": 35,
+      "speaker": "B",
+      "start": 205.862,
+      "end": 206.643,
+      "text": "Okay."
+    },
+    {
+      "idx": 36,
+      "speaker": "C",
+      "start": 207.665,
+      "end": 211.402,
+      "text": "Just a review of current systems uh to introduce."
+    },
+    {
+      "idx": 37,
+      "speaker": "D",
+      "start": 209.085,
+      "end": 211.089,
+      "text": "Yeah, yeah. Sure, that's interest us."
+    },
+    {
+      "idx": 38,
+      "speaker": "B",
+      "start": 210.637,
+      "end": 213.963,
+      "text": "The first one is -- yeah, I will call that A_."
+    },
+    {
+      "idx": 39,
+      "speaker": "B",
+      "start": 218.72,
+      "end": 222.858,
+      "text": "SMAC, which is develop by Fribourg and CERN. The second one, B_,"
+    },
+    {
+      "idx": 40,
+      "speaker": "B",
+      "start": 224.689,
+      "end": 232.073,
+      "text": "which is uh -- I would like to che say uh cheap uh meeting room or -- I don't know."
+    },
+    {
+      "idx": 41,
+      "speaker": "D",
+      "start": 231.968,
+      "end": 233.658,
+      "text": "It's okay. It should."
+    },
+    {
+      "idx": 42,
+      "speaker": "C",
+      "start": 232.815,
+      "end": 238.772,
+      "text": "Well, cheap meeting room is the, you know, mm -- it's a conference room? Or --"
+    },
+    {
+      "idx": 43,
+      "speaker": "D",
+      "start": 235.803,
+      "end": 243.367,
+      "text": "But for the moment just for the purpose [sharp inhale] -- well, f for the moment it's just to understand each other so we know -- we know that the uh --"
+    },
+    {
+      "idx": 44,
+      "speaker": "B",
+      "start": 235.969,
+      "end": 239.522,
+      "text": "Okay. -- --"
+    },
+    {
+      "idx": 45,
+      "speaker": "A",
+      "start": 236.811,
+      "end": 239.598,
+      "text": "You can say -- then -- you --"
+    },
+    {
+      "idx": 46,
+      "speaker": "A",
+      "start": 241.855,
+      "end": 245.954,
+      "text": "It -- I th I thought it was called PAS, so I think just use this."
+    },
+    {
+      "idx": 47,
+      "speaker": "C",
+      "start": 243.976,
+      "end": 248.862,
+      "text": "Yeah. PAS. Alexandre. PAS. Yeah."
+    },
+    {
+      "idx": 48,
+      "speaker": "D",
+      "start": 244.912,
+      "end": 248.543,
+      "text": "Yeah for with PAS. It's okay. Yeah, good idea. [other]"
+    },
+    {
+      "idx": 49,
+      "speaker": "B",
+      "start": 246.689,
+      "end": 248.019,
+      "text": "P_A_S_."
+    },
+    {
+      "idx": 50,
+      "speaker": "A",
+      "start": 247.461,
+      "end": 248.625,
+      "text": "PAS. Yeah, yeah."
+    },
+    {
+      "idx": 51,
+      "speaker": "B",
+      "start": 249.236,
+      "end": 252.52,
+      "text": "Okay, P_A_S_. The third one is um --"
+    },
+    {
+      "idx": 52,
+      "speaker": "D",
+      "start": 251.622,
+      "end": 257.706,
+      "text": "Uh this sounds like Alexandre pas. Yeah that's not that -- [laugh]"
+    },
+    {
+      "idx": 53,
+      "speaker": "A",
+      "start": 253.66,
+      "end": 255.335,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 54,
+      "speaker": "C",
+      "start": 254.176,
+      "end": 259.297,
+      "text": "P [laugh] PAS project."
+    },
+    {
+      "idx": 55,
+      "speaker": "B",
+      "start": 254.235,
+      "end": 268.085,
+      "text": "[laugh] Okay. [laugh] The third one is called uh the s um [other] this is uh the smart meeting room develop at Fribourg which is called the smart --"
+    },
+    {
+      "idx": 56,
+      "speaker": "D",
+      "start": 262.919,
+      "end": 263.292,
+      "text": "[other]"
+    },
+    {
+      "idx": 57,
+      "speaker": "C",
+      "start": 267.282,
+      "end": 280.18,
+      "text": "Smart mediat uh Smart Minutes, but uh I thi [other] Diva. Because a Sma yeah, Smart Minute is all the process of capturing the minutes automatically. But it's Diva we can say."
+    },
+    {
+      "idx": 58,
+      "speaker": "D",
+      "start": 268.451,
+      "end": 272.659,
+      "text": "It's [other] Diva. N'est-ce pas? Something like this. Yeah."
+    },
+    {
+      "idx": 59,
+      "speaker": "B",
+      "start": 272.541,
+      "end": 273.464,
+      "text": "It's DIVA."
+    },
+    {
+      "idx": 60,
+      "speaker": "B",
+      "start": 276.208,
+      "end": 276.874,
+      "text": "Okay."
+    },
+    {
+      "idx": 61,
+      "speaker": "B",
+      "start": 278.173,
+      "end": 279.678,
+      "text": "The p DIVA."
+    },
+    {
+      "idx": 62,
+      "speaker": "B",
+      "start": 281.733,
+      "end": 299.125,
+      "text": "D_I_V_A_, something like that. The third one is call -- uh the third one is uh the project that I have to improve the current smart meeting room at IDIAP. Uh for that we will use um uh --"
+    },
+    {
+      "idx": 63,
+      "speaker": "D",
+      "start": 286.904,
+      "end": 287.386,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 64,
+      "speaker": "C",
+      "start": 298.56,
+      "end": 299.458,
+      "text": "--"
+    },
+    {
+      "idx": 65,
+      "speaker": "B",
+      "start": 300.564,
+      "end": 305.741,
+      "text": "Yeah, a tape three uh -- okay, let's call that."
+    },
+    {
+      "idx": 66,
+      "speaker": "C",
+      "start": 308.847,
+      "end": 310.785,
+      "text": "Free. [laugh]"
+    },
+    {
+      "idx": 67,
+      "speaker": "A",
+      "start": 309.587,
+      "end": 311.376,
+      "text": "[sharp inhale] [laugh]"
+    },
+    {
+      "idx": 68,
+      "speaker": "B",
+      "start": 317.487,
+      "end": 334.303,
+      "text": "And the last one I would like just mention just to -- for the meeting and this is uh the fire-wire. Um I don't know if you saw my presentation during my turn. You -- did you? Uh okay. E_, which is firewire."
+    },
+    {
+      "idx": 69,
+      "speaker": "D",
+      "start": 327.949,
+      "end": 328.389,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 70,
+      "speaker": "D",
+      "start": 329.52,
+      "end": 329.712,
+      "text": "Yeah."
+    },
+    {
+      "idx": 71,
+      "speaker": "B",
+      "start": 338.268,
+      "end": 338.566,
+      "text": "[other]"
+    },
+    {
+      "idx": 72,
+      "speaker": "B",
+      "start": 341.223,
+      "end": 350.117,
+      "text": "Okay. So I will start just with the SMAC. So maybe I draw line here. So the SMAC --"
+    },
+    {
+      "idx": 73,
+      "speaker": "B",
+      "start": 352.379,
+      "end": 376.091,
+      "text": "The SMAC project the SMAC project is a project which aims to do the acquisition of audio, video and slide uh for presentation. Yeah, this project is done with Fribourg and CERN. But I'm just going to make a very short um graphic. In fact, they use um"
+    },
+    {
+      "idx": 74,
+      "speaker": "B",
+      "start": 377.807,
+      "end": 393.301,
+      "text": "a card, a video card which is call um I_V_C_ -- mm yeah. I just write I_V_C_. In fact, this is a video card with four um inputs."
+    },
+    {
+      "idx": 75,
+      "speaker": "C",
+      "start": 384.151,
+      "end": 385.855,
+      "text": "Mm. Doesn't matter. Yeah."
+    },
+    {
+      "idx": 76,
+      "speaker": "B",
+      "start": 395.807,
+      "end": 412.637,
+      "text": "[other] On these four inputs you can have only video. But uh they want to make also the slide acquisition. So on one input they put um a conversion box, a converter, which converts from slide"
+    },
+    {
+      "idx": 77,
+      "speaker": "B",
+      "start": 414.816,
+      "end": 432.597,
+      "text": "to video. So that mean that we decrease uh the the quality. We have a high quality in slide and we go to low quality to lower quality with uh video. Um so this one is just for the SMAC. Now I will just move. D"
+    },
+    {
+      "idx": 78,
+      "speaker": "C",
+      "start": 431.87,
+      "end": 435.362,
+      "text": "And this -- the three of those are the v the the video --"
+    },
+    {
+      "idx": 79,
+      "speaker": "B",
+      "start": 434.011,
+      "end": 448.688,
+      "text": "Yeah. These one are just for video and audio. You can use uh them. And this board does uh the DivX compression on the fly. This is uh the box that we have on the table. The the card that we have on the table."
+    },
+    {
+      "idx": 80,
+      "speaker": "D",
+      "start": 446.179,
+      "end": 446.703,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 81,
+      "speaker": "C",
+      "start": 448.785,
+      "end": 487.307,
+      "text": "And uh I'd like to add that this c I think it's quite ambitious project because it's with uh the CERN. And they w they uh already worked on uh a European project called InDiCo, where they they have uh release, deliver, a full um kind of conference uh uh software. And uh to to manage uh all the the conference aspects uh uh we have in a conference automatically. And uh I know that at Fribourg they installed uh already in in a in a big uh amphitheatre for students. And I guess it's currently working."
+    },
+    {
+      "idx": 82,
+      "speaker": "C",
+      "start": 487.307,
+      "end": 515.019,
+      "text": "Ah no. Either just to uh in parentheses uh we didn't choose that um that solution because they had no um -- the the slides were not captured very uh -- in a very uh precise way. That's the point. Okay. Otherwise they uh -- it's fully automatic? Or have have you discussed with them? Did you discuss that? Is it fully automatic? You don't know?"
+    },
+    {
+      "idx": 83,
+      "speaker": "A",
+      "start": 503.566,
+      "end": 504.73,
+      "text": "Mm-hmm. Mm."
+    },
+    {
+      "idx": 84,
+      "speaker": "D",
+      "start": 504.469,
+      "end": 505.026,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 85,
+      "speaker": "D",
+      "start": 515.304,
+      "end": 515.996,
+      "text": "I don't know."
+    },
+    {
+      "idx": 86,
+      "speaker": "C",
+      "start": 517.158,
+      "end": 517.715,
+      "text": "Okay."
+    },
+    {
+      "idx": 87,
+      "speaker": "A",
+      "start": 518.526,
+      "end": 527.494,
+      "text": "Well I suppose uh I suppose they can capture things, right. I mean don't s I don't see why you could not capture the videos I mean with a card like this."
+    },
+    {
+      "idx": 88,
+      "speaker": "B",
+      "start": 520.337,
+      "end": 521.269,
+      "text": "Uh I think --"
+    },
+    {
+      "idx": 89,
+      "speaker": "C",
+      "start": 522.934,
+      "end": 523.873,
+      "text": "But the p i"
+    },
+    {
+      "idx": 90,
+      "speaker": "D",
+      "start": 528.367,
+      "end": 529.485,
+      "text": "[other]"
+    },
+    {
+      "idx": 91,
+      "speaker": "C",
+      "start": 528.478,
+      "end": 536.178,
+      "text": "But i i it all synchronize and i is it doing all what we want but without the slide uh precision?"
+    },
+    {
+      "idx": 92,
+      "speaker": "D",
+      "start": 533.753,
+      "end": 534.177,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 93,
+      "speaker": "A",
+      "start": 538.762,
+      "end": 540.425,
+      "text": "I don't know. I mean I don't know."
+    },
+    {
+      "idx": 94,
+      "speaker": "D",
+      "start": 539.699,
+      "end": 578.795,
+      "text": "But l let be careful. There's one important point. The technical aspects of the way you acquire things should be driven by the kind of processing you want to have. So in our case we need to have a good processing of slides that in our case it means to transcribe with an O_C_R_ and then make indexing. We need to have high resolution image. I guess that's what you mean by precision, right? So in a sense that's the point. For us we need to have uh this sufficient resolution images of slides to do what we want to do. So that's why I guess we don't follow that solution. Because apparently -- yeah."
+    },
+    {
+      "idx": 95,
+      "speaker": "C",
+      "start": 540.416,
+      "end": 541.254,
+      "text": "Okay, yeah."
+    },
+    {
+      "idx": 96,
+      "speaker": "C",
+      "start": 560.728,
+      "end": 561.218,
+      "text": "Yeah."
+    },
+    {
+      "idx": 97,
+      "speaker": "C",
+      "start": 576.12,
+      "end": 590.047,
+      "text": "And uh -- okay. And we are su and we are sure that in that uh context of SMAC project with uh um Fribourg working on document analysis uh there were not enough precision -- un enough resolution in the slides?"
+    },
+    {
+      "idx": 98,
+      "speaker": "D",
+      "start": 586.237,
+      "end": 586.769,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 99,
+      "speaker": "D",
+      "start": 589.922,
+      "end": 620.238,
+      "text": "As far as I know so far uh they did similar works on meetings, document centred meetings. They always worked on manual transcriptions of documents. So they never really took into account a possibility of actually performing processing on the document they talk about during the meeting during in this case the uh the talk, the conference, the the th the presentation. As far as I know. As far as they published I kn I know the results they published uh so far."
+    }
+  ]
+}

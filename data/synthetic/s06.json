@@ -1,0 +1,293 @@
+{
+  "meeting_id": "s06",
+  "title": "Customer Escalation Name Recognition",
+  "date": "2025-07-18",
+  "timezone": "Asia/Kolkata",
+  "roster": [
+    "Priya",
+    "Sam",
+    "Dan"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "Dan",
+      "start": 0.0,
+      "end": 3.8,
+      "text": "Let's prepare a factual timeline for the customer escalation."
+    },
+    {
+      "idx": 1,
+      "speaker": "Sam",
+      "start": 5.2,
+      "end": 9.0,
+      "text": "The support ticket has most of the contact history."
+    },
+    {
+      "idx": 2,
+      "speaker": "Priya",
+      "start": 10.4,
+      "end": 14.2,
+      "text": "I have the incident notes and the customer-facing template."
+    },
+    {
+      "idx": 3,
+      "speaker": "Dan",
+      "start": 15.6,
+      "end": 19.4,
+      "text": "There are a couple of name-recognition issues in the call transcript."
+    },
+    {
+      "idx": 4,
+      "speaker": "Sam",
+      "start": 20.8,
+      "end": 24.6,
+      "text": "We should resolve those from the conversation, not guess."
+    },
+    {
+      "idx": 5,
+      "speaker": "Priya",
+      "start": 26.0,
+      "end": 29.8,
+      "text": "Agreed; let's confirm who is being addressed before assigning work."
+    },
+    {
+      "idx": 6,
+      "speaker": "Dan",
+      "start": 31.2,
+      "end": 35.0,
+      "text": "The customer escalation needs one person to prepare the response timeline."
+    },
+    {
+      "idx": 7,
+      "speaker": "Sam",
+      "start": 36.4,
+      "end": 40.2,
+      "text": "I heard the recording say 'Pree-ya' should prepare it."
+    },
+    {
+      "idx": 8,
+      "speaker": "Priya",
+      "start": 41.6,
+      "end": 45.4,
+      "text": "Yes, that's me; people sometimes pronounce my name that way."
+    },
+    {
+      "idx": 9,
+      "speaker": "Dan",
+      "start": 46.8,
+      "end": 50.6,
+      "text": "The transcript also spells it 'Priyaa' in the next sentence."
+    },
+    {
+      "idx": 10,
+      "speaker": "Priya",
+      "start": 52.0,
+      "end": 55.8,
+      "text": "That's still referring to me; the speaker says my name and then addresses me directly."
+    },
+    {
+      "idx": 11,
+      "speaker": "Sam",
+      "start": 57.2,
+      "end": 61.0,
+      "text": "Can you take the response timeline, Priya?"
+    },
+    {
+      "idx": 12,
+      "speaker": "Priya",
+      "start": 62.4,
+      "end": 66.2,
+      "text": "Yes, I'll prepare the customer response timeline."
+    },
+    {
+      "idx": 13,
+      "speaker": "Dan",
+      "start": 67.6,
+      "end": 71.4,
+      "text": "Let's make sure we don't create a second owner for 'Pree-ya' and 'Priyaa'."
+    },
+    {
+      "idx": 14,
+      "speaker": "Sam",
+      "start": 72.8,
+      "end": 76.6,
+      "text": "Agreed, those are two recognition variants for the same person in this exchange."
+    },
+    {
+      "idx": 15,
+      "speaker": "Priya",
+      "start": 78.0,
+      "end": 81.8,
+      "text": "I'll include the timestamps of the three customer contacts."
+    },
+    {
+      "idx": 16,
+      "speaker": "Dan",
+      "start": 83.2,
+      "end": 87.0,
+      "text": "Please keep the internal incident notes separate from the customer-facing timeline."
+    },
+    {
+      "idx": 17,
+      "speaker": "Priya",
+      "start": 88.4,
+      "end": 92.2,
+      "text": "Understood; I'll only include details cleared for the customer."
+    },
+    {
+      "idx": 18,
+      "speaker": "Sam",
+      "start": 93.6,
+      "end": 97.4,
+      "text": "The account manager can review the wording after it's drafted."
+    },
+    {
+      "idx": 19,
+      "speaker": "Dan",
+      "start": 98.8,
+      "end": 102.6,
+      "text": "That's a proposed review step; nobody has accepted it yet."
+    },
+    {
+      "idx": 20,
+      "speaker": "Priya",
+      "start": 104.0,
+      "end": 107.8,
+      "text": "The response timeline itself is mine."
+    },
+    {
+      "idx": 21,
+      "speaker": "Sam",
+      "start": 109.2,
+      "end": 113.0,
+      "text": "I'll check whether the support ticket has all three contact times."
+    },
+    {
+      "idx": 22,
+      "speaker": "Dan",
+      "start": 114.4,
+      "end": 118.2,
+      "text": "That ticket check is separate from Priya's timeline."
+    },
+    {
+      "idx": 23,
+      "speaker": "Sam",
+      "start": 119.6,
+      "end": 123.4,
+      "text": "I can check the ticket now and add any missing contact times."
+    },
+    {
+      "idx": 24,
+      "speaker": "Priya",
+      "start": 124.8,
+      "end": 128.6,
+      "text": "Thanks, that is a clear second commitment."
+    },
+    {
+      "idx": 25,
+      "speaker": "Dan",
+      "start": 130.0,
+      "end": 133.8,
+      "text": "The two spellings should not become two people or two tasks."
+    },
+    {
+      "idx": 26,
+      "speaker": "Priya",
+      "start": 135.2,
+      "end": 139.0,
+      "text": "Correct. I am Priya, and I'll own the timeline."
+    },
+    {
+      "idx": 27,
+      "speaker": "Sam",
+      "start": 140.4,
+      "end": 144.2,
+      "text": "I'll own the ticket timestamp check."
+    },
+    {
+      "idx": 28,
+      "speaker": "Sam",
+      "start": 145.6,
+      "end": 149.4,
+      "text": "The customer-facing template has a field for contact time."
+    },
+    {
+      "idx": 29,
+      "speaker": "Priya",
+      "start": 150.8,
+      "end": 154.6,
+      "text": "I'll keep internal diagnostics out of that version."
+    },
+    {
+      "idx": 30,
+      "speaker": "Dan",
+      "start": 156.0,
+      "end": 159.8,
+      "text": "The account manager can review it once the timeline exists."
+    },
+    {
+      "idx": 31,
+      "speaker": "Sam",
+      "start": 161.2,
+      "end": 165.0,
+      "text": "That review is not assigned yet."
+    },
+    {
+      "idx": 32,
+      "speaker": "Priya",
+      "start": 166.4,
+      "end": 170.2,
+      "text": "The two name variants refer to the same addressee here."
+    },
+    {
+      "idx": 33,
+      "speaker": "Dan",
+      "start": 171.6,
+      "end": 175.4,
+      "text": "Let's retain the confirmed spelling in the final notes."
+    },
+    {
+      "idx": 34,
+      "speaker": "Dan",
+      "start": 176.8,
+      "end": 180.6,
+      "text": "Priya owns the response timeline; Sam owns the ticket check."
+    },
+    {
+      "idx": 35,
+      "speaker": "Priya",
+      "start": 182.0,
+      "end": 185.8,
+      "text": "I'll prepare the timeline from the confirmed contacts."
+    },
+    {
+      "idx": 36,
+      "speaker": "Sam",
+      "start": 187.2,
+      "end": 191.0,
+      "text": "I'll verify the ticket timestamps."
+    },
+    {
+      "idx": 37,
+      "speaker": "Dan",
+      "start": 192.4,
+      "end": 196.2,
+      "text": "The name variants have been resolved from context."
+    },
+    {
+      "idx": 38,
+      "speaker": "Priya",
+      "start": 197.6,
+      "end": 201.4,
+      "text": "I'll use my full name in the customer document."
+    },
+    {
+      "idx": 39,
+      "speaker": "Dan",
+      "start": 202.8,
+      "end": 206.6,
+      "text": "Thanks, close the call."
+    }
+  ]
+}

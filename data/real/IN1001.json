@@ -1,0 +1,713 @@
+{
+  "meeting_id": "IN1001",
+  "title": "AMI non-scenario meeting IN1001",
+  "date": "2005-10-03",
+  "timezone": null,
+  "roster": [
+    "A",
+    "B",
+    "C"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "B",
+      "start": 32.917,
+      "end": 33.529,
+      "text": "Oh yeah."
+    },
+    {
+      "idx": 1,
+      "speaker": "B",
+      "start": 41.431,
+      "end": 47.114,
+      "text": "You don't put your headset microphone? [laugh]"
+    },
+    {
+      "idx": 2,
+      "speaker": "B",
+      "start": 52.49,
+      "end": 53.621,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 3,
+      "speaker": "A",
+      "start": 77.989,
+      "end": 83.394,
+      "text": "So we are here to just make the point. Well make the point, yeah."
+    },
+    {
+      "idx": 4,
+      "speaker": "A",
+      "start": 85.172,
+      "end": 88.007,
+      "text": "Make the status about the shot detection."
+    },
+    {
+      "idx": 5,
+      "speaker": "B",
+      "start": 88.754,
+      "end": 89.444,
+      "text": "Okay."
+    },
+    {
+      "idx": 6,
+      "speaker": "A",
+      "start": 89.616,
+      "end": 121.208,
+      "text": "To -- so you have applied the shot detector to some of the CINETIS video, or at least one, and uh so we can basically maybe just comment on on this, maybe quickly remind what the shot detector is -- how the shot detector is working, basically. Uh we might be able anyway to give you some reference. I mean your report it's it should be described there or -- yeah, yeah. You have the report? Okay."
+    },
+    {
+      "idx": 7,
+      "speaker": "B",
+      "start": 94.862,
+      "end": 95.485,
+      "text": "Yeah."
+    },
+    {
+      "idx": 8,
+      "speaker": "C",
+      "start": 106.732,
+      "end": 107.139,
+      "text": "Hmm."
+    },
+    {
+      "idx": 9,
+      "speaker": "B",
+      "start": 115.053,
+      "end": 115.618,
+      "text": "Yeah."
+    },
+    {
+      "idx": 10,
+      "speaker": "B",
+      "start": 117.092,
+      "end": 132.055,
+      "text": "Yeah, I have actually -- yeah, the -- we can see the report here and the demo, [other] and the goal of uh this meeting is to present the video shot detector to Olivier, okay."
+    },
+    {
+      "idx": 11,
+      "speaker": "A",
+      "start": 130.61,
+      "end": 132.099,
+      "text": "To Olivier, yeah."
+    },
+    {
+      "idx": 12,
+      "speaker": "C",
+      "start": 132.199,
+      "end": 132.64,
+      "text": "Yes."
+    },
+    {
+      "idx": 13,
+      "speaker": "B",
+      "start": 134.967,
+      "end": 170.285,
+      "text": "Okay. So yeah, it was my project um [other] during my internship at IDIAP [laugh] under the supervision of Jean-Marc. And as you saw as you saw in the email I sent -- uh okay. I didn't send [other] -- this video is the new one. I just um [other] uh processed from your images. [other] Yeah. But uh let's let's start by the video from Friday. CINETIS demo one."
+    },
+    {
+      "idx": 14,
+      "speaker": "A",
+      "start": 162.483,
+      "end": 168.237,
+      "text": "Ah, okay, yes, the kayak wi I was not even -- [other] with the other one, okay."
+    },
+    {
+      "idx": 15,
+      "speaker": "A",
+      "start": 171.18,
+      "end": 178.647,
+      "text": "By the way, I was uh going to ask, so I had seen the video, i you uh did um a downsampling of the video, right? I mean --"
+    },
+    {
+      "idx": 16,
+      "speaker": "A",
+      "start": 180.419,
+      "end": 182.972,
+      "text": "For uh browsing I mean. Okay, yeah."
+    },
+    {
+      "idx": 17,
+      "speaker": "B",
+      "start": 181.906,
+      "end": 182.313,
+      "text": "Yeah."
+    },
+    {
+      "idx": 18,
+      "speaker": "B",
+      "start": 187.25,
+      "end": 189.223,
+      "text": "[other] So this was uh --"
+    },
+    {
+      "idx": 19,
+      "speaker": "A",
+      "start": 187.381,
+      "end": 187.722,
+      "text": "[other]"
+    },
+    {
+      "idx": 20,
+      "speaker": "B",
+      "start": 191.119,
+      "end": 191.743,
+      "text": "Okay."
+    },
+    {
+      "idx": 21,
+      "speaker": "A",
+      "start": 191.904,
+      "end": 196.319,
+      "text": "So this is hierarchical normally, so you have scenes and shots, but --"
+    },
+    {
+      "idx": 22,
+      "speaker": "B",
+      "start": 194.72,
+      "end": 200.743,
+      "text": "[laugh] Yeah, here on the left you have different things, but uh [other] as applied --"
+    },
+    {
+      "idx": 23,
+      "speaker": "C",
+      "start": 195.625,
+      "end": 196.473,
+      "text": "Mm 'kay."
+    },
+    {
+      "idx": 24,
+      "speaker": "A",
+      "start": 197.792,
+      "end": 209.154,
+      "text": "[other] Because for instance we could probably, you know, like group all the initial ones into one scene and maybe after, when there's some things inside, it s should be another scene, so."
+    },
+    {
+      "idx": 25,
+      "speaker": "C",
+      "start": 198.331,
+      "end": 200.542,
+      "text": "Okay, this is."
+    },
+    {
+      "idx": 26,
+      "speaker": "C",
+      "start": 207.562,
+      "end": 208.286,
+      "text": "Okay."
+    },
+    {
+      "idx": 27,
+      "speaker": "B",
+      "start": 209.382,
+      "end": 248.583,
+      "text": "So this detector uh detected the thirty shots, and if you click on uh plus button you can expand it and see the key frames that are in fact uh five extracted frames from the shot. [other] But I think th uh as it is, it's t extracted uh without uh using sub-shots, uh it's simply uh five down-sam yeah, down-sampling. Um so I -- we can see the video actually, [other] uh the entire video, can open with Real Player. I hope it will work."
+    },
+    {
+      "idx": 28,
+      "speaker": "C",
+      "start": 219.008,
+      "end": 219.599,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 29,
+      "speaker": "C",
+      "start": 225.812,
+      "end": 226.469,
+      "text": "Okay."
+    },
+    {
+      "idx": 30,
+      "speaker": "A",
+      "start": 225.854,
+      "end": 228.746,
+      "text": "Which are extracted I think uh --"
+    },
+    {
+      "idx": 31,
+      "speaker": "A",
+      "start": 234.744,
+      "end": 235.9,
+      "text": "Downsampling."
+    },
+    {
+      "idx": 32,
+      "speaker": "C",
+      "start": 236.93,
+      "end": 237.521,
+      "text": "Okay."
+    },
+    {
+      "idx": 33,
+      "speaker": "A",
+      "start": 242.7,
+      "end": 243.157,
+      "text": "Yeah."
+    },
+    {
+      "idx": 34,
+      "speaker": "B",
+      "start": 255.195,
+      "end": 264.583,
+      "text": "So we don't have the [other] the sound, and it won't be grabbed -- the video won't -- uh I don't know if uh --"
+    },
+    {
+      "idx": 35,
+      "speaker": "B",
+      "start": 265.772,
+      "end": 267.626,
+      "text": "Okay, it's not good quality."
+    },
+    {
+      "idx": 36,
+      "speaker": "A",
+      "start": 267.963,
+      "end": 274.674,
+      "text": "Yeah, the quality is -- that's why I was asking that. [laugh] It it's not this that you processed, right? Okay, okay."
+    },
+    {
+      "idx": 37,
+      "speaker": "B",
+      "start": 271.275,
+      "end": 272.074,
+      "text": "Oh yeah, yeah, yeah."
+    },
+    {
+      "idx": 38,
+      "speaker": "B",
+      "start": 273.264,
+      "end": 277.354,
+      "text": "No no no no no no. It's in Real Media, so it's very compressed."
+    },
+    {
+      "idx": 39,
+      "speaker": "A",
+      "start": 277.201,
+      "end": 287.957,
+      "text": "So here we see that we the shot at eighteenth and after twenty twos and after again. And uh if we go down, I mean maybe in terms of shot here, we can see that --"
+    },
+    {
+      "idx": 40,
+      "speaker": "C",
+      "start": 277.326,
+      "end": 278.041,
+      "text": "Okay."
+    },
+    {
+      "idx": 41,
+      "speaker": "C",
+      "start": 283.62,
+      "end": 284.069,
+      "text": "'Kay."
+    },
+    {
+      "idx": 42,
+      "speaker": "A",
+      "start": 289.94,
+      "end": 294.51,
+      "text": "Right, I mean -- so now we see shot seven I suppose, yeah."
+    },
+    {
+      "idx": 43,
+      "speaker": "C",
+      "start": 299.901,
+      "end": 300.641,
+      "text": "Okay."
+    },
+    {
+      "idx": 44,
+      "speaker": "A",
+      "start": 302.878,
+      "end": 307.201,
+      "text": "Uh yeah, okay, shot nine currently, shot ten probably."
+    },
+    {
+      "idx": 45,
+      "speaker": "B",
+      "start": 303.261,
+      "end": 305.905,
+      "text": "Uh okay."
+    },
+    {
+      "idx": 46,
+      "speaker": "A",
+      "start": 308.965,
+      "end": 315.676,
+      "text": "Eleven or twelve. No, eleven. Or -- no this is ten indeed, okay. Yeah."
+    },
+    {
+      "idx": 47,
+      "speaker": "B",
+      "start": 312.356,
+      "end": 316.979,
+      "text": "Uh ten -- yeah. And then there's um --"
+    },
+    {
+      "idx": 48,
+      "speaker": "A",
+      "start": 317.008,
+      "end": 320.94,
+      "text": "Yeah, this one, it's eleven, twelve"
+    },
+    {
+      "idx": 49,
+      "speaker": "C",
+      "start": 317.467,
+      "end": 318.082,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 50,
+      "speaker": "B",
+      "start": 319.859,
+      "end": 320.408,
+      "text": "Okay."
+    },
+    {
+      "idx": 51,
+      "speaker": "A",
+      "start": 322.386,
+      "end": 323.862,
+      "text": "or fourteen seconds."
+    },
+    {
+      "idx": 52,
+      "speaker": "C",
+      "start": 327.907,
+      "end": 328.547,
+      "text": "Okay."
+    },
+    {
+      "idx": 53,
+      "speaker": "A",
+      "start": 330.574,
+      "end": 341.392,
+      "text": "Yeah, okay. Okay. Yeah, it's inside and -- yeah. It's really a dissolve or is it really like is -- you have the feeling that it's both --"
+    },
+    {
+      "idx": 54,
+      "speaker": "B",
+      "start": 332.132,
+      "end": 344.164,
+      "text": "Yes. [laugh] And this one, yeah, it's a dissolve it's a dissolve, so it doesn't detect -- yeah, when I saw the M_ -- with M_ Player, it's a dissolve, yeah."
+    },
+    {
+      "idx": 55,
+      "speaker": "C",
+      "start": 337.487,
+      "end": 338.643,
+      "text": "Okay."
+    },
+    {
+      "idx": 56,
+      "speaker": "A",
+      "start": 342.816,
+      "end": 343.307,
+      "text": "Okay."
+    },
+    {
+      "idx": 57,
+      "speaker": "A",
+      "start": 347.282,
+      "end": 364.423,
+      "text": "But it's it's it's not standard man-made movies, because [laugh] I would say most of the time people couldn didn't do any dissolve. Yeah, I could see here, I mean, that it was like horse it was only one single one."
+    },
+    {
+      "idx": 58,
+      "speaker": "C",
+      "start": 354.41,
+      "end": 354.893,
+      "text": "Hmm."
+    },
+    {
+      "idx": 59,
+      "speaker": "C",
+      "start": 356.348,
+      "end": 356.822,
+      "text": "Mm."
+    },
+    {
+      "idx": 60,
+      "speaker": "B",
+      "start": 360.613,
+      "end": 362.401,
+      "text": "Yeah. Okay."
+    },
+    {
+      "idx": 61,
+      "speaker": "B",
+      "start": 363.814,
+      "end": 370.905,
+      "text": "Yeah. I don't know if this one if we see was correctly -- uh, you see? Yeah."
+    },
+    {
+      "idx": 62,
+      "speaker": "A",
+      "start": 369.613,
+      "end": 382.473,
+      "text": "N yeah, yeah. This is the one I I had seen, yeah. But as I said, I mean uh with even the motion detector, when it's black it's -- there is not s no structure, so you don't esti yeah, but you don't really estimate motion."
+    },
+    {
+      "idx": 63,
+      "speaker": "B",
+      "start": 372.61,
+      "end": 372.925,
+      "text": "Yeah."
+    },
+    {
+      "idx": 64,
+      "speaker": "B",
+      "start": 378.764,
+      "end": 385.346,
+      "text": "But there is a moon. But -- okay, because there is no motion in fact between the two shots."
+    },
+    {
+      "idx": 65,
+      "speaker": "A",
+      "start": 384.361,
+      "end": 414.471,
+      "text": "Well, there is no structure. There is no texture, if you want to say so, and this is this is not so good for the motion. Uh but for instance of course between the horse and uh and um [other] the c the c uh uh -- yeah. [laugh] Uh the cows, yeah, maybe we could have detected things. But it's not even sure, because the background is quite similar and uh it's it's it's not that sure."
+    },
+    {
+      "idx": 66,
+      "speaker": "B",
+      "start": 387.508,
+      "end": 388.854,
+      "text": "Yeah, okay, okay."
+    },
+    {
+      "idx": 67,
+      "speaker": "B",
+      "start": 403.981,
+      "end": 405.817,
+      "text": "The cow? Yeah."
+    },
+    {
+      "idx": 68,
+      "speaker": "B",
+      "start": 408.945,
+      "end": 409.67,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 69,
+      "speaker": "B",
+      "start": 414.293,
+      "end": 428.377,
+      "text": "Yeah, maybe to explain [other] this method was using uh a simple uh uh distance between uh consecutive histograms, and we didn't use motion features at all for that, that's why i we --"
+    },
+    {
+      "idx": 70,
+      "speaker": "C",
+      "start": 423.379,
+      "end": 423.961,
+      "text": "Okay."
+    },
+    {
+      "idx": 71,
+      "speaker": "C",
+      "start": 426.114,
+      "end": 426.605,
+      "text": "Mm."
+    },
+    {
+      "idx": 72,
+      "speaker": "A",
+      "start": 427.982,
+      "end": 473.092,
+      "text": "So it's -- yeah. The histogram, so we have experience with it. So it's it's scrambled, so you can scramble the image and you get the same histogram. So there is no structure indeed, so of course when you look the horse and then you can see as a cow -- the cows, of course you have a black in the top and uh you have also uh maybe eighty percent of like green uh, which is even not green there but uh uh grass. You have stones and uh so there of course are differences, because on the one hand you have horse, but it's black, so you have more sky, which is black on the right, so you don't care about this. So it's a glo it's global -- it's a global histogram, so yeah."
+    },
+    {
+      "idx": 73,
+      "speaker": "C",
+      "start": 431.095,
+      "end": 432.681,
+      "text": "Yeah. Yeah."
+    },
+    {
+      "idx": 74,
+      "speaker": "B",
+      "start": 431.515,
+      "end": 432.854,
+      "text": "Yeah, [laugh] okay."
+    },
+    {
+      "idx": 75,
+      "speaker": "C",
+      "start": 436.772,
+      "end": 437.379,
+      "text": "Okay."
+    },
+    {
+      "idx": 76,
+      "speaker": "C",
+      "start": 439.058,
+      "end": 439.449,
+      "text": "Yeah."
+    },
+    {
+      "idx": 77,
+      "speaker": "C",
+      "start": 440.916,
+      "end": 441.523,
+      "text": "Okay."
+    },
+    {
+      "idx": 78,
+      "speaker": "C",
+      "start": 453.404,
+      "end": 454.036,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 79,
+      "speaker": "C",
+      "start": 467.661,
+      "end": 468.285,
+      "text": "Okay."
+    },
+    {
+      "idx": 80,
+      "speaker": "C",
+      "start": 473.354,
+      "end": 473.803,
+      "text": "'Kay."
+    },
+    {
+      "idx": 81,
+      "speaker": "A",
+      "start": 475.496,
+      "end": 487.52,
+      "text": "But it's when for this I would -- for this application I could imagine that it would -- were quite high. [other] Uh and it's a threshold but still it's adaptive, right, if I remember well, yeah."
+    },
+    {
+      "idx": 82,
+      "speaker": "C",
+      "start": 480.212,
+      "end": 480.86,
+      "text": "Hmm."
+    },
+    {
+      "idx": 83,
+      "speaker": "B",
+      "start": 480.539,
+      "end": 481.395,
+      "text": "Enough --"
+    },
+    {
+      "idx": 84,
+      "speaker": "B",
+      "start": 485.746,
+      "end": 489.398,
+      "text": "Yeah. Yeah. With a sliding window."
+    },
+    {
+      "idx": 85,
+      "speaker": "C",
+      "start": 488.925,
+      "end": 490.346,
+      "text": "Yeah. Okay."
+    },
+    {
+      "idx": 86,
+      "speaker": "A",
+      "start": 489.709,
+      "end": 505.509,
+      "text": "So. Because of course if you just compute the -- yeah, if you have the report -- because if you compute the um distance between the two histograms, I think this was Bhattacharya? Right. So now we know [laugh]."
+    },
+    {
+      "idx": 87,
+      "speaker": "B",
+      "start": 493.649,
+      "end": 495.395,
+      "text": "I can show you uh --"
+    },
+    {
+      "idx": 88,
+      "speaker": "B",
+      "start": 501.756,
+      "end": 502.172,
+      "text": "Yeah."
+    },
+    {
+      "idx": 89,
+      "speaker": "C",
+      "start": 502.834,
+      "end": 505.12,
+      "text": "Hmm. Okay. [laugh]"
+    },
+    {
+      "idx": 90,
+      "speaker": "A",
+      "start": 505.509,
+      "end": 543.527,
+      "text": "And uh so if you take uh these two with the with the Bhattacharya uh then of course you should just do a threshold. When there is motion you will see a lot of things changing, so by using an L_R_T_T_ threshold, if you see that there is a continuous change of the d distance, you don't do a threshold. It's only if you have an identified peak, which is m fifty percent or maybe uh two times higher than the the next second value in the window, then you say it's it's a shot. Right, I don't know."
+    },
+    {
+      "idx": 91,
+      "speaker": "C",
+      "start": 519.238,
+      "end": 519.945,
+      "text": "Okay."
+    },
+    {
+      "idx": 92,
+      "speaker": "C",
+      "start": 528.923,
+      "end": 529.53,
+      "text": "Okay."
+    },
+    {
+      "idx": 93,
+      "speaker": "B",
+      "start": 541.392,
+      "end": 605.222,
+      "text": "Yeah. I don't know if we c [other] we want to make uh -- use the whiteboard or -- here it's uh -- it was uh to dis it's infra only the -- this part about uh shot boundary detection is in French unfortunately, but uh the -- this image shows the results using motion when you s use the motion features, and here on the right is when using the histogram uh distance. And the the motion features can better show what's going on when there is such a difficult uh transition, while with the histogram um, yeah, it just shows that there is a shot uh [other] change at the end, but even for dissolves, I don't have examples here, but um there is not a strict uh transition. Uh it's continuous for dissolves. Dissolves is uh -- yeah."
+    },
+    {
+      "idx": 94,
+      "speaker": "A",
+      "start": 553.634,
+      "end": 554.457,
+      "text": "Yeah, yeah."
+    },
+    {
+      "idx": 95,
+      "speaker": "A",
+      "start": 557.575,
+      "end": 558.387,
+      "text": "Yeah."
+    },
+    {
+      "idx": 96,
+      "speaker": "C",
+      "start": 573.572,
+      "end": 574.17,
+      "text": "Okay."
+    },
+    {
+      "idx": 97,
+      "speaker": "C",
+      "start": 598.63,
+      "end": 599.195,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 98,
+      "speaker": "A",
+      "start": 599.636,
+      "end": 621.497,
+      "text": "It's continuous for dissolve, yeah. But an anyway it's difficult, I mean in th in in in general, because sometimes you have some dissolve you could imagine they are part of of of a scene and uh -- so, but of course when you have cuts you can see they are easy to detect, right, I mean like something -- yeah."
+    },
+    {
+      "idx": 99,
+      "speaker": "C",
+      "start": 601.756,
+      "end": 605.51,
+      "text": "Okay. Yeah, okay. Yeah, I understand. Okay."
+    }
+  ]
+}
