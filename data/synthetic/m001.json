@@ -1,0 +1,45 @@
+
+{
+  "meeting_id": "m001",
+  "title": "Pricing Page Discussion",
+  "date": "2025-03-12",
+  "timezone": "Asia/Kolkata",
+  "roster": ["Priya", "Sam", "Dan"],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "Priya",
+      "start": 0.0,
+      "end": 4.5,
+      "text": "I'll send the pricing page draft by Friday."
+    },
+    {
+      "idx": 1,
+      "speaker": "Sam",
+      "start": 5.0,
+      "end": 8.0,
+      "text": "We should also review the refund policy."
+    },
+    {
+      "idx": 2,
+      "speaker": "Dan",
+      "start": 9.0,
+      "end": 12.0,
+      "text": "Let's use Postgres for the database."
+    },
+    {
+      "idx": 3,
+      "speaker": "Priya",
+      "start": 13.0,
+      "end": 16.0,
+      "text": "Agreed, Postgres works for me."
+    },
+    {
+      "idx": 4,
+      "speaker": "Sam",
+      "start": 17.0,
+      "end": 20.0,
+      "text": "Who owns the refund policy?"
+    }
+  ]
+}

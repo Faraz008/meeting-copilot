@@ -1,0 +1,22 @@
+{
+  "meeting_id": "m001",
+  "source": "synthetic",
+  "meeting_date": "2025-03-12",
+  "roster": ["Priya", "Sam", "Dan"],
+  "action_items": [
+    {
+      "gold_id": "a1",
+      "title": "Send pricing page draft",
+      "owner": "Priya",
+      "deadline": "2025-03-14",
+      "status": "committed",
+      "turns": [0],
+      "tags": ["relative_date"]
+    }
+  ],
+  "decisions": [],
+  "open_questions": [
+    {"gold_id": "q1", "question": "Who owns refund policy?", "answered": false, "turns": [4]}
+  ],
+  "follow_ups": []
+}
