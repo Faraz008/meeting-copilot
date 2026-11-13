@@ -1,0 +1,60 @@
+{
+  "meeting_id": "s15",
+  "meeting_date": "2026-03-31",
+  "roster": [
+    "Elliot"
+  ],
+  "action_items": [
+    {
+      "gold_id": "a1",
+      "title": "Compare the regional breakdowns in a later analysis",
+      "owner": null,
+      "deadline": null,
+      "status": "proposed",
+      "turns": [
+        9,
+        10
+      ],
+      "tags": [
+        "proposed",
+        "no_owner",
+        "no_deadline"
+      ]
+    },
+    {
+      "gold_id": "a2",
+      "title": "Consider standardizing the inconsistent spreadsheet labels",
+      "owner": null,
+      "deadline": null,
+      "status": "proposed",
+      "turns": [
+        13,
+        14
+      ],
+      "tags": [
+        "proposed",
+        "no_owner",
+        "no_deadline"
+      ]
+    },
+    {
+      "gold_id": "a3",
+      "title": "Check for the next quarterly report when it is published",
+      "owner": null,
+      "deadline": null,
+      "status": "proposed",
+      "turns": [
+        18,
+        19
+      ],
+      "tags": [
+        "proposed",
+        "no_owner",
+        "no_deadline"
+      ]
+    }
+  ],
+  "decisions": [],
+  "open_questions": [],
+  "follow_ups": []
+}

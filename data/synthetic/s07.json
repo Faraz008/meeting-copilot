@@ -1,0 +1,293 @@
+{
+  "meeting_id": "s07",
+  "title": "Year-End Campaign Schedule",
+  "date": "2025-12-19",
+  "timezone": "Asia/Kolkata",
+  "roster": [
+    "Meera",
+    "Arjun",
+    "Tara"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "Meera",
+      "start": 0.0,
+      "end": 3.8,
+      "text": "Let's coordinate the campaign work before the holiday period."
+    },
+    {
+      "idx": 1,
+      "speaker": "Arjun",
+      "start": 5.2,
+      "end": 9.0,
+      "text": "The banner and email drafts are in the shared folder."
+    },
+    {
+      "idx": 2,
+      "speaker": "Tara",
+      "start": 10.4,
+      "end": 14.2,
+      "text": "The landing page is ready for a final review."
+    },
+    {
+      "idx": 3,
+      "speaker": "Meera",
+      "start": 15.6,
+      "end": 19.4,
+      "text": "We need dates that remain clear across the year boundary."
+    },
+    {
+      "idx": 4,
+      "speaker": "Arjun",
+      "start": 20.8,
+      "end": 24.6,
+      "text": "I'll say the calendar dates out loud as we go."
+    },
+    {
+      "idx": 5,
+      "speaker": "Tara",
+      "start": 26.0,
+      "end": 29.8,
+      "text": "That should avoid confusion around January deadlines."
+    },
+    {
+      "idx": 6,
+      "speaker": "Meera",
+      "start": 31.2,
+      "end": 35.0,
+      "text": "We need the year-end campaign assets lined up before the holiday break."
+    },
+    {
+      "idx": 7,
+      "speaker": "Arjun",
+      "start": 36.4,
+      "end": 40.2,
+      "text": "I'll send the final banner copy tomorrow, Saturday the twentieth."
+    },
+    {
+      "idx": 8,
+      "speaker": "Tara",
+      "start": 41.6,
+      "end": 45.4,
+      "text": "I'll review the landing page next Monday, December twenty-second."
+    },
+    {
+      "idx": 9,
+      "speaker": "Meera",
+      "start": 46.8,
+      "end": 50.6,
+      "text": "For the email sequence, can we have the draft in two weeks?"
+    },
+    {
+      "idx": 10,
+      "speaker": "Arjun",
+      "start": 52.0,
+      "end": 55.8,
+      "text": "I can prepare the email sequence draft by January second, two weeks from today."
+    },
+    {
+      "idx": 11,
+      "speaker": "Tara",
+      "start": 57.2,
+      "end": 61.0,
+      "text": "The final invoice should be ready by the end of this month."
+    },
+    {
+      "idx": 12,
+      "speaker": "Meera",
+      "start": 62.4,
+      "end": 66.2,
+      "text": "I'll send the invoice summary by December thirty-first."
+    },
+    {
+      "idx": 13,
+      "speaker": "Arjun",
+      "start": 67.6,
+      "end": 71.4,
+      "text": "Those dates cross into January, so let's write the year explicitly."
+    },
+    {
+      "idx": 14,
+      "speaker": "Tara",
+      "start": 72.8,
+      "end": 76.6,
+      "text": "The banner copy is December twentieth, the page review is December twenty-second."
+    },
+    {
+      "idx": 15,
+      "speaker": "Meera",
+      "start": 78.0,
+      "end": 81.8,
+      "text": "The email draft is January second, and invoice summary is December thirty-first."
+    },
+    {
+      "idx": 16,
+      "speaker": "Arjun",
+      "start": 83.2,
+      "end": 87.0,
+      "text": "I'll keep the campaign copy aligned with the approved offer."
+    },
+    {
+      "idx": 17,
+      "speaker": "Tara",
+      "start": 88.4,
+      "end": 92.2,
+      "text": "I'll check mobile rendering during the page review."
+    },
+    {
+      "idx": 18,
+      "speaker": "Meera",
+      "start": 93.6,
+      "end": 97.4,
+      "text": "We should also confirm the promotion code before the first email."
+    },
+    {
+      "idx": 19,
+      "speaker": "Arjun",
+      "start": 98.8,
+      "end": 102.6,
+      "text": "No one has taken that confirmation task yet."
+    },
+    {
+      "idx": 20,
+      "speaker": "Tara",
+      "start": 104.0,
+      "end": 107.8,
+      "text": "The promotion code expires on January fifth."
+    },
+    {
+      "idx": 21,
+      "speaker": "Meera",
+      "start": 109.2,
+      "end": 113.0,
+      "text": "Let's ask finance to confirm the code in the next check-in."
+    },
+    {
+      "idx": 22,
+      "speaker": "Arjun",
+      "start": 114.4,
+      "end": 118.2,
+      "text": "I can add a reminder to the campaign tracker?"
+    },
+    {
+      "idx": 23,
+      "speaker": "Meera",
+      "start": 119.6,
+      "end": 123.4,
+      "text": "Let's not add another commitment; the four dates above are enough."
+    },
+    {
+      "idx": 24,
+      "speaker": "Tara",
+      "start": 124.8,
+      "end": 128.6,
+      "text": "The January second draft is after New Year's Day."
+    },
+    {
+      "idx": 25,
+      "speaker": "Arjun",
+      "start": 130.0,
+      "end": 133.8,
+      "text": "Correct, and it is fourteen days after this meeting."
+    },
+    {
+      "idx": 26,
+      "speaker": "Meera",
+      "start": 135.2,
+      "end": 139.0,
+      "text": "The invoice deadline remains December thirty-first."
+    },
+    {
+      "idx": 27,
+      "speaker": "Tara",
+      "start": 140.4,
+      "end": 144.2,
+      "text": "I'll use the year-end date in the schedule."
+    },
+    {
+      "idx": 28,
+      "speaker": "Tara",
+      "start": 145.6,
+      "end": 149.4,
+      "text": "The landing page uses the approved promotion code."
+    },
+    {
+      "idx": 29,
+      "speaker": "Meera",
+      "start": 150.8,
+      "end": 154.6,
+      "text": "The invoice summary belongs in the finance folder."
+    },
+    {
+      "idx": 30,
+      "speaker": "Arjun",
+      "start": 156.0,
+      "end": 159.8,
+      "text": "The email sequence should use the same offer language."
+    },
+    {
+      "idx": 31,
+      "speaker": "Tara",
+      "start": 161.2,
+      "end": 165.0,
+      "text": "The review on Monday is before the campaign launch."
+    },
+    {
+      "idx": 32,
+      "speaker": "Meera",
+      "start": 166.4,
+      "end": 170.2,
+      "text": "The dates are clear once we include the year."
+    },
+    {
+      "idx": 33,
+      "speaker": "Arjun",
+      "start": 171.6,
+      "end": 175.4,
+      "text": "I'll keep the schedule in ISO date format."
+    },
+    {
+      "idx": 34,
+      "speaker": "Meera",
+      "start": 176.8,
+      "end": 180.6,
+      "text": "The schedule now includes the year for each date."
+    },
+    {
+      "idx": 35,
+      "speaker": "Arjun",
+      "start": 182.0,
+      "end": 185.8,
+      "text": "I'll send the banner copy on December twentieth."
+    },
+    {
+      "idx": 36,
+      "speaker": "Tara",
+      "start": 187.2,
+      "end": 191.0,
+      "text": "I'll review the landing page on December twenty-second."
+    },
+    {
+      "idx": 37,
+      "speaker": "Meera",
+      "start": 192.4,
+      "end": 196.2,
+      "text": "The invoice summary is due December thirty-first."
+    },
+    {
+      "idx": 38,
+      "speaker": "Arjun",
+      "start": 197.6,
+      "end": 201.4,
+      "text": "The email draft is due January second."
+    },
+    {
+      "idx": 39,
+      "speaker": "Tara",
+      "start": 202.8,
+      "end": 206.6,
+      "text": "Thanks, that closes the schedule."
+    }
+  ]
+}

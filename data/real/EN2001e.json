@@ -1,0 +1,715 @@
+{
+  "meeting_id": "EN2001e",
+  "title": "AMI non-scenario meeting EN2001e",
+  "date": "2005-03-08",
+  "timezone": null,
+  "roster": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "D",
+      "start": 0.0,
+      "end": 1.184,
+      "text": "Sixteen times zero."
+    },
+    {
+      "idx": 1,
+      "speaker": "B",
+      "start": 1.104,
+      "end": 57.2,
+      "text": "I'm not a hundred percent sure, but I'm not having crashes at the moment. So -- what I'm having is -- so we we had a we had a long problem about not finding out why the time synching up between the relative time in in a in a sort of in a in a summarised section and the absolute time didn't correspond and stuff, and we found it was some stupid -- well, [other] at the moment our best guess is that it was some stupid Java thing about if you if you actually -- if you have two objects and you say object -- if you say A_ equals B_, they actually reference to the same thing. So any changes you make to one are made to the other, and if you do that around five corners, you lose track of it and you suddenly wonder why that value is zero. And it turns out it is zero because it's the same thing that you -- anyway uh -- [laugh] So we figured out -- it's interesting, why don't I have a screen here now actually that's new, but that's okay. It's doing different things all the time. Like this is the first time that actually -- the -- but uh uh that should be okay that should be okay. I'll I'll be able to --"
+    },
+    {
+      "idx": 2,
+      "speaker": "A",
+      "start": 33.792,
+      "end": 35.035,
+      "text": "[laugh] Yeah."
+    },
+    {
+      "idx": 3,
+      "speaker": "B",
+      "start": 63.904,
+      "end": 82.192,
+      "text": "Yeah, but last time I pressed that key combination, everything went wrong, and I think I'll be able to do it just fine on the screen. So that'll probably keep me from pointing on my screen, which I usually -- it might just be at this point. Like there's sometimes a point to loading, not usually that long. Well, let's see. Anyway, so n uh let's just see what happens."
+    },
+    {
+      "idx": 4,
+      "speaker": "D",
+      "start": 82.112,
+      "end": 83.488,
+      "text": "[cough]"
+    },
+    {
+      "idx": 5,
+      "speaker": "B",
+      "start": 83.805,
+      "end": 86.544,
+      "text": "In the end we did get it working before."
+    },
+    {
+      "idx": 6,
+      "speaker": "B",
+      "start": 88.336,
+      "end": 93.399,
+      "text": "Oh see I get -- Yeah. Yeah."
+    },
+    {
+      "idx": 7,
+      "speaker": "B",
+      "start": 97.921,
+      "end": 100.55,
+      "text": "Ah, so now I'm having a complete mess of like split --"
+    },
+    {
+      "idx": 8,
+      "speaker": "B",
+      "start": 103.259,
+      "end": 118.847,
+      "text": "split screens and stuff. I think last time -- yes, but that's not what we want, is it? So but I think if I -- this is a log out command and usually it resets this -- [sound indicating exasperation] Amazing strange colour combinations I see in front of me at the moment."
+    },
+    {
+      "idx": 9,
+      "speaker": "E",
+      "start": 105.744,
+      "end": 106.176,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 10,
+      "speaker": "E",
+      "start": 120.086,
+      "end": 120.496,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 11,
+      "speaker": "B",
+      "start": 123.056,
+      "end": 128.22,
+      "text": "Yeah, we somehow always get it working, but in different ways every time. Um --"
+    },
+    {
+      "idx": 12,
+      "speaker": "B",
+      "start": 132.195,
+      "end": 161.496,
+      "text": "So that kept us like basically from doing anything else product qu for quite some time in the last days because we were um hunting down that stupid error. I got it fixed in the last whatever one hour or something, but so at the moment the program is sort of in between working and not working because we've done lots of changes to what the error was. Dave, I think actually that the summary at the current moment isn't working a hundred percent correct. But that could be because of the input data. It seems to just take the first utterances more or less."
+    },
+    {
+      "idx": 13,
+      "speaker": "D",
+      "start": 148.454,
+      "end": 150.105,
+      "text": "[cough]"
+    },
+    {
+      "idx": 14,
+      "speaker": "D",
+      "start": 161.574,
+      "end": 163.264,
+      "text": "Does it? I have to check that out."
+    },
+    {
+      "idx": 15,
+      "speaker": "A",
+      "start": 162.362,
+      "end": 162.896,
+      "text": "Yeah."
+    },
+    {
+      "idx": 16,
+      "speaker": "B",
+      "start": 163.76,
+      "end": 175.68,
+      "text": "Like if you if you -- first if you read through the summaries, they read suspiciously fluent, like as in people's questions and answers. And then if you plot them on the screen where where they are at the moment, they seem to o"
+    },
+    {
+      "idx": 17,
+      "speaker": "D",
+      "start": 169.52,
+      "end": 169.948,
+      "text": "Hmm."
+    },
+    {
+      "idx": 18,
+      "speaker": "D",
+      "start": 174.861,
+      "end": 186.565,
+      "text": "It depends which data you use as well because um if you use the data where they're all really high, it does prefer ones from the beginning because it just picks the first ones it finds."
+    },
+    {
+      "idx": 19,
+      "speaker": "B",
+      "start": 184.576,
+      "end": 189.581,
+      "text": "Yes. So maybe that's where the problem is coming from."
+    },
+    {
+      "idx": 20,
+      "speaker": "D",
+      "start": 189.359,
+      "end": 190.723,
+      "text": "But I'll check it out anyway."
+    },
+    {
+      "idx": 21,
+      "speaker": "B",
+      "start": 191.093,
+      "end": 193.28,
+      "text": "Yeah. Um --"
+    },
+    {
+      "idx": 22,
+      "speaker": "B",
+      "start": 195.427,
+      "end": 201.627,
+      "text": "So this is when you start shifting around your laptop to think that it gets somehow less sloped on the screen. Um --"
+    },
+    {
+      "idx": 23,
+      "speaker": "E",
+      "start": 195.642,
+      "end": 196.731,
+      "text": "[cough]"
+    },
+    {
+      "idx": 24,
+      "speaker": "E",
+      "start": 198.067,
+      "end": 198.515,
+      "text": "[other]"
+    },
+    {
+      "idx": 25,
+      "speaker": "B",
+      "start": 206.128,
+      "end": 233.663,
+      "text": "So I'm not really sure what this meeting is about to be honest. Um I'm I'm gonna show this, just what we have at the moment but it not gonna look very different from what we had last time. Don't ask him what happened to the promise that you'll get your script where you can use your own stuff because actually that was sort of ready but then we sort -- started trying to get something more working and then we got into big problems. So at the moment I mean again we should be at a state where people can load their own sc okay."
+    },
+    {
+      "idx": 26,
+      "speaker": "D",
+      "start": 207.834,
+      "end": 209.78,
+      "text": "[cough]"
+    },
+    {
+      "idx": 27,
+      "speaker": "D",
+      "start": 230.704,
+      "end": 237.232,
+      "text": "Yeah. I've got time now. Like um for the next couple of days I'll do some on it, 'cause I was just too busy last week."
+    },
+    {
+      "idx": 28,
+      "speaker": "B",
+      "start": 234.96,
+      "end": 235.523,
+      "text": "Yeah."
+    },
+    {
+      "idx": 29,
+      "speaker": "B",
+      "start": 237.457,
+      "end": 255.68,
+      "text": "Thing is a at the moment it's just really bad for me. But from Monday on I can just do twenty four seven for this one until it until it's due. But until Monday it's gonna be really bad. Like I can probably help people if they have problems with getting getting what we have running now. But -- [laugh]"
+    },
+    {
+      "idx": 30,
+      "speaker": "A",
+      "start": 244.387,
+      "end": 245.505,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 31,
+      "speaker": "B",
+      "start": 257.022,
+      "end": 257.618,
+      "text": "Okay."
+    },
+    {
+      "idx": 32,
+      "speaker": "B",
+      "start": 259.407,
+      "end": 263.879,
+      "text": "So I'll just start it up what we have now and then we can talk about what different people have and stuff."
+    },
+    {
+      "idx": 33,
+      "speaker": "D",
+      "start": 269.92,
+      "end": 271.92,
+      "text": "What's that that's creeping over the other screen?"
+    },
+    {
+      "idx": 34,
+      "speaker": "E",
+      "start": 271.44,
+      "end": 275.424,
+      "text": "I know. [laugh] Doesn't look great, does it? [laugh]"
+    },
+    {
+      "idx": 35,
+      "speaker": "B",
+      "start": 272.096,
+      "end": 272.656,
+      "text": "Huh?"
+    },
+    {
+      "idx": 36,
+      "speaker": "D",
+      "start": 273.901,
+      "end": 274.45,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 37,
+      "speaker": "C",
+      "start": 274.208,
+      "end": 274.976,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 38,
+      "speaker": "B",
+      "start": 275.552,
+      "end": 276.432,
+      "text": "Eek."
+    },
+    {
+      "idx": 39,
+      "speaker": "B",
+      "start": 277.808,
+      "end": 278.857,
+      "text": "Yeah, it doesn't."
+    },
+    {
+      "idx": 40,
+      "speaker": "B",
+      "start": 280.679,
+      "end": 286.119,
+      "text": "But sometimes you have to take whatever you get and then just see how far that gets you."
+    },
+    {
+      "idx": 41,
+      "speaker": "D",
+      "start": 288.0,
+      "end": 290.441,
+      "text": "That's really weird 'cause it's just started creeping over."
+    },
+    {
+      "idx": 42,
+      "speaker": "B",
+      "start": 290.217,
+      "end": 292.397,
+      "text": "[sigh]"
+    },
+    {
+      "idx": 43,
+      "speaker": "A",
+      "start": 292.933,
+      "end": 332.206,
+      "text": "Yeah, uh so let's perhaps uh in the meantime talk about the um um numbers we assign to the dialogue acts because um yeah, I didn't know that you left out those who don't have words. So I just extracted the actual dialogue numbers, and the problem is um it's perhaps more um dangerous to get mistaken with all those numbers and not knowing why things happen if we just devote numbers and n make new uh n n"
+    },
+    {
+      "idx": 44,
+      "speaker": "E",
+      "start": 304.88,
+      "end": 305.387,
+      "text": "Uh-uh."
+    },
+    {
+      "idx": 45,
+      "speaker": "D",
+      "start": 330.512,
+      "end": 335.63,
+      "text": "Um well as long as the two correspond then it's fine."
+    },
+    {
+      "idx": 46,
+      "speaker": "A",
+      "start": 335.968,
+      "end": 372.17,
+      "text": "Yeah sure, but I mean for all those measures that are based on words um I can automatically just throw those where it's nothing. But um those dialogues acts um like thirty three in in the first meeting, um they have a duration, even though they don't have a word. Um so for my earl other measures I I get them and I don't -- I mean I would have to look for every single -- write a programme that looks for everything a number and does the mapping for that."
+    },
+    {
+      "idx": 47,
+      "speaker": "D",
+      "start": 337.389,
+      "end": 339.037,
+      "text": "[cough]"
+    },
+    {
+      "idx": 48,
+      "speaker": "E",
+      "start": 351.976,
+      "end": 352.416,
+      "text": "Mm."
+    },
+    {
+      "idx": 49,
+      "speaker": "D",
+      "start": 358.941,
+      "end": 360.247,
+      "text": "Oh right, I see."
+    },
+    {
+      "idx": 50,
+      "speaker": "D",
+      "start": 368.546,
+      "end": 378.304,
+      "text": "Okay. So would it be would it be easier if there's a reference file with the actual real I_D_ and the corresponding number? So"
+    },
+    {
+      "idx": 51,
+      "speaker": "A",
+      "start": 376.845,
+      "end": 377.452,
+      "text": "Yes."
+    },
+    {
+      "idx": 52,
+      "speaker": "E",
+      "start": 377.728,
+      "end": 380.816,
+      "text": "Yeah there is there's index files already. Yeah."
+    },
+    {
+      "idx": 53,
+      "speaker": "D",
+      "start": 379.768,
+      "end": 380.749,
+      "text": "is there some already?"
+    },
+    {
+      "idx": 54,
+      "speaker": "A",
+      "start": 381.503,
+      "end": 382.468,
+      "text": "Why is that?"
+    },
+    {
+      "idx": 55,
+      "speaker": "E",
+      "start": 382.656,
+      "end": 385.849,
+      "text": "Yeah, in the raw text index directory."
+    },
+    {
+      "idx": 56,
+      "speaker": "A",
+      "start": 386.161,
+      "end": 386.66,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 57,
+      "speaker": "E",
+      "start": 387.104,
+      "end": 389.898,
+      "text": "Yeah, and it uh allows you to map between the different I_D_s."
+    },
+    {
+      "idx": 58,
+      "speaker": "D",
+      "start": 390.849,
+      "end": 392.769,
+      "text": "So would that solve the problem basically?"
+    },
+    {
+      "idx": 59,
+      "speaker": "A",
+      "start": 393.136,
+      "end": 398.974,
+      "text": "Yeah, I just wanted to uh um -- why do you think it's necessary at all to do that?"
+    },
+    {
+      "idx": 60,
+      "speaker": "D",
+      "start": 399.664,
+      "end": 403.503,
+      "text": "Because the whole programme works on them being numbered at the moment."
+    },
+    {
+      "idx": 61,
+      "speaker": "A",
+      "start": 404.368,
+      "end": 406.528,
+      "text": "Yeah, and it's a problem if there's no --"
+    },
+    {
+      "idx": 62,
+      "speaker": "D",
+      "start": 407.1,
+      "end": 414.603,
+      "text": "Um it'd be a lot of word for really no extra p feature gain at all. [cough]"
+    },
+    {
+      "idx": 63,
+      "speaker": "A",
+      "start": 412.128,
+      "end": 424.176,
+      "text": "But actually I think there is something in the audio, shouldn't there? If there's um -- even though there's not a word, I think in the audio there will be something at that point because it has a duration."
+    },
+    {
+      "idx": 64,
+      "speaker": "D",
+      "start": 426.385,
+      "end": 428.464,
+      "text": "Or do you think it could appear in the summary?"
+    },
+    {
+      "idx": 65,
+      "speaker": "A",
+      "start": 429.952,
+      "end": 430.258,
+      "text": "Hmm?"
+    },
+    {
+      "idx": 66,
+      "speaker": "D",
+      "start": 431.881,
+      "end": 436.01,
+      "text": "Well if it's something in the audio that's just like a noise, then we don't want it."
+    },
+    {
+      "idx": 67,
+      "speaker": "E",
+      "start": 436.384,
+      "end": 442.713,
+      "text": "Yeah, I guess. 'Cause we can't show it in the display. Yeah, they've been cut out the ones that don't have any words."
+    },
+    {
+      "idx": 68,
+      "speaker": "A",
+      "start": 437.785,
+      "end": 440.064,
+      "text": "So d you cut it out."
+    },
+    {
+      "idx": 69,
+      "speaker": "D",
+      "start": 438.999,
+      "end": 439.581,
+      "text": "Yeah."
+    },
+    {
+      "idx": 70,
+      "speaker": "D",
+      "start": 440.55,
+      "end": 440.974,
+      "text": "Yeah."
+    },
+    {
+      "idx": 71,
+      "speaker": "E",
+      "start": 444.08,
+      "end": 444.735,
+      "text": "Suppose."
+    },
+    {
+      "idx": 72,
+      "speaker": "B",
+      "start": 445.277,
+      "end": 455.73,
+      "text": "But would that not happen at some -- sorry, I'm jum jumping in. Would that not happen at summarisation anyway even if they're in the w like with the ones that have no words and then not have really low information density or something?"
+    },
+    {
+      "idx": 73,
+      "speaker": "E",
+      "start": 447.981,
+      "end": 448.503,
+      "text": "Huh."
+    },
+    {
+      "idx": 74,
+      "speaker": "D",
+      "start": 458.006,
+      "end": 464.093,
+      "text": "I don't I don't know. You -- 'cause the thing is it depends if we want to have it display the whole thing at once."
+    },
+    {
+      "idx": 75,
+      "speaker": "B",
+      "start": 466.33,
+      "end": 466.904,
+      "text": "Hmm."
+    },
+    {
+      "idx": 76,
+      "speaker": "B",
+      "start": 468.896,
+      "end": 473.221,
+      "text": "'Cause you'd reckon that you could leave them in and they would never show up in a summary anyway."
+    },
+    {
+      "idx": 77,
+      "speaker": "D",
+      "start": 472.747,
+      "end": 477.683,
+      "text": "If you left them in hopefully it wouldn't affect the way the programme works."
+    },
+    {
+      "idx": 78,
+      "speaker": "A",
+      "start": 479.536,
+      "end": 483.914,
+      "text": "Yeah, I mean but why do you have a special for those? It's just --"
+    },
+    {
+      "idx": 79,
+      "speaker": "E",
+      "start": 479.742,
+      "end": 480.748,
+      "text": "No, I guess not."
+    },
+    {
+      "idx": 80,
+      "speaker": "D",
+      "start": 482.816,
+      "end": 488.099,
+      "text": "Well I don't in the programme, it's just they're not in the raw text files."
+    },
+    {
+      "idx": 81,
+      "speaker": "E",
+      "start": 486.517,
+      "end": 493.226,
+      "text": "Hmm. That's just 'cause they would have a blank line in it. Seems a bit stupid. But I can fit 'em back in if --"
+    },
+    {
+      "idx": 82,
+      "speaker": "A",
+      "start": 489.76,
+      "end": 490.111,
+      "text": "Yeah."
+    },
+    {
+      "idx": 83,
+      "speaker": "D",
+      "start": 489.954,
+      "end": 491.184,
+      "text": "[cough]"
+    },
+    {
+      "idx": 84,
+      "speaker": "A",
+      "start": 493.703,
+      "end": 497.885,
+      "text": "Yeah, uh I mean it's just a question I wanted to raise. [laugh]"
+    },
+    {
+      "idx": 85,
+      "speaker": "D",
+      "start": 495.287,
+      "end": 496.135,
+      "text": "Well either way."
+    },
+    {
+      "idx": 86,
+      "speaker": "E",
+      "start": 497.621,
+      "end": 498.103,
+      "text": "Yeah."
+    },
+    {
+      "idx": 87,
+      "speaker": "D",
+      "start": 497.682,
+      "end": 507.161,
+      "text": "Either way is fine by me as long as the two wo things um tie up. As far as I'm concerned it doesn't really matter whether those are in or out."
+    },
+    {
+      "idx": 88,
+      "speaker": "B",
+      "start": 507.702,
+      "end": 527.972,
+      "text": "We wouldn't you think that if we just write the programme the way that even in the p way that it displays everything, it still leaves those out. Like if we those a special information density I_D_, or if you just put a spe yeah, something like that. And then just make sure that summary even in the in the most summarised mode just never puts them in."
+    },
+    {
+      "idx": 89,
+      "speaker": "D",
+      "start": 519.301,
+      "end": 520.906,
+      "text": "No, minus one or something."
+    },
+    {
+      "idx": 90,
+      "speaker": "D",
+      "start": 524.633,
+      "end": 526.148,
+      "text": "Yeah, certainly possible."
+    },
+    {
+      "idx": 91,
+      "speaker": "C",
+      "start": 528.087,
+      "end": 534.65,
+      "text": "It might be a problem for me at the stage right now because I based everything on not having those um --"
+    },
+    {
+      "idx": 92,
+      "speaker": "B",
+      "start": 534.056,
+      "end": 534.929,
+      "text": "Hmm."
+    },
+    {
+      "idx": 93,
+      "speaker": "D",
+      "start": 534.506,
+      "end": 537.733,
+      "text": "Actually yeah, 'cause the T_F_I_D_F_ wouldn't make any sense with --"
+    },
+    {
+      "idx": 94,
+      "speaker": "E",
+      "start": 534.845,
+      "end": 535.881,
+      "text": "Yeah, it's a cer uh --"
+    },
+    {
+      "idx": 95,
+      "speaker": "C",
+      "start": 537.257,
+      "end": 537.905,
+      "text": "Yeah."
+    },
+    {
+      "idx": 96,
+      "speaker": "E",
+      "start": 537.28,
+      "end": 540.204,
+      "text": "Yeah, my topic segmenter doesn't like blank lines either."
+    },
+    {
+      "idx": 97,
+      "speaker": "C",
+      "start": 539.696,
+      "end": 541.776,
+      "text": "Uh what I also --"
+    },
+    {
+      "idx": 98,
+      "speaker": "D",
+      "start": 540.096,
+      "end": 542.192,
+      "text": "So maybe we should just omit them then."
+    },
+    {
+      "idx": 99,
+      "speaker": "C",
+      "start": 543.072,
+      "end": 565.987,
+      "text": "Yeah, what I also did was having two people um annotate the first meeting, and so they didn't annotate the n n uh uh the spaces and everything would mess up. I think if I had spaces for the um new values so when I went to do correlation it wouldn't work anymore. So I don't know."
+    }
+  ]
+}

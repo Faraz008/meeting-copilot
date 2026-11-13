@@ -1,0 +1,293 @@
+{
+  "meeting_id": "s10",
+  "title": "Quarterly Access Review Planning",
+  "date": "2025-10-31",
+  "timezone": "Asia/Kolkata",
+  "roster": [
+    "Fatima",
+    "Gabe",
+    "Hiro"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "Fatima",
+      "start": 0.0,
+      "end": 3.8,
+      "text": "Let's scope the quarterly access review."
+    },
+    {
+      "idx": 1,
+      "speaker": "Gabe",
+      "start": 5.2,
+      "end": 9.0,
+      "text": "The current access export is ready."
+    },
+    {
+      "idx": 2,
+      "speaker": "Hiro",
+      "start": 10.4,
+      "end": 14.2,
+      "text": "Security sent the latest service-account policy."
+    },
+    {
+      "idx": 3,
+      "speaker": "Fatima",
+      "start": 15.6,
+      "end": 19.4,
+      "text": "We need to capture candidate work without inventing owners."
+    },
+    {
+      "idx": 4,
+      "speaker": "Gabe",
+      "start": 20.8,
+      "end": 24.6,
+      "text": "The planning meeting can assign people later."
+    },
+    {
+      "idx": 5,
+      "speaker": "Hiro",
+      "start": 26.0,
+      "end": 29.8,
+      "text": "I'll distinguish suggestions from accepted tasks."
+    },
+    {
+      "idx": 6,
+      "speaker": "Fatima",
+      "start": 31.2,
+      "end": 35.0,
+      "text": "The quarterly access review needs a few process updates."
+    },
+    {
+      "idx": 7,
+      "speaker": "Gabe",
+      "start": 36.4,
+      "end": 40.2,
+      "text": "We should compare the current access list with the HR roster."
+    },
+    {
+      "idx": 8,
+      "speaker": "Hiro",
+      "start": 41.6,
+      "end": 45.4,
+      "text": "The team can review the contractor accounts as well."
+    },
+    {
+      "idx": 9,
+      "speaker": "Fatima",
+      "start": 46.8,
+      "end": 50.6,
+      "text": "It would be useful to document the exception process."
+    },
+    {
+      "idx": 10,
+      "speaker": "Gabe",
+      "start": 52.0,
+      "end": 55.8,
+      "text": "Someone should check whether inactive accounts are automatically disabled."
+    },
+    {
+      "idx": 11,
+      "speaker": "Hiro",
+      "start": 57.2,
+      "end": 61.0,
+      "text": "We could ask security to explain the service-account policy."
+    },
+    {
+      "idx": 12,
+      "speaker": "Fatima",
+      "start": 62.4,
+      "end": 66.2,
+      "text": "Those are sensible tasks, but no individual owner has been named."
+    },
+    {
+      "idx": 13,
+      "speaker": "Gabe",
+      "start": 67.6,
+      "end": 71.4,
+      "text": "I haven't volunteered to compare the lists."
+    },
+    {
+      "idx": 14,
+      "speaker": "Hiro",
+      "start": 72.8,
+      "end": 76.6,
+      "text": "And I haven't accepted the contractor review."
+    },
+    {
+      "idx": 15,
+      "speaker": "Fatima",
+      "start": 78.0,
+      "end": 81.8,
+      "text": "Let's record the work as proposed until the team assigns owners."
+    },
+    {
+      "idx": 16,
+      "speaker": "Gabe",
+      "start": 83.2,
+      "end": 87.0,
+      "text": "The review window opens in November."
+    },
+    {
+      "idx": 17,
+      "speaker": "Hiro",
+      "start": 88.4,
+      "end": 92.2,
+      "text": "The access export is available from the admin console."
+    },
+    {
+      "idx": 18,
+      "speaker": "Fatima",
+      "start": 93.6,
+      "end": 97.4,
+      "text": "That availability doesn't mean anyone has committed to pull it."
+    },
+    {
+      "idx": 19,
+      "speaker": "Gabe",
+      "start": 98.8,
+      "end": 102.6,
+      "text": "We should include service accounts in the scope."
+    },
+    {
+      "idx": 20,
+      "speaker": "Hiro",
+      "start": 104.0,
+      "end": 107.8,
+      "text": "Maybe the team can prepare a checklist."
+    },
+    {
+      "idx": 21,
+      "speaker": "Fatima",
+      "start": 109.2,
+      "end": 113.0,
+      "text": "Again, no named person has taken the checklist."
+    },
+    {
+      "idx": 22,
+      "speaker": "Gabe",
+      "start": 114.4,
+      "end": 118.2,
+      "text": "Could we ask for volunteers at the next planning meeting?"
+    },
+    {
+      "idx": 23,
+      "speaker": "Hiro",
+      "start": 119.6,
+      "end": 123.4,
+      "text": "Yes, but that's not a commitment to do the review itself."
+    },
+    {
+      "idx": 24,
+      "speaker": "Fatima",
+      "start": 124.8,
+      "end": 128.6,
+      "text": "The scope should include employees, contractors, and service accounts."
+    },
+    {
+      "idx": 25,
+      "speaker": "Gabe",
+      "start": 130.0,
+      "end": 133.8,
+      "text": "That sounds like a reasonable proposal."
+    },
+    {
+      "idx": 26,
+      "speaker": "Hiro",
+      "start": 135.2,
+      "end": 139.0,
+      "text": "No owner or deadline has been established."
+    },
+    {
+      "idx": 27,
+      "speaker": "Fatima",
+      "start": 140.4,
+      "end": 144.2,
+      "text": "Please keep the owner field empty rather than assigning it to the person who suggested it."
+    },
+    {
+      "idx": 28,
+      "speaker": "Hiro",
+      "start": 145.6,
+      "end": 149.4,
+      "text": "The export includes service accounts and human accounts."
+    },
+    {
+      "idx": 29,
+      "speaker": "Gabe",
+      "start": 150.8,
+      "end": 154.6,
+      "text": "The contractor list comes from a separate HR report."
+    },
+    {
+      "idx": 30,
+      "speaker": "Fatima",
+      "start": 156.0,
+      "end": 159.8,
+      "text": "That makes the comparison work distinct from the policy question."
+    },
+    {
+      "idx": 31,
+      "speaker": "Hiro",
+      "start": 161.2,
+      "end": 165.0,
+      "text": "We can scope it now and assign it later."
+    },
+    {
+      "idx": 32,
+      "speaker": "Gabe",
+      "start": 166.4,
+      "end": 170.2,
+      "text": "No one has accepted the checklist suggestion."
+    },
+    {
+      "idx": 33,
+      "speaker": "Fatima",
+      "start": 171.6,
+      "end": 175.4,
+      "text": "Keep all proposed work unowned."
+    },
+    {
+      "idx": 34,
+      "speaker": "Fatima",
+      "start": 176.8,
+      "end": 180.6,
+      "text": "These are proposed work items only."
+    },
+    {
+      "idx": 35,
+      "speaker": "Gabe",
+      "start": 182.0,
+      "end": 185.8,
+      "text": "No individual owner has accepted them."
+    },
+    {
+      "idx": 36,
+      "speaker": "Hiro",
+      "start": 187.2,
+      "end": 191.0,
+      "text": "The planning meeting can assign owners later."
+    },
+    {
+      "idx": 37,
+      "speaker": "Fatima",
+      "start": 192.4,
+      "end": 196.2,
+      "text": "Let's keep the owner fields null."
+    },
+    {
+      "idx": 38,
+      "speaker": "Gabe",
+      "start": 197.6,
+      "end": 201.4,
+      "text": "The scope is captured."
+    },
+    {
+      "idx": 39,
+      "speaker": "Hiro",
+      "start": 202.8,
+      "end": 206.6,
+      "text": "Thanks, meeting closed."
+    }
+  ]
+}

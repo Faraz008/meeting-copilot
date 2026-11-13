@@ -1,0 +1,293 @@
+{
+  "meeting_id": "s01",
+  "title": "Pricing Page Ownership Handoff",
+  "date": "2025-03-12",
+  "timezone": "Asia/Kolkata",
+  "roster": [
+    "Priya",
+    "Sam",
+    "Dan"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "Priya",
+      "start": 0.0,
+      "end": 3.8,
+      "text": "Thanks for joining; let's use this time to close the pricing page gaps."
+    },
+    {
+      "idx": 1,
+      "speaker": "Sam",
+      "start": 5.2,
+      "end": 9.0,
+      "text": "I have the current draft and the mobile preview open."
+    },
+    {
+      "idx": 2,
+      "speaker": "Dan",
+      "start": 10.4,
+      "end": 14.2,
+      "text": "I reviewed the product names against the feature matrix."
+    },
+    {
+      "idx": 3,
+      "speaker": "Priya",
+      "start": 15.6,
+      "end": 19.4,
+      "text": "The goal is to leave with clear owners, not just a list of comments."
+    },
+    {
+      "idx": 4,
+      "speaker": "Sam",
+      "start": 20.8,
+      "end": 24.6,
+      "text": "I can share the mobile preview after we agree on the copy."
+    },
+    {
+      "idx": 5,
+      "speaker": "Dan",
+      "start": 26.0,
+      "end": 29.8,
+      "text": "I'll keep track of anything that needs legal or design input."
+    },
+    {
+      "idx": 6,
+      "speaker": "Priya",
+      "start": 31.2,
+      "end": 35.0,
+      "text": "Let's start with the pricing page copy; the design is nearly ready."
+    },
+    {
+      "idx": 7,
+      "speaker": "Sam",
+      "start": 36.4,
+      "end": 40.2,
+      "text": "The annual plan wording is still a little dense on mobile."
+    },
+    {
+      "idx": 8,
+      "speaker": "Dan",
+      "start": 41.6,
+      "end": 45.4,
+      "text": "The comparison table also needs the latest feature names."
+    },
+    {
+      "idx": 9,
+      "speaker": "Priya",
+      "start": 46.8,
+      "end": 50.6,
+      "text": "I can prepare the revised pricing copy and send it to the group by Friday."
+    },
+    {
+      "idx": 10,
+      "speaker": "Sam",
+      "start": 52.0,
+      "end": 55.8,
+      "text": "That would cover the main gap."
+    },
+    {
+      "idx": 11,
+      "speaker": "Dan",
+      "start": 57.2,
+      "end": 61.0,
+      "text": "Do we also need a check from legal on the cancellation wording?"
+    },
+    {
+      "idx": 12,
+      "speaker": "Priya",
+      "start": 62.4,
+      "end": 66.2,
+      "text": "Yes, but let's keep the copy task moving first."
+    },
+    {
+      "idx": 13,
+      "speaker": "Priya",
+      "start": 67.6,
+      "end": 71.4,
+      "text": "Actually, I need to hand that copy task over; Sam, can you own the revised pricing copy instead?"
+    },
+    {
+      "idx": 14,
+      "speaker": "Sam",
+      "start": 72.8,
+      "end": 76.6,
+      "text": "Yes, I'll take the revised pricing copy and send it by Friday."
+    },
+    {
+      "idx": 15,
+      "speaker": "Dan",
+      "start": 78.0,
+      "end": 81.8,
+      "text": "Just to confirm, Sam owns the copy now, not Priya?"
+    },
+    {
+      "idx": 16,
+      "speaker": "Priya",
+      "start": 83.2,
+      "end": 87.0,
+      "text": "Correct. I am handing it to Sam; I won't be preparing that draft."
+    },
+    {
+      "idx": 17,
+      "speaker": "Sam",
+      "start": 88.4,
+      "end": 92.2,
+      "text": "I'll use the current page as the base and update the annual plan section."
+    },
+    {
+      "idx": 18,
+      "speaker": "Dan",
+      "start": 93.6,
+      "end": 97.4,
+      "text": "I can check the feature names separately."
+    },
+    {
+      "idx": 19,
+      "speaker": "Priya",
+      "start": 98.8,
+      "end": 102.6,
+      "text": "Thanks. Please don't combine the feature-name check with Sam's copy task."
+    },
+    {
+      "idx": 20,
+      "speaker": "Sam",
+      "start": 104.0,
+      "end": 107.8,
+      "text": "Understood. I'll send the revised copy to both of you."
+    },
+    {
+      "idx": 21,
+      "speaker": "Dan",
+      "start": 109.2,
+      "end": 113.0,
+      "text": "For legal, we still need to ask whether cancellation wording needs a footnote."
+    },
+    {
+      "idx": 22,
+      "speaker": "Priya",
+      "start": 114.4,
+      "end": 118.2,
+      "text": "Let's leave that as a proposed check until legal responds."
+    },
+    {
+      "idx": 23,
+      "speaker": "Sam",
+      "start": 119.6,
+      "end": 123.4,
+      "text": "The mobile layout should keep the prices visible without horizontal scrolling."
+    },
+    {
+      "idx": 24,
+      "speaker": "Dan",
+      "start": 124.8,
+      "end": 128.6,
+      "text": "Agreed; the design team already has that layout note."
+    },
+    {
+      "idx": 25,
+      "speaker": "Priya",
+      "start": 130.0,
+      "end": 133.8,
+      "text": "The handoff is the important change: Sam is the single owner of the copy."
+    },
+    {
+      "idx": 26,
+      "speaker": "Sam",
+      "start": 135.2,
+      "end": 139.0,
+      "text": "Yes, that's clear. I'll send the copy by Friday."
+    },
+    {
+      "idx": 27,
+      "speaker": "Dan",
+      "start": 140.4,
+      "end": 144.2,
+      "text": "I'll review the feature names once the copy is in."
+    },
+    {
+      "idx": 28,
+      "speaker": "Dan",
+      "start": 145.6,
+      "end": 149.4,
+      "text": "The feature matrix has a separate owner in product operations."
+    },
+    {
+      "idx": 29,
+      "speaker": "Sam",
+      "start": 150.8,
+      "end": 154.6,
+      "text": "I'll use its approved names rather than inventing labels."
+    },
+    {
+      "idx": 30,
+      "speaker": "Priya",
+      "start": 156.0,
+      "end": 159.8,
+      "text": "The legal cancellation wording still needs a separate check."
+    },
+    {
+      "idx": 31,
+      "speaker": "Dan",
+      "start": 161.2,
+      "end": 165.0,
+      "text": "That check can be raised with legal after the copy is handed over."
+    },
+    {
+      "idx": 32,
+      "speaker": "Sam",
+      "start": 166.4,
+      "end": 170.2,
+      "text": "The mobile preview will help us spot line breaks."
+    },
+    {
+      "idx": 33,
+      "speaker": "Priya",
+      "start": 171.6,
+      "end": 175.4,
+      "text": "Let's keep the handoff and the legal question distinct."
+    },
+    {
+      "idx": 34,
+      "speaker": "Dan",
+      "start": 176.8,
+      "end": 180.6,
+      "text": "I'll review the feature names after Sam shares the copy."
+    },
+    {
+      "idx": 35,
+      "speaker": "Sam",
+      "start": 182.0,
+      "end": 185.8,
+      "text": "I'll send the revised copy by Friday."
+    },
+    {
+      "idx": 36,
+      "speaker": "Priya",
+      "start": 187.2,
+      "end": 191.0,
+      "text": "The owner handoff is clear."
+    },
+    {
+      "idx": 37,
+      "speaker": "Dan",
+      "start": 192.4,
+      "end": 196.2,
+      "text": "The legal wording question remains separate."
+    },
+    {
+      "idx": 38,
+      "speaker": "Sam",
+      "start": 197.6,
+      "end": 201.4,
+      "text": "I'll use the current draft as the starting point."
+    },
+    {
+      "idx": 39,
+      "speaker": "Priya",
+      "start": 202.8,
+      "end": 206.6,
+      "text": "Thanks, let's close there."
+    }
+  ]
+}

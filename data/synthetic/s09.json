@@ -1,0 +1,293 @@
+{
+  "meeting_id": "s09",
+  "title": "Conditional Production Deployment",
+  "date": "2025-09-25",
+  "timezone": "Asia/Kolkata",
+  "roster": [
+    "Ravi",
+    "Dan",
+    "Mina"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "Ravi",
+      "start": 0.0,
+      "end": 3.8,
+      "text": "Let's review the production deployment gate."
+    },
+    {
+      "idx": 1,
+      "speaker": "Dan",
+      "start": 5.2,
+      "end": 9.0,
+      "text": "The rollback notes are the last approval dependency."
+    },
+    {
+      "idx": 2,
+      "speaker": "Mina",
+      "start": 10.4,
+      "end": 14.2,
+      "text": "The patch is already running in staging."
+    },
+    {
+      "idx": 3,
+      "speaker": "Ravi",
+      "start": 15.6,
+      "end": 19.4,
+      "text": "We need to keep testing and approval as separate conditions."
+    },
+    {
+      "idx": 4,
+      "speaker": "Dan",
+      "start": 20.8,
+      "end": 24.6,
+      "text": "I'll be explicit about whether I have approved anything."
+    },
+    {
+      "idx": 5,
+      "speaker": "Mina",
+      "start": 26.0,
+      "end": 29.8,
+      "text": "I won't deploy based only on an assumption."
+    },
+    {
+      "idx": 6,
+      "speaker": "Ravi",
+      "start": 31.2,
+      "end": 35.0,
+      "text": "The patch is ready in staging, but we still need the approval gate."
+    },
+    {
+      "idx": 7,
+      "speaker": "Mina",
+      "start": 36.4,
+      "end": 40.2,
+      "text": "The smoke tests passed on the last build."
+    },
+    {
+      "idx": 8,
+      "speaker": "Dan",
+      "start": 41.6,
+      "end": 45.4,
+      "text": "I need to review the rollback notes before we deploy."
+    },
+    {
+      "idx": 9,
+      "speaker": "Ravi",
+      "start": 46.8,
+      "end": 50.6,
+      "text": "Dan, can you confirm whether the rollback notes are acceptable?"
+    },
+    {
+      "idx": 10,
+      "speaker": "Dan",
+      "start": 52.0,
+      "end": 55.8,
+      "text": "The database rollback step needs one more clarification."
+    },
+    {
+      "idx": 11,
+      "speaker": "Mina",
+      "start": 57.2,
+      "end": 61.0,
+      "text": "I can update that clarification."
+    },
+    {
+      "idx": 12,
+      "speaker": "Ravi",
+      "start": 62.4,
+      "end": 66.2,
+      "text": "Mina, please don't deploy until Dan has approved."
+    },
+    {
+      "idx": 13,
+      "speaker": "Mina",
+      "start": 67.6,
+      "end": 71.4,
+      "text": "Understood. If Dan approves the rollback notes, I'll deploy the patch."
+    },
+    {
+      "idx": 14,
+      "speaker": "Dan",
+      "start": 72.8,
+      "end": 76.6,
+      "text": "That is conditional on my approval; I haven't approved it yet."
+    },
+    {
+      "idx": 15,
+      "speaker": "Ravi",
+      "start": 78.0,
+      "end": 81.8,
+      "text": "Correct. The commitment is to deploy only after that condition is met."
+    },
+    {
+      "idx": 16,
+      "speaker": "Mina",
+      "start": 83.2,
+      "end": 87.0,
+      "text": "I'll wait for your explicit approval in the release channel."
+    },
+    {
+      "idx": 17,
+      "speaker": "Dan",
+      "start": 88.4,
+      "end": 92.2,
+      "text": "I'll review the rollback notes after this meeting."
+    },
+    {
+      "idx": 18,
+      "speaker": "Ravi",
+      "start": 93.6,
+      "end": 97.4,
+      "text": "The staging tests alone do not satisfy the approval condition."
+    },
+    {
+      "idx": 19,
+      "speaker": "Mina",
+      "start": 98.8,
+      "end": 102.6,
+      "text": "I won't treat a green test run as approval."
+    },
+    {
+      "idx": 20,
+      "speaker": "Dan",
+      "start": 104.0,
+      "end": 107.8,
+      "text": "I'll post either approval or the changes required."
+    },
+    {
+      "idx": 21,
+      "speaker": "Ravi",
+      "start": 109.2,
+      "end": 113.0,
+      "text": "If changes are needed, we will revisit the deployment window."
+    },
+    {
+      "idx": 22,
+      "speaker": "Mina",
+      "start": 114.4,
+      "end": 118.2,
+      "text": "The deployment task remains mine once the condition is satisfied."
+    },
+    {
+      "idx": 23,
+      "speaker": "Dan",
+      "start": 119.6,
+      "end": 123.4,
+      "text": "Yes, and my review is a separate task."
+    },
+    {
+      "idx": 24,
+      "speaker": "Ravi",
+      "start": 124.8,
+      "end": 128.6,
+      "text": "No production action should happen before approval."
+    },
+    {
+      "idx": 25,
+      "speaker": "Mina",
+      "start": 130.0,
+      "end": 133.8,
+      "text": "Agreed; I'll hold the deployment."
+    },
+    {
+      "idx": 26,
+      "speaker": "Dan",
+      "start": 135.2,
+      "end": 139.0,
+      "text": "I'll send the review outcome in the release channel."
+    },
+    {
+      "idx": 27,
+      "speaker": "Ravi",
+      "start": 140.4,
+      "end": 144.2,
+      "text": "Then we'll proceed based on that outcome."
+    },
+    {
+      "idx": 28,
+      "speaker": "Dan",
+      "start": 145.6,
+      "end": 149.4,
+      "text": "The rollback note should include the schema migration step."
+    },
+    {
+      "idx": 29,
+      "speaker": "Mina",
+      "start": 150.8,
+      "end": 154.6,
+      "text": "The staging logs are attached to the release ticket."
+    },
+    {
+      "idx": 30,
+      "speaker": "Ravi",
+      "start": 156.0,
+      "end": 159.8,
+      "text": "The approval message needs to be explicit in the channel."
+    },
+    {
+      "idx": 31,
+      "speaker": "Dan",
+      "start": 161.2,
+      "end": 165.0,
+      "text": "I will not treat a test result as an approval."
+    },
+    {
+      "idx": 32,
+      "speaker": "Mina",
+      "start": 166.4,
+      "end": 170.2,
+      "text": "I'll hold until that message appears."
+    },
+    {
+      "idx": 33,
+      "speaker": "Ravi",
+      "start": 171.6,
+      "end": 175.4,
+      "text": "That preserves the condition on the deployment commitment."
+    },
+    {
+      "idx": 34,
+      "speaker": "Ravi",
+      "start": 176.8,
+      "end": 180.6,
+      "text": "Mina's deployment remains conditional on Dan's approval."
+    },
+    {
+      "idx": 35,
+      "speaker": "Dan",
+      "start": 182.0,
+      "end": 185.8,
+      "text": "I'll post the review outcome."
+    },
+    {
+      "idx": 36,
+      "speaker": "Mina",
+      "start": 187.2,
+      "end": 191.0,
+      "text": "I'll wait for explicit approval before deploying."
+    },
+    {
+      "idx": 37,
+      "speaker": "Ravi",
+      "start": 192.4,
+      "end": 196.2,
+      "text": "No production change happens before that."
+    },
+    {
+      "idx": 38,
+      "speaker": "Dan",
+      "start": 197.6,
+      "end": 201.4,
+      "text": "The rollback note is my review task."
+    },
+    {
+      "idx": 39,
+      "speaker": "Ravi",
+      "start": 202.8,
+      "end": 206.6,
+      "text": "Thanks, we're done."
+    }
+  ]
+}

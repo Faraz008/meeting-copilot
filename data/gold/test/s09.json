@@ -1,0 +1,50 @@
+{
+  "meeting_id": "s09",
+  "meeting_date": "2025-09-25",
+  "roster": [
+    "Ravi",
+    "Dan",
+    "Mina"
+  ],
+  "action_items": [
+    {
+      "gold_id": "a1",
+      "title": "Deploy the production patch if Dan approves the rollback notes",
+      "owner": "Mina",
+      "deadline": null,
+      "status": "committed",
+      "condition": "Dan approves the rollback notes",
+      "turns": [
+        13,
+        14,
+        15,
+        16,
+        23,
+        26
+      ],
+      "tags": [
+        "conditional",
+        "no_deadline"
+      ]
+    },
+    {
+      "gold_id": "a2",
+      "title": "Review the rollback notes and post the approval outcome",
+      "owner": "Dan",
+      "deadline": null,
+      "status": "committed",
+      "turns": [
+        8,
+        17,
+        20,
+        27
+      ],
+      "tags": [
+        "no_deadline"
+      ]
+    }
+  ],
+  "decisions": [],
+  "open_questions": [],
+  "follow_ups": []
+}

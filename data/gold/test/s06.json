@@ -1,0 +1,47 @@
+{
+  "meeting_id": "s06",
+  "meeting_date": "2025-07-18",
+  "roster": [
+    "Priya",
+    "Sam",
+    "Dan"
+  ],
+  "action_items": [
+    {
+      "gold_id": "a1",
+      "title": "Prepare the customer response timeline",
+      "owner": "Priya",
+      "deadline": null,
+      "status": "committed",
+      "turns": [
+        9,
+        12,
+        13,
+        20,
+        26
+      ],
+      "tags": [
+        "asr_error",
+        "no_deadline"
+      ]
+    },
+    {
+      "gold_id": "a2",
+      "title": "Check the support ticket and add missing customer contact times",
+      "owner": "Sam",
+      "deadline": null,
+      "status": "committed",
+      "turns": [
+        23,
+        24,
+        27
+      ],
+      "tags": [
+        "no_deadline"
+      ]
+    }
+  ],
+  "decisions": [],
+  "open_questions": [],
+  "follow_ups": []
+}

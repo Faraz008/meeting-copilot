@@ -1,0 +1,714 @@
+{
+  "meeting_id": "EN2001b",
+  "title": "AMI non-scenario meeting EN2001b",
+  "date": "2005-02-15",
+  "timezone": null,
+  "roster": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "A",
+      "start": 2.977,
+      "end": 3.368,
+      "text": "Hmm"
+    },
+    {
+      "idx": 1,
+      "speaker": "D",
+      "start": 18.705,
+      "end": 19.669,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 2,
+      "speaker": "C",
+      "start": 22.269,
+      "end": 22.726,
+      "text": "Yeah."
+    },
+    {
+      "idx": 3,
+      "speaker": "B",
+      "start": 28.474,
+      "end": 30.114,
+      "text": "[other]"
+    },
+    {
+      "idx": 4,
+      "speaker": "A",
+      "start": 28.593,
+      "end": 34.663,
+      "text": "[laugh] It's with cameras. [laugh]"
+    },
+    {
+      "idx": 5,
+      "speaker": "C",
+      "start": 28.993,
+      "end": 31.407,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 6,
+      "speaker": "B",
+      "start": 32.027,
+      "end": 32.942,
+      "text": "Hmm?"
+    },
+    {
+      "idx": 7,
+      "speaker": "D",
+      "start": 32.656,
+      "end": 33.065,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 8,
+      "speaker": "C",
+      "start": 33.752,
+      "end": 35.506,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 9,
+      "speaker": "A",
+      "start": 35.633,
+      "end": 38.84,
+      "text": "You look quite funny at the moment, Tim. [laugh]"
+    },
+    {
+      "idx": 10,
+      "speaker": "D",
+      "start": 37.871,
+      "end": 38.728,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 11,
+      "speaker": "B",
+      "start": 42.859,
+      "end": 45.319,
+      "text": "This isn't supposed to look like just --"
+    },
+    {
+      "idx": 12,
+      "speaker": "D",
+      "start": 44.396,
+      "end": 45.418,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 13,
+      "speaker": "B",
+      "start": 47.928,
+      "end": 49.381,
+      "text": "Ah, sod that. Okay, there."
+    },
+    {
+      "idx": 14,
+      "speaker": "D",
+      "start": 49.295,
+      "end": 53.743,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 15,
+      "speaker": "C",
+      "start": 49.36,
+      "end": 52.669,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 16,
+      "speaker": "A",
+      "start": 49.606,
+      "end": 52.352,
+      "text": "[laugh] Nice. [laugh]"
+    },
+    {
+      "idx": 17,
+      "speaker": "B",
+      "start": 54.785,
+      "end": 56.648,
+      "text": "Group K_. Da."
+    },
+    {
+      "idx": 18,
+      "speaker": "B",
+      "start": 58.325,
+      "end": 58.829,
+      "text": "Yeah."
+    },
+    {
+      "idx": 19,
+      "speaker": "D",
+      "start": 60.432,
+      "end": 61.312,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 20,
+      "speaker": "C",
+      "start": 61.277,
+      "end": 61.911,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 21,
+      "speaker": "B",
+      "start": 65.296,
+      "end": 67.583,
+      "text": "Yeah, I guess. Whatever."
+    },
+    {
+      "idx": 22,
+      "speaker": "D",
+      "start": 65.355,
+      "end": 68.007,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 23,
+      "speaker": "C",
+      "start": 67.296,
+      "end": 68.32,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 24,
+      "speaker": "B",
+      "start": 70.651,
+      "end": 82.866,
+      "text": "It's -- yeah, I never get this, so what's the point of -- if this is strapless -- if this strap's supposed to go behind m I obviously doing this wrong. Obviously failing this like -- whatev calling centre and tra"
+    },
+    {
+      "idx": 25,
+      "speaker": "A",
+      "start": 78.38,
+      "end": 78.716,
+      "text": "[other]"
+    },
+    {
+      "idx": 26,
+      "speaker": "C",
+      "start": 81.471,
+      "end": 86.361,
+      "text": "You you have this going behind your ears, the -- yeah. Yeah."
+    },
+    {
+      "idx": 27,
+      "speaker": "D",
+      "start": 81.535,
+      "end": 83.115,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 28,
+      "speaker": "B",
+      "start": 84.446,
+      "end": 90.852,
+      "text": "Like this and then -- yeah, you know what the shit has to do now."
+    },
+    {
+      "idx": 29,
+      "speaker": "D",
+      "start": 86.285,
+      "end": 88.704,
+      "text": "Look's good. [laugh]"
+    },
+    {
+      "idx": 30,
+      "speaker": "D",
+      "start": 95.879,
+      "end": 96.378,
+      "text": "Yeah."
+    },
+    {
+      "idx": 31,
+      "speaker": "B",
+      "start": 97.472,
+      "end": 98.812,
+      "text": "Okay."
+    },
+    {
+      "idx": 32,
+      "speaker": "B",
+      "start": 106.336,
+      "end": 112.763,
+      "text": "Yes, so um actually I just realise I don't have power, let me just switch on the other which is gonna run out."
+    },
+    {
+      "idx": 33,
+      "speaker": "B",
+      "start": 117.577,
+      "end": 118.217,
+      "text": "Okay."
+    },
+    {
+      "idx": 34,
+      "speaker": "D",
+      "start": 118.76,
+      "end": 119.209,
+      "text": "Okay."
+    },
+    {
+      "idx": 35,
+      "speaker": "B",
+      "start": 123.115,
+      "end": 134.384,
+      "text": "So [other] there's probably not much to talk about at the moment in terms of like talking about each other's stuff, I mean beyond what we've been talking about yesterday."
+    },
+    {
+      "idx": 36,
+      "speaker": "D",
+      "start": 134.448,
+      "end": 135.647,
+      "text": "Yeah, that's true I think."
+    },
+    {
+      "idx": 37,
+      "speaker": "B",
+      "start": 136.074,
+      "end": 166.64,
+      "text": "So what I've been thinking is maybe if we try to really make sense together of the X_M_L_ format to be sure that we can all produce the data that we are producing in a way -- or at least I mean -- I guess my data I'll probably load in from completely different way anyway because it's matrix, but all this stuff that goes with annotation, that we have it in the right format. Maybe if we just sort of pool what we know about the X_M_L_ format and try to make sense of it. I don't at all know how to go about this."
+    },
+    {
+      "idx": 38,
+      "speaker": "B",
+      "start": 168.256,
+      "end": 174.032,
+      "text": "Um what I did just now is I downloaded --"
+    },
+    {
+      "idx": 39,
+      "speaker": "B",
+      "start": 180.624,
+      "end": 183.504,
+      "text": "Um I downloaded some"
+    },
+    {
+      "idx": 40,
+      "speaker": "B",
+      "start": 184.56,
+      "end": 215.008,
+      "text": "files, some X_M_L_ files and I was thinking if we maybe just should go through some of them and like try to see if you understand the general structure and pool together what we think about the structure, what we think that things mean. And then talk about how the annotation for information density and stuff should maybe be structured in a similar way. Or -- but I don't r I don't really have an idea like what, other words, what we would do today in this meeting. I mean --"
+    },
+    {
+      "idx": 41,
+      "speaker": "D",
+      "start": 187.248,
+      "end": 187.688,
+      "text": "Oh yeah."
+    },
+    {
+      "idx": 42,
+      "speaker": "D",
+      "start": 208.224,
+      "end": 208.716,
+      "text": "Yeah."
+    },
+    {
+      "idx": 43,
+      "speaker": "C",
+      "start": 208.434,
+      "end": 208.874,
+      "text": "Hmm."
+    },
+    {
+      "idx": 44,
+      "speaker": "D",
+      "start": 216.144,
+      "end": 218.214,
+      "text": "Yeah, we haven't got that much to talk about, I don't think."
+    },
+    {
+      "idx": 45,
+      "speaker": "C",
+      "start": 217.92,
+      "end": 223.872,
+      "text": "No. Just maybe talk about um how you would give me your data file. Yeah."
+    },
+    {
+      "idx": 46,
+      "speaker": "D",
+      "start": 222.717,
+      "end": 223.282,
+      "text": "Yeah."
+    },
+    {
+      "idx": 47,
+      "speaker": "D",
+      "start": 224.656,
+      "end": 225.514,
+      "text": "Yes, we can do that."
+    },
+    {
+      "idx": 48,
+      "speaker": "B",
+      "start": 226.609,
+      "end": 227.657,
+      "text": "What's that part?"
+    },
+    {
+      "idx": 49,
+      "speaker": "C",
+      "start": 228.192,
+      "end": 237.661,
+      "text": "That's um [other] the interface between having the topic segments and calculating the uh information -- importance of words."
+    },
+    {
+      "idx": 50,
+      "speaker": "B",
+      "start": 233.051,
+      "end": 233.874,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 51,
+      "speaker": "B",
+      "start": 237.808,
+      "end": 238.4,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 52,
+      "speaker": "C",
+      "start": 238.96,
+      "end": 246.493,
+      "text": "Yeah. So I I would need separate files for each segment or just maybe have delimiters inbetween each segment."
+    },
+    {
+      "idx": 53,
+      "speaker": "D",
+      "start": 243.072,
+      "end": 243.654,
+      "text": "Alright."
+    },
+    {
+      "idx": 54,
+      "speaker": "D",
+      "start": 245.664,
+      "end": 250.004,
+      "text": "Yeah well, that that's the way it works. It's got delimiters in-between the mar the boundaries. But --"
+    },
+    {
+      "idx": 55,
+      "speaker": "C",
+      "start": 248.363,
+      "end": 250.784,
+      "text": "Okay, yeah, and y then I can make files of that."
+    },
+    {
+      "idx": 56,
+      "speaker": "D",
+      "start": 250.701,
+      "end": 263.143,
+      "text": "Yeah, if you're happy to do that, yeah. And you're saying you need a a label for each segment. But I mean the most I ca you don't need a one. Well, I could give you an I_D_, but it'd be quite difficult to actually give a topic a title. [laugh]"
+    },
+    {
+      "idx": 57,
+      "speaker": "C",
+      "start": 251.93,
+      "end": 252.346,
+      "text": "Alright."
+    },
+    {
+      "idx": 58,
+      "speaker": "C",
+      "start": 255.6,
+      "end": 257.728,
+      "text": "No, I don't kno know it, no."
+    },
+    {
+      "idx": 59,
+      "speaker": "C",
+      "start": 259.641,
+      "end": 260.539,
+      "text": "Yeah, that's fine."
+    },
+    {
+      "idx": 60,
+      "speaker": "B",
+      "start": 261.643,
+      "end": 262.291,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 61,
+      "speaker": "C",
+      "start": 261.665,
+      "end": 267.504,
+      "text": "I just I just need a a title for the file, but doesn't matter what it is."
+    },
+    {
+      "idx": 62,
+      "speaker": "D",
+      "start": 266.121,
+      "end": 269.431,
+      "text": "Right. Okay. Yeah, that's no problem."
+    },
+    {
+      "idx": 63,
+      "speaker": "B",
+      "start": 272.401,
+      "end": 292.192,
+      "text": "Yes, so does anyone have a good idea where to start like which -- what -- so what is it we talk about getting in at the moment? We're basically just -- 'cause the two of you will merge your data together, right? In some way like i in the end it'll result in one annotation. So the only thing we're trying to tie in is just an additional annotation which is similar to"
+    },
+    {
+      "idx": 64,
+      "speaker": "A",
+      "start": 282.422,
+      "end": 283.178,
+      "text": "Mm yes."
+    },
+    {
+      "idx": 65,
+      "speaker": "B",
+      "start": 293.664,
+      "end": 300.947,
+      "text": "the annotation about what what would it be s most similar to. Simply to the segmentation information or --"
+    },
+    {
+      "idx": 66,
+      "speaker": "A",
+      "start": 299.904,
+      "end": 310.947,
+      "text": "Yes, perhaps yeah, but I mean they're all very very similar, all those X_M_L_ files. I had um a look at the um for example A_S_ --"
+    },
+    {
+      "idx": 67,
+      "speaker": "B",
+      "start": 304.422,
+      "end": 305.354,
+      "text": "Okay."
+    },
+    {
+      "idx": 68,
+      "speaker": "B",
+      "start": 309.892,
+      "end": 320.63,
+      "text": "I'm not sure it -- Ah. See, that's what I was thinking. Not sure what software I have at the moment, which would be -- hello?"
+    },
+    {
+      "idx": 69,
+      "speaker": "C",
+      "start": 311.328,
+      "end": 312.544,
+      "text": "Mm."
+    },
+    {
+      "idx": 70,
+      "speaker": "A",
+      "start": 312.063,
+      "end": 312.479,
+      "text": "Mm."
+    },
+    {
+      "idx": 71,
+      "speaker": "B",
+      "start": 321.92,
+      "end": 322.352,
+      "text": "Um --"
+    },
+    {
+      "idx": 72,
+      "speaker": "D",
+      "start": 322.576,
+      "end": 323.328,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 73,
+      "speaker": "B",
+      "start": 326.368,
+      "end": 326.672,
+      "text": "Yeah."
+    },
+    {
+      "idx": 74,
+      "speaker": "B",
+      "start": 328.161,
+      "end": 328.608,
+      "text": "Ah."
+    },
+    {
+      "idx": 75,
+      "speaker": "B",
+      "start": 332.672,
+      "end": 336.369,
+      "text": "Does anyone know any good standards software displays X_M_L_, I'm not sure."
+    },
+    {
+      "idx": 76,
+      "speaker": "A",
+      "start": 336.64,
+      "end": 337.573,
+      "text": "Take Mozilla."
+    },
+    {
+      "idx": 77,
+      "speaker": "B",
+      "start": 338.235,
+      "end": 342.351,
+      "text": "Yeah, but I'm afraid I only have Firefox and Firefox doesn't have the nice X_M_L_ viewer anymore."
+    },
+    {
+      "idx": 78,
+      "speaker": "D",
+      "start": 344.245,
+      "end": 344.543,
+      "text": "Hmm."
+    },
+    {
+      "idx": 79,
+      "speaker": "B",
+      "start": 344.384,
+      "end": 346.864,
+      "text": "I think I don't have Mozilla."
+    },
+    {
+      "idx": 80,
+      "speaker": "B",
+      "start": 348.14,
+      "end": 348.587,
+      "text": "."
+    },
+    {
+      "idx": 81,
+      "speaker": "B",
+      "start": 350.464,
+      "end": 351.081,
+      "text": "No."
+    },
+    {
+      "idx": 82,
+      "speaker": "C",
+      "start": 353.881,
+      "end": 354.179,
+      "text": "[other]"
+    },
+    {
+      "idx": 83,
+      "speaker": "B",
+      "start": 354.182,
+      "end": 355.888,
+      "text": "I can probably just Emacs them."
+    },
+    {
+      "idx": 84,
+      "speaker": "C",
+      "start": 358.563,
+      "end": 369.982,
+      "text": "So uh we have then when we are mixing our um values together, is it um a value for each um expression, for each sentence or something?"
+    },
+    {
+      "idx": 85,
+      "speaker": "A",
+      "start": 370.4,
+      "end": 376.043,
+      "text": "Yeah, I think that would be m I mean uh for me it's quite difficult to say [other] o on,"
+    },
+    {
+      "idx": 86,
+      "speaker": "C",
+      "start": 372.096,
+      "end": 372.816,
+      "text": "Yeah."
+    },
+    {
+      "idx": 87,
+      "speaker": "A",
+      "start": 377.232,
+      "end": 383.296,
+      "text": "you know, w um what scope one annotation would have."
+    },
+    {
+      "idx": 88,
+      "speaker": "C",
+      "start": 381.778,
+      "end": 382.56,
+      "text": "Mm-mm."
+    },
+    {
+      "idx": 89,
+      "speaker": "A",
+      "start": 384.832,
+      "end": 388.32,
+      "text": "I think it would be certainly more than one word and"
+    },
+    {
+      "idx": 90,
+      "speaker": "A",
+      "start": 389.712,
+      "end": 394.16,
+      "text": "I think it would work best with utterances or segments."
+    },
+    {
+      "idx": 91,
+      "speaker": "C",
+      "start": 392.592,
+      "end": 393.172,
+      "text": "Yeah."
+    },
+    {
+      "idx": 92,
+      "speaker": "C",
+      "start": 395.338,
+      "end": 401.088,
+      "text": "Yeah, I would just end up with uh values for each word, so I wouldn't have um"
+    },
+    {
+      "idx": 93,
+      "speaker": "A",
+      "start": 395.415,
+      "end": 395.713,
+      "text": "Yep."
+    },
+    {
+      "idx": 94,
+      "speaker": "C",
+      "start": 402.086,
+      "end": 405.57,
+      "text": "any boundaries for segments at all."
+    },
+    {
+      "idx": 95,
+      "speaker": "B",
+      "start": 406.784,
+      "end": 407.41,
+      "text": "But --"
+    },
+    {
+      "idx": 96,
+      "speaker": "C",
+      "start": 407.072,
+      "end": 414.498,
+      "text": "I just I just would have the words, and then how we um how long each expression would be, I don't know."
+    },
+    {
+      "idx": 97,
+      "speaker": "B",
+      "start": 415.029,
+      "end": 420.128,
+      "text": "But going from from a word business, wouldn't it be easier to then go back and calculate for each utterance?"
+    },
+    {
+      "idx": 98,
+      "speaker": "C",
+      "start": 420.656,
+      "end": 424.123,
+      "text": "Yeah, but what is an utterance. Uh, yeah."
+    },
+    {
+      "idx": 99,
+      "speaker": "B",
+      "start": 422.81,
+      "end": 424.781,
+      "text": "You know, wha wha each turn, so if we --"
+    }
+  ]
+}

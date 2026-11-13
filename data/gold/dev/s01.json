@@ -1,0 +1,31 @@
+{
+  "meeting_id": "s01",
+  "meeting_date": "2025-03-12",
+  "roster": [
+    "Priya",
+    "Sam",
+    "Dan"
+  ],
+  "action_items": [
+    {
+      "gold_id": "a1",
+      "title": "Prepare and send the revised pricing page copy",
+      "owner": "Sam",
+      "deadline": "2025-03-14",
+      "status": "committed",
+      "turns": [
+        9,
+        13,
+        16,
+        26
+      ],
+      "tags": [
+        "retraction",
+        "revision"
+      ]
+    }
+  ],
+  "decisions": [],
+  "open_questions": [],
+  "follow_ups": []
+}

@@ -221,5 +221,7 @@ __marimo__/
 
 .env
 data/raw/
+data/llm_cache/
+data/runs/
 *.sqlite
 *.db

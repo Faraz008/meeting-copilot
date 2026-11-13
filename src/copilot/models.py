@@ -90,6 +90,7 @@ class Meeting(BaseModel):
     timezone: str = "Asia/Kolkata"
     roster: list[str] = Field(default_factory=list)
     turns: list[Turn]
+    aliases: dict[str, list[str]] = Field(default_factory=dict)
 
 
 def stable_id(kind: str, meeting_id: str, first_turn_idx: int, n: int = 0) -> str:

@@ -1,0 +1,714 @@
+{
+  "meeting_id": "EN2009d",
+  "title": "AMI non-scenario meeting EN2009d",
+  "date": "2005-11-07",
+  "timezone": null,
+  "roster": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "B",
+      "start": 0.0,
+      "end": 3.872,
+      "text": "Which data. You know, I I want everything and then I'll decide what I want."
+    },
+    {
+      "idx": 1,
+      "speaker": "A",
+      "start": 1.536,
+      "end": 1.921,
+      "text": "Yeah."
+    },
+    {
+      "idx": 2,
+      "speaker": "A",
+      "start": 3.751,
+      "end": 8.591,
+      "text": "So this was that face to face meeting. Um but it uh it doesn't"
+    },
+    {
+      "idx": 3,
+      "speaker": "B",
+      "start": 5.312,
+      "end": 5.696,
+      "text": "Okay."
+    },
+    {
+      "idx": 4,
+      "speaker": "A",
+      "start": 10.252,
+      "end": 45.798,
+      "text": "There isn't -- th so there are things in the eye tracker record that we definitely don't want in the G_D_F_ format, um like the frame rate eye movement. You know, we we -- uh uh i we're -- if we're expecting the G_D_F_ format to be um sort of a parsed version of events. And you know there's just too much raw frame f frame rate stuff coming out of this. You wouldn't prob you wouldn't want it in this kind of format for up-translation to the other things. Yeah, we -- yeah, you can get back to it. Yeah. We're not throwing anything away. This is just the stuff --"
+    },
+    {
+      "idx": 5,
+      "speaker": "B",
+      "start": 38.48,
+      "end": 47.352,
+      "text": "We can get back to it. We can get -- we can always get back to it. We're not th actually throwing anything away. And if we decide to re-jig this at some finer --"
+    },
+    {
+      "idx": 6,
+      "speaker": "A",
+      "start": 48.107,
+      "end": 48.522,
+      "text": "Yeah."
+    },
+    {
+      "idx": 7,
+      "speaker": "B",
+      "start": 49.056,
+      "end": 54.833,
+      "text": "Mecha method. We'll still have the original and a method of uh of filtering. So --"
+    },
+    {
+      "idx": 8,
+      "speaker": "A",
+      "start": 52.843,
+      "end": 67.774,
+      "text": "Yeah. But the -- th but the way to think of this is this is the data that we want to be able to analyse against the other tracks of data. So the data that we wanna compare with a language or with whatever. And um -- so --"
+    },
+    {
+      "idx": 9,
+      "speaker": "B",
+      "start": 58.365,
+      "end": 58.964,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 10,
+      "speaker": "B",
+      "start": 60.816,
+      "end": 61.302,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 11,
+      "speaker": "B",
+      "start": 63.28,
+      "end": 96.24,
+      "text": "Mm-hmm. Mm-hmm. Okay. As long as the format in which we pick it up is a format which could be generalised to a finer take. Because the worst thing that can ever happen to you is you discover that you've done huge amounts of analysis and th you actually had the data but you threw it away because you treated it so grossly. Okay. So whatever we should be able to b you know, backtrack and say okay instead of every second, every tenth of a second or some such thing. But you know th"
+    },
+    {
+      "idx": 12,
+      "speaker": "A",
+      "start": 82.323,
+      "end": 85.534,
+      "text": "Yeah. S so in essence what you would then do is --"
+    },
+    {
+      "idx": 13,
+      "speaker": "A",
+      "start": 95.472,
+      "end": 103.712,
+      "text": "Well we're not doing frame rate at any frame for -- well, maybe we are. I don't know. I I had thought we were -- yeah, the eye tracker does. But --"
+    },
+    {
+      "idx": 14,
+      "speaker": "B",
+      "start": 100.297,
+      "end": 102.336,
+      "text": "Well, the eye tracker does."
+    },
+    {
+      "idx": 15,
+      "speaker": "D",
+      "start": 100.623,
+      "end": 101.039,
+      "text": "Yeah."
+    },
+    {
+      "idx": 16,
+      "speaker": "C",
+      "start": 102.016,
+      "end": 103.879,
+      "text": "Uh five hundred Hertz though."
+    },
+    {
+      "idx": 17,
+      "speaker": "B",
+      "start": 104.016,
+      "end": 104.569,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 18,
+      "speaker": "D",
+      "start": 104.495,
+      "end": 104.968,
+      "text": "Yeah."
+    },
+    {
+      "idx": 19,
+      "speaker": "A",
+      "start": 105.088,
+      "end": 149.747,
+      "text": "But -- right. W what w [other] um [other] the kinds of events that we had r uh before talked about putting into the record for then use in ELAN and N_X_T_ isn't based on saying every X_ seconds something. You know, give me give me what's happening every X_ seconds. It's more like, you know, give me the fixations and the um the blinks. Yeah. Oh yeah. Durations are in there. But it's not -- there's a difference between um saying that something is in a particular state every frame, whatever the frame rate is, you know, ten seconds a minute. You know, that's that's one kind of w way of looking at data, and um a parsed version of the data, which isn't at um any particular length. It relies on this really close frame rate that's underneath."
+    },
+    {
+      "idx": 20,
+      "speaker": "B",
+      "start": 121.244,
+      "end": 121.843,
+      "text": "Well, you need --"
+    },
+    {
+      "idx": 21,
+      "speaker": "B",
+      "start": 125.554,
+      "end": 129.944,
+      "text": "Well one needs to know the duration of these things, right. So one needs to be able to say --"
+    },
+    {
+      "idx": 22,
+      "speaker": "B",
+      "start": 135.392,
+      "end": 135.936,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 23,
+      "speaker": "B",
+      "start": 138.928,
+      "end": 139.408,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 24,
+      "speaker": "B",
+      "start": 148.765,
+      "end": 155.485,
+      "text": "Well so there's no real time, there's only ev there's only events. What I'm -- we're trying to figure out is whether we've thrown time away."
+    },
+    {
+      "idx": 25,
+      "speaker": "A",
+      "start": 155.744,
+      "end": 176.78,
+      "text": "No, no. The time the time is still in there. But you'll get -- uh what you want is to figure out what are the um the concepts behind that data that you want represented. So rather than saying the eye was at this particular place, you know, here, and then a tenth of a second later here and then a tenth of a second later here. You say there was a fixation from this time to that time and there was blink from this time to that time. And --"
+    },
+    {
+      "idx": 26,
+      "speaker": "B",
+      "start": 170.258,
+      "end": 171.065,
+      "text": "Here --"
+    },
+    {
+      "idx": 27,
+      "speaker": "B",
+      "start": 176.198,
+      "end": 224.4,
+      "text": "Okay, so one of the formats in which eye tracker data is analysed is percentage of time spent on some target as opposed to some competitor over the first second after some event, okay. So you actually have to be shu have to show at some time slice rate whether the eye was on the same target as the other guy, a similar target, what we'd both been deali you know. So we have to b we have all the parts, the interesting parts of the screen identified and be able to show distribution of gaze over time. Alright. Now we could be really unlucky and somebody would expect us to do that at the real frame rate. But I think that's really unlucky. But but my point is that we mustn't throw away in -- or lose the capacity of being able to deliver that kind of data. Mm-hmm. Mm."
+    },
+    {
+      "idx": 28,
+      "speaker": "C",
+      "start": 185.485,
+      "end": 186.268,
+      "text": "[other]"
+    },
+    {
+      "idx": 29,
+      "speaker": "A",
+      "start": 191.829,
+      "end": 192.311,
+      "text": "Okay."
+    },
+    {
+      "idx": 30,
+      "speaker": "C",
+      "start": 200.135,
+      "end": 200.642,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 31,
+      "speaker": "A",
+      "start": 207.376,
+      "end": 207.833,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 32,
+      "speaker": "C",
+      "start": 209.067,
+      "end": 209.574,
+      "text": "Yeah."
+    },
+    {
+      "idx": 33,
+      "speaker": "A",
+      "start": 221.527,
+      "end": 231.958,
+      "text": "Right. So there's two issues here. We're not throwing anything away. But the question is what tool would you use to get that information out of the data? Would you be -- so the more you can plan --"
+    },
+    {
+      "idx": 34,
+      "speaker": "B",
+      "start": 230.138,
+      "end": 265.079,
+      "text": "S so typically the eye will move, right. So over any one second, they eye's actually f fixing on a bunch of different things. And you -- and so when you say the eye was on this from here to here what's gonna happen is that is that if you use the real frame rate, it's gonna jiggle all over the place. It's gonna be on this landmark. Uh it's on this object, that object, this fixed thing, that fixed thing, okay. You're gonna get lots and lots of stuff. And it's percentage distribution that you're going to want. It's not uh I went here. I s you know, it's not like person walking. I went here, I stayed here. It's it's more like a fly hovering."
+    },
+    {
+      "idx": 35,
+      "speaker": "A",
+      "start": 233.829,
+      "end": 234.328,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 36,
+      "speaker": "A",
+      "start": 248.235,
+      "end": 248.645,
+      "text": "Yeah."
+    },
+    {
+      "idx": 37,
+      "speaker": "A",
+      "start": 262.884,
+      "end": 263.308,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 38,
+      "speaker": "A",
+      "start": 265.133,
+      "end": 269.124,
+      "text": "So you need to know the percentage of time it was on during that fixation."
+    },
+    {
+      "idx": 39,
+      "speaker": "B",
+      "start": 268.841,
+      "end": 274.048,
+      "text": "Mm-hmm. Because if you if you take them as separate events you get thousands of separate events."
+    },
+    {
+      "idx": 40,
+      "speaker": "A",
+      "start": 270.125,
+      "end": 270.46,
+      "text": "Yeah?"
+    },
+    {
+      "idx": 41,
+      "speaker": "C",
+      "start": 270.675,
+      "end": 288.527,
+      "text": "Uh -- m m i uh i yeah but the p sort of start and end times will give you back to that output. A as a -- and then you just measure it against, you know, the c the c yeah, the cumulative total time record or something. So --"
+    },
+    {
+      "idx": 42,
+      "speaker": "B",
+      "start": 276.544,
+      "end": 277.008,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 43,
+      "speaker": "B",
+      "start": 283.913,
+      "end": 285.152,
+      "text": "Against bigger frames."
+    },
+    {
+      "idx": 44,
+      "speaker": "A",
+      "start": 287.696,
+      "end": 293.98,
+      "text": "[other] Okay, so the percentage is -- i i is a cut -- it's not something you're using for measurement. It's a cut-off for whether or not it counts as a fixation? Is that --"
+    },
+    {
+      "idx": 45,
+      "speaker": "B",
+      "start": 293.302,
+      "end": 303.456,
+      "text": "Well, that's the that's the problem. There are two ways of doing it. One is that there's always a cut-off, right. But the other is that there will be a time span, a kind of reaction to some event span."
+    },
+    {
+      "idx": 46,
+      "speaker": "C",
+      "start": 297.84,
+      "end": 298.456,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 47,
+      "speaker": "C",
+      "start": 302.753,
+      "end": 310.285,
+      "text": "B uh uh m yeah, so I'll I'll lag in some of it during the -- I suppose there's the the saccadic movement itself, for example."
+    },
+    {
+      "idx": 48,
+      "speaker": "B",
+      "start": 306.25,
+      "end": 306.782,
+      "text": "Right."
+    },
+    {
+      "idx": 49,
+      "speaker": "B",
+      "start": 309.792,
+      "end": 365.183,
+      "text": "Right. And so -- I mean there are there are really two ways of looking at this. One would like to know for example the percentage of time overall in which two people are looking at the same thing, okay. And one would like to know sequences of they didn't look at the same thing and then they broke it. Or they did look at the same thing and then they did or didn't brea you know. One one could imagine those two categories. That's that's a kind of testing of our hypotheses. But there's a certain amount of um [laugh] dues you pay to the way they do things in the literature to get your papers published. And one of the things they will want to know is an event series after some critical event, right. What percentage of time is given to looking where the other guy is looking. And what percentage of time over some, you know, reasonable time span of a couple of seconds, alright. So they'll be -- they -- they'll want to see essentially the gaze settling on particular incidents on particular places. So we have to be able to deliver those two things and they're rather different demands."
+    },
+    {
+      "idx": 50,
+      "speaker": "A",
+      "start": 318.906,
+      "end": 319.438,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 51,
+      "speaker": "A",
+      "start": 329.491,
+      "end": 329.901,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 52,
+      "speaker": "D",
+      "start": 335.272,
+      "end": 335.607,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 53,
+      "speaker": "A",
+      "start": 354.646,
+      "end": 355.019,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 54,
+      "speaker": "C",
+      "start": 364.234,
+      "end": 394.538,
+      "text": "Th th th yeah, the -- it should still come out that the little sketch I asked this p for for last week about N_X_T_ and whether it would have that sort of tiered effect so you could see the overlap of where one person is looking compared to the other and their mouse movements and things. That that should ra uh address all that. Mm-hmm. But but because it's also in the i based on the the time course of the [other] procedure you'll be able to basically get the scan path of the pattern of events from that as well."
+    },
+    {
+      "idx": 55,
+      "speaker": "A",
+      "start": 365.28,
+      "end": 365.603,
+      "text": "Right."
+    },
+    {
+      "idx": 56,
+      "speaker": "A",
+      "start": 379.603,
+      "end": 379.985,
+      "text": "Yeah."
+    },
+    {
+      "idx": 57,
+      "speaker": "A",
+      "start": 381.95,
+      "end": 385.609,
+      "text": "'Cause all you wanna know is whether they were looking at the same object in the period after."
+    },
+    {
+      "idx": 58,
+      "speaker": "A",
+      "start": 391.054,
+      "end": 391.453,
+      "text": "Yeah."
+    },
+    {
+      "idx": 59,
+      "speaker": "A",
+      "start": 393.712,
+      "end": 398.918,
+      "text": "Okay. Can we draw it to make sure that that um -- that this is satisfying Ellen's concerns?"
+    },
+    {
+      "idx": 60,
+      "speaker": "C",
+      "start": 397.016,
+      "end": 402.518,
+      "text": "Yeah, yeah. So I did have it somewhere. I didn't have it -- r uh haven't brought it. trying to remember it."
+    },
+    {
+      "idx": 61,
+      "speaker": "B",
+      "start": 399.823,
+      "end": 400.214,
+      "text": "Right."
+    },
+    {
+      "idx": 62,
+      "speaker": "A",
+      "start": 400.519,
+      "end": 423.101,
+      "text": "Well, there's a white-board, right. We love this thing. See if the pens work. So um this is um A_'s eyes, right? And B_'s eyes. And I think what you're saying -- you should probably draw this -- right, is that they -- you know, if um from this time to this time they're looking at triangle one."
+    },
+    {
+      "idx": 63,
+      "speaker": "D",
+      "start": 403.005,
+      "end": 403.564,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 64,
+      "speaker": "D",
+      "start": 404.943,
+      "end": 405.614,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 65,
+      "speaker": "C",
+      "start": 407.16,
+      "end": 407.682,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 66,
+      "speaker": "C",
+      "start": 411.818,
+      "end": 412.56,
+      "text": "[other]"
+    },
+    {
+      "idx": 67,
+      "speaker": "C",
+      "start": 417.269,
+      "end": 418.16,
+      "text": "[other]"
+    },
+    {
+      "idx": 68,
+      "speaker": "C",
+      "start": 423.504,
+      "end": 424.257,
+      "text": "[other]"
+    },
+    {
+      "idx": 69,
+      "speaker": "A",
+      "start": 425.04,
+      "end": 435.085,
+      "text": "W what you're saying is that you want to know in the critical -- [other] you wanna know after they're they're looking at triangle one what's happening in this period with this guy, right?"
+    },
+    {
+      "idx": 70,
+      "speaker": "B",
+      "start": 436.752,
+      "end": 488.741,
+      "text": "Or how l alright. Let's let's imagine a typical construction event, okay. There is some part -- there are there are separate movable parts on the screen ready for use, right. There may be or not a construction already begun, right. Somebody makes the first move. There's some kind of communication either gestural, imaginary or verbal, that plans how we're gonna do it, right. Before that happens the person who speaks is going to do some kind of visual scanning. While they're speaking or communicating in some way, the other person may or may not be looking where they're looking, okay. They may be overlapping gaze at particular objects which are of interest. Let's call it the c the construct, existing construct, which could be zero."
+    },
+    {
+      "idx": 71,
+      "speaker": "A",
+      "start": 444.941,
+      "end": 445.448,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 72,
+      "speaker": "D",
+      "start": 457.667,
+      "end": 457.928,
+      "text": "[other]"
+    },
+    {
+      "idx": 73,
+      "speaker": "A",
+      "start": 458.796,
+      "end": 459.243,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 74,
+      "speaker": "A",
+      "start": 468.308,
+      "end": 468.716,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 75,
+      "speaker": "A",
+      "start": 480.192,
+      "end": 480.535,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 76,
+      "speaker": "B",
+      "start": 488.741,
+      "end": 515.789,
+      "text": "Alright. Or the um the addendum, the thing which is next going to be added. Next piece, okay. Now in neither case, when you draw this, he's looking at triangle one, which you're actually drawing, you know, for a -- the period of time in which he's steadily looking at triangle one is gonna be very very short, right. Because staring fixedly without interruption, blink or or saccade is is an extremely short event."
+    },
+    {
+      "idx": 77,
+      "speaker": "A",
+      "start": 488.819,
+      "end": 489.21,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 78,
+      "speaker": "A",
+      "start": 494.928,
+      "end": 495.283,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 79,
+      "speaker": "C",
+      "start": 507.439,
+      "end": 508.064,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 80,
+      "speaker": "C",
+      "start": 512.077,
+      "end": 512.636,
+      "text": "The --"
+    },
+    {
+      "idx": 81,
+      "speaker": "C",
+      "start": 513.158,
+      "end": 530.773,
+      "text": "Uh it m it m uh but uh br at that point they're all of it -- lumped all the individual fixations as long as it doesn't move off that triangle together as a total sort of gaze gaze time on that. Yep. Yeah. That -- that's a target within the target region."
+    },
+    {
+      "idx": 82,
+      "speaker": "B",
+      "start": 525.168,
+      "end": 561.197,
+      "text": "That's fine. So it's in a region it's in a region. Okay. But even so you're likely to get bouncing in and out of the region, right. So even so you wanna look at if we're interested in how long before the construction move takes place, um how much of the time they spend looking at the same thing. Let's call that our measure of alignment. So they're gonna be -- yeah, that's right, A_ is gonna be on triangle one and various other places. That's right. And and B_ um -- okay. And we're gonna look at the percentage of of that time where they're both in the same region."
+    },
+    {
+      "idx": 83,
+      "speaker": "A",
+      "start": 527.116,
+      "end": 527.638,
+      "text": "Yeah. So --"
+    },
+    {
+      "idx": 84,
+      "speaker": "A",
+      "start": 528.868,
+      "end": 529.24,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 85,
+      "speaker": "C",
+      "start": 534.306,
+      "end": 535.051,
+      "text": "Uh m"
+    },
+    {
+      "idx": 86,
+      "speaker": "A",
+      "start": 546.596,
+      "end": 547.137,
+      "text": "Alright."
+    },
+    {
+      "idx": 87,
+      "speaker": "C",
+      "start": 550.851,
+      "end": 551.358,
+      "text": "Uh-huh."
+    },
+    {
+      "idx": 88,
+      "speaker": "A",
+      "start": 554.535,
+      "end": 554.908,
+      "text": "[other]"
+    },
+    {
+      "idx": 89,
+      "speaker": "C",
+      "start": 554.864,
+      "end": 556.174,
+      "text": "M yes, somewhere."
+    },
+    {
+      "idx": 90,
+      "speaker": "C",
+      "start": 557.626,
+      "end": 558.185,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 91,
+      "speaker": "B",
+      "start": 562.876,
+      "end": 574.641,
+      "text": "Right. So what I want to make sure is that we don't um simplify, do you know what I mean? Temporarily simplify too much, so that -- yeah."
+    },
+    {
+      "idx": 92,
+      "speaker": "A",
+      "start": 563.633,
+      "end": 564.257,
+      "text": "So --"
+    },
+    {
+      "idx": 93,
+      "speaker": "C",
+      "start": 573.039,
+      "end": 581.226,
+      "text": "It it sh yeah, it -- I mean uh as long as we're [other] dif r yeah, it -- there shouldn't be anything missing."
+    },
+    {
+      "idx": 94,
+      "speaker": "B",
+      "start": 577.952,
+      "end": 581.04,
+      "text": "'Cause then you lose percentage as an -- as a as a D_V_."
+    },
+    {
+      "idx": 95,
+      "speaker": "B",
+      "start": 583.28,
+      "end": 589.824,
+      "text": "Right. And so B_ has some periods of looking at one and all it -- will -- which will also be intermittent. Because --"
+    },
+    {
+      "idx": 96,
+      "speaker": "C",
+      "start": 583.562,
+      "end": 584.128,
+      "text": "That should be alright."
+    },
+    {
+      "idx": 97,
+      "speaker": "C",
+      "start": 585.828,
+      "end": 586.2,
+      "text": "."
+    },
+    {
+      "idx": 98,
+      "speaker": "C",
+      "start": 586.685,
+      "end": 587.467,
+      "text": ". Yeah."
+    },
+    {
+      "idx": 99,
+      "speaker": "A",
+      "start": 589.142,
+      "end": 589.575,
+      "text": "Yeah."
+    }
+  ]
+}

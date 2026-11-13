@@ -1,0 +1,293 @@
+{
+  "meeting_id": "s05",
+  "title": "Incident Handoff Crosstalk",
+  "date": "2025-06-06",
+  "timezone": "Asia/Kolkata",
+  "roster": [
+    "Iris",
+    "Noah",
+    "Pavel"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "Iris",
+      "start": 0.0,
+      "end": 3.8,
+      "text": "Let's review the handoff before the next on-call rotation."
+    },
+    {
+      "idx": 1,
+      "speaker": "Noah",
+      "start": 5.2,
+      "end": 9.0,
+      "text": "The incident channel has the latest alert timeline."
+    },
+    {
+      "idx": 2,
+      "speaker": "Pavel",
+      "start": 10.4,
+      "end": 14.2,
+      "text": "I have the database log open."
+    },
+    {
+      "idx": 3,
+      "speaker": "Iris",
+      "start": 15.6,
+      "end": 19.4,
+      "text": "We need clear ownership for the summary and the timestamp check."
+    },
+    {
+      "idx": 4,
+      "speaker": "Noah",
+      "start": 20.8,
+      "end": 24.6,
+      "text": "I'll avoid filling gaps with estimates."
+    },
+    {
+      "idx": 5,
+      "speaker": "Pavel",
+      "start": 26.0,
+      "end": 29.8,
+      "text": "The recovery marker is the one detail that needs verification."
+    },
+    {
+      "idx": 6,
+      "speaker": "Iris",
+      "start": 31.2,
+      "end": 35.0,
+      "text": "We need to review the incident handoff before the next on-call rotation."
+    },
+    {
+      "idx": 7,
+      "speaker": "Noah",
+      "start": 36.4,
+      "end": 40.2,
+      "text": "The alert summary is missing the database recovery time."
+    },
+    {
+      "idx": 8,
+      "speaker": "Pavel",
+      "start": 38.0,
+      "end": 44.0,
+      "text": "I can—"
+    },
+    {
+      "idx": 9,
+      "speaker": "Iris",
+      "start": 40.0,
+      "end": 45.0,
+      "text": "Sorry, Pavel, one second; the audio clipped."
+    },
+    {
+      "idx": 10,
+      "speaker": "Noah",
+      "start": 43.0,
+      "end": 47.0,
+      "text": "I thought I heard 'I can own the summary', but I don't want to assume."
+    },
+    {
+      "idx": 11,
+      "speaker": "Pavel",
+      "start": 57.2,
+      "end": 61.0,
+      "text": "No, I was starting to say I can check—"
+    },
+    {
+      "idx": 12,
+      "speaker": "Iris",
+      "start": 62.4,
+      "end": 66.2,
+      "text": "Let's not assign anything from that interrupted sentence."
+    },
+    {
+      "idx": 13,
+      "speaker": "Pavel",
+      "start": 67.6,
+      "end": 71.4,
+      "text": "Right. I haven't accepted the summary task."
+    },
+    {
+      "idx": 14,
+      "speaker": "Noah",
+      "start": 72.8,
+      "end": 76.6,
+      "text": "I can prepare the alert summary and include the recovery timeline."
+    },
+    {
+      "idx": 15,
+      "speaker": "Iris",
+      "start": 78.0,
+      "end": 81.8,
+      "text": "Thanks, Noah. That's a clear commitment."
+    },
+    {
+      "idx": 16,
+      "speaker": "Pavel",
+      "start": 83.2,
+      "end": 87.0,
+      "text": "I can separately verify the database recovery timestamp."
+    },
+    {
+      "idx": 17,
+      "speaker": "Iris",
+      "start": 88.4,
+      "end": 92.2,
+      "text": "Pavel, are you committing to that verification?"
+    },
+    {
+      "idx": 18,
+      "speaker": "Pavel",
+      "start": 93.6,
+      "end": 97.4,
+      "text": "Yes, I'll verify the recovery timestamp in the incident log."
+    },
+    {
+      "idx": 19,
+      "speaker": "Noah",
+      "start": 98.8,
+      "end": 102.6,
+      "text": "I'll use the verified timestamp when I write the summary."
+    },
+    {
+      "idx": 20,
+      "speaker": "Iris",
+      "start": 104.0,
+      "end": 107.8,
+      "text": "Those are two separate tasks with two clear owners."
+    },
+    {
+      "idx": 21,
+      "speaker": "Pavel",
+      "start": 109.2,
+      "end": 113.0,
+      "text": "The first alert fired at 02:14, but the recovery marker is later."
+    },
+    {
+      "idx": 22,
+      "speaker": "Noah",
+      "start": 114.4,
+      "end": 118.2,
+      "text": "I won't guess the recovery time until Pavel checks it."
+    },
+    {
+      "idx": 23,
+      "speaker": "Iris",
+      "start": 119.6,
+      "end": 123.4,
+      "text": "Good. The summary should distinguish detection from recovery."
+    },
+    {
+      "idx": 24,
+      "speaker": "Pavel",
+      "start": 124.8,
+      "end": 128.6,
+      "text": "I'll post the timestamp in the incident channel."
+    },
+    {
+      "idx": 25,
+      "speaker": "Noah",
+      "start": 130.0,
+      "end": 133.8,
+      "text": "I'll post the completed summary after that."
+    },
+    {
+      "idx": 26,
+      "speaker": "Iris",
+      "start": 135.2,
+      "end": 139.0,
+      "text": "The interrupted fragment at the start is not an assignment."
+    },
+    {
+      "idx": 27,
+      "speaker": "Pavel",
+      "start": 140.4,
+      "end": 144.2,
+      "text": "Agreed; my actual commitment was the timestamp check."
+    },
+    {
+      "idx": 28,
+      "speaker": "Noah",
+      "start": 145.6,
+      "end": 149.4,
+      "text": "The alert summary should include timezone labels."
+    },
+    {
+      "idx": 29,
+      "speaker": "Pavel",
+      "start": 150.8,
+      "end": 154.6,
+      "text": "The log timestamps are in UTC."
+    },
+    {
+      "idx": 30,
+      "speaker": "Iris",
+      "start": 156.0,
+      "end": 159.8,
+      "text": "Please state that in the handoff so nobody converts them incorrectly."
+    },
+    {
+      "idx": 31,
+      "speaker": "Noah",
+      "start": 161.2,
+      "end": 165.0,
+      "text": "I'll include the timezone note in the summary."
+    },
+    {
+      "idx": 32,
+      "speaker": "Pavel",
+      "start": 166.4,
+      "end": 170.2,
+      "text": "The recovery timestamp will be the source of truth."
+    },
+    {
+      "idx": 33,
+      "speaker": "Iris",
+      "start": 171.6,
+      "end": 175.4,
+      "text": "Good; don't use the interrupted fragment as evidence of ownership."
+    },
+    {
+      "idx": 34,
+      "speaker": "Iris",
+      "start": 176.8,
+      "end": 180.6,
+      "text": "Noah owns the summary and Pavel owns the timestamp check."
+    },
+    {
+      "idx": 35,
+      "speaker": "Noah",
+      "start": 182.0,
+      "end": 185.8,
+      "text": "I'll post the summary after the timestamp is verified."
+    },
+    {
+      "idx": 36,
+      "speaker": "Pavel",
+      "start": 187.2,
+      "end": 191.0,
+      "text": "I'll post the verified time in the incident channel."
+    },
+    {
+      "idx": 37,
+      "speaker": "Iris",
+      "start": 192.4,
+      "end": 196.2,
+      "text": "The interrupted fragment was not an assignment."
+    },
+    {
+      "idx": 38,
+      "speaker": "Noah",
+      "start": 197.6,
+      "end": 201.4,
+      "text": "Both actual commitments are clear."
+    },
+    {
+      "idx": 39,
+      "speaker": "Iris",
+      "start": 202.8,
+      "end": 206.6,
+      "text": "Thanks, we're done."
+    }
+  ]
+}

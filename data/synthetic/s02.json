@@ -1,0 +1,293 @@
+{
+  "meeting_id": "s02",
+  "title": "Release Checklist Deadline Change",
+  "date": "2025-03-13",
+  "timezone": "Asia/Kolkata",
+  "roster": [
+    "Maya",
+    "Dan",
+    "Leo"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "Maya",
+      "start": 0.0,
+      "end": 3.8,
+      "text": "Thanks, everyone. This is the final checklist review before the release."
+    },
+    {
+      "idx": 1,
+      "speaker": "Dan",
+      "start": 5.2,
+      "end": 9.0,
+      "text": "I have the checklist and the open security comments ready."
+    },
+    {
+      "idx": 2,
+      "speaker": "Leo",
+      "start": 10.4,
+      "end": 14.2,
+      "text": "The release review is scheduled for Tuesday."
+    },
+    {
+      "idx": 3,
+      "speaker": "Maya",
+      "start": 15.6,
+      "end": 19.4,
+      "text": "Let's focus on the remaining checklist work and its timing."
+    },
+    {
+      "idx": 4,
+      "speaker": "Dan",
+      "start": 20.8,
+      "end": 24.6,
+      "text": "I can walk through the sections that are still incomplete."
+    },
+    {
+      "idx": 5,
+      "speaker": "Leo",
+      "start": 26.0,
+      "end": 29.8,
+      "text": "I'll flag anything that depends on another team."
+    },
+    {
+      "idx": 6,
+      "speaker": "Maya",
+      "start": 31.2,
+      "end": 35.0,
+      "text": "The release checklist has three remaining sections."
+    },
+    {
+      "idx": 7,
+      "speaker": "Dan",
+      "start": 36.4,
+      "end": 40.2,
+      "text": "I can consolidate the checklist and send it to the channel by Friday."
+    },
+    {
+      "idx": 8,
+      "speaker": "Leo",
+      "start": 41.6,
+      "end": 45.4,
+      "text": "Friday is March fourteenth, right?"
+    },
+    {
+      "idx": 9,
+      "speaker": "Dan",
+      "start": 46.8,
+      "end": 50.6,
+      "text": "Yes, that's the date I had in mind."
+    },
+    {
+      "idx": 10,
+      "speaker": "Maya",
+      "start": 52.0,
+      "end": 55.8,
+      "text": "The security review may not finish until Monday."
+    },
+    {
+      "idx": 11,
+      "speaker": "Leo",
+      "start": 57.2,
+      "end": 61.0,
+      "text": "Would Monday be safer for the consolidated checklist too?"
+    },
+    {
+      "idx": 12,
+      "speaker": "Dan",
+      "start": 62.4,
+      "end": 66.2,
+      "text": "Yes, change my deadline from Friday to Monday; I'll send the consolidated checklist then."
+    },
+    {
+      "idx": 13,
+      "speaker": "Maya",
+      "start": 67.6,
+      "end": 71.4,
+      "text": "So Monday, March seventeenth, replaces Friday, March fourteenth."
+    },
+    {
+      "idx": 14,
+      "speaker": "Dan",
+      "start": 72.8,
+      "end": 76.6,
+      "text": "Correct. Please treat Monday as the only deadline."
+    },
+    {
+      "idx": 15,
+      "speaker": "Leo",
+      "start": 78.0,
+      "end": 81.8,
+      "text": "I'll keep the checklist comments open over the weekend."
+    },
+    {
+      "idx": 16,
+      "speaker": "Maya",
+      "start": 83.2,
+      "end": 87.0,
+      "text": "We should not create a second task just because the date changed."
+    },
+    {
+      "idx": 17,
+      "speaker": "Dan",
+      "start": 88.4,
+      "end": 92.2,
+      "text": "Agreed, it's the same consolidation task."
+    },
+    {
+      "idx": 18,
+      "speaker": "Leo",
+      "start": 93.6,
+      "end": 97.4,
+      "text": "The release notes can stay in their own document."
+    },
+    {
+      "idx": 19,
+      "speaker": "Maya",
+      "start": 98.8,
+      "end": 102.6,
+      "text": "The checklist should link to those notes rather than copy them."
+    },
+    {
+      "idx": 20,
+      "speaker": "Dan",
+      "start": 104.0,
+      "end": 107.8,
+      "text": "I'll include the link when I send the consolidated version."
+    },
+    {
+      "idx": 21,
+      "speaker": "Leo",
+      "start": 109.2,
+      "end": 113.0,
+      "text": "Does the security section need a separate sign-off?"
+    },
+    {
+      "idx": 22,
+      "speaker": "Maya",
+      "start": 114.4,
+      "end": 118.2,
+      "text": "Yes, security owns that sign-off, not this checklist task."
+    },
+    {
+      "idx": 23,
+      "speaker": "Dan",
+      "start": 119.6,
+      "end": 123.4,
+      "text": "I'll mark the security section as pending until they respond."
+    },
+    {
+      "idx": 24,
+      "speaker": "Leo",
+      "start": 124.8,
+      "end": 128.6,
+      "text": "The review meeting is already booked for Tuesday morning."
+    },
+    {
+      "idx": 25,
+      "speaker": "Maya",
+      "start": 130.0,
+      "end": 133.8,
+      "text": "That gives us time to inspect the final checklist."
+    },
+    {
+      "idx": 26,
+      "speaker": "Dan",
+      "start": 135.2,
+      "end": 139.0,
+      "text": "I'll send it Monday, March seventeenth."
+    },
+    {
+      "idx": 27,
+      "speaker": "Leo",
+      "start": 140.4,
+      "end": 144.2,
+      "text": "Then we'll use that version for Tuesday's review."
+    },
+    {
+      "idx": 28,
+      "speaker": "Leo",
+      "start": 145.6,
+      "end": 149.4,
+      "text": "The release notes are stored beside the checklist."
+    },
+    {
+      "idx": 29,
+      "speaker": "Maya",
+      "start": 150.8,
+      "end": 154.6,
+      "text": "The security review remains a dependency, not a second checklist deadline."
+    },
+    {
+      "idx": 30,
+      "speaker": "Dan",
+      "start": 156.0,
+      "end": 159.8,
+      "text": "I'll link the review status in the document."
+    },
+    {
+      "idx": 31,
+      "speaker": "Leo",
+      "start": 161.2,
+      "end": 165.0,
+      "text": "The Tuesday meeting can use the Monday version."
+    },
+    {
+      "idx": 32,
+      "speaker": "Maya",
+      "start": 166.4,
+      "end": 170.2,
+      "text": "Please retain the date change in the notes."
+    },
+    {
+      "idx": 33,
+      "speaker": "Dan",
+      "start": 171.6,
+      "end": 175.4,
+      "text": "The checklist task itself has not changed."
+    },
+    {
+      "idx": 34,
+      "speaker": "Maya",
+      "start": 176.8,
+      "end": 180.6,
+      "text": "The final checklist deadline is Monday."
+    },
+    {
+      "idx": 35,
+      "speaker": "Dan",
+      "start": 182.0,
+      "end": 185.8,
+      "text": "I'll send the consolidated version on March seventeenth."
+    },
+    {
+      "idx": 36,
+      "speaker": "Leo",
+      "start": 187.2,
+      "end": 191.0,
+      "text": "I'll use it for Tuesday's review."
+    },
+    {
+      "idx": 37,
+      "speaker": "Maya",
+      "start": 192.4,
+      "end": 196.2,
+      "text": "The earlier Friday date is superseded."
+    },
+    {
+      "idx": 38,
+      "speaker": "Dan",
+      "start": 197.6,
+      "end": 201.4,
+      "text": "Understood; one task, one final deadline."
+    },
+    {
+      "idx": 39,
+      "speaker": "Leo",
+      "start": 202.8,
+      "end": 206.6,
+      "text": "Thanks, that's all from me."
+    }
+  ]
+}

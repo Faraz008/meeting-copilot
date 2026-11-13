@@ -1,0 +1,715 @@
+{
+  "meeting_id": "EN2001a",
+  "title": "AMI non-scenario meeting EN2001a",
+  "date": "2005-02-08",
+  "timezone": null,
+  "roster": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "E",
+      "start": 3.168,
+      "end": 3.968,
+      "text": "'Kay."
+    },
+    {
+      "idx": 1,
+      "speaker": "E",
+      "start": 5.463,
+      "end": 6.103,
+      "text": "Gosh."
+    },
+    {
+      "idx": 2,
+      "speaker": "A",
+      "start": 5.496,
+      "end": 6.07,
+      "text": "Okay."
+    },
+    {
+      "idx": 3,
+      "speaker": "E",
+      "start": 10.454,
+      "end": 10.953,
+      "text": "'Kay."
+    },
+    {
+      "idx": 4,
+      "speaker": "A",
+      "start": 11.04,
+      "end": 15.632,
+      "text": "Does anyone want to see uh Steve's feedback from the specification?"
+    },
+    {
+      "idx": 5,
+      "speaker": "E",
+      "start": 16.736,
+      "end": 18.146,
+      "text": "Is there much more in it than he d"
+    },
+    {
+      "idx": 6,
+      "speaker": "D",
+      "start": 16.98,
+      "end": 19.758,
+      "text": "I I dry-read it the last time.."
+    },
+    {
+      "idx": 7,
+      "speaker": "A",
+      "start": 18.883,
+      "end": 19.373,
+      "text": "Right."
+    },
+    {
+      "idx": 8,
+      "speaker": "E",
+      "start": 18.985,
+      "end": 20.816,
+      "text": "Is there much more in it than he said yesterday?"
+    },
+    {
+      "idx": 9,
+      "speaker": "D",
+      "start": 20.944,
+      "end": 21.391,
+      "text": "[cough]"
+    },
+    {
+      "idx": 10,
+      "speaker": "A",
+      "start": 21.392,
+      "end": 25.857,
+      "text": "Not really, um just what he's talking about, like duplication of effort and --"
+    },
+    {
+      "idx": 11,
+      "speaker": "E",
+      "start": 22.928,
+      "end": 23.312,
+      "text": "Mm."
+    },
+    {
+      "idx": 12,
+      "speaker": "E",
+      "start": 25.001,
+      "end": 27.472,
+      "text": "Hmm. Hmm?"
+    },
+    {
+      "idx": 13,
+      "speaker": "A",
+      "start": 28.033,
+      "end": 40.152,
+      "text": "Like duplication of effort and stuff, and um -- yeah, he was saying that we should maybe uh think about having a prototype for week six, which is next week. Yeah."
+    },
+    {
+      "idx": 14,
+      "speaker": "D",
+      "start": 38.661,
+      "end": 39.467,
+      "text": "Next week."
+    },
+    {
+      "idx": 15,
+      "speaker": "A",
+      "start": 42.224,
+      "end": 47.618,
+      "text": "So we should probably prioritize our packages."
+    },
+    {
+      "idx": 16,
+      "speaker": "E",
+      "start": 46.352,
+      "end": 85.233,
+      "text": "Yeah, now I'd say if for the prototype if we just like wherever possible p chunk in the stuff that we have um pre-annotated and stuff, and for the stuff that we don't have pre-annotated write like a stupid baseline, then we should probably be able to -- basically that means we focus on on the interface first sort of, so that we we take the the ready-made parts and just see how we get them work together in the interface the way we want and and then we have a working prototype. And then we can go back and replace pieces either by our own components or by more sophisticated compo po components of our own. So it's probably feasible. The thing is I'm away this weekend. [laugh] So that's for me --"
+    },
+    {
+      "idx": 17,
+      "speaker": "A",
+      "start": 56.535,
+      "end": 57.029,
+      "text": "Mm."
+    },
+    {
+      "idx": 18,
+      "speaker": "B",
+      "start": 78.696,
+      "end": 79.168,
+      "text": "Yeah."
+    },
+    {
+      "idx": 19,
+      "speaker": "A",
+      "start": 79.967,
+      "end": 80.541,
+      "text": "Yeah."
+    },
+    {
+      "idx": 20,
+      "speaker": "B",
+      "start": 84.208,
+      "end": 94.825,
+      "text": "Yeah, I mean if we just want to have um some data for the user face, could even be random data. Uh mm mm --"
+    },
+    {
+      "idx": 21,
+      "speaker": "E",
+      "start": 92.885,
+      "end": 112.977,
+      "text": "Oh yeah, um yeah. No. But also I might -- like the the similarity thing, like my -- just my matrix itself for my stuff, I c I I think I can do that fairly quickly because I have the algorithms. Yeah, I think today's meeting is really the one where we where we sort of settle down the data structure and as soon as we have that, uh probably like after today's meeting, we then actually need to"
+    },
+    {
+      "idx": 22,
+      "speaker": "D",
+      "start": 93.699,
+      "end": 94.332,
+      "text": "Yeah."
+    },
+    {
+      "idx": 23,
+      "speaker": "B",
+      "start": 103.984,
+      "end": 104.692,
+      "text": "Yeah, I'm --"
+    },
+    {
+      "idx": 24,
+      "speaker": "D",
+      "start": 109.712,
+      "end": 110.27,
+      "text": "Yeah."
+    },
+    {
+      "idx": 25,
+      "speaker": "E",
+      "start": 114.576,
+      "end": 126.784,
+      "text": "well go back first of all and look at NITE X_M_L_ to see in how far that that which we want is compatible with that which NITE X_M_L_ offers us. And then just sort of everyone -- make sure everyone understand the interface."
+    },
+    {
+      "idx": 26,
+      "speaker": "A",
+      "start": 121.848,
+      "end": 122.231,
+      "text": "Yeah."
+    },
+    {
+      "idx": 27,
+      "speaker": "E",
+      "start": 128.992,
+      "end": 157.422,
+      "text": "So [sound indicating ambivalence] I think if today we decide on what data we wanna have now, and and later, maybe even today, we go and look at NITE X_M_L_ or some of us look at NITE X_M_L_ in a bit more detail, just trying to make some sense of that code and see how does the representation work in their system. And then sort of with that knowledge we should be able to then say okay, that type of NITE X_M_L_ data we wanna load into it, and this is how everyone can access it, and then we should be able to go from there."
+    },
+    {
+      "idx": 28,
+      "speaker": "A",
+      "start": 155.456,
+      "end": 161.802,
+      "text": "Hmm. Has has anyone actually looked at the Java code for the --, huh? Hmm."
+    },
+    {
+      "idx": 29,
+      "speaker": "E",
+      "start": 159.725,
+      "end": 160.349,
+      "text": "No."
+    },
+    {
+      "idx": 30,
+      "speaker": "D",
+      "start": 160.252,
+      "end": 160.784,
+      "text": "No."
+    },
+    {
+      "idx": 31,
+      "speaker": "E",
+      "start": 161.552,
+      "end": 198.046,
+      "text": "I've looked -- looked at the documentation and n like seen enough to make me think that we want to use the NITE X_M_L_ framework because um they have a good a event model that synchronizes sort of the data and and every display element. So that takes a lot of work away from us. Sort of that would be a reason for staying within their framework and using their general classes. But beyond that I haven't looked at it at all, which is something we should really do. Who actually like -- for this whole discussion I mean, who of us is doing stuff that is happening on-line and who of us is doing stuff that's happening off-line? Like my data is coming c"
+    },
+    {
+      "idx": 32,
+      "speaker": "A",
+      "start": 186.784,
+      "end": 187.692,
+      "text": "Yeah, I think so."
+    },
+    {
+      "idx": 33,
+      "speaker": "E",
+      "start": 210.56,
+      "end": 210.882,
+      "text": "Hmm?"
+    },
+    {
+      "idx": 34,
+      "speaker": "C",
+      "start": 211.312,
+      "end": 220.896,
+      "text": "The basic word importance is off-line as well. The combined measure might not be if we want to wait what the user has typed in into the search."
+    },
+    {
+      "idx": 35,
+      "speaker": "E",
+      "start": 213.136,
+      "end": 213.689,
+      "text": "Yeah."
+    },
+    {
+      "idx": 36,
+      "speaker": "E",
+      "start": 218.33,
+      "end": 218.954,
+      "text": "Okay."
+    },
+    {
+      "idx": 37,
+      "speaker": "E",
+      "start": 220.946,
+      "end": 221.611,
+      "text": "Okay."
+    },
+    {
+      "idx": 38,
+      "speaker": "D",
+      "start": 222.016,
+      "end": 232.245,
+      "text": "Uh mine's gonna be mostly using the off-line. But the actual stuff it's doing will be on-line. But it won't be very um processor intensive or memory intensive, I don't think."
+    },
+    {
+      "idx": 39,
+      "speaker": "E",
+      "start": 228.896,
+      "end": 229.353,
+      "text": "'Kay."
+    },
+    {
+      "idx": 40,
+      "speaker": "E",
+      "start": 231.608,
+      "end": 250.619,
+      "text": "So basically apart from the display module, the i the display itself, we don't have an extremely high degree of interaction between sort of our modules that create the stuff and and the interface, so the interface is mainly while it's running just working on data that's just loaded from a file, I guess."
+    },
+    {
+      "idx": 41,
+      "speaker": "E",
+      "start": 252.215,
+      "end": 252.895,
+      "text": "There isn't --"
+    },
+    {
+      "idx": 42,
+      "speaker": "A",
+      "start": 252.231,
+      "end": 257.619,
+      "text": "Yeah, I I don't know about the search functionality, that might be online. Depends how it's gonna work."
+    },
+    {
+      "idx": 43,
+      "speaker": "B",
+      "start": 252.964,
+      "end": 253.654,
+      "text": "Hmm."
+    },
+    {
+      "idx": 44,
+      "speaker": "E",
+      "start": 257.617,
+      "end": 293.184,
+      "text": "Yeah, I know. Th Yeah, the search is -- I guess the search is sort of a strange beast anyway because for the search we're leaving the NITE X_M_L_ framework. Um but that's still sort of -- that's good. That means that at least like we don't have the type of situation where somebody has to do like a billion calculations on on data on-line. 'Cause that would make it a lot more -- like that would mean that our interface for the data would have to be a lot more careful about how it performs and and everything. And nobody is modifying that data at at on-line time at all it seems. Nobody's making any changes to the actual data on-line."
+    },
+    {
+      "idx": 45,
+      "speaker": "A",
+      "start": 265.748,
+      "end": 266.307,
+      "text": "Yeah."
+    },
+    {
+      "idx": 46,
+      "speaker": "D",
+      "start": 294.844,
+      "end": 295.658,
+      "text": "Don't think so."
+    },
+    {
+      "idx": 47,
+      "speaker": "E",
+      "start": 295.632,
+      "end": 306.24,
+      "text": "So that's actually making it a lot easier. That basically means our browser really is a viewer mostly, which isn't doing much with the data except for sort of selecting a piece piece of it and and displaying it."
+    },
+    {
+      "idx": 48,
+      "speaker": "D",
+      "start": 297.283,
+      "end": 297.694,
+      "text": "Yeah."
+    },
+    {
+      "idx": 49,
+      "speaker": "D",
+      "start": 310.9,
+      "end": 315.739,
+      "text": "Are we still gonna go for dumping it into a database? Are we still gonna dump it into a database?"
+    },
+    {
+      "idx": 50,
+      "speaker": "E",
+      "start": 313.376,
+      "end": 313.69,
+      "text": "Hmm?"
+    },
+    {
+      "idx": 51,
+      "speaker": "E",
+      "start": 316.096,
+      "end": 319.873,
+      "text": "Well some parts relevant for the search, yes. I'd say so."
+    },
+    {
+      "idx": 52,
+      "speaker": "D",
+      "start": 316.738,
+      "end": 318.243,
+      "text": "[cough]"
+    },
+    {
+      "idx": 53,
+      "speaker": "D",
+      "start": 320.153,
+      "end": 325.377,
+      "text": "'Cause if we are, I reckon we should all read our classes out of the database. It'll be so much easier."
+    },
+    {
+      "idx": 54,
+      "speaker": "E",
+      "start": 325.808,
+      "end": 326.147,
+      "text": "Hmm?"
+    },
+    {
+      "idx": 55,
+      "speaker": "D",
+      "start": 326.672,
+      "end": 342.101,
+      "text": "Well if we're gonna dump the part of it into a database anyway, we might as well dump all the fields we want into the database, calculate everything from there. Then we don't even have to worry that much about the underlying X_M_L_ representation. We can just query it."
+    },
+    {
+      "idx": 56,
+      "speaker": "E",
+      "start": 343.288,
+      "end": 347.204,
+      "text": "Yeah, but nobody of us is doing much of searching from the data in the on-line stage."
+    },
+    {
+      "idx": 57,
+      "speaker": "E",
+      "start": 348.8,
+      "end": 392.893,
+      "text": "And for all together, like the display itself, I think we are easier if we -- if it's sitting on the X_M_L_ than if it's sitting on the S_Q_L_ stuff, because if it's sitting on the X_M_L_, we have the the NITE X_M_L_ framework with all its functionality for synchronizing through all the different levels whenever there's a change, whenever something's moving forward and stuff. And we can just more or less look at their code, like how their player moves forward, and how that moving forward is represented in different windows and stuff. So I think in the actual browser itself I don't wanna sit on the S_Q_L_ if we can sit on the X_M_L_ because sitting on the X_M_L_ we have all -- we have so much help. And for y for like the p the calculations that we're doing apart from the search, it seems that everyone needs some special representations anyway."
+    },
+    {
+      "idx": 58,
+      "speaker": "D",
+      "start": 393.623,
+      "end": 398.97,
+      "text": "Well if we're gonna do that, we should try and store everything in in an X_M_L_ format as well."
+    },
+    {
+      "idx": 59,
+      "speaker": "E",
+      "start": 400.096,
+      "end": 408.332,
+      "text": "You mean our results? Yeah, in in the NITE X_M_L_ X_M_L_ format, so with their time stamps and stuff, so that it's easy to to tie together st things."
+    },
+    {
+      "idx": 60,
+      "speaker": "D",
+      "start": 401.168,
+      "end": 401.586,
+      "text": "Yeah."
+    },
+    {
+      "idx": 61,
+      "speaker": "B",
+      "start": 406.304,
+      "end": 406.946,
+      "text": "Yes."
+    },
+    {
+      "idx": 62,
+      "speaker": "D",
+      "start": 408.146,
+      "end": 408.645,
+      "text": "Yeah."
+    },
+    {
+      "idx": 63,
+      "speaker": "E",
+      "start": 411.664,
+      "end": 442.479,
+      "text": "What I'm -- like what we have to think about is if we go with this multi-level idea, like this idea that sort of if you start with a whole meeting series as one entity, as one thing that you display, as one whole sort of, that then the individual chunks of the individual meetings, whereas -- and then you can click on a meeting, and then sort of the meeting is the whole thing and the chunks are the individual segments, that means sort of we have multiple levels of of representation, which we probably --"
+    },
+    {
+      "idx": 64,
+      "speaker": "E",
+      "start": 443.826,
+      "end": 484.793,
+      "text": "If we if we do it this way -- like we f we have to discuss that if we do it this way, then we should probably find some abstraction model, so that the interface in the sense like deals with it as if it's same so that the interface doesn't really have to worry whether it's a meeting in the whole meeting series or a segment within a meeting, you know what I mean? And that's probably stuff that we have to sort of like process twice then. Like for example that -- like the summary of a meeting within the whole meeting corpus or meeting series y is meeting series a good word for that? I don't really know what -- how to call it. You know what I mean, like not not the whole corpus, but [other] every meeting that has to do with one topic. Um so in in the meeting se series so that a summary for a meeting within the meeting series, are sort of"
+    },
+    {
+      "idx": 65,
+      "speaker": "A",
+      "start": 460.928,
+      "end": 461.345,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 66,
+      "speaker": "B",
+      "start": 461.248,
+      "end": 461.724,
+      "text": "Hmm yes."
+    },
+    {
+      "idx": 67,
+      "speaker": "B",
+      "start": 474.744,
+      "end": 475.218,
+      "text": "Hmm."
+    },
+    {
+      "idx": 68,
+      "speaker": "A",
+      "start": 479.6,
+      "end": 480.439,
+      "text": "Yeah, that makes sense."
+    },
+    {
+      "idx": 69,
+      "speaker": "E",
+      "start": 486.498,
+      "end": 494.792,
+      "text": "compiled off-line by a summary module. And that is separate from a summary of a segment within a meeting. 'Cause I don't think we can --"
+    },
+    {
+      "idx": 70,
+      "speaker": "B",
+      "start": 494.304,
+      "end": 496.64,
+      "text": "[sharp inhale] I'm not so sure."
+    },
+    {
+      "idx": 71,
+      "speaker": "D",
+      "start": 494.463,
+      "end": 510.886,
+      "text": "Well we don't even need to do that, 'cause if we got our information density calculated off-line, so all we do is treat the whole lot as one massive document. I mean they'll -- it's not gonna be so big that we can't load in a information density for every utterance. And we can just summarise based on that."
+    },
+    {
+      "idx": 72,
+      "speaker": "E",
+      "start": 510.907,
+      "end": 511.248,
+      "text": "[other]"
+    },
+    {
+      "idx": 73,
+      "speaker": "B",
+      "start": 511.504,
+      "end": 528.608,
+      "text": "I I thought we would just have like um one big summary um with all the uh different importance levels um displayed on it. And depending on what our um zoom level is, we just display a part of it."
+    },
+    {
+      "idx": 74,
+      "speaker": "E",
+      "start": 528.864,
+      "end": 531.578,
+      "text": "So are we doing that at all levels? Are we um --"
+    },
+    {
+      "idx": 75,
+      "speaker": "B",
+      "start": 531.76,
+      "end": 538.756,
+      "text": "And we would have one very big thing off-line. And from that we would just select what we are displaying."
+    },
+    {
+      "idx": 76,
+      "speaker": "E",
+      "start": 538.656,
+      "end": 542.237,
+      "text": "And just have different like fine-grainedness levels sort of."
+    },
+    {
+      "idx": 77,
+      "speaker": "B",
+      "start": 542.016,
+      "end": 554.21,
+      "text": "Yes. So for example you would um give a high value to those um sequences you want to display in the meeting series summary. And you just cut off."
+    },
+    {
+      "idx": 78,
+      "speaker": "E",
+      "start": 548.261,
+      "end": 548.82,
+      "text": "Mm."
+    },
+    {
+      "idx": 79,
+      "speaker": "E",
+      "start": 551.776,
+      "end": 565.699,
+      "text": "'Kay. So the only thing that -- yeah, so the only thing that would happen basically if I double-click let's say from the whole meeting series on a single meeting, is that the zoom level changes. Like the th the start and the end position changes and the zoom level changes."
+    },
+    {
+      "idx": 80,
+      "speaker": "B",
+      "start": 566.048,
+      "end": 569.101,
+      "text": "That was what I sh I thought, yeah. I thought."
+    },
+    {
+      "idx": 81,
+      "speaker": "D",
+      "start": 567.799,
+      "end": 569.337,
+      "text": "I think you can do it on-line."
+    },
+    {
+      "idx": 82,
+      "speaker": "E",
+      "start": 568.044,
+      "end": 574.184,
+      "text": "I I thought we couldn't do that. Like I was under the impression that we couldn't do that because we couldn't load the data for all that."
+    },
+    {
+      "idx": 83,
+      "speaker": "E",
+      "start": 576.032,
+      "end": 577.264,
+      "text": "But I don't know, I mean that --"
+    },
+    {
+      "idx": 84,
+      "speaker": "A",
+      "start": 578.272,
+      "end": 578.764,
+      "text": "Hmm."
+    },
+    {
+      "idx": 85,
+      "speaker": "D",
+      "start": 578.896,
+      "end": 594.652,
+      "text": "I don't think there's really much point in doing like that when it's just gonna feed off in the end the information density measure basically. And that's all calculated off-line. So what you're really doing is sorting a list, is the p computationally hard part of it."
+    },
+    {
+      "idx": 86,
+      "speaker": "E",
+      "start": 596.448,
+      "end": 599.108,
+      "text": "So I'm s not sure if I got it. I was --"
+    },
+    {
+      "idx": 87,
+      "speaker": "D",
+      "start": 598.809,
+      "end": 627.535,
+      "text": "Well like the ideas we're calculating are information density all off-line first for every utterance in the whole corpus, right? So what you do is you say if you're looking at a series of meetings, you just say well our whole document comprises of all these stuck together. And then all you have to do is sort them by j information density. Like maybe weighted with the search terms, and then extract them. I don't think it's too slow to do on-line, to be honest."
+    },
+    {
+      "idx": 88,
+      "speaker": "E",
+      "start": 605.088,
+      "end": 606.921,
+      "text": "Mm-hmm. Mm-hmm."
+    },
+    {
+      "idx": 89,
+      "speaker": "E",
+      "start": 613.824,
+      "end": 614.268,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 90,
+      "speaker": "E",
+      "start": 617.856,
+      "end": 618.257,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 91,
+      "speaker": "E",
+      "start": 620.752,
+      "end": 621.178,
+      "text": "Okay."
+    },
+    {
+      "idx": 92,
+      "speaker": "E",
+      "start": 622.624,
+      "end": 623.459,
+      "text": "So --"
+    },
+    {
+      "idx": 93,
+      "speaker": "E",
+      "start": 626.62,
+      "end": 640.359,
+      "text": "Okay. I wa I was just worried about the total memory complexity of it. But I I completely admit, I mean, I just sort of like th took that from some thing that Jonathan once said about not loading everything. But maybe I was just wrong about it. How many utterances w"
+    },
+    {
+      "idx": 94,
+      "speaker": "D",
+      "start": 638.326,
+      "end": 638.588,
+      "text": "[cough]"
+    },
+    {
+      "idx": 95,
+      "speaker": "D",
+      "start": 639.006,
+      "end": 639.78,
+      "text": "Is that --"
+    },
+    {
+      "idx": 96,
+      "speaker": "B",
+      "start": 639.565,
+      "end": 657.248,
+      "text": "But I think the m difference might be that we want -- just want to have um the words. And that's not so much what he meant with not possibly loading everything was that you m um load all the uh annotation stuff, all the sound files, all --"
+    },
+    {
+      "idx": 97,
+      "speaker": "E",
+      "start": 651.727,
+      "end": 660.648,
+      "text": "Yeah, and I w yeah. Yeah. Yeah. Yeah. So what we have is we would have a word."
+    },
+    {
+      "idx": 98,
+      "speaker": "D",
+      "start": 654.374,
+      "end": 654.848,
+      "text": "Yeah."
+    },
+    {
+      "idx": 99,
+      "speaker": "A",
+      "start": 655.366,
+      "end": 655.85,
+      "text": "Hmm."
+    }
+  ]
+}

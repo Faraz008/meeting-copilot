@@ -1,0 +1,291 @@
+{
+  "meeting_id": "s15",
+  "title": "Solo Research Update",
+  "date": "2026-03-31",
+  "timezone": "Asia/Kolkata",
+  "roster": [
+    "Elliot"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "Elliot",
+      "start": 0.0,
+      "end": 3.8,
+      "text": "This recording is my individual research status update."
+    },
+    {
+      "idx": 1,
+      "speaker": "Elliot",
+      "start": 5.2,
+      "end": 9.0,
+      "text": "I'll cover the sources, findings, and remaining uncertainties."
+    },
+    {
+      "idx": 2,
+      "speaker": "Elliot",
+      "start": 10.4,
+      "end": 14.2,
+      "text": "The scope is the enterprise market in the current quarter."
+    },
+    {
+      "idx": 3,
+      "speaker": "Elliot",
+      "start": 15.6,
+      "end": 19.4,
+      "text": "I have the report and the analysis spreadsheet open."
+    },
+    {
+      "idx": 4,
+      "speaker": "Elliot",
+      "start": 20.8,
+      "end": 24.6,
+      "text": "There are no other participants on this call."
+    },
+    {
+      "idx": 5,
+      "speaker": "Elliot",
+      "start": 26.0,
+      "end": 29.8,
+      "text": "I'll be careful to distinguish ideas from actual commitments."
+    },
+    {
+      "idx": 6,
+      "speaker": "Elliot",
+      "start": 31.2,
+      "end": 35.0,
+      "text": "I'll walk through the research status; this is a solo update, so there are no other attendees to confirm assignments."
+    },
+    {
+      "idx": 7,
+      "speaker": "Elliot",
+      "start": 36.4,
+      "end": 40.2,
+      "text": "I reviewed the three public market reports last week."
+    },
+    {
+      "idx": 8,
+      "speaker": "Elliot",
+      "start": 41.6,
+      "end": 45.4,
+      "text": "The reports agree that the enterprise segment is growing faster than the small-business segment."
+    },
+    {
+      "idx": 9,
+      "speaker": "Elliot",
+      "start": 46.8,
+      "end": 50.6,
+      "text": "I should probably compare the regional breakdowns in a later analysis."
+    },
+    {
+      "idx": 10,
+      "speaker": "Elliot",
+      "start": 52.0,
+      "end": 55.8,
+      "text": "That is an idea for future work, not a commitment I'm making in this meeting."
+    },
+    {
+      "idx": 11,
+      "speaker": "Elliot",
+      "start": 57.2,
+      "end": 61.0,
+      "text": "The customer interview notes are already grouped by industry."
+    },
+    {
+      "idx": 12,
+      "speaker": "Elliot",
+      "start": 62.4,
+      "end": 66.2,
+      "text": "I noticed two inconsistent labels in the spreadsheet."
+    },
+    {
+      "idx": 13,
+      "speaker": "Elliot",
+      "start": 67.6,
+      "end": 71.4,
+      "text": "We could standardize those labels before the next review."
+    },
+    {
+      "idx": 14,
+      "speaker": "Elliot",
+      "start": 72.8,
+      "end": 76.6,
+      "text": "Again, that's a possible next step; no owner has been assigned by a group."
+    },
+    {
+      "idx": 15,
+      "speaker": "Elliot",
+      "start": 78.0,
+      "end": 81.8,
+      "text": "There is no group discussion or acceptance in this recording."
+    },
+    {
+      "idx": 16,
+      "speaker": "Elliot",
+      "start": 83.2,
+      "end": 87.0,
+      "text": "The current chart uses the latest available quarter."
+    },
+    {
+      "idx": 17,
+      "speaker": "Elliot",
+      "start": 88.4,
+      "end": 92.2,
+      "text": "I haven't checked whether the next quarterly release is available."
+    },
+    {
+      "idx": 18,
+      "speaker": "Elliot",
+      "start": 93.6,
+      "end": 97.4,
+      "text": "It may be worth checking when the new report is published."
+    },
+    {
+      "idx": 19,
+      "speaker": "Elliot",
+      "start": 98.8,
+      "end": 102.6,
+      "text": "I am not setting a deadline for that possible check."
+    },
+    {
+      "idx": 20,
+      "speaker": "Elliot",
+      "start": 104.0,
+      "end": 107.8,
+      "text": "The summary slide is complete."
+    },
+    {
+      "idx": 21,
+      "speaker": "Elliot",
+      "start": 109.2,
+      "end": 113.0,
+      "text": "The source links are included in the appendix."
+    },
+    {
+      "idx": 22,
+      "speaker": "Elliot",
+      "start": 114.4,
+      "end": 118.2,
+      "text": "The sample size is stated on the methodology slide."
+    },
+    {
+      "idx": 23,
+      "speaker": "Elliot",
+      "start": 119.6,
+      "end": 123.4,
+      "text": "I would not infer that anyone else has agreed to update the analysis."
+    },
+    {
+      "idx": 24,
+      "speaker": "Elliot",
+      "start": 124.8,
+      "end": 128.6,
+      "text": "The research findings are preliminary and should be described that way."
+    },
+    {
+      "idx": 25,
+      "speaker": "Elliot",
+      "start": 130.0,
+      "end": 133.8,
+      "text": "I have not made a final recommendation about regional investment."
+    },
+    {
+      "idx": 26,
+      "speaker": "Elliot",
+      "start": 135.2,
+      "end": 139.0,
+      "text": "This recording contains only my status narration."
+    },
+    {
+      "idx": 27,
+      "speaker": "Elliot",
+      "start": 140.4,
+      "end": 144.2,
+      "text": "That is the end of my update."
+    },
+    {
+      "idx": 28,
+      "speaker": "Elliot",
+      "start": 145.6,
+      "end": 149.4,
+      "text": "The regional chart is descriptive, not a recommendation."
+    },
+    {
+      "idx": 29,
+      "speaker": "Elliot",
+      "start": 150.8,
+      "end": 154.6,
+      "text": "The sample is limited to the sources listed in the appendix."
+    },
+    {
+      "idx": 30,
+      "speaker": "Elliot",
+      "start": 156.0,
+      "end": 159.8,
+      "text": "The spreadsheet labels are inconsistent in two rows."
+    },
+    {
+      "idx": 31,
+      "speaker": "Elliot",
+      "start": 161.2,
+      "end": 165.0,
+      "text": "I have not changed them during this status update."
+    },
+    {
+      "idx": 32,
+      "speaker": "Elliot",
+      "start": 166.4,
+      "end": 170.2,
+      "text": "No one else has reviewed this analysis in the recording."
+    },
+    {
+      "idx": 33,
+      "speaker": "Elliot",
+      "start": 171.6,
+      "end": 175.4,
+      "text": "Any later work would need a separate assignment."
+    },
+    {
+      "idx": 34,
+      "speaker": "Elliot",
+      "start": 176.8,
+      "end": 180.6,
+      "text": "The summary reflects the current evidence."
+    },
+    {
+      "idx": 35,
+      "speaker": "Elliot",
+      "start": 182.0,
+      "end": 185.8,
+      "text": "The possible next steps are ideas only."
+    },
+    {
+      "idx": 36,
+      "speaker": "Elliot",
+      "start": 187.2,
+      "end": 191.0,
+      "text": "There was no group agreement or assignment."
+    },
+    {
+      "idx": 37,
+      "speaker": "Elliot",
+      "start": 192.4,
+      "end": 196.2,
+      "text": "The findings remain preliminary."
+    },
+    {
+      "idx": 38,
+      "speaker": "Elliot",
+      "start": 197.6,
+      "end": 201.4,
+      "text": "I'll stop the recording here."
+    },
+    {
+      "idx": 39,
+      "speaker": "Elliot",
+      "start": 202.8,
+      "end": 206.6,
+      "text": "End of update."
+    }
+  ]
+}

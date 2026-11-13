@@ -1,0 +1,293 @@
+{
+  "meeting_id": "s11",
+  "title": "Database Choice Reversal",
+  "date": "2025-11-14",
+  "timezone": "Asia/Kolkata",
+  "roster": [
+    "Lena",
+    "Omar",
+    "Quinn"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "Lena",
+      "start": 0.0,
+      "end": 3.8,
+      "text": "Let's confirm the reporting service database choice."
+    },
+    {
+      "idx": 1,
+      "speaker": "Omar",
+      "start": 5.2,
+      "end": 9.0,
+      "text": "I have the query benchmark results."
+    },
+    {
+      "idx": 2,
+      "speaker": "Quinn",
+      "start": 10.4,
+      "end": 14.2,
+      "text": "The load test report arrived this morning."
+    },
+    {
+      "idx": 3,
+      "speaker": "Lena",
+      "start": 15.6,
+      "end": 19.4,
+      "text": "We should record the decision and any later change accurately."
+    },
+    {
+      "idx": 4,
+      "speaker": "Omar",
+      "start": 20.8,
+      "end": 24.6,
+      "text": "I'll keep the architecture note open."
+    },
+    {
+      "idx": 5,
+      "speaker": "Quinn",
+      "start": 26.0,
+      "end": 29.8,
+      "text": "Let's use the evidence rather than preference."
+    },
+    {
+      "idx": 6,
+      "speaker": "Lena",
+      "start": 31.2,
+      "end": 35.0,
+      "text": "We need to settle the database choice for the reporting service."
+    },
+    {
+      "idx": 7,
+      "speaker": "Omar",
+      "start": 36.4,
+      "end": 40.2,
+      "text": "Postgres meets the query and reporting requirements."
+    },
+    {
+      "idx": 8,
+      "speaker": "Quinn",
+      "start": 41.6,
+      "end": 45.4,
+      "text": "Let's use Postgres for the reporting service."
+    },
+    {
+      "idx": 9,
+      "speaker": "Lena",
+      "start": 46.8,
+      "end": 50.6,
+      "text": "Agreed; we'll proceed with Postgres."
+    },
+    {
+      "idx": 10,
+      "speaker": "Omar",
+      "start": 52.0,
+      "end": 55.8,
+      "text": "I'll update the architecture note to reflect that choice."
+    },
+    {
+      "idx": 11,
+      "speaker": "Quinn",
+      "start": 57.2,
+      "end": 61.0,
+      "text": "The load test results came in this morning."
+    },
+    {
+      "idx": 12,
+      "speaker": "Lena",
+      "start": 62.4,
+      "end": 66.2,
+      "text": "The results show the reporting workload exceeds our Postgres sizing estimate."
+    },
+    {
+      "idx": 13,
+      "speaker": "Omar",
+      "start": 67.6,
+      "end": 71.4,
+      "text": "The alternative test on MySQL was materially more stable."
+    },
+    {
+      "idx": 14,
+      "speaker": "Quinn",
+      "start": 72.8,
+      "end": 76.6,
+      "text": "Given that evidence, I propose reversing the database decision and using MySQL."
+    },
+    {
+      "idx": 15,
+      "speaker": "Lena",
+      "start": 78.0,
+      "end": 81.8,
+      "text": "Agreed. We are reversing the earlier Postgres decision; MySQL is the final choice."
+    },
+    {
+      "idx": 16,
+      "speaker": "Omar",
+      "start": 83.2,
+      "end": 87.0,
+      "text": "I'll revise the architecture note from Postgres to MySQL."
+    },
+    {
+      "idx": 17,
+      "speaker": "Quinn",
+      "start": 88.4,
+      "end": 92.2,
+      "text": "The earlier decision should remain in the history, not as the active choice."
+    },
+    {
+      "idx": 18,
+      "speaker": "Lena",
+      "start": 93.6,
+      "end": 97.4,
+      "text": "Correct. The current decision is MySQL."
+    },
+    {
+      "idx": 19,
+      "speaker": "Omar",
+      "start": 98.8,
+      "end": 102.6,
+      "text": "I'll remove the outdated Postgres recommendation from the implementation section."
+    },
+    {
+      "idx": 20,
+      "speaker": "Quinn",
+      "start": 104.0,
+      "end": 107.8,
+      "text": "Keep a note explaining why the decision changed."
+    },
+    {
+      "idx": 21,
+      "speaker": "Lena",
+      "start": 109.2,
+      "end": 113.0,
+      "text": "The reason is the load-test result, not a change in feature scope."
+    },
+    {
+      "idx": 22,
+      "speaker": "Omar",
+      "start": 114.4,
+      "end": 118.2,
+      "text": "I'll add that rationale to the architecture note."
+    },
+    {
+      "idx": 23,
+      "speaker": "Quinn",
+      "start": 119.6,
+      "end": 123.4,
+      "text": "The migration plan can now use the MySQL test environment."
+    },
+    {
+      "idx": 24,
+      "speaker": "Lena",
+      "start": 124.8,
+      "end": 128.6,
+      "text": "Let's treat the reversal as final unless new performance evidence appears."
+    },
+    {
+      "idx": 25,
+      "speaker": "Omar",
+      "start": 130.0,
+      "end": 133.8,
+      "text": "Understood; MySQL is the active database choice."
+    },
+    {
+      "idx": 26,
+      "speaker": "Quinn",
+      "start": 135.2,
+      "end": 139.0,
+      "text": "The earlier Postgres agreement is historical only."
+    },
+    {
+      "idx": 27,
+      "speaker": "Lena",
+      "start": 140.4,
+      "end": 144.2,
+      "text": "That closes the database choice discussion."
+    },
+    {
+      "idx": 28,
+      "speaker": "Omar",
+      "start": 145.6,
+      "end": 149.4,
+      "text": "The architecture note has a decision history section."
+    },
+    {
+      "idx": 29,
+      "speaker": "Quinn",
+      "start": 150.8,
+      "end": 154.6,
+      "text": "The load test used the same reporting query set."
+    },
+    {
+      "idx": 30,
+      "speaker": "Lena",
+      "start": 156.0,
+      "end": 159.8,
+      "text": "That makes the comparison relevant to the choice."
+    },
+    {
+      "idx": 31,
+      "speaker": "Omar",
+      "start": 161.2,
+      "end": 165.0,
+      "text": "I'll state that the earlier choice was superseded."
+    },
+    {
+      "idx": 32,
+      "speaker": "Quinn",
+      "start": 166.4,
+      "end": 170.2,
+      "text": "The final active option should be unambiguous."
+    },
+    {
+      "idx": 33,
+      "speaker": "Lena",
+      "start": 171.6,
+      "end": 175.4,
+      "text": "The history remains useful for audit purposes."
+    },
+    {
+      "idx": 34,
+      "speaker": "Lena",
+      "start": 176.8,
+      "end": 180.6,
+      "text": "MySQL is the final active database choice."
+    },
+    {
+      "idx": 35,
+      "speaker": "Omar",
+      "start": 182.0,
+      "end": 185.8,
+      "text": "I'll update the architecture note and record the reason."
+    },
+    {
+      "idx": 36,
+      "speaker": "Quinn",
+      "start": 187.2,
+      "end": 191.0,
+      "text": "The earlier Postgres decision remains in history."
+    },
+    {
+      "idx": 37,
+      "speaker": "Lena",
+      "start": 192.4,
+      "end": 196.2,
+      "text": "The reversal is explicit."
+    },
+    {
+      "idx": 38,
+      "speaker": "Omar",
+      "start": 197.6,
+      "end": 201.4,
+      "text": "The implementation note will use MySQL."
+    },
+    {
+      "idx": 39,
+      "speaker": "Quinn",
+      "start": 202.8,
+      "end": 206.6,
+      "text": "Thanks, that's the conclusion."
+    }
+  ]
+}

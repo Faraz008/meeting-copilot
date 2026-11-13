@@ -1,0 +1,714 @@
+{
+  "meeting_id": "EN2005a",
+  "title": "AMI non-scenario meeting EN2005a",
+  "date": "2005-04-29",
+  "timezone": null,
+  "roster": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "B",
+      "start": 0.0,
+      "end": 8.856,
+      "text": "Five years just because of the floods bringing the ceilings down. So -- On its great joy."
+    },
+    {
+      "idx": 1,
+      "speaker": "A",
+      "start": 3.528,
+      "end": 6.746,
+      "text": "Alright, is it -- it's ready. Okay, great."
+    },
+    {
+      "idx": 2,
+      "speaker": "B",
+      "start": 10.544,
+      "end": 11.192,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 3,
+      "speaker": "D",
+      "start": 11.419,
+      "end": 12.498,
+      "text": "Aren't they suing him?"
+    },
+    {
+      "idx": 4,
+      "speaker": "B",
+      "start": 13.524,
+      "end": 35.345,
+      "text": "I think they probably ought to, but uh they -- well, they've only just started realising that treating this as a legal issue is probably the right way to look at it. So they're not really the sort of people that are up for understanding um the intricacies of the committee, I guess. I mean i you would have thought they could, but it's r it's actually quite hard work. The law isn't very clear."
+    },
+    {
+      "idx": 5,
+      "speaker": "D",
+      "start": 21.799,
+      "end": 22.356,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 6,
+      "speaker": "D",
+      "start": 34.045,
+      "end": 36.736,
+      "text": "Can't th can't they get legal aid?"
+    },
+    {
+      "idx": 7,
+      "speaker": "B",
+      "start": 37.914,
+      "end": 55.422,
+      "text": "That's a good question. They p they uh they might be able to. It's just it's so strapped now, um you know, like the Citizens Advice Bureau is so hard to actually get access to because they've -- they have so many cases and so few people. So -- But yeah, that's probably the next thing they'll have to do."
+    },
+    {
+      "idx": 8,
+      "speaker": "D",
+      "start": 52.432,
+      "end": 52.925,
+      "text": "Hmm."
+    },
+    {
+      "idx": 9,
+      "speaker": "D",
+      "start": 55.524,
+      "end": 55.931,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 10,
+      "speaker": "A",
+      "start": 57.098,
+      "end": 58.595,
+      "text": "Yeah, everything's okay."
+    },
+    {
+      "idx": 11,
+      "speaker": "D",
+      "start": 63.248,
+      "end": 67.03,
+      "text": "Are we supposed to count to ten or something? We don't have to do all that?"
+    },
+    {
+      "idx": 12,
+      "speaker": "C",
+      "start": 68.263,
+      "end": 69.046,
+      "text": "Yeah, mm-hmm."
+    },
+    {
+      "idx": 13,
+      "speaker": "D",
+      "start": 68.679,
+      "end": 69.358,
+      "text": "Okay."
+    },
+    {
+      "idx": 14,
+      "speaker": "C",
+      "start": 70.391,
+      "end": 70.882,
+      "text": "Hmm."
+    },
+    {
+      "idx": 15,
+      "speaker": "B",
+      "start": 71.87,
+      "end": 72.227,
+      "text": "M"
+    },
+    {
+      "idx": 16,
+      "speaker": "B",
+      "start": 87.44,
+      "end": 87.854,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 17,
+      "speaker": "A",
+      "start": 88.017,
+      "end": 91.268,
+      "text": "Okay. Okay, okay, yeah."
+    },
+    {
+      "idx": 18,
+      "speaker": "B",
+      "start": 89.592,
+      "end": 131.563,
+      "text": "[laugh] Okay. Yeah. Right. Well um I thought the right thing to do was to review what Wei-Xun's been doing in the area of dialogue structure for work package one over the last period. So basically for him to talk about what he -- what progress he's been making and then for us to um -- for hi for him to describe what work he intends over the next period of the project, and for us to figure out what help he needs with that. Um m maybe give him some help figuring out what publications he's gonna um get out of this and for us to make sure that it fits into the overall project."
+    },
+    {
+      "idx": 19,
+      "speaker": "C",
+      "start": 89.665,
+      "end": 90.939,
+      "text": "[laugh]"
+    },
+    {
+      "idx": 20,
+      "speaker": "D",
+      "start": 91.472,
+      "end": 90.461,
+      "text": "Okay."
+    },
+    {
+      "idx": 21,
+      "speaker": "A",
+      "start": 92.648,
+      "end": 93.58,
+      "text": "Okay, thanks."
+    },
+    {
+      "idx": 22,
+      "speaker": "D",
+      "start": 92.81,
+      "end": 93.739,
+      "text": "Thank you."
+    },
+    {
+      "idx": 23,
+      "speaker": "C",
+      "start": 93.68,
+      "end": 94.304,
+      "text": "Thank you."
+    },
+    {
+      "idx": 24,
+      "speaker": "D",
+      "start": 121.356,
+      "end": 121.941,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 25,
+      "speaker": "B",
+      "start": 131.563,
+      "end": 152.967,
+      "text": "So um this is something that -- you know, we're not gonna do everything today, but I wanted to make sure that we sort of all aligned on what he was doing at the moment and and then sort of figured out how to give him the best advice coming up. So that's that's why I called this."
+    },
+    {
+      "idx": 26,
+      "speaker": "A",
+      "start": 151.474,
+      "end": 154.95,
+      "text": "Okay. Okay, thanks. Yeah."
+    },
+    {
+      "idx": 27,
+      "speaker": "D",
+      "start": 151.504,
+      "end": 152.24,
+      "text": "Okay, so --"
+    },
+    {
+      "idx": 28,
+      "speaker": "D",
+      "start": 154.702,
+      "end": 158.13,
+      "text": "You're gonna give a presentation for us then. Great."
+    },
+    {
+      "idx": 29,
+      "speaker": "A",
+      "start": 156.534,
+      "end": 171.814,
+      "text": "Yeah, yeah a very -- or a quick uh slides. So um I've been here for fourteen month, I think. Yeah, so I've a accustomed to the environment here and enjoy staying here. So mm uh"
+    },
+    {
+      "idx": 30,
+      "speaker": "A",
+      "start": 173.233,
+      "end": 220.034,
+      "text": "from uh last year I was uh uh s uh supervising the annotation of segmentation, summarisation uh uh with Jean uh of the I uh IC ICSI corpus and uh uh uh on the other hand uh I w n uh did s some very preliminary work on chunking the switchboard corpus. But uh that was not uh well picked up in the AMI corpus, which is supposed to be. So uh and currently I'm more interested in see uh [other] uh, yeah, analysing the discourse structure in multi-party meetings. This is what I'm going to present here. So uh"
+    },
+    {
+      "idx": 31,
+      "speaker": "D",
+      "start": 185.344,
+      "end": 185.902,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 32,
+      "speaker": "D",
+      "start": 196.398,
+      "end": 196.93,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 33,
+      "speaker": "A",
+      "start": 222.059,
+      "end": 234.04,
+      "text": "uh in this presentation I'm going to see how we could analyse utterance to utterance relations in multi-party meetings. Um --"
+    },
+    {
+      "idx": 34,
+      "speaker": "A",
+      "start": 235.955,
+      "end": 288.471,
+      "text": "'Cause meetings is a lit different from normal text or a n a normal dialogue or monologue. So interactivity is a concept is a concept that I'm using to distinguish the two uh uh extremes of uh of interac uh of discourse in meetings. And uh for dialogues uh and monologues I think we might have to use different uh concepts to m m uh model the discourse structure. Then uh I w I will uh give a very uh rough plan for the next uh couple of month. And finally I I will intr i introduce some related work, yeah. So"
+    },
+    {
+      "idx": 35,
+      "speaker": "A",
+      "start": 290.291,
+      "end": 321.287,
+      "text": "the big question that I'm concern here is what's the relationship between utterances in multi-party meetings, or how do we analyse discourse structure right above utterances instead of uh those high level intentional structure of discourse? So the concern here is about the very local low level utterance-to-utterance relations in multi-party meetings. Uh this is the local discourse structure."
+    },
+    {
+      "idx": 36,
+      "speaker": "A",
+      "start": 321.287,
+      "end": 355.369,
+      "text": "So the uh building block of that kind of uh structure would be the uh utterance and possibly one of its properties, the dialogue act which we're currently uh working on or uh -- and uh for meetings, yeah, so I've mentioned uh uh before that meetings is a bit different from uh monologue and uh dialogues."
+    },
+    {
+      "idx": 37,
+      "speaker": "A",
+      "start": 357.556,
+      "end": 401.362,
+      "text": "So uh in meetings I uh from my uh reading of the -- one of the AMI meetings I_S_ one O_ eight, uh the uh the four meetings, I noticed that uh uh the interaction, degrees of interaction in the meetings uh [other] varies from parts to parts. So for some part uh the interaction is very strong. So it's obviously a dialogue. But uh for some part part where the interaction is very weak, uh just uh like the uh chairman or project manager is mm"
+    },
+    {
+      "idx": 38,
+      "speaker": "A",
+      "start": 401.362,
+      "end": 439.653,
+      "text": "uh coordinating the meeting. He's uh pushing the meeting forward, then this kind of s organ organisational structure or part. Uh uh and also other pr uh parts like uh the back-channels without any [other] uh semantic content uh from other participants. So this kind of uh interaction [other] might be better analysed as monologue, which uh -- in which there is interaction, I suppose. So --"
+    },
+    {
+      "idx": 39,
+      "speaker": "B",
+      "start": 441.035,
+      "end": 466.884,
+      "text": "I'm a little bit confused. So um when you say interactivity, do you mean um -- well, how would you characterise a highly interactive meeting? What are the measurements you'd apply? So you -- I think what you're doing is segmenting meetings into highly interactive parts and not so interactive parts, where you think some of them are like -- a bit like dialogue and some are a bit like monologue. So what measurements would you apply to um find out which is which?"
+    },
+    {
+      "idx": 40,
+      "speaker": "A",
+      "start": 442.148,
+      "end": 442.73,
+      "text": "Uh-huh."
+    },
+    {
+      "idx": 41,
+      "speaker": "A",
+      "start": 446.031,
+      "end": 446.605,
+      "text": "Yeah."
+    },
+    {
+      "idx": 42,
+      "speaker": "A",
+      "start": 460.175,
+      "end": 463.244,
+      "text": "Yeah. Yeah, yeah."
+    },
+    {
+      "idx": 43,
+      "speaker": "A",
+      "start": 465.308,
+      "end": 492.849,
+      "text": "So yeah, so this is going to be based on the utterance to utterance. So for this utterance, the next utterance, if it's from another pa uh speaker, then uh if it's not a back-channel or uh something similar, then it's a dialogue. So if speak changes. So yeah, speaker change is --"
+    },
+    {
+      "idx": 44,
+      "speaker": "B",
+      "start": 491.835,
+      "end": 495.64,
+      "text": "So you mean relatively short turns and speaker change."
+    },
+    {
+      "idx": 45,
+      "speaker": "A",
+      "start": 494.229,
+      "end": 534.061,
+      "text": "Yeah. Yeah, yeah, b but uh sh short uh turns uh like mm or something very similar might be the uh seg second type of interactivity, the weak interactivity. That might not be analysed as a uh monologue, but as a dial uh no no no, wrong, uh not as dialogue but as um a monologue. Yeah. So for that part uh for that kind of back-channels we can just skip that and uh uh to not treat them as interruptions or something like. Then yeah, we could just uh --"
+    },
+    {
+      "idx": 46,
+      "speaker": "B",
+      "start": 521.923,
+      "end": 522.199,
+      "text": "S"
+    },
+    {
+      "idx": 47,
+      "speaker": "B",
+      "start": 534.115,
+      "end": 556.799,
+      "text": "So so am I right in thinking you think that you can segment meetings maybe into two t types of areas, interactive and non-interactive? So what are th what are the characteristics of the interactive areas? So w so okay, so but you just said, I think, that you would characterise short turns as being the non-interactive parts."
+    },
+    {
+      "idx": 48,
+      "speaker": "A",
+      "start": 540.516,
+      "end": 541.098,
+      "text": "Yeah."
+    },
+    {
+      "idx": 49,
+      "speaker": "A",
+      "start": 542.588,
+      "end": 543.203,
+      "text": "Yeah."
+    },
+    {
+      "idx": 50,
+      "speaker": "A",
+      "start": 545.939,
+      "end": 549.372,
+      "text": "Speak change speak change would be -- yeah."
+    },
+    {
+      "idx": 51,
+      "speaker": "A",
+      "start": 555.765,
+      "end": 567.986,
+      "text": "If if it's uh just some kind of back-channel or it's just a signal signal the s the speaker is listening or is understanding what's going on, yeah. Yeah, yeah."
+    },
+    {
+      "idx": 52,
+      "speaker": "B",
+      "start": 564.883,
+      "end": 572.999,
+      "text": "Oh okay, well we we can discount back-channels. I mean uh c are you -- is it okay if we talk about this for a minute 'cause I'm confused. Or or do you get a c"
+    },
+    {
+      "idx": 53,
+      "speaker": "D",
+      "start": 571.902,
+      "end": 581.405,
+      "text": "I was just wondering if you were gonna define this more on the slides to come or if this is as much as you're gonna tell us. I'm just wondering if he's prepared --"
+    },
+    {
+      "idx": 54,
+      "speaker": "A",
+      "start": 573.291,
+      "end": 573.732,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 55,
+      "speaker": "B",
+      "start": 575.203,
+      "end": 576.201,
+      "text": "Alright. Alright."
+    },
+    {
+      "idx": 56,
+      "speaker": "A",
+      "start": 575.48,
+      "end": 576.004,
+      "text": "Uh-huh."
+    },
+    {
+      "idx": 57,
+      "speaker": "A",
+      "start": 579.024,
+      "end": 579.99,
+      "text": "Um --"
+    },
+    {
+      "idx": 58,
+      "speaker": "B",
+      "start": 580.528,
+      "end": 590.056,
+      "text": "'Cause if this is all we've got, I think we should uh have interactive and non-interactive on the board and then figure out what properties going to each just so we're clear what the two mean. Uh --"
+    },
+    {
+      "idx": 59,
+      "speaker": "D",
+      "start": 589.36,
+      "end": 594.824,
+      "text": "Sure. So so what -- did you have more on later slides about this?"
+    },
+    {
+      "idx": 60,
+      "speaker": "A",
+      "start": 590.909,
+      "end": 591.508,
+      "text": "Yeah, so --"
+    },
+    {
+      "idx": 61,
+      "speaker": "A",
+      "start": 592.955,
+      "end": 610.159,
+      "text": "Uh yeah. Uh so for interactivity this is the only slide. So yeah activity is -- uh I'd define interactivity to be as a degrees of interaction in meetings. So which might -- uh speak change whi uh uh would be a very good indicator, yeah."
+    },
+    {
+      "idx": 62,
+      "speaker": "D",
+      "start": 597.296,
+      "end": 597.847,
+      "text": "Okay."
+    },
+    {
+      "idx": 63,
+      "speaker": "B",
+      "start": 603.988,
+      "end": 604.99,
+      "text": "Well uh okay --"
+    },
+    {
+      "idx": 64,
+      "speaker": "B",
+      "start": 609.839,
+      "end": 621.268,
+      "text": "But are you -- you need to be more precise what you mean by speaker change. So y do you mean all of the speakers are involved in it? Is it sufficient for two speakers? Right, and then --"
+    },
+    {
+      "idx": 65,
+      "speaker": "A",
+      "start": 612.11,
+      "end": 612.517,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 66,
+      "speaker": "A",
+      "start": 613.897,
+      "end": 615.086,
+      "text": "Yeah, yeah yeah."
+    },
+    {
+      "idx": 67,
+      "speaker": "A",
+      "start": 617.664,
+      "end": 638.897,
+      "text": "No, no. Yeah. No -- yeah. So actually, so uh this is a very rough idea of interactivity. If we go further, we might distinguish uh the interactivity between two, f three, or all the groups. So that might be some final [other] definition for the uh interactivity, yeah."
+    },
+    {
+      "idx": 68,
+      "speaker": "D",
+      "start": 638.944,
+      "end": 645.738,
+      "text": "But we've also established that it's not just speaker change, it -- because if you have mm-hmm, okay, then --"
+    },
+    {
+      "idx": 69,
+      "speaker": "A",
+      "start": 644.46,
+      "end": 650.606,
+      "text": "Yeah, so that might be the second class, yeah. Weak -- this is a kind of weak interactivity. Yeah. Yeah."
+    },
+    {
+      "idx": 70,
+      "speaker": "B",
+      "start": 646.306,
+      "end": 677.082,
+      "text": "Okay, but that's n you can -- that's definitional, right. So so I mean you wouldn't necessarily consider that to change the turns. Those are just back-channels. So one speaker will have the floor channel um throughout that and -- so I guess what you're saying is that the interactive sections would have shorter speaker turns when you're not considering the back-channels as interruptions. Um so --"
+    },
+    {
+      "idx": 71,
+      "speaker": "D",
+      "start": 648.432,
+      "end": 650.898,
+      "text": "Okay. Y yeah, yeah."
+    },
+    {
+      "idx": 72,
+      "speaker": "D",
+      "start": 658.968,
+      "end": 661.15,
+      "text": "Right. Yeah. Mm-hmm."
+    },
+    {
+      "idx": 73,
+      "speaker": "A",
+      "start": 671.622,
+      "end": 674.067,
+      "text": "Yeah, yeah, yeah, yeah, yeah, yeah, yeah, definitely, yeah."
+    },
+    {
+      "idx": 74,
+      "speaker": "D",
+      "start": 678.377,
+      "end": 685.78,
+      "text": "Well it might be the case that to be interactive there have to be dialogue acts of some specific type in a turn rather than --"
+    },
+    {
+      "idx": 75,
+      "speaker": "A",
+      "start": 683.575,
+      "end": 688.407,
+      "text": "Yeah, yeah, yeah, that's also true. Yeah. S yeah, yeah, actually 'cause uh I've looked uh --"
+    },
+    {
+      "idx": 76,
+      "speaker": "B",
+      "start": 687.408,
+      "end": 688.466,
+      "text": "Well do y"
+    },
+    {
+      "idx": 77,
+      "speaker": "D",
+      "start": 688.496,
+      "end": 691.769,
+      "text": "Like statement, statement, reject, accept, you know, something like that."
+    },
+    {
+      "idx": 78,
+      "speaker": "B",
+      "start": 690.851,
+      "end": 703.515,
+      "text": "Yeah. Sufficient but not necessary maybe. It depend if you had so a bunch of people all just giving information and opinion around the table and they never actually ask questions of each other, but the turns were actually quite short, which one would it be?"
+    },
+    {
+      "idx": 79,
+      "speaker": "A",
+      "start": 691.134,
+      "end": 691.891,
+      "text": "Yeah."
+    },
+    {
+      "idx": 80,
+      "speaker": "A",
+      "start": 697.346,
+      "end": 698.036,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 81,
+      "speaker": "A",
+      "start": 700.03,
+      "end": 750.668,
+      "text": "Okay. So for that case, yeah uh -- yeah, so this might be a weak definition of interactivity. So if we could figure out uh if they are really interacti uh interacting with each other, or just uh uh incremental mm presentation of some information. So that's d uh different. We might um [other] yeah need a more strict or finer uh definition of interactivity. Yeah, ju uh for this use of the -- uh for the use of this term for the indicator of the uh degrees of interaction, uh I think for for the current uh proposal I think that it's just for distinguish between dialogues and monologues. 'Cause for these two types of discourse, uh the uh [other]"
+    },
+    {
+      "idx": 82,
+      "speaker": "B",
+      "start": 719.517,
+      "end": 720.207,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 83,
+      "speaker": "A",
+      "start": 752.057,
+      "end": 758.683,
+      "text": "the the cons the the two that we are going to analyse the discourse structure might be d different."
+    },
+    {
+      "idx": 84,
+      "speaker": "B",
+      "start": 758.198,
+      "end": 768.555,
+      "text": "Right, okay. I remember you saying this before. So basically you want to do the segmentation because you're going to apply completely different analyses to the two sections. Um --"
+    },
+    {
+      "idx": 85,
+      "speaker": "A",
+      "start": 760.462,
+      "end": 761.577,
+      "text": "Yeah, yeah."
+    },
+    {
+      "idx": 86,
+      "speaker": "A",
+      "start": 766.589,
+      "end": 797.907,
+      "text": "Yeah, yeah. And also 'cause uh I have uh read some of the M_O_T_A_ uh corpus. Uh so for some part of th that kind of meetings um uh several utterances or dialogue acts are just uh tagged as statement. So that -- I don't think that would be very informative for high level str analysis. So that's all what -- uh that's why why uh I'm distinguishing the two kinds of discourse here."
+    },
+    {
+      "idx": 87,
+      "speaker": "B",
+      "start": 797.656,
+      "end": 857.662,
+      "text": "Right. So Wei-Xun quite -- takes quite a strong position on um this um difference between these two um kinds of group activities because he says that they admit different kinds of analyses. Right, the -- with the non-interactive, more monolo mono-logic sections of the meeting um you have to uh analyse them using something akin to rhetorical structure or something. And uh with the other sections you uh um you you use some other theory to look at them. And I actually uh think that that's a slightly extreme um position um with regard to the literature that a lot of people might say it doesn't really matter who the different speakers are in an interactive section. You can still um build maybe the the same argument structure over the top of the basic um acts and propositional content that's there."
+    },
+    {
+      "idx": 88,
+      "speaker": "D",
+      "start": 824.163,
+      "end": 824.647,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 89,
+      "speaker": "A",
+      "start": 852.125,
+      "end": 852.759,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 90,
+      "speaker": "B",
+      "start": 857.662,
+      "end": 892.832,
+      "text": "And uh what you get is a messier version of the argument structure because not everybody has the same argument in their brain, you know, for this. But um but that the same theory or the the same analysis can be applied to both parts. So I think it's important to keep um that in mind, and if you if you do need to argue that these two kinds of group activities uh can can only be analysed if you use different analytical mechanisms, then you have to explain why that is. Right, so it it puts an extra burden of proof on the work that you do."
+    },
+    {
+      "idx": 91,
+      "speaker": "A",
+      "start": 873.927,
+      "end": 874.486,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 92,
+      "speaker": "A",
+      "start": 889.886,
+      "end": 890.37,
+      "text": "Okay."
+    },
+    {
+      "idx": 93,
+      "speaker": "D",
+      "start": 893.638,
+      "end": 918.272,
+      "text": "Well, actually I don't quite agree. I mean i for example you can't use R_S_T_ across speakers because the definitions of the relations depend on the intentions of the speaker and there's different speakers have different intentions. So you can't use the theory. It's just fundamentally wrong, it's -- it was meant as a theory for a one person -- uh right. So that doesn't mean there aren't other theo so for --"
+    },
+    {
+      "idx": 94,
+      "speaker": "A",
+      "start": 896.166,
+      "end": 896.8,
+      "text": "Mm-hmm."
+    },
+    {
+      "idx": 95,
+      "speaker": "B",
+      "start": 896.717,
+      "end": 897.164,
+      "text": "Mm."
+    },
+    {
+      "idx": 96,
+      "speaker": "B",
+      "start": 912.714,
+      "end": 912.914,
+      "text": "[other]"
+    },
+    {
+      "idx": 97,
+      "speaker": "A",
+      "start": 915.32,
+      "end": 916.737,
+      "text": "Yeah, the -- like -- yeah."
+    },
+    {
+      "idx": 98,
+      "speaker": "B",
+      "start": 915.573,
+      "end": 916.039,
+      "text": "Right."
+    },
+    {
+      "idx": 99,
+      "speaker": "B",
+      "start": 917.386,
+      "end": 945.408,
+      "text": "But to the grou degree that a group is building an argument together, I mean it -- I think wh what you're doing in a group discussion isn't necessarily one coherent argument f for the person, but an argument that is the group view. And so it's -- maybe it's not R_S_T_, um but it's um more akin to um -- I don't know, is it Toolman? But, you know, not that i but you know, the kinds of things where people to -- try to represent argument structure."
+    }
+  ]
+}

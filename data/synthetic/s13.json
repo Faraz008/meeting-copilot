@@ -1,0 +1,294 @@
+{
+  "meeting_id": "s13",
+  "title": "Nickname Identity Check",
+  "date": "2026-01-16",
+  "timezone": "Asia/Kolkata",
+  "roster": [
+    "Robert",
+    "Roberto",
+    "Samantha",
+    "Samuel"
+  ],
+  "turns": [
+    {
+      "idx": 0,
+      "speaker": "Robert",
+      "start": 0.0,
+      "end": 3.8,
+      "text": "Let's review the partner onboarding notes and make the ownership references clear."
+    },
+    {
+      "idx": 1,
+      "speaker": "Roberto",
+      "start": 5.2,
+      "end": 9.0,
+      "text": "I have the partner calendar and the draft notes open."
+    },
+    {
+      "idx": 2,
+      "speaker": "Samantha",
+      "start": 10.4,
+      "end": 14.2,
+      "text": "I checked the contact list for the onboarding team."
+    },
+    {
+      "idx": 3,
+      "speaker": "Samuel",
+      "start": 15.6,
+      "end": 19.4,
+      "text": "The transcript uses shortened names in two places."
+    },
+    {
+      "idx": 4,
+      "speaker": "Robert",
+      "start": 20.8,
+      "end": 24.6,
+      "text": "Let's resolve those from direct confirmation rather than guessing."
+    },
+    {
+      "idx": 5,
+      "speaker": "Samantha",
+      "start": 26.0,
+      "end": 29.8,
+      "text": "I'll call out which person each reference means."
+    },
+    {
+      "idx": 6,
+      "speaker": "Robert",
+      "start": 31.2,
+      "end": 35.0,
+      "text": "We need to assign the partner onboarding summary."
+    },
+    {
+      "idx": 7,
+      "speaker": "Samantha",
+      "start": 36.4,
+      "end": 40.2,
+      "text": "The notes mention Rob in the first paragraph."
+    },
+    {
+      "idx": 8,
+      "speaker": "Roberto",
+      "start": 41.6,
+      "end": 45.4,
+      "text": "Just to avoid confusion, I'm Roberto; Robert is also on this call."
+    },
+    {
+      "idx": 9,
+      "speaker": "Robert",
+      "start": 46.8,
+      "end": 50.6,
+      "text": "And I'm Robert. When the notes say Rob in that sentence, they mean me; I confirmed it with the author."
+    },
+    {
+      "idx": 10,
+      "speaker": "Samuel",
+      "start": 52.0,
+      "end": 55.8,
+      "text": "The next line says Sam should check the onboarding dates."
+    },
+    {
+      "idx": 11,
+      "speaker": "Samantha",
+      "start": 57.2,
+      "end": 61.0,
+      "text": "I'm Samantha, and the author confirmed that 'Sam' in that line refers to me."
+    },
+    {
+      "idx": 12,
+      "speaker": "Robert",
+      "start": 62.4,
+      "end": 66.2,
+      "text": "Thanks, so Rob maps to Robert and Sam maps to Samantha in these notes."
+    },
+    {
+      "idx": 13,
+      "speaker": "Samantha",
+      "start": 67.6,
+      "end": 71.4,
+      "text": "I'll check the onboarding dates against the partner calendar."
+    },
+    {
+      "idx": 14,
+      "speaker": "Robert",
+      "start": 72.8,
+      "end": 76.6,
+      "text": "I'll prepare the onboarding summary using the corrected identity references."
+    },
+    {
+      "idx": 15,
+      "speaker": "Roberto",
+      "start": 78.0,
+      "end": 81.8,
+      "text": "I haven't accepted either task."
+    },
+    {
+      "idx": 16,
+      "speaker": "Samuel",
+      "start": 83.2,
+      "end": 87.0,
+      "text": "Nor have I; the nickname alone should not assign the task to me."
+    },
+    {
+      "idx": 17,
+      "speaker": "Samantha",
+      "start": 88.4,
+      "end": 92.2,
+      "text": "I'll flag any date that differs from the partner calendar."
+    },
+    {
+      "idx": 18,
+      "speaker": "Robert",
+      "start": 93.6,
+      "end": 97.4,
+      "text": "I'll keep the summary focused on the agreed onboarding steps."
+    },
+    {
+      "idx": 19,
+      "speaker": "Roberto",
+      "start": 98.8,
+      "end": 102.6,
+      "text": "Can we include the escalation contact in the appendix?"
+    },
+    {
+      "idx": 20,
+      "speaker": "Robert",
+      "start": 104.0,
+      "end": 107.8,
+      "text": "Yes, that belongs in the summary."
+    },
+    {
+      "idx": 21,
+      "speaker": "Samantha",
+      "start": 109.2,
+      "end": 113.0,
+      "text": "The calendar check is separate from writing the summary."
+    },
+    {
+      "idx": 22,
+      "speaker": "Samuel",
+      "start": 114.4,
+      "end": 118.2,
+      "text": "The notes should retain full names in the final version."
+    },
+    {
+      "idx": 23,
+      "speaker": "Robert",
+      "start": 119.6,
+      "end": 123.4,
+      "text": "Agreed; use full names to avoid ambiguity."
+    },
+    {
+      "idx": 24,
+      "speaker": "Samantha",
+      "start": 124.8,
+      "end": 128.6,
+      "text": "I'll send the date check results to Robert."
+    },
+    {
+      "idx": 25,
+      "speaker": "Robert",
+      "start": 130.0,
+      "end": 133.8,
+      "text": "I'll incorporate those results into the summary."
+    },
+    {
+      "idx": 26,
+      "speaker": "Roberto",
+      "start": 135.2,
+      "end": 139.0,
+      "text": "The identity mapping is now explicit."
+    },
+    {
+      "idx": 27,
+      "speaker": "Samuel",
+      "start": 140.4,
+      "end": 144.2,
+      "text": "Good, no need to guess from the nickname by itself."
+    },
+    {
+      "idx": 28,
+      "speaker": "Roberto",
+      "start": 145.6,
+      "end": 149.4,
+      "text": "The onboarding checklist includes identity verification and access setup."
+    },
+    {
+      "idx": 29,
+      "speaker": "Robert",
+      "start": 150.8,
+      "end": 154.6,
+      "text": "The summary should use the names from the official partner roster."
+    },
+    {
+      "idx": 30,
+      "speaker": "Samantha",
+      "start": 156.0,
+      "end": 159.8,
+      "text": "The calendar dates are already in the partner workspace."
+    },
+    {
+      "idx": 31,
+      "speaker": "Samuel",
+      "start": 161.2,
+      "end": 165.0,
+      "text": "I can see the same shortened labels in the source notes."
+    },
+    {
+      "idx": 32,
+      "speaker": "Roberto",
+      "start": 166.4,
+      "end": 170.2,
+      "text": "That doesn't establish that the labels refer to me or Samuel."
+    },
+    {
+      "idx": 33,
+      "speaker": "Robert",
+      "start": 171.6,
+      "end": 175.4,
+      "text": "Right; the speakers clarified the references in this meeting."
+    },
+    {
+      "idx": 34,
+      "speaker": "Robert",
+      "start": 176.8,
+      "end": 180.6,
+      "text": "The summary and date check have separate owners."
+    },
+    {
+      "idx": 35,
+      "speaker": "Samantha",
+      "start": 182.0,
+      "end": 185.8,
+      "text": "I'll check the dates and send the results to Robert."
+    },
+    {
+      "idx": 36,
+      "speaker": "Robert",
+      "start": 187.2,
+      "end": 191.0,
+      "text": "I'll prepare the summary using the corrected references."
+    },
+    {
+      "idx": 37,
+      "speaker": "Roberto",
+      "start": 192.4,
+      "end": 196.2,
+      "text": "I have not taken either task."
+    },
+    {
+      "idx": 38,
+      "speaker": "Samuel",
+      "start": 197.6,
+      "end": 201.4,
+      "text": "And neither has been assigned to me."
+    },
+    {
+      "idx": 39,
+      "speaker": "Samantha",
+      "start": 202.8,
+      "end": 206.6,
+      "text": "Thanks, that resolves the identity question."
+    }
+  ]
+}

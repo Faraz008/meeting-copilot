@@ -1,223 +1,225 @@
 import argparse
 import json
 import sys
+from collections import Counter
 from datetime import date
 from pathlib import Path
-from typing import Any
+
+from pydantic import ValidationError
+
+from copilot.eval.gold import KNOWN_TAGS, GoldMeeting
 
 ROOT = Path(__file__).resolve().parents[1]
-
-GOLD_DIR = ROOT / "data" / "gold"
-TRANSCRIPT_DIRS = [
-    ROOT / "data" / "synthetic",
-    ROOT / "data" / "raw",
-]
-
-ITEM_CATEGORIES = (
-    "action_items",
-    "decisions",
-    "open_questions",
-    "follow_ups",
-)
+SPLITS = ("dev", "test")
 
 
-def load_json(path: Path) -> dict[str, Any]:
-    with path.open(encoding="utf-8") as file:
-        data = json.load(file)
+def resolve_transcript_path(gold: GoldMeeting) -> Path:
+    if gold.transcript:
+        path = Path(gold.transcript)
+        return path if path.is_absolute() else ROOT / path
 
-    if not isinstance(data, dict):
-        raise ValueError(f"{path}: expected a JSON object")
-
-    return data
+    return ROOT / "data" / gold.source / f"{gold.meeting_id}.json"
 
 
-def find_transcript(meeting_id: str) -> Path | None:
-    """Find the transcript corresponding to a gold meeting."""
-    for directory in TRANSCRIPT_DIRS:
-        path = directory / f"{meeting_id}.json"
-        if path.is_file():
-            return path
-
-    return None
-
-
-def validate_date(value: Any, field: str, errors: list[str]) -> None:
-    """Check that a value is a valid ISO-8601 calendar date."""
-    if not isinstance(value, str):
-        errors.append(f"{field}: expected a date string")
-        return
+def check(path: Path):
+    errors: list[str] = []
+    warnings: list[str] = []
 
     try:
-        date.fromisoformat(value)
-    except ValueError:
-        errors.append(f"{field}: invalid date {value!r}")
+        gold = GoldMeeting.model_validate_json(path.read_text(encoding="utf-8"))
+    except ValidationError as exc:
+        return None, [f"schema error: {exc}"], warnings
 
+    if gold.meeting_id != path.stem:
+        errors.append(f"meeting_id '{gold.meeting_id}' != filename '{path.stem}'")
 
-def get_transcript_turns(
-    transcript: dict[str, Any],
-    path: Path,
-    errors: list[str],
-) -> set[int]:
-    """Extract valid turn indexes from a transcript JSON file."""
+    transcript_path = resolve_transcript_path(gold)
+
+    if not transcript_path.exists():
+        message = f"transcript missing: {transcript_path}"
+
+        if gold.source == "synthetic":
+            errors.append(message)
+        else:
+            warnings.append(message)
+
+        return gold, errors, warnings
+
+    try:
+        transcript = json.loads(transcript_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as exc:
+        errors.append(f"could not read transcript JSON: {exc}")
+        return gold, errors, warnings
+
+    if not isinstance(transcript, dict):
+        errors.append("transcript root must be a JSON object")
+        return gold, errors, warnings
+
+    transcript_id = transcript.get("meeting_id")
+
+    if transcript_id != gold.meeting_id:
+        errors.append(
+            f"transcript meeting_id '{transcript_id}' "
+            f"does not match gold meeting_id '{gold.meeting_id}'"
+        )
+
+    transcript_date = transcript.get("date")
+
+    if transcript_date:
+        try:
+            parsed_date = date.fromisoformat(transcript_date)
+            if parsed_date != gold.meeting_date:
+                errors.append(
+                    f"transcript date {parsed_date} does not match "
+                    f"gold meeting_date {gold.meeting_date}"
+                )
+        except (TypeError, ValueError):
+            errors.append(f"invalid transcript date: {transcript_date}")
+
     turns = transcript.get("turns")
 
-    if not isinstance(turns, list):
-        errors.append(f"{path}: expected a 'turns' list")
-        return set()
+    if not isinstance(turns, list) or not turns:
+        errors.append("transcript must contain a non-empty turns list")
+        return gold, errors, warnings
 
-    indexes: set[int] = set()
+    valid_turn_ids: set[int] = set()
+    speakers: set[str] = set()
 
     for position, turn in enumerate(turns):
         if not isinstance(turn, dict):
-            errors.append(f"{path}: turns[{position}] must be an object")
+            errors.append(f"turn at position {position} must be an object")
             continue
 
-        idx = turn.get("idx")
+        turn_idx = turn.get("idx")
 
-        if isinstance(idx, bool) or not isinstance(idx, int) or idx < 0:
-            errors.append(f"{path}: turns[{position}] has an invalid idx")
-            continue
+        if not isinstance(turn_idx, int) or isinstance(turn_idx, bool):
+            errors.append(f"turn at position {position} has invalid idx: {turn_idx}")
+        elif turn_idx in valid_turn_ids:
+            errors.append(f"duplicate transcript turn idx: {turn_idx}")
+        else:
+            valid_turn_ids.add(turn_idx)
 
-        if idx in indexes:
-            errors.append(f"{path}: duplicate transcript turn index {idx}")
+        speaker = turn.get("speaker")
 
-        indexes.add(idx)
+        if isinstance(speaker, str) and speaker.strip():
+            speakers.add(speaker)
 
-    return indexes
+    for name in set(gold.roster) - speakers:
+        warnings.append(f"roster name '{name}' never speaks (may be mentioned only)")
 
+    for speaker in speakers - set(gold.roster):
+        warnings.append(f"speaker '{speaker}' is not in gold roster")
 
-def validate_gold_file(gold_path: Path) -> list[str]:
-    errors: list[str] = []
+    groups = [
+        gold.action_items,
+        gold.decisions,
+        gold.open_questions,
+        gold.follow_ups,
+    ]
 
-    try:
-        gold = load_json(gold_path)
-    except (OSError, json.JSONDecodeError, ValueError) as exc:
-        return [f"{gold_path}: cannot read gold file: {exc}"]
+    all_items = [item for group in groups for item in group]
+    ids = [item.gold_id for item in all_items]
 
-    meeting_id = gold.get("meeting_id")
+    for gold_id, count in Counter(ids).items():
+        if count > 1:
+            errors.append(f"duplicate gold_id '{gold_id}'")
 
-    if not isinstance(meeting_id, str) or not meeting_id.strip():
-        return [f"{gold_path}: missing or invalid meeting_id"]
+    for item in all_items:
+        invalid_turns = [turn_idx for turn_idx in item.turns if turn_idx not in valid_turn_ids]
 
-    validate_date(gold.get("meeting_date"), "meeting_date", errors)
+        if invalid_turns:
+            errors.append(f"{item.gold_id}: invalid turn indexes {invalid_turns}")
 
-    roster = gold.get("roster")
+        unknown_tags = set(item.tags) - KNOWN_TAGS
 
-    if not isinstance(roster, list) or not all(
-        isinstance(name, str) and name.strip() for name in roster
-    ):
-        errors.append("roster: expected a list of non-empty names")
-        roster = []
+        if unknown_tags:
+            errors.append(f"{item.gold_id}: unknown tags {sorted(unknown_tags)}")
 
-    transcript_path = find_transcript(meeting_id)
+    for action in gold.action_items:
+        if action.owner and action.owner not in gold.roster:
+            errors.append(f"{action.gold_id}: owner '{action.owner}' is not in roster")
 
-    if transcript_path is None:
-        errors.append(f"{meeting_id}: transcript not found in data/synthetic/ or data/raw/")
-        return errors
+        if "ambiguous_owner" in action.tags and action.owner:
+            errors.append(f"{action.gold_id}: ambiguous_owner items must have owner null")
 
-    try:
-        transcript = load_json(transcript_path)
-    except (OSError, json.JSONDecodeError, ValueError) as exc:
-        errors.append(f"{transcript_path}: cannot read transcript: {exc}")
-        return errors
+        if (
+            action.status == "committed"
+            and not action.owner
+            and not {"no_owner", "ambiguous_owner"} & set(action.tags)
+        ):
+            warnings.append(
+                f"{action.gold_id}: committed action has no owner "
+                "and is not tagged no_owner/ambiguous_owner"
+            )
 
-    valid_turns = get_transcript_turns(
-        transcript,
-        transcript_path,
-        errors,
-    )
+        if action.deadline and action.deadline < gold.meeting_date:
+            warnings.append(f"{action.gold_id}: deadline is before meeting date")
 
-    seen_ids: set[str] = set()
-
-    for category in ITEM_CATEGORIES:
-        items = gold.get(category, [])
-
-        if not isinstance(items, list):
-            errors.append(f"{category}: expected a list")
-            continue
-
-        for position, item in enumerate(items):
-            location = f"{category}[{position}]"
-
-            if not isinstance(item, dict):
-                errors.append(f"{location}: expected an object")
-                continue
-
-            gold_id = item.get("gold_id")
-
-            if not isinstance(gold_id, str) or not gold_id.strip():
-                errors.append(f"{location}: missing or invalid gold_id")
-            elif gold_id in seen_ids:
-                errors.append(f"{location}: duplicate gold_id {gold_id!r}")
-            else:
-                seen_ids.add(gold_id)
-
-            turns = item.get("turns")
-
-            if not isinstance(turns, list) or not turns:
-                errors.append(f"{location}: turns must be a non-empty list")
-            else:
-                for turn_idx in turns:
-                    if isinstance(turn_idx, bool) or not isinstance(turn_idx, int) or turn_idx < 0:
-                        errors.append(f"{location}: invalid turn index {turn_idx!r}")
-                    elif turn_idx not in valid_turns:
-                        errors.append(
-                            f"{location}: turn index {turn_idx} does not exist in transcript"
-                        )
-
-            if category == "action_items":
-                owner = item.get("owner")
-
-                if owner is not None and owner not in roster:
-                    errors.append(f"{location}: owner {owner!r} is not in the meeting roster")
-
-                if "deadline" in item and item["deadline"] is not None:
-                    validate_date(
-                        item["deadline"],
-                        f"{location}.deadline",
-                        errors,
-                    )
-
-    return errors
+    return gold, errors, warnings
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(
-        description="Validate meeting gold files against their transcripts."
-    )
+    parser = argparse.ArgumentParser()
     parser.add_argument(
         "--gold-dir",
         type=Path,
-        default=GOLD_DIR,
-        help="Directory containing gold JSON files.",
+        help="Validate one gold directory instead of both splits",
     )
     args = parser.parse_args()
 
-    gold_files = sorted(args.gold_dir.glob("*.json"))
+    if args.gold_dir:
+        gold_dir = args.gold_dir
+        if not gold_dir.is_absolute():
+            gold_dir = ROOT / gold_dir
 
-    if not gold_files:
-        print(f"ERROR: No gold JSON files found in {args.gold_dir}")
-        return 1
+        directories = [(gold_dir.name, gold_dir)]
+    else:
+        directories = [(split, ROOT / "data" / "gold" / split) for split in SPLITS]
 
-    total_errors = 0
+    failed = False
+    seen_meetings: dict[str, str] = {}
+    coverage = {name: Counter() for name, _ in directories}
+    counts = Counter()
 
-    for gold_path in gold_files:
-        errors = validate_gold_file(gold_path)
+    for split, directory in directories:
+        files = sorted(directory.glob("*.json"))
 
-        if errors:
-            print(f"\nFAIL: {gold_path.relative_to(ROOT)}")
+        if not files:
+            print(f"ERROR {directory}: no gold JSON files found")
+            failed = True
+            continue
+
+        for path in files:
+            gold, errors, warnings = check(path)
+            counts[split] += 1
+
+            for warning in warnings:
+                print(f"WARN  {split}/{path.name}: {warning}")
+
             for error in errors:
-                print(f"  - {error}")
-            total_errors += len(errors)
-        else:
-            print(f"PASS: {gold_path.relative_to(ROOT)}")
+                print(f"ERROR {split}/{path.name}: {error}")
+                failed = True
 
-    if total_errors:
-        print(f"\nValidation failed: {total_errors} error(s).")
-        return 1
+            if gold is None:
+                continue
 
-    print(f"\nAll {len(gold_files)} gold file(s) passed validation.")
-    return 0
+            previous_split = seen_meetings.get(gold.meeting_id)
+
+            if previous_split:
+                print(f"ERROR {gold.meeting_id} appears in both {previous_split} and {split}")
+                failed = True
+            else:
+                seen_meetings[gold.meeting_id] = split
+
+            for item in gold.action_items + gold.decisions + gold.open_questions + gold.follow_ups:
+                coverage[split].update(item.tags)
+
+    print(f"\nfiles: {dict(counts)}")
+
+    for split, tags in coverage.items():
+        print(f"tag coverage [{split}]: {dict(sorted(tags.items()))}")
+
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":
