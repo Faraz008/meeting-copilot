@@ -1,0 +1,3 @@
+[00:01:23] Priya: The project is progressing well.
+[00:01:28] Rahul: We completed the backend integration.
+[00:01:35] Priya: Excellent, let's discuss testing.

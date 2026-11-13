@@ -1,0 +1,5 @@
+Priya: We need to complete the backend integration
+before Friday. The API endpoints are almost ready.
+
+Rahul: I will take care of the testing
+and prepare the deployment checklist.
