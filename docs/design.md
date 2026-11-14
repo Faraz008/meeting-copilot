@@ -32,8 +32,29 @@ The `evidence` field uses Pydantic's `min_length=1` constraint.
 An item without supporting transcript evidence cannot pass model validation. This guardrail is enforced at the data-model level rather than relying only on LLM instructions or prompt engineering.
 
 Evidence contains:
+
 - `turn_idx`: The transcript turn containing the supporting statement.
 - `quote`: A verbatim quotation from the transcript.
+
+### Evidence Grounding
+
+Extracted evidence is checked against the original transcript before an item is accepted.
+
+Grounding first checks the predicted turn, then the immediately preceding and following turns to account for off-by-one errors in LLM-generated turn references.
+
+Evidence that fails grounding is removed from the item. If no evidence survives grounding, the item is rejected.
+
+Rejected items are counted when calculating the hallucination rate.
+
+Short quotes require a whole-word match rather than fuzzy matching. This prevents short strings from receiving false matches inside longer words.
+
+### Deadline Validation
+
+The `deadline_raw` expression must appear near the item's supporting evidence in the transcript.
+
+If the deadline expression cannot be found near the evidence, it is removed and a validation note is recorded.
+
+The item subsequently receives the `no_deadline` flag when no valid deadline remains.
 
 ### Superseded Items
 

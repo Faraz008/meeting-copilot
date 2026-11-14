@@ -51,5 +51,5 @@ class Provider(Protocol):
         *,
         json_mode: bool = True,
         temperature: float = 0.0,
-        max_tokens: int = 2048,
+        max_tokens: int = 4096,
     ) -> Completion: ...
