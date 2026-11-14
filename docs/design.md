@@ -63,3 +63,26 @@ Superseded action items are retained rather than deleted.
 When an existing action item is replaced or invalidated by a later discussion, its status becomes `superseded`, and `superseded_by` can reference the replacement item's ID.
 
 This preserves the history of decisions and commitments instead of losing previously extracted information.
+
+### Deadline Resolution Conventions
+
+Deadline expressions are normalized using deterministic rules based on the meeting date.
+
+The following conventions are used:
+
+- A bare weekday means its next occurrence after the meeting date. If the meeting falls on that weekday, the result is ambiguous because it could mean today or the following week.
+- `this <wd>` means that weekday in the current calendar week (Monday to Sunday). If it has already passed, it rolls forward to the following week.
+- `next <wd>` means that weekday in the next calendar week. If the nearest upcoming occurrence differs, the result is ambiguous. The next week's date is used as the primary date, and both dates are included in `options`.
+- `end of week` / `EOW` resolves to Friday.
+- `EOD` / `COB` resolves to today at 17:00.
+- `end of month` resolves to the last calendar day of the month.
+- `next week` is ambiguous between Monday and Friday. Friday is used as the primary date.
+- `next month` is ambiguous between the first and last day of the next month. The last day is used as the primary date.
+
+Event-relative and vague expressions such as "before the release", "ASAP", "when Dan approves", and "a few days" are unresolvable. They are flagged rather than assigned guessed dates.
+
+`before X` is treated as `X`. Applying a stricter interpretation of "before" is left to human review.
+
+Ambiguous deadlines retain their primary resolved date and receive a flag. This keeps the action item useful while making it clear that human confirmation is required.
+
+Unresolvable deadlines are flagged and are not assigned guessed dates.
