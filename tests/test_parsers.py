@@ -8,13 +8,7 @@ from copilot.parsers.transcript import (
     parse_transcript,
 )
 
-FX = Path(__file__).parent / "fixtures"
-
 FIXTURES = Path(__file__).parent / "fixtures"
-
-
-def load(name: str) -> str:
-    return (FX / name).read_text(encoding="utf-8")
 
 
 def load_fixture(name: str) -> str:
@@ -155,6 +149,6 @@ def test_text_normalization():
 
 
 def test_turn_indices_are_sequential():
-    turns = parse_transcript(load("clean_vtt.vtt"))
+    turns = parse_transcript(load_fixture("clean_vtt.vtt"))
 
     assert [t.idx for t in turns] == list(range(len(turns)))

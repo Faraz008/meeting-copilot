@@ -1,5 +1,5 @@
 import hashlib
-from datetime import date
+from datetime import date, time
 from enum import StrEnum
 from typing import Literal
 
@@ -18,6 +18,7 @@ class Flag(StrEnum):
     NO_OWNER = "no_owner"
     AMBIGUOUS_OWNER = "ambiguous_owner"
     NO_DEADLINE = "no_deadline"
+    AMBIGUOUS_DEADLINE = "ambiguous_deadline"
     UNRESOLVED_DEADLINE = "unresolved_deadline"
     LOW_CONFIDENCE = "low_confidence"
     PROPOSED_NOT_COMMITTED = "proposed_not_committed"
@@ -37,12 +38,16 @@ class ActionItem(BaseModel):
     owner: str | None = None
     deadline_raw: str | None = None
     deadline: date | None = None
+    deadline_time: time | None = None
     status: Literal["committed", "proposed", "superseded"] = "committed"
     condition: str | None = None  # "if Dan approves"
     confidence: float = Field(default=0.5, ge=0, le=1)
     evidence: list[Evidence] = Field(min_length=1)
     flags: list[Flag] = Field(default_factory=list)
     superseded_by: str | None = None
+    deadline_options: list[date] = []  # plausible readings when ambiguous
+    owner_candidates: list[str] = []  # competing volunteers
+    priority: Literal["high", "normal", "low"] = "normal"
 
     @field_validator("title")
     @classmethod
@@ -59,6 +64,8 @@ class Decision(BaseModel):
     confidence: float = Field(default=0.5, ge=0, le=1)
     evidence: list[Evidence] = Field(min_length=1)
     flags: list[Flag] = Field(default_factory=list)
+    status: Literal["active", "superseded", "reversed"] = "active"
+    superseded_by: str | None = None
 
 
 class OpenQuestion(BaseModel):

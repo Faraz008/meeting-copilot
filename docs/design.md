@@ -32,8 +32,29 @@ The `evidence` field uses Pydantic's `min_length=1` constraint.
 An item without supporting transcript evidence cannot pass model validation. This guardrail is enforced at the data-model level rather than relying only on LLM instructions or prompt engineering.
 
 Evidence contains:
+
 - `turn_idx`: The transcript turn containing the supporting statement.
 - `quote`: A verbatim quotation from the transcript.
+
+### Evidence Grounding
+
+Extracted evidence is checked against the original transcript before an item is accepted.
+
+Grounding first checks the predicted turn, then the immediately preceding and following turns to account for off-by-one errors in LLM-generated turn references.
+
+Evidence that fails grounding is removed from the item. If no evidence survives grounding, the item is rejected.
+
+Rejected items are counted when calculating the hallucination rate.
+
+Short quotes require a whole-word match rather than fuzzy matching. This prevents short strings from receiving false matches inside longer words.
+
+### Deadline Validation
+
+The `deadline_raw` expression must appear near the item's supporting evidence in the transcript.
+
+If the deadline expression cannot be found near the evidence, it is removed and a validation note is recorded.
+
+The item subsequently receives the `no_deadline` flag when no valid deadline remains.
 
 ### Superseded Items
 
@@ -42,3 +63,75 @@ Superseded action items are retained rather than deleted.
 When an existing action item is replaced or invalidated by a later discussion, its status becomes `superseded`, and `superseded_by` can reference the replacement item's ID.
 
 This preserves the history of decisions and commitments instead of losing previously extracted information.
+
+### Deadline Resolution Conventions
+
+Deadline expressions are normalized using deterministic rules based on the meeting date.
+
+The following conventions are used:
+
+- A bare weekday means its next occurrence after the meeting date. If the meeting falls on that weekday, the result is ambiguous because it could mean today or the following week.
+- `this <wd>` means that weekday in the current calendar week (Monday to Sunday). If it has already passed, it rolls forward to the following week.
+- `next <wd>` means that weekday in the next calendar week. If the nearest upcoming occurrence differs, the result is ambiguous. The next week's date is used as the primary date, and both dates are included in `options`.
+- `end of week` / `EOW` resolves to Friday.
+- `EOD` / `COB` resolves to today at 17:00.
+- `end of month` resolves to the last calendar day of the month.
+- `next week` is ambiguous between Monday and Friday. Friday is used as the primary date.
+- `next month` is ambiguous between the first and last day of the next month. The last day is used as the primary date.
+
+Event-relative and vague expressions such as "before the release", "ASAP", "when Dan approves", and "a few days" are unresolvable. They are flagged rather than assigned guessed dates.
+
+`before X` is treated as `X`. Applying a stricter interpretation of "before" is left to human review.
+
+Ambiguous deadlines retain their primary resolved date and receive a flag. This keeps the action item useful while making it clear that human confirmation is required.
+
+Unresolvable deadlines are flagged and are not assigned guessed dates.
+
+### Core Principle
+
+Pass 2 can only **merge, annotate, or downgrade** items produced by Pass 1. It must never create new items.
+
+Pass 1 is responsible for extracting candidate items from the transcript. Pass 2 reviews those candidates across transcript chunks to reconcile information that may have been missed or contradicted by chunk boundaries.
+
+This restriction ensures that reconciliation cannot introduce entirely new, unsupported action items, decisions, or questions.
+
+### Deterministic Reconciliation
+
+Merging and supersession of action items are handled by deterministic application logic rather than the LLM.
+
+Code is responsible for:
+- Identifying duplicate action items.
+- Merging compatible items.
+- Preserving stable IDs and evidence references.
+- Marking replaced or invalidated action items as `superseded`.
+- Linking superseded items to their replacements through `superseded_by`, where applicable.
+
+### LLM-Assisted Judgments
+
+The LLM is used only for two reconciliation judgments that cannot be reliably determined through simple deterministic rules:
+
+1. **Question resolution:** Whether an existing open question was answered later in the meeting.
+2. **Decision reversal:** Whether a previously recorded decision was explicitly reversed during subsequent discussion.
+
+The LLM does not directly modify the extracted collection or introduce new items. It provides judgments for deterministic application logic to validate and apply.
+
+### Evidence-Grounded Judgments
+
+Every LLM reconciliation judgment must include a supporting quotation grounded in the transcript.
+
+A judgment without valid supporting evidence is ignored.
+
+The application validates the quotation against the original transcript before accepting the judgment. Unsupported or ungrounded judgments must not change an item's status or other resolved fields.
+
+This ensures that Pass 2 can improve consistency across transcript chunks without introducing hallucinated information or overriding previously extracted data without evidence.
+
+### Pipeline Invariant
+
+The reconciliation pipeline follows these rules:
+
+- Pass 1 extracts candidate items.
+- Pass 2 reconciles existing candidates only.
+- Deterministic code handles merging, supersession, and state updates.
+- LLM judgments are restricted to question resolution and decision reversal.
+- Every accepted LLM judgment requires validated transcript evidence.
+- Pass 2 cannot increase the number of extracted items by creating new ones.
