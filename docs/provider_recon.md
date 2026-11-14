@@ -13,9 +13,9 @@ Method:
 | Provider | Model | Success rate | Median latency (burst) | JSON fenced | Errors observed | Rate limit observed | owner_raw |
 |---|---|---:|---:|---:|---|---|---|
 | Groq | `openai/gpt-oss-120b` | 12/39 (30.8%) | 1.27 s | 0 | HTTP 429, bad JSON | Yes; Retry-After: 5 s | 0/4 |
-| Gemini | `gemini-3.8-flash` | 0/39 (0%) | 1.05 s | 0 | HTTP 429, HTTP 503, timeout | Yes; HTTP 429 | N/A |
 | OpenRouter | `nvidia/nemotron-3-ultra-550b-a55b:free` | 38/39 (97.4%) | 7.52 s | 0 | Empty response | No 429 observed | 30/30 |
 | Ollama | `qwen3:4b` | 0/9 (0%) | N/A | 0 | ReadTimeout, empty response | Not tested | N/A |
+| Gemini | `gemini-3.8-flash` | 0/39 (0%) | 1.05 s | 0 | HTTP 429, HTTP 503, timeout | Yes; HTTP 429 | N/A |
 
 Note:
 - Success rate combines all requests across the listed tests.

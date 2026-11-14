@@ -9,23 +9,44 @@ from copilot.llm.router import Router
 
 def _specs() -> dict:
     s = settings
+
     return {
-        "groq": ("https://api.groq.com/openai/v1", s.groq_api_key, s.groq_model, s.groq_rpm, 120),
-        "gemini": (
-            "https://generativelanguage.googleapis.com/v1beta/openai",
-            s.gemini_api_key,
-            s.gemini_model,
-            s.gemini_rpm,
-            120,
-        ),
-        "openrouter": (
-            "https://openrouter.ai/api/v1",
-            s.openrouter_api_key,
-            s.openrouter_model,
-            s.openrouter_rpm,
-            120,
-        ),
-        "ollama": ("http://localhost:11434/v1", "ollama", s.ollama_model, s.ollama_rpm, 600),
+        "groq": {
+            "base_url": "https://api.groq.com/openai/v1",
+            "api_key": s.groq_api_key,
+            "model": s.groq_model,
+            "rpm": s.groq_rpm,
+            "timeout": 120,
+            "extra_body": {
+                "reasoning_effort": "low",
+            },
+        },
+        "openrouter": {
+            "base_url": "https://openrouter.ai/api/v1",
+            "api_key": s.openrouter_api_key,
+            "model": s.openrouter_model,
+            "rpm": s.openrouter_rpm,
+            "timeout": 120,
+            "extra_body": {
+                "reasoning": {"effort": "low"},
+            },
+        },
+        "ollama": {
+            "base_url": "http://localhost:11434/v1",
+            "api_key": "ollama",
+            "model": s.ollama_model,
+            "rpm": s.ollama_rpm,
+            "timeout": 600,
+            "extra_body": {},
+        },
+        "gemini": {
+            "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+            "api_key": s.gemini_api_key,
+            "model": s.gemini_model,
+            "rpm": s.gemini_rpm,
+            "timeout": 120,
+            "extra_body": {},
+        },
     }
 
 
@@ -36,18 +57,42 @@ def build_router(
     log: bool = True,
 ) -> Router:
     mode = cache_mode or settings.cache_mode
+
     names = order or [n.strip() for n in settings.provider_order.split(",") if n.strip()]
+
+    specs = _specs()
     providers = []
-    for n in names:
-        base, key, model, rpm, timeout = _specs()[n]
+
+    for name in names:
+        if name not in specs:
+            raise ValueError(f"Unknown LLM provider: {name}")
+
+        spec = specs[name]
+
+        key = spec["api_key"]
         if mode == "replay":
-            key = key or "replay"  # CI has no real keys
-        if not key or not model:
+            key = key or "replay"
+
+        if not key or not spec["model"]:
             continue
-        p = OpenAICompatProvider(n, base, key, model, rpm=rpm, timeout=timeout)
-        providers.append(p if mode == "off" else CachingProvider(p, settings.cache_dir, mode))
+
+        provider = OpenAICompatProvider(
+            name=name,
+            base_url=spec["base_url"],
+            api_key=key,
+            model=spec["model"],
+            rpm=spec["rpm"],
+            timeout=spec["timeout"],
+            extra_body=spec["extra_body"],
+        )
+
+        providers.append(
+            provider if mode == "off" else CachingProvider(provider, settings.cache_dir, mode)
+        )
+
     if not providers:
         raise RuntimeError("No LLM providers configured. Fill .env (see .env.example).")
+
     return Router(
         providers,
         CallLogger(settings.calls_db) if log else None,

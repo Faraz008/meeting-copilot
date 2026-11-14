@@ -15,11 +15,6 @@ PROVIDERS = {
         settings.groq_api_key,
         settings.groq_model,
     ),
-    "gemini": (
-        "https://generativelanguage.googleapis.com/v1beta/openai",
-        settings.gemini_api_key,
-        settings.gemini_model,
-    ),
     "openrouter": (
         "https://openrouter.ai/api/v1",
         settings.openrouter_api_key,
@@ -29,6 +24,11 @@ PROVIDERS = {
         "http://localhost:11434/v1",
         "ollama",
         settings.ollama_model,
+    ),
+    "gemini": (
+        "https://generativelanguage.googleapis.com/v1beta/openai",
+        settings.gemini_api_key,
+        settings.gemini_model,
     ),
 }
 
