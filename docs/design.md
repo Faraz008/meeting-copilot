@@ -86,3 +86,52 @@ Event-relative and vague expressions such as "before the release", "ASAP", "when
 Ambiguous deadlines retain their primary resolved date and receive a flag. This keeps the action item useful while making it clear that human confirmation is required.
 
 Unresolvable deadlines are flagged and are not assigned guessed dates.
+
+### Core Principle
+
+Pass 2 can only **merge, annotate, or downgrade** items produced by Pass 1. It must never create new items.
+
+Pass 1 is responsible for extracting candidate items from the transcript. Pass 2 reviews those candidates across transcript chunks to reconcile information that may have been missed or contradicted by chunk boundaries.
+
+This restriction ensures that reconciliation cannot introduce entirely new, unsupported action items, decisions, or questions.
+
+### Deterministic Reconciliation
+
+Merging and supersession of action items are handled by deterministic application logic rather than the LLM.
+
+Code is responsible for:
+- Identifying duplicate action items.
+- Merging compatible items.
+- Preserving stable IDs and evidence references.
+- Marking replaced or invalidated action items as `superseded`.
+- Linking superseded items to their replacements through `superseded_by`, where applicable.
+
+### LLM-Assisted Judgments
+
+The LLM is used only for two reconciliation judgments that cannot be reliably determined through simple deterministic rules:
+
+1. **Question resolution:** Whether an existing open question was answered later in the meeting.
+2. **Decision reversal:** Whether a previously recorded decision was explicitly reversed during subsequent discussion.
+
+The LLM does not directly modify the extracted collection or introduce new items. It provides judgments for deterministic application logic to validate and apply.
+
+### Evidence-Grounded Judgments
+
+Every LLM reconciliation judgment must include a supporting quotation grounded in the transcript.
+
+A judgment without valid supporting evidence is ignored.
+
+The application validates the quotation against the original transcript before accepting the judgment. Unsupported or ungrounded judgments must not change an item's status or other resolved fields.
+
+This ensures that Pass 2 can improve consistency across transcript chunks without introducing hallucinated information or overriding previously extracted data without evidence.
+
+### Pipeline Invariant
+
+The reconciliation pipeline follows these rules:
+
+- Pass 1 extracts candidate items.
+- Pass 2 reconciles existing candidates only.
+- Deterministic code handles merging, supersession, and state updates.
+- LLM judgments are restricted to question resolution and decision reversal.
+- Every accepted LLM judgment requires validated transcript evidence.
+- Pass 2 cannot increase the number of extracted items by creating new ones.
