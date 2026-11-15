@@ -7,6 +7,7 @@ from copilot.llm.base import CacheMiss, Completion
 
 
 class CachingProvider:
+    used: set = set()
     """mode: off | live (read-through cache) | replay (cache only; a miss is an error)."""
 
     def __init__(self, inner, cache_dir: str = "data/llm_cache", mode: str = "live"):
@@ -24,6 +25,7 @@ class CachingProvider:
     def complete(self, messages, *, json_mode=True, temperature=0.0, max_tokens=2048) -> Completion:
         path = self._path(messages, json_mode, temperature, max_tokens)
         if path.exists():
+            CachingProvider.used.add(path)
             return Completion(**{**json.loads(path.read_text("utf-8")), "cached": True})
         if self.mode == "replay":
             raise CacheMiss(f"no recording for {self.name} {path.name}")
@@ -32,4 +34,5 @@ class CachingProvider:
         )
         self.dir.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps({**asdict(comp), "cached": False}), "utf-8")
+        CachingProvider.used.add(path)
         return comp

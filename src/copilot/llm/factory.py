@@ -55,6 +55,7 @@ def build_router(
     cache_mode: str | None = None,
     run_id: str | None = None,
     log: bool = True,
+    cache_dir: str | None = None,
 ) -> Router:
     mode = cache_mode or settings.cache_mode
 
@@ -87,7 +88,13 @@ def build_router(
         )
 
         providers.append(
-            provider if mode == "off" else CachingProvider(provider, settings.cache_dir, mode)
+            provider
+            if mode == "off"
+            else CachingProvider(
+                provider,
+                cache_dir or settings.cache_dir,
+                mode,
+            )
         )
 
     if not providers:
