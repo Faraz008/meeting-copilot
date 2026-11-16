@@ -100,16 +100,16 @@ def main() -> int:
 
     for k, floor in th["min"].items():
         ok = m[k] is not None and m[k] >= floor
-
-        rows.append(f"| {k} | {m[k]:.3f} | ≥ {floor} {'✅' if ok else '❌'} |")
+        value = f"{m[k]:.3f}" if m[k] is not None else "N/A"
+        rows.append(f"| {k} | {value} | ≥ {floor} {'✅' if ok else '❌'} |")
 
         if not ok:
             bad.append(f"{k}={m[k]} < {floor}")
 
     for k, ceil in th["max"].items():
         ok = m[k] is None or m[k] <= ceil
-
-        rows.append(f"| {k} | {m[k]} | ≤ {ceil} {'✅' if ok else '❌'} |")
+        value = f"{m[k]:.3f}" if m[k] is not None else "N/A"
+        rows.append(f"| {k} | {value} | ≤ {ceil} {'✅' if ok else '❌'} |")
 
         if not ok:
             bad.append(f"{k}={m[k]} > {ceil}")
