@@ -22,4 +22,4 @@ The regression was tested on a temporary scratch branch and was not merged.
 
 ### CI failure evidence
 
-![Replay regression detected by GitHub Actions](docs/images/replay-regression-failure.png)
+![Replay regression detected by GitHub Actions](docs/img/replay-regression-failure.png)
