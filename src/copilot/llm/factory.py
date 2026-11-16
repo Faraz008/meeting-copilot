@@ -37,7 +37,7 @@ def _specs() -> dict:
             "model": s.ollama_model,
             "rpm": s.ollama_rpm,
             "timeout": 600,
-            "extra_body": {},
+            "extra_body": {"reasoning_effort": "none"},
         },
         "gemini": {
             "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
@@ -45,7 +45,7 @@ def _specs() -> dict:
             "model": s.gemini_model,
             "rpm": s.gemini_rpm,
             "timeout": 120,
-            "extra_body": {},
+            "extra_body": {"reasoning_effort": "low"},
         },
     }
 
@@ -55,7 +55,12 @@ def build_router(
     cache_mode: str | None = None,
     run_id: str | None = None,
     log: bool = True,
+    cache_dir: str | None = None,
+    max_attempts: int = 4,
 ) -> Router:
+    if max_attempts < 1:
+        raise ValueError("max_attempts must be at least 1")
+
     mode = cache_mode or settings.cache_mode
 
     names = order or [n.strip() for n in settings.provider_order.split(",") if n.strip()]
@@ -87,7 +92,13 @@ def build_router(
         )
 
         providers.append(
-            provider if mode == "off" else CachingProvider(provider, settings.cache_dir, mode)
+            provider
+            if mode == "off"
+            else CachingProvider(
+                provider,
+                cache_dir or settings.cache_dir,
+                mode,
+            )
         )
 
     if not providers:
@@ -97,4 +108,5 @@ def build_router(
         providers,
         CallLogger(settings.calls_db) if log else None,
         run_id=run_id or uuid.uuid4().hex[:8],
+        max_attempts=max_attempts,
     )

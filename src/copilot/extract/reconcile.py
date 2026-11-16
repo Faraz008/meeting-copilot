@@ -11,6 +11,7 @@ from copilot.extract.structured import generate_validated
 from copilot.llm.base import LLMError
 from copilot.models import Evidence, Flag, Meeting
 from copilot.resolve.owners import FIRST_PERSON, resolve_owner
+from copilot.tuning import TUNE
 from copilot.validate.grounding import ground_one, norm
 
 RETRACT = re.compile(
@@ -115,7 +116,7 @@ def same_commitment(a: ActionCand, b: ActionCand) -> bool:
             norm(a.title),
             norm(b.title),
         )
-        < 80
+        < TUNE.dedupe_title
     ):
         return False
 
@@ -175,7 +176,7 @@ def apply_supersession(items: list[ActionCand]) -> None:
                 norm(target),
             )
 
-            threshold = 70 if hint else 85
+            threshold = TUNE.supersede_hint if hint else TUNE.supersede_cue
 
             if s >= threshold and s > best_s:
                 best, best_s = earlier, s
@@ -214,7 +215,7 @@ def merge_competing(
                         norm(a.title),
                         norm(b.title),
                     )
-                    >= 80
+                    >= TUNE.competing_title
                     and not _cue(b)
                 ):
                     group.append(b)

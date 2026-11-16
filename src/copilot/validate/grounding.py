@@ -16,6 +16,7 @@ from copilot.extract.raw_models import (
     RawQuestion,
 )
 from copilot.models import Flag, Turn
+from copilot.tuning import TUNE
 
 _PUNCT = re.compile(r"[^\w\s']")
 
@@ -43,7 +44,12 @@ class Grounded:
     moved: bool
 
 
-def ground_one(ev: RawEvidence, turns: list[Turn], threshold: float = 85) -> Grounded | None:
+def ground_one(
+    ev: RawEvidence,
+    turns: list[Turn],
+    threshold: float | None = None,
+) -> Grounded | None:
+    threshold = TUNE.grounding if threshold is None else threshold
     """Exact turn first; then +-1 (models are often off by one). Nothing else is accepted."""
     for k, idx in enumerate((ev.turn_idx, ev.turn_idx - 1, ev.turn_idx + 1)):
         if 0 <= idx < len(turns):

@@ -34,6 +34,8 @@ from copilot.resolve.deadlines import (
 )
 from copilot.resolve.flags import action_flags
 from copilot.resolve.priority import priority
+from copilot.resolve.tense import looks_completed
+from copilot.tuning import TUNE
 from copilot.validate.grounding import norm
 
 CONF = {
@@ -49,9 +51,10 @@ class PipelineConfig:
     max_chars: int = 8000
     overlap: int = 4
     date_order: str = "DMY"
-    use_grounding: bool = True  # Ablation switches for Week 3.
+    use_grounding: bool = True  # Ablation switches for later Week progress.
     use_pass2: bool = True
     date_resolver: str = "rules"  # "rules" | "dateparser"
+    filter_completed: bool = False
 
 
 @dataclass
@@ -85,7 +88,7 @@ def _dedupe_simple(cands, key):
                 norm(key(a)),
                 norm(key(b)),
             )
-            >= 80
+            >= TUNE.dedupe_title
             and any(abs(x.turn_idx - y.turn_idx) <= 1 for x in a.evidence for y in b.evidence)
         ),
     )
@@ -124,6 +127,17 @@ def run_pipeline(
         c.uid = i + 1
 
     preresolve_owners(acts, meeting)
+
+    if cfg.filter_completed:
+        kept = []
+        for c in acts:
+            if c.status == "committed" and looks_completed(" ".join(e.quote for e in c.evidence)):
+                p1.rejected.append(
+                    {"kind": "action", "text": c.title, "reason": "completed_past_tense"}
+                )
+                continue
+            kept.append(c)
+        acts = kept
 
     if cfg.use_pass2:
         acts = dedupe(acts, same_commitment)

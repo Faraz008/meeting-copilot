@@ -21,11 +21,16 @@ class Router:
         *,
         run_id: str = "adhoc",
         cooldown_s: float = 60.0,
+        max_attempts: int = 4,
         sleep=time.sleep,
         clock=time.monotonic,
     ):
+        if max_attempts < 1:
+            raise ValueError("max_attempts must be at least 1")
+
         self.providers, self.logger, self.run_id = providers, logger, run_id
         self.cooldown_s, self.sleep, self.clock = cooldown_s, sleep, clock
+        self.max_attempts = max_attempts
         self._until: dict[str, float] = {}
 
     def available(self) -> list:
@@ -33,7 +38,10 @@ class Router:
         return [p for p in self.providers if self._until.get(p.name, 0) <= now]
 
     def wait_until_available(self, max_wait: float = 90.0) -> bool:
-        soonest = min((self._until.get(p.name, 0) for p in self.providers), default=math.inf)
+        soonest = min(
+            (self._until.get(p.name, 0) for p in self.providers),
+            default=math.inf,
+        )
         wait = soonest - self.clock()
         if wait <= 0:
             return True
@@ -77,13 +85,32 @@ class Router:
             try:
                 comp = provider.complete(messages, **kw)
             except LLMError as e:
-                self._log(provider, messages, purpose, state["n"], type(e).__name__, str(e)[:200])
+                self._log(
+                    provider,
+                    messages,
+                    purpose,
+                    state["n"],
+                    type(e).__name__,
+                    str(e)[:200],
+                )
                 raise
-            self._log(provider, messages, purpose, state["n"], "ok", comp=comp)
+
+            self._log(
+                provider,
+                messages,
+                purpose,
+                state["n"],
+                "ok",
+                comp=comp,
+            )
             return comp
 
         try:
-            return with_retries(once, sleep=self.sleep)
+            return with_retries(
+                once,
+                max_attempts=self.max_attempts,
+                sleep=self.sleep,
+            )
         except RateLimited as e:
             self._until[provider.name] = self.clock() + (e.retry_after or self.cooldown_s)
             raise
@@ -91,14 +118,16 @@ class Router:
             self._until[provider.name] = self.clock() + self.cooldown_s
             raise
         except PermanentError:
-            self._until[provider.name] = math.inf  # bad key / bad model: dead for this run
+            self._until[provider.name] = math.inf
             raise
 
     def complete(self, messages, **kw) -> Completion:
         errors: list[str] = []
+
         for p in self.available():
             try:
                 return self.call(p, messages, **kw)
             except LLMError as e:
                 errors.append(f"{p.name}: {type(e).__name__}: {e}")
+
         raise AllProvidersFailed(errors)

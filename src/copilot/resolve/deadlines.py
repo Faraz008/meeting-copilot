@@ -645,7 +645,7 @@ def resolve_deadline_naive(
     base: date,
     date_order: str = "DMY",
 ) -> Resolution:
-    """Off-the-shelf parser used as the Week 3 ablation baseline."""
+    """Off-the-shelf parser used as the later Week ablation baseline."""
 
     import dateparser
 
