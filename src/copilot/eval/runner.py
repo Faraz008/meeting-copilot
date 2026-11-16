@@ -101,6 +101,8 @@ def run_system(spec: RunSpec) -> Path:
                     ro.report,
                 )
 
+                pred.actions = []
+
         except Exception as e:
             pred = Prediction(
                 meeting_id=g.meeting_id,
