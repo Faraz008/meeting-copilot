@@ -356,7 +356,7 @@ def r_end_of(
     nxt = modifier == "next"
 
     if unit == "week":
-        days = 4 + (7 if nxt else 0)
+        days = 3 + (7 if nxt else 0)
         friday = week_start(base) + timedelta(days=days)
 
         if friday < base:
