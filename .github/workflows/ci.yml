@@ -12,7 +12,7 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
-      - run: pip install -e ".[dev]"
+      - run: pip install -e ".[dev,ui]"
       - run: ruff check .
       - run: ruff format --check .
       - run: python scripts/check_secrets.py
@@ -27,5 +27,5 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
-      - run: pip install -e ".[dev]"
+      - run: pip install -e ".[dev,ui]"
       - run: python scripts/ci_eval.py

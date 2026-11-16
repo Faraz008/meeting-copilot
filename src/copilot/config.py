@@ -29,5 +29,27 @@ class Settings(BaseSettings):
     # API call logging
     calls_db: str = "data/calls.sqlite"
 
+    notion_token: str | None = None
+    notion_database_id: str | None = None
+    notion_parent_page_id: str | None = None
+    jira_base_url: str | None = None
+    jira_email: str | None = None
+    jira_api_token: str | None = None
+    jira_project_key: str | None = None
+    jira_issue_type: str = "Task"
+    jira_set_priority: bool = False
+    smtp_host: str | None = None
+    smtp_port: int = 587
+    smtp_user: str | None = None
+    smtp_password: str | None = None
+    smtp_from: str | None = None
+    slack_webhook_url: str | None = None
+    public_url: str = "http://localhost:8501"
+    roster_path: str = "config/roster.json"
+    store_path: str = "data/copilot.sqlite"
+    api_key: str | None = None
+    hf_token: str | None = None
+    demo_mode: bool = False
+
 
 settings = Settings()

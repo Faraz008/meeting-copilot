@@ -87,6 +87,8 @@ Ambiguous deadlines retain their primary resolved date and receive a flag. This 
 
 Unresolvable deadlines are flagged and are not assigned guessed dates.
 
+## Reconciliation Design
+
 ### Core Principle
 
 Pass 2 can only **merge, annotate, or downgrade** items produced by Pass 1. It must never create new items.
@@ -100,10 +102,11 @@ This restriction ensures that reconciliation cannot introduce entirely new, unsu
 Merging and supersession of action items are handled by deterministic application logic rather than the LLM.
 
 Code is responsible for:
+
 - Identifying duplicate action items.
 - Merging compatible items.
 - Preserving stable IDs and evidence references.
-- Marking replaced or invalidated action items as `superseded`.
+- Marking replaced or invalidated items as `superseded`.
 - Linking superseded items to their replacements through `superseded_by`, where applicable.
 
 ### LLM-Assisted Judgments
@@ -135,3 +138,63 @@ The reconciliation pipeline follows these rules:
 - LLM judgments are restricted to question resolution and decision reversal.
 - Every accepted LLM judgment requires validated transcript evidence.
 - Pass 2 cannot increase the number of extracted items by creating new ones.
+
+## Application Architecture
+
+### Single Service Layer
+
+The application uses a single service layer (`service.py`) for its core workflows.
+
+The UI, CLI, and API act as thin interfaces over this service rather than implementing their own extraction, validation, reconciliation, or integration logic.
+
+This keeps business logic centralized and ensures that the same operations behave consistently regardless of how they are invoked.
+
+### Human Approval Boundary
+
+Nothing leaves the machine without human approval.
+
+Extraction and processing only write to the local database. External integrations can push only items explicitly marked as `approved`.
+
+Email integration defaults to dry-run mode, generating or previewing the intended output without sending it.
+
+Approval is required before any external write or communication takes place.
+
+### Untrusted Transcript Input
+
+The transcript is treated as untrusted input.
+
+Every string originating from the transcript must be escaped or safely encoded for its destination before being rendered or transmitted.
+
+This applies to HTML, Markdown, Slack messages, email content, and Jira fields.
+
+Transcript content must never be treated as trusted markup, executable instructions, or formatting supplied by the application.
+
+## Integration Design
+
+### Field Ownership
+
+The application and external task managers have separate ownership over different fields.
+
+**Copilot-owned content fields:**
+- Title
+- Deadline
+- Evidence
+
+**Human-owned workflow fields:**
+- Notion `Stage`
+- Jira status
+- Jira assignee after creation
+
+Copilot can create and update its content fields in external systems, but must not overwrite human-owned workflow fields during subsequent updates.
+
+This preserves human control over task execution and workflow management.
+
+### External Item Lifecycle
+
+Copilot never deletes or closes external items.
+
+When an external item no longer has a corresponding active item in the local database, it is reported as an orphan for human review.
+
+The application does not automatically delete, archive, or close such items.
+
+This ensures that external task history and human workflow decisions remain under human control.
