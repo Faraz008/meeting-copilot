@@ -2,13 +2,11 @@
 
 ## m001
 
-- **EXTRA** action turns [1] [proposed]: Review refund policy  _evidence: We should also review the refund policy._
 - **EXTRA** decision turns [2] [None]: Use Postgres for the database  _evidence: Let's use Postgres for the database._
 
 ## s01
 
 - **EXTRA** action turns [18] [committed]: Check feature names separately  _evidence: I can check the feature names separately._
-- **EXTRA** action turns [22] [proposed]: Check cancellation wording with legal  _evidence: Let's leave that as a proposed check until legal responds._
 - **EXTRA** decision turns [15, 16] [None]: Sam is the owner of the revised pricing copy  _evidence: Just to confirm, Sam owns the copy now, not Priya? | Correct. I am handing it to Sam; I won't be preparing that draft._
 - **EXTRA** question turns [11] [None]: Do we also need a check from legal on the cancellation wording?  _evidence: Do we also need a check from legal on the cancellation wording?_
 
@@ -23,8 +21,6 @@
 
 ## s03
 
-- **EXTRA** action turns [10] [proposed]: Create compact mobile summary  _evidence: A compact mobile summary would be useful too._
-- **EXTRA** action turns [22] [proposed]: Estimate comparison view cost  _evidence: We should estimate it before choosing._
 - **EXTRA** action turns [34] [committed]: Carry proposals into planning  _evidence: I'll carry the proposals into planning without owners._
 - **EXTRA** follow_up turns [32] [None]: Revisit prioritization when owners are assigned  _evidence: We'll revisit prioritization when owners are assigned._
 - **EXTRA** question turns [18] [None]: Should we rank these before the next planning session?  _evidence: Should we rank these before the next planning session?_
@@ -32,7 +28,6 @@
 ## s04
 
 - **MISSED** follow_up `f1` turns [22, 25] tags ['deferred']: Revisit the weekend coverage clause after legal confirms it
-- **EXTRA** action turns [24] [proposed]: Review vendor response in next operations meeting  _evidence: Let's review the vendor response in the next operations meeting._
 - **EXTRA** action turns [36] [committed]: Send vendor request follow-up  _evidence: I'll send the vendor request follow-up._
 - **EXTRA** follow_up turns [32] [None]: Revisit open point in next operations review  _evidence: The next operations review can revisit the open point._
 - **EXTRA** question turns [10, 13] [None]: Can we ask them to confirm the June support capacity?  _evidence: Can we ask them to confirm the June support capacity? | I can answer the June capacity question now: the vendor confirmed twelve support age_

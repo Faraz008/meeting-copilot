@@ -1,123 +1,172 @@
-# Results
+# Evaluation Results
 
 ## Evaluation scope
 
-- Split: development
-- Meetings: 6 (`m001`, `s01`–`s05`)
-- Gold actions: 10
-- Providers: Groq, OpenRouter, Ollama (Qwen3 4B Q4_K_M)
-- Held-out test results are reserved for Week 5.
-- Metrics are micro-averaged over meetings; reported confidence intervals are 95% bootstrap intervals over meetings.
+- Development set: six meetings (`m001`, `s01`–`s05`)
+- Providers: Groq, OpenRouter, and Ollama
+- Prompts: `extract_v1` and `extract_v2`
+- Evaluation: title matcher and turn matcher
+- Test split: not used for tuning or prompt selection
 
-## Baseline vs. pipeline
+## v1 results
 
-The baseline and full pipeline are compared using the title-only matcher in this experiment. The turn-aware full-pipeline results are also shown separately for reference.
+### Provider comparison
 
-| Model | System | Matcher | Action F1 | Precision | Recall | Fully-correct actions | Owner accuracy | Deadline accuracy | Ungrounded |
-|---|---|---|---:|---:|---:|---:|---:|---:|---:|
-| Groq | Baseline | Title | 44% [24–69] | 35% [22–64] | 60% [20–100] | 60% [20–100] | 100% | 100% | — |
-| Groq | Full | Title | 53% [47–57] | 38% [32–43] | 90% [80–100] | 90% [80–100] | 100% | 100% | 0% |
-| Groq | Full | Turns | 59% [48–68] | 42% [32–52] | 100% | 100% | 100% | 100% | 0% |
-| OpenRouter | Baseline | Title | 33% [12–56] | 25% [11–40] | 50% [13–100] | 50% [13–100] | 100% | 100% | — |
-| OpenRouter | Full | Title | 35% [24–44] | 22% [15–32] | 80% [56–100] | 80% [56–100] | 100% | 100% | 0% |
-| OpenRouter | Full | Turns | 39% [24–53] | 25% [15–38] | 90% [57–100] | 90% [57–100] | 100% | 100% | 0% |
-| Ollama | Baseline | Title | 86% [57–100] | 82% [50–100] | 90% [67–100] | 20% [0–56] | 56% [20–100] | 67% [17–93] | — |
-| Ollama | Full | Title | 71% [58–86] | 56% [41–75] | 100% | 100% | 100% | 100% | 0% |
-| Ollama | Full | Turns | 71% [58–86] | 56% [41–75] | 100% | 100% | 100% | 100% | 0% |
+| Provider | Configuration | Action F1 | Notes |
+|---|---|---:|---|
+| Groq | Baseline, title matcher | 44% | |
+| Groq | Full pipeline, title matcher | 53% [47–57] | |
+| Groq | Full pipeline, turn matcher | 59% [48–68] | Recall 100% |
+| OpenRouter | Baseline, title matcher | 33% | |
+| OpenRouter | Full pipeline, title matcher | 35% | |
+| OpenRouter | Full pipeline, turn matcher | 39% | |
+| Ollama | Baseline, title matcher | 86% | |
+| Ollama | Full pipeline, title matcher | 71% | |
 
-The OpenRouter `s01` full-pipeline run was incomplete because the provider returned `no providers`. Its quantitative results should therefore be interpreted with that limitation in mind.
+### Component ablations
 
-## What each component buys
+The v1 ablation results showed limited measurable differences between the full pipeline and several reduced configurations.
 
-The following tables use the turn-aware matcher. The full pipeline is the reference configuration.
+- Groq: removing grounding, code dates, or pass 2 did not materially change the reported aggregate metrics.
+- OpenRouter and Ollama: removing pass 2 increased unresolved-question recall from 50% to 100% in the observed runs.
+- Some reduced configurations also showed changes in ungrounded output. These results should be interpreted alongside the small evaluation set.
 
-### Groq
+### Run-to-run variance
 
-| Configuration | Action F1 | Precision | Recall | Fully-correct recall | Owner accuracy | Deadline accuracy | Decision F1 | Unresolved-question recall | Ungrounded |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Full pipeline | 59% | 42% | 100% | 100% | 100% | 100% | 0% | 100% | 0% |
-| No grounding | 59% | 42% | 100% | 100% | 100% | 100% | 0% | 100% | 0% |
-| No code dates | 59% | 42% | 100% | 100% | 100% | 100% | 0% | 100% | 0% |
-| No pass 2 | 59% | 42% | 100% | 100% | 100% | 100% | 0% | 100% | 0% |
-| Naive pipeline | 59% | 42% | 100% | 100% | 100% | 100% | 0% | 100% | 0% |
+The repeated Groq runs produced the following measurements:
 
-All four ablations produced exactly the same reported aggregate metrics and paired differences as the full pipeline.
+| Metric | Mean | Standard deviation |
+|---|---:|---:|
+| Action F1 | 39.1% | 0.7 pp |
+| Action precision | 29.0% | 0.8 pp |
+| Action recall | 60.0% | 0.0 pp |
+| Fully-correct action recall | 60.0% | 0.0 pp |
 
-### OpenRouter
+These estimates use only three runs over six development meetings. Zero observed standard deviation does not establish that the system is deterministic.
 
-| Configuration | Action F1 | Precision | Recall | Fully-correct recall | Owner accuracy | Deadline accuracy | Decision F1 | Unresolved-question recall | Ungrounded |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Full pipeline | 39% | 25% | 90% | 90% | 100% | 100% | 0% | 50% | 0% |
-| No grounding | 39% | 25% | 90% | 90% | 100% | 100% | 0% | 50% | 0% |
-| No code dates | 39% | 25% | 90% | 90% | 100% | 100% | 0% | 50% | 0% |
-| No pass 2 | 39% | 25% | 90% | 90% | 100% | 100% | 0% | 100% | 0% |
-| Naive pipeline | 39% | 25% | 90% | 90% | 100% | 100% | 0% | 100% | 0% |
+The repeated-run results also differ from the older saved Groq full-pipeline report, which recorded 59% action F1 and 100% recall. The runs may differ in prompt, configuration, matcher, or evaluation state. Therefore, the variance estimates should not be treated as a universal noise floor for every Groq result.
 
-Removing pass two and using the naive pipeline both increased observed unresolved-question recall from 50% to 100%. The paired intervals for these changes include zero.
+---
 
-### Ollama (Qwen3 4B Q4_K_M)
+## v2 results
 
-| Configuration | Action F1 | Precision | Recall | Fully-correct recall | Owner accuracy | Deadline accuracy | Decision F1 | Unresolved-question recall | Ungrounded |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Full pipeline | 71% | 56% | 100% | 100% | 100% | 100% | 0% | 50% | 0% |
-| No grounding | 71% | 56% | 100% | 100% | 100% | 100% | 0% | 50% | 3% |
-| No code dates | 71% | 56% | 100% | 100% | 100% | 100% | 0% | 50% | 0% |
-| No pass 2 | 71% | 56% | 100% | 100% | 100% | 100% | 0% | 100% | 0% |
-| Naive pipeline | 71% | 56% | 100% | 100% | 100% | 100% | 0% | 100% | 3% |
+The following results are from the `extract_v2` prompt ablation runs.
 
-Removing grounding increased the observed ungrounded rate from 0% to 3%. Removing pass two increased unresolved-question recall from 50% to 100%. The naive pipeline showed both changes.
+### Provider comparison — title matcher
 
-### Paired differences vs. full pipeline
+| Provider | Configuration | Action F1 | Precision | Recall | Fully-correct recall | Owner accuracy | Deadline accuracy | Unresolved-Q recall |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| Groq | Baseline | 44% | 35% | 60% | 60% | 100% | 100% | 50% |
+| Groq | Full pipeline | 52% | 41% | 70% | 60% | 86% | 100% | 50% |
+| OpenRouter | Baseline | 60% | 45% | 90% | 60% | 67% | 100% | 100% |
+| OpenRouter | Full pipeline | 47% | 35% | 70% | 50% | 71% | 100% | 50% |
+| Ollama | Baseline | 95% | 91% | 100% | 30% | 60% | 70% | 100% |
+| Ollama | Full pipeline | 69% | 53% | 100% | 100% | 100% | 100% | 50% |
 
-The following table preserves the non-zero paired differences and their 95% bootstrap intervals. All unlisted metric differences for each configuration were exactly `+0.0 [0.0, 0.0]` in the source reports.
+**Important OpenRouter limitation:** `s01` was incomplete in the full-pipeline run and in the no-grounding and no-code-dates runs. Those configurations therefore do not have complete, equivalent meeting coverage to the baseline. Their aggregate comparisons should be treated as provisional.
 
-| Model | Ablation | Metric | Δ (percentage points) | 95% paired CI |
+### Provider comparison — turn matcher
+
+| Provider | Configuration | Action F1 | Precision | Recall | Fully-correct recall | Owner accuracy | Deadline accuracy | Unresolved-Q recall |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| Groq | Full pipeline | 44% | 35% | 60% | 60% | 100% | 100% | 50% |
+| OpenRouter | Full pipeline | 33% | 25% | 50% | 50% | 100% | 100% | 50% |
+| OpenRouter | No pass 2 | 32% | 21% | 60% | 60% | 100% | 100% | 100% |
+| Ollama | Full pipeline | 69% | 53% | 100% | 100% | 100% | 100% | 50% |
+
+The turn-matcher results for Groq and Ollama were unchanged across the reported component ablations on the main action metrics. OpenRouter's no-pass-2 configuration showed a small change in action metrics and higher unresolved-question recall, but the paired confidence intervals include zero.
+
+### Component ablations — v2
+
+| Provider | Ablation | Observed result |
+|---|---|---|
+| Groq | No grounding | Same main metrics as full pipeline |
+| Groq | No code dates | Same main metrics as full pipeline |
+| Groq | No pass 2 | Same action metrics; unresolved-question recall increased from 50% to 100% |
+| Groq | Naive pipeline | Same action metrics as no-pass-2; unresolved-question recall increased to 100% |
+| OpenRouter | No grounding | Same reported metrics as full pipeline; `s01` incomplete |
+| OpenRouter | No code dates | Same reported metrics as full pipeline; `s01` incomplete |
+| OpenRouter | No pass 2 | Action metrics changed slightly; unresolved-question recall increased from 50% to 100% |
+| OpenRouter | Naive pipeline | Same reported action metrics as no-pass-2 |
+| Ollama | No grounding | Turn-matcher ungrounded rate increased from 0% to 3% |
+| Ollama | No code dates | Same main metrics as full pipeline |
+| Ollama | No pass 2 | Same action metrics; unresolved-question recall increased from 50% to 100% |
+| Ollama | Naive pipeline | Similar to no-pass-2; turn-matcher ungrounded rate was 3% |
+
+The no-grounding and no-code-dates configurations generally produced the same aggregate action metrics as the full pipeline in these runs. The small observed changes in ungrounded output and unresolved-question recall should not be treated as conclusive where the paired confidence intervals include zero.
+
+### Paired comparisons and confidence intervals
+
+| Provider | Comparison | Metric | Difference | 95% interval |
 |---|---|---|---:|---:|
-| Groq | No grounding | All reported metrics | 0.0 | [0.0, 0.0] |
-| Groq | No code dates | All reported metrics | 0.0 | [0.0, 0.0] |
-| Groq | No pass 2 | All reported metrics | 0.0 | [0.0, 0.0] |
-| Groq | Naive pipeline | All reported metrics | 0.0 | [0.0, 0.0] |
-| OpenRouter | No grounding | All reported metrics | 0.0 | [0.0, 0.0] |
-| OpenRouter | No code dates | All reported metrics | 0.0 | [0.0, 0.0] |
-| OpenRouter | No pass 2 | Unresolved-question recall | +50.0 | [0.0, +100.0] |
-| OpenRouter | Naive pipeline | Unresolved-question recall | +50.0 | [0.0, +100.0] |
-| Ollama | No grounding | Ungrounded items in output | +2.8 | [0.0, +7.3] |
-| Ollama | No code dates | All reported metrics | 0.0 | [0.0, 0.0] |
-| Ollama | No pass 2 | Unresolved-question recall | +50.0 | [0.0, +100.0] |
-| Ollama | Naive pipeline | Unresolved-question recall | +50.0 | [0.0, +100.0] |
-| Ollama | Naive pipeline | Ungrounded items in output | +2.8 | [0.0, +7.3] |
+| Groq | Full vs baseline | Action F1 | +7.4 pp | [-9.7, +21.5] |
+| Groq | Full vs baseline | Action precision | +5.9 pp | [-18.1, +23.1] |
+| Groq | Full vs baseline | Action recall | +10 pp | [0, +20] |
+| Groq | Full vs baseline | Fully-correct recall | 0 pp | [0, 0] |
+| Groq | Full vs baseline | Owner accuracy | -14.3 pp | [-50, 0] |
+| Groq | No pass 2 vs full | Unresolved-Q recall | +50 pp | [0, +100] |
+| OpenRouter | Full vs baseline | Action F1 | -13.3 pp | [-19, -7.1] |
+| OpenRouter | Full vs baseline | Action precision | -10 pp | [-16.7, +1.6] |
+| OpenRouter | Full vs baseline | Action recall | -20 pp | [-44.4, 0] |
+| OpenRouter | Full vs baseline | Fully-correct recall | -10 pp | [-42.9, 0] |
+| OpenRouter | Full vs baseline | Unresolved-Q recall | -50 pp | [-100, 0] |
+| OpenRouter | No pass 2 vs full, turn matcher | Action F1 | -1.8 pp | [-8.3, +3.6] |
+| OpenRouter | No pass 2 vs full, turn matcher | Action recall | +10 pp | [0, +42.9] |
+| OpenRouter | No pass 2 vs full, turn matcher | Unresolved-Q recall | +50 pp | [0, +100] |
+| Ollama | Full vs baseline | Action F1 | -26.3 pp | [-42.9, -11.9] |
+| Ollama | Full vs baseline | Action precision | -38.3 pp | [-60, -19.5] |
+| Ollama | Full vs baseline | Fully-correct recall | +70 pp | [+22.2, +100] |
+| Ollama | Full vs baseline | Owner accuracy | +40 pp | [0, +80] |
+| Ollama | Full vs baseline | Deadline accuracy | +30 pp | [+5.9, +83.3] |
 
-Where the paired confidence interval includes zero, report **no detectable effect on this dataset**. The grounding-related increase for Ollama is an observed difference, but its interval also touches zero, so it is not conclusive under this rule.
+OpenRouter's full-pipeline comparisons against its baseline are affected by the incomplete `s01` run. They should not be interpreted as clean paired comparisons across the same six meetings.
 
-The source reports contain no numeric spurious-actions-per-negative-meeting result (`—`), so this metric is not interpreted as zero.
+### Reading these numbers
 
-## Noise floor
+`no_code_dates` produces no measurable change in the reported deadline accuracy on this dataset. This does not establish that code-based date resolution is unnecessary; the evaluation set may not contain enough cases where it changes the outcome. Removing grounding has little effect on the main aggregate metrics in most runs, although Ollama shows a small increase in ungrounded output in the reduced configuration. Removing pass 2 increases unresolved-question recall from 50% to 100% in some provider runs, but the paired confidence intervals include zero, so this is not conclusive evidence that pass 2 is harmful. Ollama's baseline has higher action F1 and precision, but the full pipeline has substantially better fully-correct action recall, owner accuracy, and deadline accuracy. OpenRouter's incomplete `s01` runs make its full-pipeline comparisons less reliable. Overall, these results are descriptive rather than proof that a component is unnecessary.
 
-Three repeated Groq full-pipeline runs were performed with cache disabled:
+---
 
-- Runs: `groq__var1`, `groq__var2`, `groq__var3`
-- Action F1: **39.1% ± 0.7 pp**
-- Action precision: **29.0% ± 0.8 pp**
-- Action recall: **60.0% ± 0.0 pp**
-- Fully-correct action recall: **60.0% ± 0.0 pp**
-- Owner accuracy: **100.0% ± 0.0 pp**
-- Deadline accuracy: **100.0% ± 0.0 pp**
-- Status accuracy: **100.0% ± 0.0 pp**
-- Decision F1: **0.0% ± 0.0 pp**
+## What I tried that didn't work
 
-Approximate two-standard-deviation thresholds are 1.4 percentage points for Action F1 and 1.6 percentage points for precision. This estimate is preliminary because it is based on three runs and six meetings.
+### 1. Threshold tuning
 
-**Consistency warning:** The repeated Groq runs report Action F1 of 39.1% and recall of 60%, whereas the saved Groq turn-aware full report reports 59% Action F1 and 100% recall. These are not directly comparable until the run configuration, gold files, matcher settings, and scoring version are verified. Do not use the 39.1% mean as the noise floor for interpreting the 59% result yet.
+I swept `dedupe_title`, `supersede_hint`, `supersede_cue`, and `grounding` individually across three values each.
 
-## Reading these numbers
+For both v1 and v2, the threshold sweeps produced identical reported aggregate metrics across the tested values. There was no measurable improvement in action F1, fully-correct action recall, decision F1, unresolved-question recall, or ungrounded rate.
 
-no_code_dates produces no measurable change in deadline accuracy on this dataset, but deadline accuracy is already 100% across the runs, so this does not establish that code-based date handling is unnecessary. The dl_invented and dl_wrong counts should be checked alongside accuracy to see whether any deadline errors are being introduced or corrected. Removing grounding raises the ungrounded rate for Ollama, but the observed increase is small and its interval includes zero; there is no detectable effect on precision in these runs. Removing pass 2 does not produce a detectable change in action precision or duplicate-related metrics, but unresolved-question recall is higher for OpenRouter and Ollama; the intervals include zero, so this is not conclusive evidence that pass 2 harms question detection. Overall, most component ablations show no detectable effect on this dataset, and the small sample means these results should be treated as descriptive rather than proof that a component is unnecessary
+**Outcome:** Kept the existing threshold defaults rather than selecting a value based on negligible or nonexistent changes.
 
-## Limitations
+### 2. The v2 prompt changes
 
-- The development set contains only six meetings and ten gold actions.
-- Confidence intervals over six meetings are wide and provide limited precision.
-- OpenRouter's `s01` run was incomplete because no provider was available.
-- The Groq variance experiment and saved Groq full report have inconsistent metrics; resolve this before using the variance estimate as a comparison threshold.
-- Zero observed differences in an ablation do not prove that a component is unnecessary; effects may be too small or too rare to appear in this dataset.
-- These are development-set findings, not held-out test results.
+The v2 prompt introduced stricter distinctions between decisions and ownership clarifications, and changed how answered and unresolved questions were handled.
+
+The Groq v2 run did not improve the overall result over v1. Action F1 decreased from 59% to 52%, action recall decreased from 100% to 70%, fully-correct action recall decreased from 100% to 60%, and unresolved-question recall decreased from 100% to 50%. Decision F1 remained at 0%.
+
+The v2 prompt also showed regressions on no-owner, proposed, and unanswered-question cases. Although some individual cases improved, the overall pattern did not satisfy the acceptance criteria.
+
+**Outcome:** Retained v1 as the baseline and treated v2 as a negative prompt experiment rather than promoting it.
+
+### 3. Removing completed-item filtering
+
+The completed-item filter experiment produced identical aggregate metrics to the full configuration. The development gold data contained no `past_tense_negative` cases, so the experiment did not meaningfully test the intended behavior.
+
+**Outcome:** No evidence of improvement. Revisit this experiment only when the development set contains appropriately labeled examples.
+
+### 4. Removing pipeline components
+
+Removing grounding and code-date handling generally did not change the aggregate action metrics in the observed v2 runs. Removing pass 2 changed unresolved-question recall for some providers, but the confidence intervals were too wide to establish a reliable improvement.
+
+The Ollama baseline also demonstrated that a higher action F1 does not necessarily mean better end-to-end extraction: its full pipeline had lower F1 but much higher fully-correct action recall and owner/deadline accuracy.
+
+**Outcome:** No component was removed based only on these small ablation results.
+
+### 5. Cross-provider comparisons
+
+The providers behaved differently across the same prompt and pipeline configurations. OpenRouter also had incomplete `s01` runs in several configurations, which prevents a clean comparison with its baseline.
+
+**Outcome:** Avoid treating one provider's aggregate score as proof that it is universally better. Complete, same-meeting runs are needed before drawing stronger conclusions.
+
+## Overall conclusion
+
+The v2 prompt and threshold experiments did not provide enough evidence to replace v1 as the baseline. The ablations suggest that some pipeline components had little measurable effect on this small development set, while pass 2 may affect unresolved-question recall. These findings are useful for directing future experiments, but they are not sufficient to justify removing components or changing the production configuration. All conclusions are limited by the small development set and, for OpenRouter, incomplete runs.
