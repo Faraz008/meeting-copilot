@@ -30,12 +30,19 @@ def load_prompt(name: str) -> Prompt:
 
 def render(prompt: Prompt, **vars) -> list[dict]:
     def fill(s: str) -> str:
-        for k, v in vars.items():
-            s = s.replace(f"<<{k}>>", str(v))
-        left = re.findall(r"<<[A-Z_]+>>", s)
-        if left:
-            raise ValueError(f"unfilled placeholders in prompt {prompt.name}: {left}")
-        return s
+        missing: set[str] = set()
+
+        def sub(m: re.Match) -> str:
+            k = m.group(1)
+            if k not in vars:
+                missing.add(k)
+                return m.group(0)
+            return str(vars[k])
+
+        out = re.sub(r"<<([A-Z_]+)>>", sub, s)
+        if missing:
+            raise ValueError(f"unfilled placeholders in prompt {prompt.name}: {sorted(missing)}")
+        return out
 
     return [
         {"role": "system", "content": fill(prompt.system)},

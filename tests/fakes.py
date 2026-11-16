@@ -18,3 +18,20 @@ class FakeProvider:
         return Completion(
             text=text, provider=self.name, model=self.model, latency_s=0.0, finish_reason=finish
         )
+
+
+class ConstProvider:
+    """Always returns the same text. Used where call counts don't matter."""
+
+    def __init__(self, name: str, text: str):
+        self.name, self.model, self.text, self.n = name, "fake", text, 0
+
+    def complete(self, messages, **kw):
+        self.n += 1
+        return Completion(
+            text=self.text,
+            provider=self.name,
+            model=self.model,
+            latency_s=0.0,
+            finish_reason="stop",
+        )

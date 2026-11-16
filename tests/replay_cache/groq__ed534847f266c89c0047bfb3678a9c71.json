@@ -1,0 +1,1 @@
+{"text": "{\"judgements\":[{\"id\":\"q1\",\"status\":\"unanswered\",\"answer_turn_idx\":null,\"answer_quote\":null,\"summary\":null}]}", "provider": "groq", "model": "openai/gpt-oss-120b", "latency_s": 2.9721356000000014, "prompt_tokens": 620, "completion_tokens": 108, "finish_reason": "stop", "cached": false}
