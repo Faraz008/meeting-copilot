@@ -2,12 +2,120 @@ import hashlib
 from dataclasses import dataclass, field
 from datetime import date
 
+from copilot.config import settings
 from copilot.extract.pipeline import PipelineConfig
 from copilot.extract.safe import run_safe
+from copilot.integrations.base import Outcome
 from copilot.integrations.directory import Directory
+from copilot.integrations.engine import push_items
+from copilot.integrations.payload import build_push_items
 from copilot.llm.factory import build_router
 from copilot.llm.redact import redact as scrub
 from copilot.store import Store
+
+
+class ConfigError(ValueError): ...
+
+
+@dataclass
+class PushReport:
+    outcomes: list[Outcome]
+    orphans: list[dict]
+
+    def summary(self) -> dict:
+        from collections import Counter
+
+        return dict(Counter(o.status for o in self.outcomes))
+
+
+def make_target(name: str, *, client=None):
+    s = settings
+
+    if name == "notion":
+        if not (s.notion_token and s.notion_database_id):
+            raise ConfigError("Set NOTION_TOKEN and NOTION_DATABASE_ID (see docs/integrations.md).")
+
+        from copilot.integrations.notion import NotionTarget
+
+        return NotionTarget(
+            s.notion_token,
+            s.notion_database_id,
+            client=client,
+        )
+
+    if name == "jira":
+        if not all(
+            [
+                s.jira_base_url,
+                s.jira_email,
+                s.jira_api_token,
+                s.jira_project_key,
+            ]
+        ):
+            raise ConfigError("Set JIRA_BASE_URL, JIRA_EMAIL, JIRA_API_TOKEN and JIRA_PROJECT_KEY.")
+
+        from copilot.integrations.jira import JiraTarget
+
+        return JiraTarget(
+            s.jira_base_url,
+            s.jira_email,
+            s.jira_api_token,
+            s.jira_project_key,
+            issue_type=s.jira_issue_type,
+            set_priority=s.jira_set_priority,
+            client=client,
+        )
+
+    raise ConfigError(f"Unknown target {name!r}")
+
+
+def push(
+    store: Store,
+    mid: str,
+    target_name: str,
+    *,
+    dry_run: bool = True,
+    force: bool = False,
+    kinds: tuple[str, ...] | None = None,
+    target=None,
+) -> PushReport:
+    if settings.demo_mode:
+        raise ConfigError("Demo mode: pushing is disabled.")
+
+    target = target or make_target(target_name)
+
+    kinds = kinds or (
+        ("action",) if target_name == "jira" else ("action", "decision", "question", "followup")
+    )
+
+    items = build_push_items(
+        store,
+        mid,
+        kinds,
+        Directory(),
+        settings.public_url,
+    )
+
+    outcomes = push_items(
+        store,
+        target,
+        items,
+        dry_run=dry_run,
+        force=force,
+    )
+
+    current = {item.id for item in items}
+
+    orphans = [
+        item
+        for item in store.list_pushes(mid)
+        if item["target"] == target.name
+        and item["status"] == "ok"
+        and item["item_id"] not in current
+        and not item["item_id"].startswith("meeting:")
+    ]
+
+    return PushReport(outcomes, orphans)
 
 
 @dataclass
@@ -26,6 +134,7 @@ def new_meeting_id(raw: str, meeting_date: date) -> str:
     """
     content = f"{meeting_date}|{raw}".encode()
     digest = hashlib.sha1(content).hexdigest()[:10]
+
     return f"m_{digest}"
 
 
