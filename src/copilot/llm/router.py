@@ -10,6 +10,7 @@ from copilot.llm.base import (
     TransientError,
 )
 from copilot.llm.calllog import CallLogger, prompt_hash
+from copilot.llm.redact import redact
 from copilot.llm.retry import with_retries
 
 
@@ -70,7 +71,7 @@ class Router:
             prompt_hash=prompt_hash(messages),
             attempt=attempt,
             outcome=outcome,
-            error=error,
+            error=redact(error) if error else None,
             latency_s=comp.latency_s if comp else None,
             prompt_tokens=comp.prompt_tokens if comp else None,
             completion_tokens=comp.completion_tokens if comp else None,

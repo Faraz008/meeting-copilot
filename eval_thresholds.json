@@ -1,0 +1,14 @@
+{
+ "min": {
+  "act_f1": 0.558,
+  "act_r": 0.97,
+  "act_full_recall": 0.97,
+  "act_owner_acc": 0.97,
+  "act_dl_acc": 0.97,
+  "dec_f1": 0.0,
+  "q_unres_recall": 0.97
+ },
+ "max": {
+  "ungrounded_rate": 0.03
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "provider": "groq",
+ "model": "openai/gpt-oss-120b",
+ "split": "dev",
+ "pipeline": {
+  "extract_prompt": "extract_v1",
+  "use_grounding": true,
+  "use_pass2": true,
+  "date_resolver": "rules",
+  "filter_completed": false
+ },
+ "recorded": "2026-11-16 10:01:52",
+ "git": {
+  "sha": "efc3fb8",
+  "dirty": true
+ },
+ "files": 15
+}

@@ -11,6 +11,7 @@ from copilot.llm.base import (
     TransientError,
 )
 from copilot.llm.ratelimit import TokenBucket
+from copilot.llm.redact import redact
 
 THINK = re.compile(r"<think>.*?</think>", re.S)
 
@@ -83,7 +84,7 @@ class OpenAICompatProvider:
             raise TransientError(f"http {r.status_code}")
 
         if r.status_code >= 400:
-            raise PermanentError(f"http {r.status_code}: {r.text[:200]}")
+            raise PermanentError(f"http {r.status_code}: {redact(r.text[:200])}")
 
     def complete(
         self,
