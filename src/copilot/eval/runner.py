@@ -18,7 +18,7 @@ RUNS = ROOT / "data/runs/eval"
 @dataclass
 class RunSpec:
     name: str
-    system: str = "pipeline"  # pipeline | baseline
+    system: str = "pipeline"
     split: str = "dev"
     provider: str | None = None
     cache_mode: str = "live"
@@ -27,7 +27,8 @@ class RunSpec:
     resume: bool = False
     limit: int | None = None
     baseline_prompt: str = "baseline_v1"
-    pipeline: dict = field(default_factory=dict)  # PipelineConfig overrides
+    pipeline: dict = field(default_factory=dict)
+    max_attempts: int = 4
 
 
 def git_info() -> dict:
@@ -63,6 +64,7 @@ def run_system(spec: RunSpec) -> Path:
         run_id=spec.name,
         log=spec.log,
         cache_dir=spec.cache_dir,
+        max_attempts=spec.max_attempts,
     )
 
     cfg = PipelineConfig(**spec.pipeline)
@@ -99,7 +101,7 @@ def run_system(spec: RunSpec) -> Path:
                     ro.report,
                 )
 
-        except Exception as e:  # a crash is data: record it, keep the batch going
+        except Exception as e:
             pred = Prediction(
                 meeting_id=g.meeting_id,
                 system=spec.name,
@@ -129,6 +131,7 @@ def run_system(spec: RunSpec) -> Path:
         "models": [(p.name, p.model) for p in router.providers],
         "cache_mode": spec.cache_mode,
         "pipeline": spec.pipeline,
+        "max_attempts": spec.max_attempts,
         "baseline_prompt": spec.baseline_prompt,
         "meetings": done,
         "prompt_sha": (

@@ -4,6 +4,9 @@ from rapidfuzz import fuzz
 
 from copilot.validate.grounding import norm
 
+DEFAULT_MIN_TITLE = 40.0
+DEFAULT_TOL = 1
+
 
 @dataclass
 class Match:
@@ -35,8 +38,8 @@ def match_items(
     p_turns,
     *,
     use_turns: bool = True,
-    min_title: float = 40.0,
-    tol: int = 1,
+    min_title: float = DEFAULT_MIN_TITLE,
+    tol: int = DEFAULT_TOL,
 ) -> list[Match]:
     """One-to-one greedy matching by descending score. Deterministic."""
     cands = []

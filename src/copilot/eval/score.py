@@ -3,7 +3,7 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 
 from copilot.eval.gold import GoldMeeting
-from copilot.eval.matching import match_items, near
+from copilot.eval.matching import DEFAULT_MIN_TITLE, DEFAULT_TOL, match_items, near
 from copilot.eval.pred import Prediction
 from copilot.extract.raw_models import RawEvidence
 from copilot.models import Turn
@@ -13,8 +13,8 @@ from copilot.validate.grounding import ground_one
 @dataclass
 class ScoreConfig:
     use_turns: bool = True
-    min_title: float | None = None
-    tol: int = 1
+    min_title: float | None = DEFAULT_MIN_TITLE
+    tol: int = DEFAULT_TOL
     min_conf: float = 0.0
     exclude_proposed: bool = False
 
@@ -65,7 +65,7 @@ def score_meeting(
         c["sys_failed"] += 1
     if pred.report.get("complete") is False:
         c["incomplete"] += 1
-    min_title = cfg.min_title if cfg.min_title is not None else (40.0 if cfg.use_turns else 60.0)
+    min_title = cfg.min_title if cfg.min_title is not None else DEFAULT_MIN_TITLE
 
     g_acts = [a for a in g.action_items if not (cfg.exclude_proposed and a.status == "proposed")]
     p_acts = [
