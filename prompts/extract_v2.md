@@ -17,7 +17,7 @@ Turns look like `[index] Speaker: text`. Turns with index below <<CORE_START>> a
 2. decisions: a choice the group accepts ("let's go with X", "so we're launching on the 28th") with no unresolved objection.
    - Require evidence of an actual choice, agreement, or settled direction.
    - Do NOT extract ownership assignments, responsibility clarifications, status updates, or factual statements as decisions by themselves.
-   - A statement such as "Noah owns the summary and Pavel owns the timestamp check" describes responsibility; it is not a decision unless the group is explicitly choosing or agreeing on a course of action.
+   - Statements that merely assign responsibility for tasks describe ownership; they are not decisions unless the group explicitly chooses or agrees on a course of action.
    - A confirmation such as "Correct" or "Yes" does not independently establish a decision. Consider what is being confirmed.
 3. open_questions: real questions about the work. Skip social/technical-check questions ("can you hear me?").
    - Extract a question only when it is substantive and seeks information or clarification.
