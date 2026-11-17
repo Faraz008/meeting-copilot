@@ -18,7 +18,7 @@ def tracked() -> dict[str, str]:
     out = {}
 
     for gold_path in sorted(TEST_DIR.glob("*.json")):
-        out[str(gold_path.relative_to(ROOT))] = sha(gold_path)
+        out[gold_path.relative_to(ROOT).as_posix()] = sha(gold_path)
 
         gold = GoldMeeting.model_validate_json(gold_path.read_text(encoding="utf-8"))
 
@@ -30,7 +30,7 @@ def tracked() -> dict[str, str]:
             transcript_path = ROOT / "data" / gold.source / f"{gold.meeting_id}.json"
 
         if transcript_path.exists():
-            out[str(transcript_path.relative_to(ROOT))] = sha(transcript_path)
+            out[transcript_path.relative_to(ROOT).as_posix()] = sha(transcript_path)
 
     return out
 
