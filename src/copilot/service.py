@@ -310,3 +310,58 @@ def configured_providers() -> list[str]:
     }
 
     return [provider for provider, configured in available.items() if configured]
+
+
+def digest(store: Store, mid: str):
+    from copilot.digest import build_digest
+
+    return build_digest(store, mid)
+
+
+def email(
+    store: Store,
+    mid: str,
+    *,
+    send: bool = False,
+    force: bool = False,
+    smtp_factory=None,
+) -> list[dict]:
+    from copilot.integrations.emailer import deliver, plan_emails
+
+    if settings.demo_mode:
+        raise ConfigError("Demo mode: email is disabled.")
+
+    if send and not (settings.smtp_host and settings.smtp_from):
+        raise ConfigError(
+            "Set SMTP_HOST and SMTP_FROM (and SMTP_USER/SMTP_PASSWORD if your server needs them)."
+        )
+
+    plans = plan_emails(digest(store, mid), Directory())
+
+    return deliver(
+        plans,
+        store,
+        mid,
+        sender=settings.smtp_from or "copilot@localhost",
+        send=send,
+        force=force,
+        host=settings.smtp_host,
+        port=settings.smtp_port,
+        user=settings.smtp_user,
+        password=settings.smtp_password,
+        smtp_factory=smtp_factory,
+    )
+
+
+def ics_bytes(store: Store, mid: str) -> bytes:
+    from copilot.integrations.ics import build_ics
+
+    return build_ics([a for a in digest(store, mid).actions if a.deadline])
+
+
+def slack(store: Store, mid: str, *, client=None) -> None:
+    from copilot.integrations.slack import build_payload, post
+
+    if settings.demo_mode or not settings.slack_webhook_url:
+        raise ConfigError("Set SLACK_WEBHOOK_URL (disabled in demo mode).")
+    post(settings.slack_webhook_url, build_payload(digest(store, mid)), client=client)
