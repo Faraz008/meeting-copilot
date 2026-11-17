@@ -15,6 +15,7 @@ jobs:
       - run: pip install -e ".[dev,ui]"
       - run: ruff check .
       - run: ruff format --check .
+      - run: python scripts/split_integrity.py
       - run: python scripts/check_secrets.py
       - run: pytest -q --cov=copilot --cov-report=term-missing --cov-fail-under=70
       - run: python scripts/validate_gold.py
