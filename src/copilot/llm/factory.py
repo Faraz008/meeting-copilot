@@ -77,16 +77,10 @@ def build_router(
 
     # Restrict provider selection to local endpoints when requested.
     if local_only:
-        unknown = [name for name in names if name not in specs]
-        if unknown:
-            raise ValueError(f"Unknown LLM provider: {unknown[0]}")
+        if not settings.ollama_model:
+            raise RuntimeError("Ollama is not configured. Set OLLAMA_MODEL and run `ollama serve`.")
 
-        names = [name for name in names if is_local(specs[name]["base_url"])]
-
-        if not names:
-            raise RuntimeError(
-                "Local-only mode needs Ollama: set OLLAMA_MODEL and run `ollama serve`."
-            )
+        names = ["ollama"]
 
     providers = []
 

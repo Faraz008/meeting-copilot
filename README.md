@@ -49,3 +49,16 @@ The integration creates a database using Notion's Select properties.
 | Owner update | ![Owner update](docs/img/3-owner-updated.png) |
 | Deleted page recovery | ![Page recreated](docs/img/4-notion-recreated.png) |
 | Stage preservation | ![Stage preserved](docs/img/5-stage-preserved.png) |
+
+## Privacy and PII Redaction
+
+The pipeline includes identifier-level PII redaction in `src/copilot/privacy/pii.py`.
+
+It redacts:
+- Email addresses and phone numbers
+- Card numbers
+- Aadhaar-like and PAN numbers
+- URLs and IP addresses
+- API keys and other key-shaped strings
+
+**Limitation:** Person names are intentionally not redacted because the pipeline needs them for action-item owner resolution. This is identifier redaction, not complete personal-data anonymization.

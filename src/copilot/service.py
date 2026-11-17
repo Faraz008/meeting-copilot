@@ -269,12 +269,18 @@ def approve_clean(
         if item["state"] != "pending":
             continue
 
+        if item["kind"] not in {"action", "decision"}:
+            continue
+
         flags = set(item["flags"])
 
         if flags - {"no_deadline"}:
             continue
 
-        confidence = item["confidence"]
+        confidence = item.get("confidence")
+
+        if confidence is None:
+            continue
 
         is_action = (
             item["kind"] == "action"
