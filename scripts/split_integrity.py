@@ -11,7 +11,8 @@ MANIFEST = ROOT / "data" / "SPLITS.sha256.json"
 
 
 def sha(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    content = path.read_bytes().replace(b"\r\n", b"\n")
+    return hashlib.sha256(content).hexdigest()
 
 
 def tracked() -> dict[str, str]:
