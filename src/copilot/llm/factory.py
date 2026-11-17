@@ -1,10 +1,17 @@
 import uuid
+from urllib.parse import urlparse
 
 from copilot.config import settings
 from copilot.llm.cache import CachingProvider
 from copilot.llm.calllog import CallLogger
 from copilot.llm.openai_compat import OpenAICompatProvider
 from copilot.llm.router import Router
+
+LOCAL_HOSTS = {"localhost", "127.0.0.1", "::1"}
+
+
+def is_local(base_url: str) -> bool:
+    return urlparse(base_url).hostname in LOCAL_HOSTS
 
 
 def _specs() -> dict:
@@ -57,6 +64,7 @@ def build_router(
     log: bool = True,
     cache_dir: str | None = None,
     max_attempts: int = 4,
+    local_only: bool = False,
 ) -> Router:
     if max_attempts < 1:
         raise ValueError("max_attempts must be at least 1")
@@ -66,6 +74,14 @@ def build_router(
     names = order or [n.strip() for n in settings.provider_order.split(",") if n.strip()]
 
     specs = _specs()
+
+    # Restrict provider selection to local endpoints when requested.
+    if local_only:
+        if not settings.ollama_model:
+            raise RuntimeError("Ollama is not configured. Set OLLAMA_MODEL and run `ollama serve`.")
+
+        names = ["ollama"]
+
     providers = []
 
     for name in names:
@@ -75,6 +91,7 @@ def build_router(
         spec = specs[name]
 
         key = spec["api_key"]
+
         if mode == "replay":
             key = key or "replay"
 

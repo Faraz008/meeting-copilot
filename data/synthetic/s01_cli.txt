@@ -1,0 +1,40 @@
+﻿Priya: Thanks for joining; let's use this time to close the pricing page gaps.
+Sam: I have the current draft and the mobile preview open.
+Dan: I reviewed the product names against the feature matrix.
+Priya: The goal is to leave with clear owners, not just a list of comments.
+Sam: I can share the mobile preview after we agree on the copy.
+Dan: I'll keep track of anything that needs legal or design input.
+Priya: Let's start with the pricing page copy; the design is nearly ready.
+Sam: The annual plan wording is still a little dense on mobile.
+Dan: The comparison table also needs the latest feature names.
+Priya: I can prepare the revised pricing copy and send it to the group by Friday.
+Sam: That would cover the main gap.
+Dan: Do we also need a check from legal on the cancellation wording?
+Priya: Yes, but let's keep the copy task moving first.
+Priya: Actually, I need to hand that copy task over; Sam, can you own the revised pricing copy instead?
+Sam: Yes, I'll take the revised pricing copy and send it by Friday.
+Dan: Just to confirm, Sam owns the copy now, not Priya?
+Priya: Correct. I am handing it to Sam; I won't be preparing that draft.
+Sam: I'll use the current page as the base and update the annual plan section.
+Dan: I can check the feature names separately.
+Priya: Thanks. Please don't combine the feature-name check with Sam's copy task.
+Sam: Understood. I'll send the revised copy to both of you.
+Dan: For legal, we still need to ask whether cancellation wording needs a footnote.
+Priya: Let's leave that as a proposed check until legal responds.
+Sam: The mobile layout should keep the prices visible without horizontal scrolling.
+Dan: Agreed; the design team already has that layout note.
+Priya: The handoff is the important change: Sam is the single owner of the copy.
+Sam: Yes, that's clear. I'll send the copy by Friday.
+Dan: I'll review the feature names once the copy is in.
+Dan: The feature matrix has a separate owner in product operations.
+Sam: I'll use its approved names rather than inventing labels.
+Priya: The legal cancellation wording still needs a separate check.
+Dan: That check can be raised with legal after the copy is handed over.
+Sam: The mobile preview will help us spot line breaks.
+Priya: Let's keep the handoff and the legal question distinct.
+Dan: I'll review the feature names after Sam shares the copy.
+Sam: I'll send the revised copy by Friday.
+Priya: The owner handoff is clear.
+Dan: The legal wording question remains separate.
+Sam: I'll use the current draft as the starting point.
+Priya: Thanks, let's close there.

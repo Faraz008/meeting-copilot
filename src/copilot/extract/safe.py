@@ -17,6 +17,7 @@ class SafeResult:
     warnings: list[str] = field(default_factory=list)
     error_code: str | None = None
     error: str | None = None
+    meeting: Meeting | None = None  # ORIGINAL turns (never the redacted copy)
 
 
 def sanity_warnings(result: ExtractionResult, n_turns: int) -> list[str]:
@@ -50,9 +51,20 @@ def run_safe(
     roster: list[str] | None = None,
     aliases: dict | None = None,
     cfg: PipelineConfig | None = None,
+    speaker_map: dict[str, str] | None = None,
+    redactor=None,
+    on_progress=None,
+    title: str | None = None,
 ) -> SafeResult:
     try:
         turns = parse_transcript(raw)
+
+        if speaker_map:
+            turns = [
+                t.model_copy(update={"speaker": speaker_map.get(t.speaker or "", t.speaker)})
+                for t in turns
+            ]
+
         turns, warns = prepare_turns(turns)
 
     except InputError as e:
@@ -71,6 +83,7 @@ def run_safe(
 
     meeting = Meeting(
         meeting_id=meeting_id,
+        title=title,
         date=meeting_date,
         timezone=timezone,
         roster=roster or build_roster(turns),
@@ -78,21 +91,34 @@ def run_safe(
         turns=turns,
     )
 
+    # Preserve the original meeting for display and evidence.
+    # Only the working copy is sent through the redaction pipeline.
+    work = meeting
+
+    if redactor:
+        work = meeting.model_copy(update={"turns": redactor.redact_turns(meeting.turns)})
+
     try:
-        out = run_pipeline(meeting, router, cfg)
+        out = run_pipeline(work, router, cfg)
 
     except Exception as e:
-        # service boundary: never leak a stack trace to a user
         log.exception("pipeline crashed for %s", meeting_id)
 
         return SafeResult(
             "failed",
             warnings=warns,
             error_code="internal",
-            error=f"{type(e).__name__}",
+            error=type(e).__name__,
+            meeting=meeting,
         )
 
     rep = out.report
+
+    # Restore original names and references in extracted results.
+    result = redactor.restore_result(out.result) if redactor else out.result
+
+    if redactor:
+        rep["redactions"] = redactor.counts()
 
     if rep["chunks"] and len(rep["failed_chunks"]) == rep["chunks"]:
         return SafeResult(
@@ -103,13 +129,15 @@ def run_safe(
             error=(
                 "Every extraction call failed (provider limits or outage). Nothing was extracted."
             ),
+            meeting=meeting,
         )
 
-    warns += sanity_warnings(out.result, len(turns))
+    warns += sanity_warnings(result, len(turns))
 
     return SafeResult(
-        "ok" if rep["complete"] else "partial",
-        out.result,
-        rep,
-        warns,
+        status="ok" if rep["complete"] else "partial",
+        result=result,
+        report=rep,
+        warnings=warns,
+        meeting=meeting,
     )

@@ -223,5 +223,8 @@ __marimo__/
 data/raw/
 data/llm_cache/
 data/runs/
+data/copilot.sqlite
+data/outbox/
+config/roster.json
 *.sqlite
 *.db

@@ -15,10 +15,19 @@ dependencies = [
   "python-dotenv>=1.0",
   "rapidfuzz>=3.6",
   "dateparser>=1.2",
+  "typer>=0.12",
+  "python-multipart>=0.0.9",
+  "jinja2>=3.1",
+  "icalendar>=5.0",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest>=8", "pytest-cov", "ruff", "pre-commit","hypothesis", "httpx2>=2.0.0",]
+ui = ["streamlit>=1.35"]
+audio = ["faster-whisper>=1.0", "pyannote.audio>=3.1"]
+
+[project.scripts]
+copilot = "copilot.cli:app"
 
 [tool.setuptools.packages.find]
 where = ["src"]
