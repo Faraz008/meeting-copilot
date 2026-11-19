@@ -1,0 +1,1 @@
+{"text": "{\n  \"decisions\": [\n    {\n      \"id\": \"d1\",\n      \"status\": \"active\",\n      \"superseded_by\": null,\n      \"quote_turn_idx\": null,\n      \"quote\": null\n    }\n  ]\n}", "provider": "ollama", "model": "copilot-local", "latency_s": 3.739180000000488, "prompt_tokens": 643, "completion_tokens": 53, "finish_reason": "stop", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "{\n  \"action_items\": [],\n  \"decisions\": [\n    \"The migration workstream is complete and will be closed.\"\n  ],\n  \"open_questions\": []\n}", "provider": "groq", "model": "openai/gpt-oss-120b", "latency_s": 2.1414964000005057, "prompt_tokens": 733, "completion_tokens": 78, "finish_reason": "stop", "cached": false}

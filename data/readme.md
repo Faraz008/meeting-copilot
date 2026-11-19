@@ -67,3 +67,17 @@ This dataset contains modified excerpts from the AMI Meeting Corpus. The source 
 Modifications include selecting the first 100 chronological annotated segments from each selected meeting, resolving NXT segment-to-word references, joining word tokens, and converting the result into the project's JSON schema.
 
 The original corpus license and source attribution must be retained when redistributing these transcripts.
+
+## Dataset inventory
+
+| Dataset | Source | License | Committed |
+|---|---|---|---|
+| AMI transcript excerpts (`data/real/`) | AMI Meeting Corpus, Manual Annotations | CC BY 4.0 | Yes |
+| Synthetic transcripts (`data/synthetic/`) | Project-generated | Project-created; no third-party dataset license | Yes |
+| Gold annotations (`data/gold/`) | Project-created annotations | Project-created; no third-party dataset license | Yes |
+
+All three datasets are committed to the Git repository.
+
+The AMI excerpts are modified portions of the original corpus. They retain the original source attribution and CC BY 4.0 licensing requirements. See the attribution and modifications section above.
+
+The synthetic transcripts and gold annotations were created for this project and are not derived from the AMI corpus. The repository's MIT license applies to the project code; it does not replace the AMI corpus license or automatically establish separate licensing terms for dataset contents.

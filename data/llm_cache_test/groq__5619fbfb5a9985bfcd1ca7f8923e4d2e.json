@@ -1,0 +1,1 @@
+{"text": "{\"decisions\":[{\"id\":\"d1\",\"status\":\"active\",\"superseded_by\":null,\"quote_turn_idx\":null,\"quote\":null}]}", "provider": "groq", "model": "openai/gpt-oss-120b", "latency_s": 0.37509589999990567, "prompt_tokens": 378, "completion_tokens": 111, "finish_reason": "stop", "cached": false}

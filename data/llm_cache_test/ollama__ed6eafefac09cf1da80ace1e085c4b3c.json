@@ -1,0 +1,1 @@
+{"text": "{\n  \"action_items\": [\n    {\n      \"title\": \"\",\n      \"owner\": \"\",\n      \"deadline\": \"null\"\n    }\n  ],\n  \"decisions\": [\n    \"\"\n  ],\n  \"open_questions\": [\n    \"\"\n  ]\n}", "provider": "ollama", "model": "copilot-local", "latency_s": 3.686364600000161, "prompt_tokens": 684, "completion_tokens": 52, "finish_reason": "stop", "cached": false}

@@ -160,3 +160,79 @@ def test_reextraction_preserves_approval_and_human_edits(tmp_path):
     # The item missing from the new extraction becomes stale.
     assert items["act_2"]["stale"] is True
     assert items["act_2"]["state"] == "approved"
+
+
+def test_meeting_obj_missing_id_raises_key_error(tmp_path):
+    s = Store(tmp_path / "t.sqlite")
+
+    with pytest.raises(KeyError, match="missing"):
+        s.meeting_obj("missing")
+
+
+def test_save_extraction_disambiguates_duplicate_ids(tmp_path):
+    from copilot.models import ActionItem, Evidence, ExtractionResult
+
+    s = Store(tmp_path / "t.sqlite")
+    seed(s, 0)
+
+    first = ActionItem(
+        id="duplicate",
+        title="First task",
+        owner="Priya",
+        owner_raw="I",
+        confidence=0.9,
+        evidence=[Evidence(turn_idx=0, quote="I'll do the first task.")],
+    )
+    second = ActionItem(
+        id="duplicate",
+        title="Second task",
+        owner="Sam",
+        owner_raw="I",
+        confidence=0.9,
+        evidence=[Evidence(turn_idx=1, quote="I'll do the second task.")],
+    )
+
+    s.save_extraction("m1", ExtractionResult(action_items=[first, second]))
+
+    items = s.items("m1", "action")
+    assert {item["id"] for item in items} == {"duplicate", "duplicatex1"}
+    assert {item["title"] for item in items} == {"First task", "Second task"}
+
+
+def test_update_item_rejects_invalid_review_state(tmp_path):
+    s = Store(tmp_path / "t.sqlite")
+    seed(s)
+
+    with pytest.raises(ValueError, match="bad state"):
+        s.update_item("act_1", state="completed")
+
+
+def test_delete_meeting_removes_meeting_items_and_pushes(tmp_path):
+    s = Store(tmp_path / "t.sqlite")
+    seed(s)
+
+    s.record_push(
+        "act_1",
+        "notion",
+        "page-123",
+        "https://notion.so/page-123",
+        "hash-123",
+        "created",
+    )
+    s.record_push(
+        "meeting:m1",
+        "slack",
+        "message-123",
+        None,
+        "hash-456",
+        "created",
+    )
+
+    assert s.get_push("act_1", "notion") is not None
+    assert s.get_push("meeting:m1", "slack") is not None
+
+    s.delete_meeting("m1")
+
+    assert s.get_meeting("m1") is None
+    assert s.get_push("act_1", "notion") is None
+    assert s.get_push("meeting:m1", "slack") is None

@@ -1,0 +1,1 @@
+{"text": "{\"action_items\":[],\"decisions\":[],\"open_questions\":[],\"follow_ups\":[]}", "provider": "groq", "model": "openai/gpt-oss-120b", "latency_s": 0.5919762999992599, "prompt_tokens": 2162, "completion_tokens": 50, "finish_reason": "stop", "cached": false}

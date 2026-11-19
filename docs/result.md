@@ -167,6 +167,37 @@ The providers behaved differently across the same prompt and pipeline configurat
 
 **Outcome:** Avoid treating one provider's aggregate score as proof that it is universally better. Complete, same-meeting runs are needed before drawing stronger conclusions.
 
+## Operational stats
+
+The call log contained **375 logged records** for the selected final runs. Of these, **202 were live provider attempts** after excluding cached records.
+
+| Provider | Live attempts | Successful attempts | Attempts with `attempt > 1` | Median successful latency | P95 successful latency | Errors |
+|---|---:|---:|---:|---:|---:|---|
+| Groq | 43 | 23 | 20 | 2.1 s | 3.8 s | 20 `RateLimited` |
+| Ollama | 37 | 37 | 0 | 6.8 s | 83.1 s | None |
+| OpenRouter | 122 | 39 | 63 | 44.1 s | 86.6 s | 72 `RateLimited`, 11 `EmptyResponse` |
+
+### Repairs and call purpose
+
+| Provider | Repair calls | Calls by purpose |
+|---|---:|---|
+| Groq | 0 | baseline: 11; extract: 24; judge_q: 6; judge_d: 2 |
+| Ollama | 1 | baseline: 10; repair: 1; extract: 10; judge_d: 9; judge_q: 7 |
+| OpenRouter | 0 | baseline: 10; extract: 104; judge_d: 5; judge_q: 3 |
+
+### Operational interpretation
+
+- **Groq:** 20 of 43 live attempts were rate-limited. Successful attempts had a low median latency of 2.1 seconds, but rate limits caused substantial retry activity.
+- **Ollama:** All 37 live attempts succeeded, with no attempts recorded after the first attempt. Its median successful latency was 6.8 seconds, although the 83.1-second P95 indicates a long tail.
+- **OpenRouter:** 39 of 122 live attempts succeeded. Rate limiting was the largest recorded failure category, with 72 `RateLimited` and 11 `EmptyResponse` outcomes. Successful calls were considerably slower than the other providers.
+- **Repairs:** One repair call was recorded, on Ollama. No repair calls were recorded for Groq or OpenRouter.
+
+These figures describe the logged calls, not the probability that an entire meeting run will complete successfully. An attempt with `attempt > 1` is counted as a later attempt in the log; it should not be interpreted as a count of unique requests that required retries. Latency statistics include successful attempts only. The call log also does not establish provider uptime or future reliability.
+
 ## Overall conclusion
 
-The v2 prompt and threshold experiments did not provide enough evidence to replace v1 as the baseline. The ablations suggest that some pipeline components had little measurable effect on this small development set, while pass 2 may affect unresolved-question recall. These findings are useful for directing future experiments, but they are not sufficient to justify removing components or changing the production configuration. All conclusions are limited by the small development set and, for OpenRouter, incomplete runs.
+The v2 prompt and threshold experiments did not provide enough evidence to replace v1 as the baseline. The ablations suggest that some pipeline components had little measurable effect on this small development set, while pass 2 may affect unresolved-question recall. These findings are useful for directing future experiments, but they are not sufficient to justify removing components or changing the production configuration.
+
+The operational logs show different provider trade-offs: Ollama had the strongest observed call-level success record but a long latency tail; Groq was faster on successful calls but encountered rate limits; OpenRouter experienced substantial rate limiting, empty responses, and higher latency. These are observations from this particular evaluation run, not guarantees of future provider reliability.
+
+All conclusions are limited by the small development set and, for OpenRouter, incomplete runs.
